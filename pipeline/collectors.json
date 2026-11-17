@@ -1,0 +1,13 @@
+[
+  {"id":"SRC-066","name":"Live Арена","url":"https://www.live-arena.moscow/afisha/","city":"Московская область","mode":"listing","max_details":14,"category":"Концерты","enabled":true},
+  {"id":"SRC-108","name":"ГЭС-2","url":"https://ges-2.org/?areas=exhibition&current_interval=future","city":"Москва","mode":"hybrid","max_details":16,"category":"Выставки","enabled":true},
+  {"id":"SRC-107","name":"Пушкинский музей","url":"https://www.pushkinmuseum.art/events/index.php?lang=ru","city":"Москва","mode":"hybrid","max_details":14,"category":"Выставки","enabled":true},
+  {"id":"SRC-106","name":"Третьяковская галерея","url":"https://new.tretyakov.ru/tickets/exhibitions/","city":"Москва","mode":"hybrid","max_details":14,"category":"Выставки","enabled":true},
+  {"id":"SRC-053","name":"Концертный зал Зарядье","url":"https://zaryadyehall.ru/events/","city":"Москва","mode":"hybrid","max_details":10,"category":"Концерты","enabled":true},
+  {"id":"SRC-019","name":"МХТ им. Чехова","url":"https://mxat.ru/afisha/","city":"Москва","mode":"hybrid","max_details":10,"category":"Театр","enabled":true},
+  {"id":"SRC-020","name":"Театр Наций","url":"https://theatreofnations.ru/","city":"Москва","mode":"hybrid","max_details":10,"category":"Театр","enabled":true},
+  {"id":"SRC-021","name":"Театр Вахтангова","url":"https://vakhtangov.ru/afisha/","city":"Москва","mode":"hybrid","max_details":10,"category":"Театр","enabled":true},
+  {"id":"SRC-111","name":"Мультимедиа Арт Музей","url":"https://mamm.art/","city":"Москва","mode":"hybrid","max_details":8,"category":"Выставки","enabled":true},
+  {"id":"SRC-034","name":"Театр Практика","url":"https://praktikatheatre.ru/","city":"Москва","mode":"hybrid","max_details":8,"category":"Театр","enabled":true},
+  {"id":"SRC-109","name":"ЦСИ Винзавод","url":"https://winzavod.ru/","city":"Москва","mode":"hybrid","max_details":8,"category":"Выставки","enabled":true}
+]

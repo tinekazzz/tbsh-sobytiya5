@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090a0e" />
+  <meta name="description" content="ТБШ СОБЫТИЯ — мониторинг самых интересных культурных событий Москвы и России. Новые анонсы, афиша следующего месяца, важные имена и источники." />
+  <link rel="icon" type="image/png" href="./assets/tbsh-mark-white.png" />
+  <title>ТБШ СОБЫТИЯ — события следующего месяца</title>
+  <link rel="stylesheet" href="./assets/app.css" />
+</head>
+<body>
+  <div class="app-layout" id="app">
+    <header class="topbar">
+      <a class="brand" href="#overview" data-view="overview" aria-label="ТБШ СОБЫТИЯ — главная">
+        <img class="brand-logo" src="./assets/tbsh-mark-white.png" alt="" aria-hidden="true" />
+        <span class="brand-name">ТБШ <span>СОБЫТИЯ</span><small>ТЕОРИЯ БОЛЬШОГО ШОУ</small></span>
+      </a>
+      <div class="global-search">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="global-search" type="search" placeholder="Событие, артист, площадка, город..." autocomplete="off" aria-label="Поиск по событиям, источникам и именам" />
+        <kbd>ПОИСК</kbd>
+      </div>
+      <div class="header-actions">
+        <span class="timezone-pill"><span class="signal-dot"></span> Москва / МСК</span>
+        <button class="icon-button top-favs" id="go-favorites" type="button" title="Избранное" aria-label="Открыть избранное">♡</button>
+        <div class="header-avatar" title="Редакторская панель">ТБШ</div>
+      </div>
+    </header>
+
+    <aside class="sidebar" aria-label="Разделы сайта">
+      <div class="sidebar-upper">
+        <p class="sidebar-label">НАВИГАЦИЯ</p>
+        <nav id="sidebar-nav" class="sidebar-nav">
+          <button data-view="overview" class="nav-link active" type="button"><span class="nav-ic">◈</span> Обзор <span class="nav-short">01</span></button>
+          <button data-view="events" class="nav-link" type="button"><span class="nav-ic">▦</span> Афиша месяца <span class="nav-short">02</span></button>
+          <button data-view="fresh" class="nav-link" type="button"><span class="nav-ic">✳</span> Новые находки <span class="nav-short">03</span></button>
+          <button data-view="favorites" class="nav-link" type="button"><span class="nav-ic">♡</span> Избранное <span class="nav-counter" id="fav-counter">0</span></button>
+        </nav>
+        <p class="sidebar-label sidebar-section">БАЗА МОНИТОРИНГА</p>
+        <nav class="sidebar-nav">
+          <button data-view="sources" class="nav-link" type="button"><span class="nav-ic">⌁</span> Источники <span class="nav-short">241</span></button>
+          <button data-view="people" class="nav-link" type="button"><span class="nav-ic">✥</span> Имена <span class="nav-short">332</span></button>
+          <button data-view="about" class="nav-link" type="button"><span class="nav-ic">ⓘ</span> Как это работает </button>
+        </nav>
+      </div>
+      <div class="sidebar-lower">
+        <div class="sidebar-help">
+          <span class="tiny-heading">О ПРОЕКТЕ</span>
+          <div class="sidebar-help-art" aria-hidden="true"><img class="sidebar-logo" src="./assets/tbsh-logo-white.png" alt="" /></div>
+          <strong>Находим то,<br />что хочется увидеть.</strong>
+          <p>Театр, музыка, искусство, шоу и самые неожиданные события.</p>
+          <button data-view="about" type="button" class="subtle-link">Как устроен радар ↗</button>
+        </div>
+        <span class="sidebar-version">ТБШ СОБЫТИЯ / v 1.1</span>
+      </div>
+    </aside>
+
+    <main class="main" id="main-content">
+      <div class="page-eyebrow"><span class="eyebrow-dash"></span> ТБШ / КУЛЬТУРНАЯ ПОВЕСТКА / РОССИЯ <span id="breadcrumb-view">/ ОБЗОР</span></div>
+      <section id="main-header" class="main-header">
+        <div class="title-cluster"><h1 id="screen-title">Пульс города<span class="title-dot">.</span></h1><p id="screen-description">Всё самое интересное в культурной жизни — на месяц вперёд.</p></div>
+        <div class="period-controls"><button id="month-prev" class="period-arrow" type="button" aria-label="Предыдущий месяц">←</button><span id="month-display">ДЕКАБРЬ 2026</span><button id="month-next" class="period-arrow" type="button" aria-label="Следующий месяц">→</button></div>
+      </section>
+
+      <section id="hero-section" class="hero" aria-label="Рекомендации и статус">
+        <div class="hero-text">
+          <span class="hero-mini"><img class="hero-mark" src="./assets/tbsh-mark-white.png" alt="" aria-hidden="true" /><span>ТБШ / ВЫПУСК <span id="hero-month-small">12 — 2026</span></span></span>
+          <h2>СОБЫТИЯ</h2>
+          <div class="hero-month-banner" id="hero-month-label">ДЕКАБРЯ</div>
+          <p class="hero-genres">КОНЦЕРТЫ <span>/</span><br />ТЕАТР <span>/</span><br />ВЫСТАВКИ <span>/</span><br />ШОУ <span>/</span><br />ФЕСТИВАЛИ</p>
+          <button id="hero-go-events" class="hero-cta" type="button">Смотреть события <span aria-hidden="true">⟶</span></button>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="hero-blue-angle"></div><span class="hero-art-label">ТЕОРИЯ БОЛЬШОГО ШОУ <b> / 2026</b></span></div>
+      </section>
+
+      <section id="metrics" class="metric-grid" aria-label="Сводка данных">
+        <div class="metric"><span class="metric-label">СОБЫТИЙ В МЕСЯЦЕ</span><span id="metric-events" class="metric-value">—</span><span class="metric-foot">с подтверждёнными датами</span></div>
+        <div class="metric"><span class="metric-label">НЕДАВНО ДОБАВЛЕНО</span><span id="metric-new" class="metric-value">—</span><span class="metric-foot">в течение 7 дней</span></div>
+        <div class="metric"><span class="metric-label">ИСТОЧНИКОВ В БАЗЕ</span><span id="metric-sources" class="metric-value">241</span><span class="metric-foot">официальные сайты и медиа</span></div>
+        <div class="metric"><span class="metric-label">ИМЁН НА РАДАРЕ</span><span id="metric-people" class="metric-value">332</span><span class="metric-foot">артисты, авторы, режиссёры</span></div>
+      </section>
+
+      <section id="events-section" class="content-section">
+        <div class="section-heading"><div><div class="section-overline">НАШ ВЫБОР / <span id="events-view-tag">АФИША</span></div><h2 id="events-section-title">События, которые стоят внимания</h2></div><div class="section-actions"><button id="export-events" type="button" class="outline-action"><span>↓</span> Скачать CSV</button><button id="see-all-events" type="button" class="text-action">Вся афиша ↗</button></div></div>
+        <div id="filters" class="filters"><div class="pill-scroll" id="genre-pills" aria-label="Фильтр по жанру"></div><div class="filter-selects"><label><span class="visually-hidden">Город</span><select id="city-select"><option value="moscow">Москва и область</option><option value="all">Вся Россия</option><option value="spb">Санкт-Петербург</option><option value="other">Другие города</option></select></label><label><span class="visually-hidden">Сортировка</span><select id="sort-select"><option value="curated">По интересу</option><option value="date">По дате</option><option value="fresh">Сначала новые</option></select></label></div></div>
+        <div id="result-meta" class="results-meta" aria-live="polite"></div>
+        <div id="events-grid" class="events-grid"></div>
+        <div id="event-more" class="event-more"></div>
+      </section>
+
+      <section id="registry-section" class="registry-section hidden" aria-label="База мониторинга">
+        <div id="registry-controls" class="registry-toolbar"></div>
+        <div id="registry-stats" class="registry-stats"></div>
+        <div id="registry-items" class="registry-items"></div>
+        <div id="registry-more" class="event-more"></div>
+      </section>
+
+      <section id="about-section" class="about-section hidden">
+        <div class="about-intro"><span class="about-ornament">✳</span><h2>Не просто афиша.<br />Система культурной разведки.</h2><p>Радар постоянно проверяет первоисточники, ищет совпадения с нашей базой имён, отбирает события по месяцу и показывает, откуда взялась информация.</p></div>
+        <div class="about-steps"><div><span>01 / ИСТОЧНИКИ</span><h3>241 сайт</h3><p>Театры, музеи, концертные площадки, арт-центры, фестивали и культурные медиа.</p></div><div><span>02 / КЛЮЧЕВЫЕ ИМЕНА</span><h3>332 объекта</h3><p>Режиссёры, исполнители, художники и сценические проекты — для целевого поиска.</p></div><div><span>03 / ДАТЫ И ФАКТЫ</span><h3>Только проверяемое</h3><p>Дата, место и ссылка на страницу анонса обязательны; источники без доступа отмечаются отдельно.</p></div><div><span>04 / КАЛЕНДАРЬ</span><h3>Каждый день</h3><p>После публикации сайта автоматический сборщик запускается ежедневно; новые события появляются после проверки.</p></div></div>
+        <div class="about-callout"><div><strong id="about-status-title">Статус проекта</strong><p id="about-status-text">Загружаем сведения о последнем обновлении...</p></div><span class="about-status-icon">◉</span></div>
+      </section>
+      <footer class="footer"><span>© 2026 ТБШ СОБЫТИЯ / ТЕОРИЯ БОЛЬШОГО ШОУ</span><span>Информация требует проверки перед публикацией. <button type="button" data-view="about">О методологии ↗</button></span></footer>
+    </main>
+
+    <aside class="rightbar" aria-label="Обновления и редакторский радар">
+      <div class="rightbar-heading"><span>СЕГОДНЯ НА РАДАРЕ</span><span class="rightbar-star">✳</span></div>
+      <div class="refresh-card"><div class="refresh-top"><span id="status-indicator" class="status-dot status-demo"></span><span id="status-label">Стартовая версия</span></div><div class="refresh-time" id="last-refresh">17.11.2026</div><p id="refresh-description">Подборка подготовлена для запуска ежедневного мониторинга.</p><div class="refresh-bottom"><span>Обновление <b id="refresh-frequency">после подключения</b></span><span class="mini-wave">▂▅▃▆▄</span></div></div>
+      <div class="right-section-head"><h3>Свежие находки</h3><button type="button" data-view="fresh" class="tiny-arrow">↗</button></div>
+      <div id="recent-events" class="recent-list"></div>
+      <div class="right-section-head people-heading"><h3>Имена на радаре</h3><button type="button" data-view="people" class="tiny-arrow">↗</button></div>
+      <div id="tracked-highlights" class="tracked-people"></div>
+      <div class="right-notice"><span>✳ ЕЖЕМЕСЯЧНЫЙ ОБЗОР</span><p>Готовьте выпуск заранее. Вся афиша следующего месяца — в одном месте.</p><button data-view="events" type="button">Перейти к событиям ↗</button></div>
+    </aside>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script defer src="./assets/app.js"></script>
+</body>
+</html>

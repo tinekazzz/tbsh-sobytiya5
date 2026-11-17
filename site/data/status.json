@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-11-17T15:44:42+03:00",
+  "mode": "offline_preview",
+  "daily_schedule": "06:20 Europe/Moscow (after GitHub Pages deployment)",
+  "sources_in_registry": 241,
+  "tracked_people": 332,
+  "configured_collectors": 11,
+  "sources_checked_today": 0,
+  "sources_reached_today": 0,
+  "events_extracted_today": 0,
+  "events_in_catalog": 19,
+  "source_log": [],
+  "note": "Демонстрационные данные: автоматическое обновление ещё не запущено"
+}
