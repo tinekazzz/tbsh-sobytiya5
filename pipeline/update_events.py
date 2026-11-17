@@ -23,6 +23,7 @@ import logging
 from pathlib import Path
 import re
 import time
+import sys
 from urllib.parse import urljoin, urlparse, urldefrag, parse_qs
 from urllib.robotparser import RobotFileParser
 
@@ -146,6 +147,8 @@ def event_from_ld(node, base, source, today):
     kinds=node.get('@type',[])
     kinds=[kinds] if isinstance(kinds,str) else kinds
     if not any('event' in str(k).lower() for k in kinds):return None
+    status=str(node.get('eventStatus') or '').lower()
+    if 'cancel' in status or 'postpon' in status:return None
     title=clean(node.get('name'))
     start=parse_iso(node.get('startDate'))
     end=parse_iso(node.get('endDate')) or start
@@ -156,7 +159,13 @@ def event_from_ld(node, base, source, today):
     desc=BeautifulSoup(str(node.get('description') or ''),'html.parser').get_text(' ',strip=True)
     uri=clean(node.get('url') or base)
     if not uri.startswith('http'):uri=urljoin(base,uri)
-    return build_event(title,start,end,desc[:300],venue,uri,source)
+    ev=build_event(title,start,end,desc[:300],venue,uri,source)
+    if isinstance(location,dict):
+        address=location.get('address') or {}
+        locality=address.get('addressLocality') if isinstance(address,dict) else None
+        if isinstance(locality,str) and 2<=len(locality)<60:
+            ev['city']=clean(locality)
+    return ev
 
 def jsonld_events(soup, page_url, source, today):
     found=[]
@@ -339,71 +348,74 @@ def merge_events(editorial,existing,found,people,today):
             combined[ev['id']]=ev;keys[key]=ev['id']
     return sorted(combined.values(),key=lambda e:(e['start_date'],-e.get('editor_score',50),e['title']))
 
-def run(offline=False):
+def run(offline=False, max_sources=0, workers=8):
+    """Update local catalog and write an honest per-source coverage report.
+
+    The full registry is attempted by default; reachability and event extraction
+    are counted separately. A 200 response with no dated events is not success
+    at finding events.
+    """
+    from monitor_registry import all_collectors, scan_registry
     now=datetime.now(TZ);today=now.date()
     editorial=load_json(DATA/'editorial_events.json',[])
     past=load_json(DATA/'events.json',{})
     existing=past.get('events',[])
+    previous_ids={e.get('id') for e in existing}
     people=load_json(DATA/'people.json',[])
-    config=load_json(ROOT/'pipeline/collectors.json',[])
+    registry=load_json(ROOT/'registry/full_registry.json',{})
+    base_sources=registry.get('sources',[])
+    custom=load_json(ROOT/'pipeline/collectors.json',[])
+    config=all_collectors(base_sources,custom)
     found=[];logs=[]
     if not offline:
-        with requests.Session() as s:
-            s.headers.update(HEADERS)
-            fetcher=Fetcher(s)
-            for src in config:
-                if not src.get('enabled',False):continue
-                row={'id':src['id'],'name':src['name'],'url':src['url'],'status':'error','pages':0,'events':0}
-                start_page_count=fetcher.pages
-                try:
-                    page=fetcher.fetch(src['url'])
-                    fresh=jsonld_events(page,src['url'],src,today)+listing_events(page,src['url'],src,today)
-                    if src.get('mode') in ('hybrid','listing'):
-                        for link in discover_links(page,src['url'],src.get('max_details',8)):
-                            try:
-                                detail=fetcher.fetch(link)
-                                fresh+=page_event(detail,link,src,today)
-                            except (requests.RequestException,PermissionError,ValueError) as ex:
-                                LOG.info('Skipping %s: %s',link,str(ex)[:120])
-                    for e in fresh:
-                        e['people']=get_people(e,people)
-                    found.extend(fresh)
-                    row['status']='ok';row['events']=len(fresh)
-                except PermissionError as ex:
-                    row['status']='blocked';row['error']=str(ex)
-                except (requests.RequestException,ValueError) as ex:
-                    row['status']='error';row['error']=str(ex)[:180]
-                except Exception as ex:
-                    row['status']='error';row['error']=type(ex).__name__+': '+str(ex)[:120]
-                    LOG.exception('Unexpected collector error')
-                row['pages']=fetcher.pages-start_page_count
-                logs.append(row)
-                LOG.info('%s: %s (%d pages, %d extracted)',src['name'],row['status'],row['pages'],row['events'])
+        found,logs=scan_registry(config,core=sys.modules[__name__],today=today,
+                                 workers=workers,max_sources=max_sources)
+        for e in found:e['people']=get_people(e,people)
     events=merge_events(editorial,existing,found,people,today)
+    seen_status={key:sum(x.get('status')==key for x in logs)
+                 for key in ('found','no_events','needs_javascript','blocked','error','invalid_url','unsupported')}
+    reached=seen_status['found']+seen_status['no_events']+seen_status['needs_javascript']
+    new_events=sum(e.get('origin')=='automatic' and e.get('id') not in previous_ids for e in events)
     status={
         'updated_at':now.isoformat(timespec='seconds'),
         'mode':'offline_preview' if offline else 'daily_collection',
-        'daily_schedule':'06:20 Europe/Moscow (after GitHub Pages deployment)',
-        'sources_in_registry':len(load_json(DATA/'sources.json',[])),
+        'collection_strategy':'registry_full_sweep',
+        'daily_schedule':'06:20 Europe/Moscow (GitHub Actions, возможна задержка)',
+        'sources_in_registry':len(base_sources),
         'tracked_people':len(people),
-        'configured_collectors':sum(bool(c.get('enabled')) for c in config),
+        'configured_collectors':len(config),
         'sources_checked_today':len(logs),
-        'sources_reached_today':sum(c['status']=='ok' for c in logs),
+        'sources_reached_today':reached,
+        'sources_with_events_today':seen_status['found'],
+        'sources_no_dated_events_today':seen_status['no_events'],
+        'sources_needing_javascript_today':seen_status['needs_javascript'],
+        'sources_blocked_today':seen_status['blocked'],
+        'sources_failed_today':seen_status['error']+seen_status['invalid_url']+seen_status['unsupported'],
         'events_extracted_today':len(found),
+        'new_events_added_today':new_events,
+        'events_with_people_today':sum(bool(e.get('people')) for e in found),
         'events_in_catalog':len(events),
+        'source_status_counts':seen_status,
         'source_log':logs,
-        'note':'Автоматическая проверка выполнена' if not offline else 'Демонстрационные данные: автоматическое обновление ещё не запущено'
+        'note':('Попытка проверки всего реестра: HTTP-доступ не гарантирует наличие событий; '
+                'учитываются только записи с датами. Часть сайтов требует отдельных интеграций.'
+                if not offline else
+                'Локальная проверка: сеть не использовалась; данные афиши сохранены из предыдущего запуска.')
     }
     bundle={'generated_at':now.isoformat(timespec='seconds'),'mode':status['mode'],'events':events}
     write_json(DATA/'events.json',bundle)
     write_json(DATA/'status.json',status)
-    LOG.info('Stored %d events',len(events))
+    LOG.info('Sources attempted: %s/%s, reached: %s, dated events: %s; catalog: %s',
+             len(logs),len(config),reached,len(found),len(events))
     return status
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--offline',action='store_true',help='Do not make internet requests; compose reviewed starter dataset')
     parser.add_argument('--verbose',action='store_true')
+    parser.add_argument('--max-sources',type=int,default=0,help='Only the first N registered sites (diagnostics)')
+    parser.add_argument('--workers',type=int,default=8,help='Concurrent source checks, default 8')
     args=parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,format='%(levelname)s %(message)s')
-    print(json.dumps(run(args.offline),ensure_ascii=False,indent=2)[:3500])
+    status=run(args.offline,max_sources=args.max_sources,workers=args.workers)
+    print(json.dumps({k:v for k,v in status.items() if k!='source_log'},ensure_ascii=False,indent=2))
