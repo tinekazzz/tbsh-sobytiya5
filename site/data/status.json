@@ -1,14 +1,105 @@
 {
-  "updated_at": "2026-11-17T15:44:42+03:00",
-  "mode": "offline_preview",
+  "updated_at": "2026-11-17T23:14:10+03:00",
+  "mode": "daily_collection",
   "daily_schedule": "06:20 Europe/Moscow (after GitHub Pages deployment)",
   "sources_in_registry": 241,
   "tracked_people": 332,
   "configured_collectors": 11,
-  "sources_checked_today": 0,
-  "sources_reached_today": 0,
-  "events_extracted_today": 0,
-  "events_in_catalog": 19,
-  "source_log": [],
-  "note": "Демонстрационные данные: автоматическое обновление ещё не запущено"
+  "sources_checked_today": 11,
+  "sources_reached_today": 9,
+  "events_extracted_today": 19,
+  "events_in_catalog": 33,
+  "source_log": [
+    {
+      "id": "SRC-066",
+      "name": "Live Арена",
+      "url": "https://www.live-arena.moscow/afisha/",
+      "status": "ok",
+      "pages": 14,
+      "events": 0
+    },
+    {
+      "id": "SRC-108",
+      "name": "ГЭС-2",
+      "url": "https://ges-2.org/?areas=exhibition&current_interval=future",
+      "status": "ok",
+      "pages": 11,
+      "events": 3
+    },
+    {
+      "id": "SRC-107",
+      "name": "Пушкинский музей",
+      "url": "https://www.pushkinmuseum.art/events/index.php?lang=ru",
+      "status": "ok",
+      "pages": 6,
+      "events": 0
+    },
+    {
+      "id": "SRC-106",
+      "name": "Третьяковская галерея",
+      "url": "https://new.tretyakov.ru/tickets/exhibitions/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "error": "robots.txt disallows or unavailable"
+    },
+    {
+      "id": "SRC-053",
+      "name": "Концертный зал Зарядье",
+      "url": "https://zaryadyehall.ru/events/",
+      "status": "ok",
+      "pages": 11,
+      "events": 0
+    },
+    {
+      "id": "SRC-019",
+      "name": "МХТ им. Чехова",
+      "url": "https://mxat.ru/afisha/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "error": "robots.txt disallows or unavailable"
+    },
+    {
+      "id": "SRC-020",
+      "name": "Театр Наций",
+      "url": "https://theatreofnations.ru/",
+      "status": "ok",
+      "pages": 11,
+      "events": 0
+    },
+    {
+      "id": "SRC-021",
+      "name": "Театр Вахтангова",
+      "url": "https://vakhtangov.ru/afisha/",
+      "status": "ok",
+      "pages": 11,
+      "events": 7
+    },
+    {
+      "id": "SRC-111",
+      "name": "Мультимедиа Арт Музей",
+      "url": "https://mamm.art/",
+      "status": "ok",
+      "pages": 9,
+      "events": 0
+    },
+    {
+      "id": "SRC-034",
+      "name": "Театр Практика",
+      "url": "https://praktikatheatre.ru/",
+      "status": "ok",
+      "pages": 8,
+      "events": 0
+    },
+    {
+      "id": "SRC-109",
+      "name": "ЦСИ Винзавод",
+      "url": "https://winzavod.ru/",
+      "status": "ok",
+      "pages": 9,
+      "events": 9
+    }
+  ],
+  "note": "Автоматическая проверка выполнена"
 }
