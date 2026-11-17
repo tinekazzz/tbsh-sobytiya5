@@ -1,0 +1,63 @@
+name: Daily TBSH SOBYTIYA update and publish
+
+on:
+  schedule:
+    # Every day at 06:20 Moscow time (03:20 UTC, no seasonal clock change)
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: culture-radar-publish
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install collector dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run daily collection (preserves editorial records)
+        run: python pipeline/update_events.py
+
+      - name: Persist collected data in the repository
+        run: |
+          git config user.name "TBSH Events Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/events.json site/data/status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: update cultural events $(date -u +%F)"
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Publish the website
+        id: deployment
+        uses: actions/deploy-pages@v4
