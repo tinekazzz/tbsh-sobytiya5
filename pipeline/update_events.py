@@ -128,6 +128,93 @@ def first_meta(soup, selectors):
             if clean(content):return clean(content)
     return ''
 
+def normalize_image_url(raw, base=''):
+    raw=clean(raw)
+    if not raw:return ''
+    if raw.startswith('//'):raw='https:'+raw
+    elif base and not raw.startswith('http'):raw=urljoin(base,raw)
+    try:
+        parsed=urlparse(raw)
+    except Exception:
+        return ''
+    if parsed.scheme!='https':return ''
+    if parsed.path.lower().endswith(('.svg', '.ico')):
+        return ''
+    return raw
+
+def image_from_tag(tag, base=''):
+    if not tag:return ''
+    values=[]
+    for attr in ('content','src','data-src','data-original','data-lazy-src','href'):
+        if tag.get(attr):values.append(tag.get(attr))
+    srcset=tag.get('srcset') or tag.get('data-srcset') or ''
+    if srcset:
+        first=srcset.split(',')[0].strip().split(' ')[0]
+        if first:values.append(first)
+    for raw in values:
+        normalized=normalize_image_url(raw,base)
+        if normalized:return normalized
+    return ''
+
+def extract_image_url(soup, base=''):
+    selectors=[
+        'meta[property="og:image"]',
+        'meta[name="og:image"]',
+        'meta[property="og:image:url"]',
+        'meta[name="twitter:image"]',
+        'meta[property="twitter:image"]',
+        'meta[itemprop="image"]',
+        'link[rel="image_src"]',
+    ]
+    for sel in selectors:
+        tag=soup.select_one(sel)
+        img=image_from_tag(tag,base)
+        if img:return img
+    for script in soup.select('script[type="application/ld+json"]'):
+        try:data=json.loads(script.string or script.get_text())
+        except Exception:continue
+        stack=[data]
+        while stack:
+            node=stack.pop()
+            if isinstance(node,dict):
+                image=node.get('image')
+                if isinstance(image,str):
+                    img=normalize_image_url(image,base)
+                    if img:return img
+                elif isinstance(image,list):
+                    for item in image:
+                        if isinstance(item,str):
+                            img=normalize_image_url(item,base)
+                            if img:return img
+                        elif isinstance(item,dict):
+                            img=normalize_image_url(item.get('url') or item.get('@id') or '',base)
+                            if img:return img
+                elif isinstance(image,dict):
+                    img=normalize_image_url(image.get('url') or image.get('@id') or '',base)
+                    if img:return img
+                stack.extend(v for v in node.values() if isinstance(v,(dict,list)))
+            elif isinstance(node,list):
+                stack.extend(node)
+    content=soup.select_one('article, main, .content, .post, .event, .event-card, .afisha-card, .entry-content, .page-content') or soup
+    for sel in ('img[src]','img[data-src]','source[srcset]'):
+        for tag in content.select(sel)[:8]:
+            img=image_from_tag(tag,base)
+            if img:return img
+    return ''
+
+def fragment_image_url(node, base=''):
+    if not node:return ''
+    for sel in ('img[src]','img[data-src]','source[srcset]'):
+        tag=node.select_one(sel) if hasattr(node,'select_one') else None
+        img=image_from_tag(tag,base)
+        if img:return img
+    style=(node.get('style') or '') if hasattr(node,'get') else ''
+    m=re.search(r"url\(['\"]?(.*?)['\"]?\)", style)
+    if m:
+        img=normalize_image_url(m.group(1),base)
+        if img:return img
+    return ''
+
 def get_people(event, registry):
     corpus=clean((event.get('title') or '')+' '+(event.get('description') or '')).casefold()
     matched=[]
@@ -159,7 +246,20 @@ def event_from_ld(node, base, source, today):
     desc=BeautifulSoup(str(node.get('description') or ''),'html.parser').get_text(' ',strip=True)
     uri=clean(node.get('url') or base)
     if not uri.startswith('http'):uri=urljoin(base,uri)
-    ev=build_event(title,start,end,desc[:300],venue,uri,source)
+    image_url=''
+    image=node.get('image')
+    if isinstance(image,str): image_url=normalize_image_url(image,uri)
+    elif isinstance(image,list):
+        for item in image:
+            if isinstance(item,str) and normalize_image_url(item,uri):
+                image_url=normalize_image_url(item,uri); break
+            if isinstance(item,dict):
+                cand=normalize_image_url(item.get('url') or item.get('@id') or '',uri)
+                if cand: image_url=cand; break
+    elif isinstance(image,dict):
+        image_url=normalize_image_url(image.get('url') or image.get('@id') or '',uri)
+    if not image_url:image_url=extract_image_url(BeautifulSoup(str(node.get('description') or ''),'html.parser'),uri)
+    ev=build_event(title,start,end,desc[:300],venue,uri,source,image_url=image_url)
     if isinstance(location,dict):
         address=location.get('address') or {}
         locality=address.get('addressLocality') if isinstance(address,dict) else None
@@ -182,16 +282,18 @@ def jsonld_events(soup, page_url, source, today):
         except (ValueError,TypeError):continue
     return found
 
-def build_event(title,start,end,desc,venue,url,source):
+def build_event(title,start,end,desc,venue,url,source,image_url=''):
     title=clean(title)
     source_name=source['name']
     dt=datetime.now(TZ).date().isoformat()
+    image_url=normalize_image_url(image_url,url)
     ev={
         'id':'auto-'+hashlib.sha256((url+'|'+title+'|'+start).encode()).hexdigest()[:14],
         'title':title[:200], 'start_date':start,'end_date':end,
         'time':None, 'category':classify(title+' '+desc[:100],source.get('category','Другое')),
         'venue':clean(venue)[:130],'city':source.get('city','Москва'),
         'url':url,'description':clean(desc)[:320], 'source_name':source_name,
+        'image_url':image_url,
         'source_id':source['id'], 'people':[], 'editor_score':68,'featured':False,
         'tag':'','discovered_at':dt,'origin':'automatic',
         'verified_at':dt,'verification':'Собрано автоматически; уточните детали у организатора'
@@ -229,7 +331,8 @@ def page_event(soup,url,source,today):
     if not candidates:return []
     desc=first_meta(soup,['meta[name="description"]','meta[property="og:description"]'])
     venue=first_meta(soup,['meta[property="event:location"]']) or source['name']
-    return [build_event(title,candidates[0],candidates[-1],desc,venue,url,source)]
+    image_url=extract_image_url(soup,url)
+    return [build_event(title,candidates[0],candidates[-1],desc,venue,url,source,image_url=image_url)]
 
 def listing_events(soup,base,source,today):
     """Conservative listing extraction: event-specific anchor and nearby date.
@@ -255,7 +358,8 @@ def listing_events(soup,base,source,today):
         if not dates or not in_scope(dates[0],dates[-1],today):continue
         # Exclude links that evidently label a category, not the event.
         if not any(token in parsed.path.lower() for token in LINK_HINTS) and len(snippet)>300:continue
-        found.append(build_event(title,dates[0],dates[-1],'',source['name'],href,source))
+        image_url=fragment_image_url(ctx or anchor,base)
+        found.append(build_event(title,dates[0],dates[-1],'',source['name'],href,source,image_url=image_url))
     return found
 
 def discover_links(soup,base,max_n):
@@ -332,6 +436,7 @@ def merge_events(editorial,existing,found,people,today):
         ev['people']=list(dict.fromkeys((ev.get('people') or [])+get_people(ev,people)))[:8]
         ev['category']=ev.get('category') or classify(title)
         ev['source_name']=ev.get('source_name') or 'Не указан'
+        ev['image_url']=normalize_image_url(ev.get('image_url') or '',ev.get('url') or '')
         ev['id']=ev.get('id') or 'event-'+hashlib.sha256((title+start).encode()).hexdigest()[:12]
         key=slug(title)+'|'+start[:7]+'|'+slug(ev.get('venue'))
         if key in keys:
@@ -347,6 +452,33 @@ def merge_events(editorial,existing,found,people,today):
         else:
             combined[ev['id']]=ev;keys[key]=ev['id']
     return sorted(combined.values(),key=lambda e:(e['start_date'],-e.get('editor_score',50),e['title']))
+
+def enrich_missing_images(events, limit=24):
+    pending=[e for e in events if not e.get('image_url') and str(e.get('url','')).startswith('https://')]
+    if not pending or limit<=0:return events
+    session=requests.Session()
+    session.headers.update(HEADERS)
+    checked=0
+    cache={}
+    for ev in pending:
+        url=ev.get('url')
+        if url in cache:
+            ev['image_url']=cache[url]
+            continue
+        if checked>=limit:break
+        checked+=1
+        try:
+            r=session.get(url,timeout=12,allow_redirects=True)
+            r.raise_for_status()
+            if 'html' not in r.headers.get('Content-Type','text/html').lower():
+                cache[url]=''; continue
+            soup=BeautifulSoup(r.content,'html.parser')
+            cache[url]=extract_image_url(soup,r.url)
+            ev['image_url']=cache[url]
+        except requests.RequestException:
+            cache[url]=''
+    session.close()
+    return events
 
 def run(offline=False, max_sources=0, workers=8):
     """Update local catalog and write an honest per-source coverage report.
@@ -372,6 +504,8 @@ def run(offline=False, max_sources=0, workers=8):
                                  workers=workers,max_sources=max_sources)
         for e in found:e['people']=get_people(e,people)
     events=merge_events(editorial,existing,found,people,today)
+    if not offline:
+        events=enrich_missing_images(events,limit=36)
     seen_status={key:sum(x.get('status')==key for x in logs)
                  for key in ('found','no_events','needs_javascript','blocked','error','invalid_url','unsupported')}
     reached=seen_status['found']+seen_status['no_events']+seen_status['needs_javascript']
