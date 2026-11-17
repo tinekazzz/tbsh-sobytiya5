@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T23:40:25+03:00",
+  "updated_at": "2026-11-18T00:00:32+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
@@ -7,22 +7,22 @@
   "tracked_people": 332,
   "configured_collectors": 241,
   "sources_checked_today": 241,
-  "sources_reached_today": 155,
-  "sources_with_events_today": 39,
-  "sources_no_dated_events_today": 116,
+  "sources_reached_today": 152,
+  "sources_with_events_today": 38,
+  "sources_no_dated_events_today": 114,
   "sources_needing_javascript_today": 0,
   "sources_blocked_today": 70,
-  "sources_failed_today": 16,
-  "events_extracted_today": 993,
-  "new_events_added_today": 706,
-  "events_with_people_today": 52,
-  "events_in_catalog": 739,
+  "sources_failed_today": 19,
+  "events_extracted_today": 986,
+  "new_events_added_today": 9,
+  "events_with_people_today": 51,
+  "events_in_catalog": 748,
   "source_status_counts": {
-    "found": 39,
-    "no_events": 116,
+    "found": 38,
+    "no_events": 114,
     "needs_javascript": 0,
     "blocked": 70,
-    "error": 16,
+    "error": 19,
     "invalid_url": 0,
     "unsupported": 0
   },
@@ -43,7 +43,7 @@
       "url": "https://www.afisha.ru/msk/",
       "status": "found",
       "pages": 4,
-      "events": 138,
+      "events": 137,
       "methods": [
         "detail_dated_page",
         "jsonld"
@@ -56,7 +56,7 @@
       "url": "https://live.mts.ru/moscow",
       "status": "found",
       "pages": 4,
-      "events": 61,
+      "events": 58,
       "methods": [
         "dated_listing"
       ],
@@ -79,7 +79,7 @@
       "url": "https://msk.kassir.ru/",
       "status": "found",
       "pages": 4,
-      "events": 81,
+      "events": 82,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -151,7 +151,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt недоступен: ReadTimeout"
+      "error": "robots.txt запрещает этот адрес"
     },
     {
       "id": "SRC-012",
@@ -466,12 +466,10 @@
       "id": "SRC-041",
       "name": "Театр имени Моссовета",
       "url": "https://mossoveta.ru/",
-      "status": "found",
+      "status": "no_events",
       "pages": 4,
-      "events": 1,
-      "methods": [
-        "detail_dated_page"
-      ],
+      "events": 0,
+      "methods": [],
       "priority": "A"
     },
     {
@@ -687,7 +685,7 @@
       "name": "Московский театр мюзикла",
       "url": "https://teamuz.ru/",
       "status": "no_events",
-      "pages": 4,
+      "pages": 2,
       "events": 0,
       "methods": [],
       "priority": "A"
@@ -914,7 +912,7 @@
       "url": "https://moscow.butmanclub.ru/",
       "status": "found",
       "pages": 3,
-      "events": 75,
+      "events": 74,
       "methods": [
         "dated_listing"
       ],
@@ -989,11 +987,12 @@
       "id": "SRC-089",
       "name": "TAU",
       "url": "https://tau.place/",
-      "status": "no_events",
-      "pages": 3,
+      "status": "error",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='tau.place', port=443): Read timed out. (read timeout=10)"
     },
     {
       "id": "SRC-090",
@@ -1136,11 +1135,12 @@
       "id": "SRC-103",
       "name": "Театр мюзикла — программа",
       "url": "https://teamuz.ru/events",
-      "status": "no_events",
-      "pages": 3,
+      "status": "error",
+      "pages": 1,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "ConnectionError: HTTPSConnectionPool(host='teamuz.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-104",
@@ -1612,11 +1612,12 @@
       "id": "SRC-148",
       "name": "Усадьба Jazz",
       "url": "https://usadba-jazz.ru/",
-      "status": "no_events",
-      "pages": 3,
+      "status": "error",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='usadba-jazz.ru', port=443): Read timed out. (read timeout=10)"
     },
     {
       "id": "SRC-149",
@@ -2065,7 +2066,7 @@
       "events": 0,
       "methods": [],
       "priority": "B",
-      "error": "robots.txt вернул HTML вместо правил"
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-192",
@@ -2340,7 +2341,7 @@
       "url": "https://drama.nnov.ru/",
       "status": "found",
       "pages": 2,
-      "events": 9,
+      "events": 10,
       "methods": [
         "dated_listing"
       ],
@@ -2506,7 +2507,7 @@
       "url": "https://concert.ru/",
       "status": "found",
       "pages": 3,
-      "events": 31,
+      "events": 28,
       "methods": [
         "dated_listing"
       ],
