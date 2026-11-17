@@ -1,55 +1,233 @@
 {
-  "updated_at": "2026-11-17T23:14:10+03:00",
+  "updated_at": "2026-11-17T23:40:25+03:00",
   "mode": "daily_collection",
-  "daily_schedule": "06:20 Europe/Moscow (after GitHub Pages deployment)",
+  "collection_strategy": "registry_full_sweep",
+  "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
   "sources_in_registry": 241,
   "tracked_people": 332,
-  "configured_collectors": 11,
-  "sources_checked_today": 11,
-  "sources_reached_today": 9,
-  "events_extracted_today": 19,
-  "events_in_catalog": 33,
+  "configured_collectors": 241,
+  "sources_checked_today": 241,
+  "sources_reached_today": 155,
+  "sources_with_events_today": 39,
+  "sources_no_dated_events_today": 116,
+  "sources_needing_javascript_today": 0,
+  "sources_blocked_today": 70,
+  "sources_failed_today": 16,
+  "events_extracted_today": 993,
+  "new_events_added_today": 706,
+  "events_with_people_today": 52,
+  "events_in_catalog": 739,
+  "source_status_counts": {
+    "found": 39,
+    "no_events": 116,
+    "needs_javascript": 0,
+    "blocked": 70,
+    "error": 16,
+    "invalid_url": 0,
+    "unsupported": 0
+  },
   "source_log": [
     {
-      "id": "SRC-066",
-      "name": "Live Арена",
-      "url": "https://www.live-arena.moscow/afisha/",
-      "status": "ok",
-      "pages": 14,
-      "events": 0
+      "id": "SRC-001",
+      "name": "Яндекс Афиша — Москва",
+      "url": "https://afisha.yandex.ru/moscow",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
     },
     {
-      "id": "SRC-108",
-      "name": "ГЭС-2",
-      "url": "https://ges-2.org/?areas=exhibition&current_interval=future",
-      "status": "ok",
-      "pages": 11,
-      "events": 3
+      "id": "SRC-002",
+      "name": "Афиша.ru — Москва",
+      "url": "https://www.afisha.ru/msk/",
+      "status": "found",
+      "pages": 4,
+      "events": 138,
+      "methods": [
+        "detail_dated_page",
+        "jsonld"
+      ],
+      "priority": "A"
     },
     {
-      "id": "SRC-107",
-      "name": "Пушкинский музей",
-      "url": "https://www.pushkinmuseum.art/events/index.php?lang=ru",
-      "status": "ok",
-      "pages": 6,
-      "events": 0
+      "id": "SRC-003",
+      "name": "МТС Live — Москва",
+      "url": "https://live.mts.ru/moscow",
+      "status": "found",
+      "pages": 4,
+      "events": 61,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
     },
     {
-      "id": "SRC-106",
-      "name": "Третьяковская галерея",
-      "url": "https://new.tretyakov.ru/tickets/exhibitions/",
+      "id": "SRC-004",
+      "name": "Ticketland — Москва",
+      "url": "https://www.ticketland.ru/",
       "status": "blocked",
       "pages": 0,
       "events": 0,
-      "error": "robots.txt disallows or unavailable"
+      "methods": [],
+      "priority": "A",
+      "error": "HTTP 403"
     },
     {
-      "id": "SRC-053",
-      "name": "Концертный зал Зарядье",
-      "url": "https://zaryadyehall.ru/events/",
-      "status": "ok",
-      "pages": 11,
-      "events": 0
+      "id": "SRC-005",
+      "name": "Кассир.ру — Москва",
+      "url": "https://msk.kassir.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 81,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page",
+        "jsonld"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-006",
+      "name": "KudaGo Москва",
+      "url": "https://kudago.com/msk/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "SRC-007",
+      "name": "Time Out Москва",
+      "url": "https://www.timeout.ru/msk",
+      "status": "found",
+      "pages": 5,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-008",
+      "name": "The City / Сити",
+      "url": "https://thecity.m24.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-009",
+      "name": "Культура.РФ — афиша",
+      "url": "https://www.culture.ru/afisha",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt ответил HTTP 425"
+    },
+    {
+      "id": "SRC-010",
+      "name": "Афиша Москвы на mos.ru",
+      "url": "https://www.mos.ru/afisha/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-011",
+      "name": "Московские сезоны",
+      "url": "https://moscowseasons.com/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ReadTimeout"
+    },
+    {
+      "id": "SRC-012",
+      "name": "Афиша на Kuda.Moscow",
+      "url": "https://kuda.moscow/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-013",
+      "name": "Афиша театра Mos.theater",
+      "url": "https://www.mos.theater/",
+      "status": "found",
+      "pages": 1,
+      "events": 6,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-014",
+      "name": "SMOTR театральные премьеры",
+      "url": "https://www.smotr.ru/premier.htm",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-015",
+      "name": "Афиша 2ГИС",
+      "url": "https://2gis.ru/moscow",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-016",
+      "name": "Справочник MusicAfisha",
+      "url": "https://musicafisha.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-017",
+      "name": "Концертный справочник UpSound",
+      "url": "https://upsound.org/spravochniki/ploschadki/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-018",
+      "name": "Большой театр",
+      "url": "https://bolshoi.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ReadTimeout"
     },
     {
       "id": "SRC-019",
@@ -58,48 +236,2387 @@
       "status": "blocked",
       "pages": 0,
       "events": 0,
-      "error": "robots.txt disallows or unavailable"
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
     },
     {
       "id": "SRC-020",
       "name": "Театр Наций",
       "url": "https://theatreofnations.ru/",
-      "status": "ok",
-      "pages": 11,
-      "events": 0
+      "status": "no_events",
+      "pages": 7,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
     },
     {
       "id": "SRC-021",
       "name": "Театр Вахтангова",
       "url": "https://vakhtangov.ru/afisha/",
-      "status": "ok",
-      "pages": 11,
-      "events": 7
+      "status": "found",
+      "pages": 7,
+      "events": 4,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
     },
     {
-      "id": "SRC-111",
-      "name": "Мультимедиа Арт Музей",
-      "url": "https://mamm.art/",
-      "status": "ok",
-      "pages": 9,
-      "events": 0
+      "id": "SRC-022",
+      "name": "Театр на Бронной",
+      "url": "https://mbronnaya.ru/events",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-023",
+      "name": "Театр им. Пушкина",
+      "url": "https://teatrpushkin.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-024",
+      "name": "Театр Маяковского",
+      "url": "https://www.mayakovsky.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-025",
+      "name": "Ленком Марка Захарова",
+      "url": "https://lenkom.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-026",
+      "name": "Театр Современник",
+      "url": "https://sovremennik.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-027",
+      "name": "Театр Ермоловой",
+      "url": "https://ermolova.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-028",
+      "name": "Театр на Таганке",
+      "url": "https://tagankateatr.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-029",
+      "name": "Театр Сатиры",
+      "url": "https://satire.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-030",
+      "name": "Театр Сатирикон",
+      "url": "https://satirikon.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-031",
+      "name": "РАМТ",
+      "url": "https://ramt.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-032",
+      "name": "Малый театр",
+      "url": "https://www.maly.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.maly.ru', port=443): Read timed out. (read timeout=10)"
+    },
+    {
+      "id": "SRC-033",
+      "name": "МТЮЗ",
+      "url": "https://moscowtyz.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
     },
     {
       "id": "SRC-034",
       "name": "Театр Практика",
       "url": "https://praktikatheatre.ru/",
-      "status": "ok",
-      "pages": 8,
-      "events": 0
+      "status": "no_events",
+      "pages": 7,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-035",
+      "name": "Пространство Внутри",
+      "url": "https://vnutri.space/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-036",
+      "name": "Мастерская Петра Фоменко",
+      "url": "https://fomenko.theatre.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-037",
+      "name": "Студия театрального искусства",
+      "url": "https://sti.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 2,
+      "methods": [
+        "dated_listing",
+        "feed_date_in_body"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-038",
+      "name": "Театр Гоголя",
+      "url": "https://teatrgogolya.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-039",
+      "name": "Школа драматического искусства",
+      "url": "https://sdart.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-040",
+      "name": "Электротеатр Станиславский",
+      "url": "https://electrotheatre.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 3,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-041",
+      "name": "Театр имени Моссовета",
+      "url": "https://mossoveta.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-042",
+      "name": "Театр Et Cetera",
+      "url": "https://et-cetera.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-043",
+      "name": "Театр Шалом",
+      "url": "https://shalom-theatre.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-044",
+      "name": "Театр на Трубной",
+      "url": "https://neglinka29.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-045",
+      "name": "Центр драматургии и режиссуры",
+      "url": "https://teatrcdr.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-046",
+      "name": "Театр имени Вл. Маяковского — афиша",
+      "url": "https://www.mayakovsky.ru/afisha/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "HTTP 404"
+    },
+    {
+      "id": "SRC-047",
+      "name": "Мастерская 12 Никиты Михалкова",
+      "url": "https://www.mikhalkov12.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-048",
+      "name": "Театр Сфера",
+      "url": "https://sferatheatre.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-049",
+      "name": "Театр.doc",
+      "url": "https://teatrdoc.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-050",
+      "name": "Театр Модерн",
+      "url": "https://www.modernteatr.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-051",
+      "name": "Театр Русская песня",
+      "url": "https://folkteatr.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-052",
+      "name": "Московская филармония",
+      "url": "https://meloman.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-053",
+      "name": "Зарядье — афиша",
+      "url": "https://zaryadyehall.ru/events/",
+      "status": "no_events",
+      "pages": 7,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-054",
+      "name": "Московский международный Дом музыки",
+      "url": "https://www.mmdm.ru/afisha/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.mmdm.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-055",
+      "name": "Московская консерватория",
+      "url": "https://www.mosconsv.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.mosconsv.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-056",
+      "name": "Кремлевский дворец",
+      "url": "https://kremlinpalace.org/",
+      "status": "found",
+      "pages": 4,
+      "events": 68,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page",
+        "microdata"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-057",
+      "name": "МАМТ им. Станиславского и Немировича-Данченко",
+      "url": "https://stanmus.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 50,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-058",
+      "name": "Новая Опера / Балет Москва",
+      "url": "https://novayaopera.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-059",
+      "name": "Геликон-опера",
+      "url": "https://helikon.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "Перенаправление на другой домен или небезопасный URL"
+    },
+    {
+      "id": "SRC-060",
+      "name": "Московский театр оперетты",
+      "url": "https://mosoperetta.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает доступ"
+    },
+    {
+      "id": "SRC-061",
+      "name": "Московский театр мюзикла",
+      "url": "https://teamuz.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-062",
+      "name": "Театр музыки и драмы Стаса Намина",
+      "url": "https://stasnamintheatre.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-063",
+      "name": "Московский государственный академический театр танца Гжель",
+      "url": "https://gzel-dance.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-064",
+      "name": "Музыка musicAeterna",
+      "url": "https://musicaeterna.org/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-065",
+      "name": "Московский джазовый оркестр Игоря Бутмана",
+      "url": "https://www.butmanmusic.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-066",
+      "name": "Live Арена",
+      "url": "https://www.live-arena.moscow/afisha/",
+      "status": "no_events",
+      "pages": 7,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-067",
+      "name": "VK Stadium",
+      "url": "https://www.vkstadium.com/afisha/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-068",
+      "name": "МТС Live Холл Москва",
+      "url": "https://msk-live-hall.mts.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 8,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-069",
+      "name": "ВТБ Арена",
+      "url": "https://vtb-arena.com/",
+      "status": "found",
+      "pages": 4,
+      "events": 55,
+      "methods": [
+        "dated_listing",
+        "microdata"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-070",
+      "name": "ЦСКА Арена",
+      "url": "https://cska-arena.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-071",
+      "name": "Спорткомплекс Лужники",
+      "url": "https://www.luzhniki.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-072",
+      "name": "Мегаспорт",
+      "url": "https://www.hcmegasport.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-073",
+      "name": "Зеленый театр ВДНХ",
+      "url": "https://vdnh.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='vdnh.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-074",
+      "name": "Московский дворец молодежи МДМ",
+      "url": "https://broadway-moscow.ru/mdm/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-075",
+      "name": "Театр Маска",
+      "url": "https://teatr-maska.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-076",
+      "name": "Концертный зал Москва",
+      "url": "https://moscowconcert.com/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-077",
+      "name": "16 тонн",
+      "url": "https://www.16tons.club/afisha/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-078",
+      "name": "1930 Moscow",
+      "url": "https://1930moscow.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectTimeout"
+    },
+    {
+      "id": "SRC-079",
+      "name": "BASE",
+      "url": "https://base-club.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-080",
+      "name": "Урбан",
+      "url": "https://urbanmoscow.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-081",
+      "name": "Клуб Алексея Козлова",
+      "url": "https://kozlovclub.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-082",
+      "name": "Джаз-клуб Игоря Бутмана",
+      "url": "https://moscow.butmanclub.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 75,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-083",
+      "name": "Джаз-клуб Эссе",
+      "url": "https://jazzesse.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-084",
+      "name": "Roofevents / концерты на крышах",
+      "url": "https://roofevents.ru/",
+      "status": "found",
+      "pages": 2,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-085",
+      "name": "КЦ Дом",
+      "url": "https://dom.com.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-086",
+      "name": "Дом винтажной музыки",
+      "url": "https://vintage-music.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-087",
+      "name": "Платформа",
+      "url": "https://platforma.place/",
+      "status": "found",
+      "pages": 3,
+      "events": 6,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-088",
+      "name": "Графит",
+      "url": "https://graphite.moscow/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-089",
+      "name": "TAU",
+      "url": "https://tau.place/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-090",
+      "name": "Свобода",
+      "url": "https://svobodamsk.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-091",
+      "name": "Powerhouse Moscow",
+      "url": "https://powerhouse.moscow/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-092",
+      "name": "Музыкальная площадка Мумий Тролль Music Bar",
+      "url": "https://mtmusicbar.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-093",
+      "name": "Большой Московский цирк на Вернадского",
+      "url": "https://bigcirk.moscow/events",
+      "status": "found",
+      "pages": 3,
+      "events": 10,
+      "methods": [
+        "detail_dated_page",
+        "jsonld"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-094",
+      "name": "Цирк Никулина на Цветном бульваре",
+      "url": "https://circusnikulin.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-095",
+      "name": "Российская государственная цирковая компания",
+      "url": "https://circus.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 2,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-096",
+      "name": "Москвариум",
+      "url": "https://www.moskvarium.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-097",
+      "name": "Театр кукол Образцова",
+      "url": "https://puppet.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-098",
+      "name": "Театр имени Наталии Сац",
+      "url": "https://teatr-sats.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-099",
+      "name": "Театр Терезы Дуровой",
+      "url": "https://teatrium.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-100",
+      "name": "Уголок дедушки Дурова",
+      "url": "https://ugolokdurova.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-101",
+      "name": "Татьяна Навка / Navka Show",
+      "url": "https://navka.show/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-102",
+      "name": "Евгений Плющенко / Angels of Plushenko",
+      "url": "https://angelsofplushenko.com/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-103",
+      "name": "Театр мюзикла — программа",
+      "url": "https://teamuz.ru/events",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-104",
+      "name": "Театр на Цветном",
+      "url": "https://teatrnatsvetnom.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-105",
+      "name": "Сны Пушкина — цирковое шоу",
+      "url": "https://snypushkina.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt ответил HTTP 301"
+    },
+    {
+      "id": "SRC-106",
+      "name": "Третьяковская галерея",
+      "url": "https://new.tretyakov.ru/tickets/exhibitions/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-107",
+      "name": "Пушкинский музей",
+      "url": "https://www.pushkinmuseum.art/events/index.php?lang=ru",
+      "status": "no_events",
+      "pages": 6,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-108",
+      "name": "ГЭС-2",
+      "url": "https://ges-2.org/?areas=exhibition&current_interval=future",
+      "status": "found",
+      "pages": 7,
+      "events": 2,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-109",
       "name": "ЦСИ Винзавод",
       "url": "https://winzavod.ru/",
-      "status": "ok",
-      "pages": 9,
-      "events": 9
+      "status": "no_events",
+      "pages": 7,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-110",
+      "name": "Центр Зотов",
+      "url": "https://centrezotov.ru/program/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-111",
+      "name": "Мультимедиа Арт Музей МАММ",
+      "url": "https://mamm.art/",
+      "status": "no_events",
+      "pages": 7,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-112",
+      "name": "Московский музей современного искусства ММОМА",
+      "url": "https://mmoma.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-113",
+      "name": "Музей русского импрессионизма",
+      "url": "https://www.rusimp.org/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-114",
+      "name": "Музей Москвы",
+      "url": "https://mosmuseum.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает доступ"
+    },
+    {
+      "id": "SRC-115",
+      "name": "Музей архитектуры им. Щусева",
+      "url": "https://muar.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-116",
+      "name": "Еврейский музей и центр толерантности",
+      "url": "https://www.jewish-museum.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-117",
+      "name": "Музей современного искусства Гараж",
+      "url": "https://garagemca.org/",
+      "status": "found",
+      "pages": 4,
+      "events": 2,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-118",
+      "name": "Музей искусства АЗ",
+      "url": "https://museum-az.com/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-119",
+      "name": "Центр Вознесенского",
+      "url": "https://www.voznesenskycenter.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-120",
+      "name": "Музей транспорта Москвы",
+      "url": "https://mtmuseum.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-121",
+      "name": "Музей криптографии",
+      "url": "https://cryptographymuseum.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-122",
+      "name": "Музей Востока",
+      "url": "https://www.orientmuseum.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-123",
+      "name": "Музей музыки",
+      "url": "https://music-museum.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-124",
+      "name": "Исторический музей",
+      "url": "https://shm.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-125",
+      "name": "Политехнический музей",
+      "url": "https://polymus.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-126",
+      "name": "Дарвиновский музей",
+      "url": "https://www.darwinmuseum.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.darwinmuseum.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-127",
+      "name": "Музей-заповедник Царицыно",
+      "url": "https://tsaritsyno-museum.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 2,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-128",
+      "name": "Усадьба Архангельское",
+      "url": "https://arhangelskoe.su/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-129",
+      "name": "Музей-заповедник Коломенское",
+      "url": "https://www.mgomz.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-130",
+      "name": "ЦСИ Фабрика",
+      "url": "https://proektfabrika.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-131",
+      "name": "Артплей",
+      "url": "https://www.artplay.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='artplay.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-132",
+      "name": "Дизайн-завод Флакон",
+      "url": "https://design-zavod.ru/",
+      "status": "found",
+      "pages": 4,
+      "events": 1,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-133",
+      "name": "Хлебозавод № 9",
+      "url": "https://hlebozavod9.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-134",
+      "name": "Московский музей дизайна",
+      "url": "https://moscowdesignmuseum.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "HTTP 500"
+    },
+    {
+      "id": "SRC-135",
+      "name": "Галерея Триумф",
+      "url": "https://triumph.gallery/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-136",
+      "name": "Галерея Ovcharenko",
+      "url": "https://ovcharenko.art/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-137",
+      "name": "Галерея pop/off/art",
+      "url": "https://popoffart.com/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-138",
+      "name": "Галерея XL",
+      "url": "https://xl-gallery.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-139",
+      "name": "a—s—t—r—a gallery",
+      "url": "https://astra-gallery.com/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-140",
+      "name": "Askeri Gallery",
+      "url": "https://askerigallery.com/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-141",
+      "name": "PA Gallery",
+      "url": "https://pagallery.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-142",
+      "name": "Золотая маска",
+      "url": "https://goldenmask.stdrf.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-143",
+      "name": "Чеховский международный театральный фестиваль",
+      "url": "https://chekhovfest.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-144",
+      "name": "Территория — фестиваль современного искусства",
+      "url": "https://territoryfest.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "SRC-145",
+      "name": "Архстояние",
+      "url": "https://arch.stoyanie.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-146",
+      "name": "Пикник Афиши",
+      "url": "https://picnic.afisha.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-147",
+      "name": "Дикая Мята",
+      "url": "https://mintmusic.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-148",
+      "name": "Усадьба Jazz",
+      "url": "https://usadba-jazz.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-149",
+      "name": "VK Fest",
+      "url": "https://vkfest.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-150",
+      "name": "Боскофест Черешневый лес",
+      "url": "https://bosco.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-151",
+      "name": "Биеннале театрального искусства",
+      "url": "https://stdrf.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-152",
+      "name": "Фестиваль Новая Голландия",
+      "url": "https://www.newhollandsp.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-153",
+      "name": "Дягилевский фестиваль",
+      "url": "https://diaghilevfest.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt вернул HTML вместо правил"
+    },
+    {
+      "id": "SRC-154",
+      "name": "Фестиваль Современная музыка и медиа",
+      "url": "https://www.electrotheatre.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 3,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-155",
+      "name": "Фестиваль Путь к сцене",
+      "url": "https://www.stdrf.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-156",
+      "name": "Книжная ярмарка non/fiction",
+      "url": "https://www.moscowbookfair.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-157",
+      "name": "Книжный фестиваль Красная площадь",
+      "url": "https://bookfestival.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "Слишком большой ответ"
+    },
+    {
+      "id": "SRC-158",
+      "name": "Cosmoscow",
+      "url": "https://cosmoscow.com/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-159",
+      "name": "blazar",
+      "url": "https://blazar.art/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-160",
+      "name": "Фестиваль Искусство кино / КАРО Арт",
+      "url": "https://karoartfestival.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-161",
+      "name": "КАРО/АРТ",
+      "url": "https://www.karofilm.ru/art",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-162",
+      "name": "КАРО Кинотеатры",
+      "url": "https://www.karofilm.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-163",
+      "name": "Москино",
+      "url": "https://mos-kino.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-164",
+      "name": "Beat Film Festival",
+      "url": "https://beatfilmfestival.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-165",
+      "name": "Московский международный кинофестиваль",
+      "url": "https://www.miff.com/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-166",
+      "name": "TheatreHD",
+      "url": "https://theatrehd.com/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "Перенаправление на другой домен или небезопасный URL"
+    },
+    {
+      "id": "SRC-167",
+      "name": "Кинопоиск — в кино",
+      "url": "https://www.kinopoisk.ru/afisha/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-168",
+      "name": "Арткино",
+      "url": "https://artkino.org/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-169",
+      "name": "Госфильмофонд",
+      "url": "https://gosfilmofond.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-170",
+      "name": "Докер — фестиваль документального кино",
+      "url": "https://www.midff.com/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-171",
+      "name": "Международный кинофестиваль Послание к человеку",
+      "url": "https://message2man.com/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-172",
+      "name": "Артгид",
+      "url": "https://artguide.com/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-173",
+      "name": "АртУзел",
+      "url": "https://artuzel.com/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-174",
+      "name": "The Blueprint",
+      "url": "https://theblueprint.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-175",
+      "name": "BURO.",
+      "url": "https://www.buro247.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-176",
+      "name": "Собака.ru",
+      "url": "https://www.sobaka.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-177",
+      "name": "Коммерсантъ Weekend",
+      "url": "https://www.kommersant.ru/weekend",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-178",
+      "name": "РБК Стиль",
+      "url": "https://style.rbc.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-179",
+      "name": "Ведомости Город",
+      "url": "https://www.vedomosti.ru/gorod",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-180",
+      "name": "Известия Культура",
+      "url": "https://iz.ru/culture",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает доступ"
+    },
+    {
+      "id": "SRC-181",
+      "name": "Российская газета Культура",
+      "url": "https://rg.ru/tema/kultura/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-182",
+      "name": "Театрал",
+      "url": "https://teatral-online.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-183",
+      "name": "Театр.ru",
+      "url": "https://www.theatre.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-184",
+      "name": "Музыкальная жизнь",
+      "url": "https://muzlifemagazine.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-185",
+      "name": "Jazzist",
+      "url": "https://jazzist.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-186",
+      "name": "Институт музыкальных инициатив",
+      "url": "https://i-m-i.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-187",
+      "name": "SRSLY",
+      "url": "https://srsly.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "ConnectionError: HTTPSConnectionPool(host='srsly.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-188",
+      "name": "ТАСС Культура",
+      "url": "https://tass.ru/kultura",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt вернул HTML вместо правил"
+    },
+    {
+      "id": "SRC-189",
+      "name": "Культура 24",
+      "url": "https://www.culture.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt ответил HTTP 425"
+    },
+    {
+      "id": "SRC-190",
+      "name": "Культура Петербурга",
+      "url": "https://spbcult.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 3,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-191",
+      "name": "Мариинский театр",
+      "url": "https://www.mariinsky.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt вернул HTML вместо правил"
+    },
+    {
+      "id": "SRC-192",
+      "name": "Михайловский театр",
+      "url": "https://mikhailovsky.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-193",
+      "name": "Александринский театр",
+      "url": "https://alexandrinsky.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 41,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-194",
+      "name": "БДТ имени Товстоногова",
+      "url": "https://bdt.spb.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-195",
+      "name": "МДТ — Театр Европы",
+      "url": "https://mdt-dodin.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-196",
+      "name": "Большой театр кукол",
+      "url": "https://puppettheatre.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-197",
+      "name": "Государственный Эрмитаж",
+      "url": "https://www.hermitagemuseum.org/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-198",
+      "name": "Государственный Русский музей",
+      "url": "https://rusmuseum.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-199",
+      "name": "Эрарта",
+      "url": "https://www.erarta.com/",
+      "status": "found",
+      "pages": 3,
+      "events": 41,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-200",
+      "name": "Манеж Санкт-Петербурга",
+      "url": "https://manege.spb.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 7,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-201",
+      "name": "Севкабель Порт",
+      "url": "https://sevkabelport.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-202",
+      "name": "БКЗ Октябрьский",
+      "url": "https://www.oktoberhall.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-203",
+      "name": "Клуб A2",
+      "url": "https://a2club.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-204",
+      "name": "Билетер",
+      "url": "https://www.bileter.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-205",
+      "name": "Филармония имени Шостаковича",
+      "url": "https://www.philharmonia.spb.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectTimeout"
+    },
+    {
+      "id": "SRC-206",
+      "name": "Центр Смена",
+      "url": "https://s-m-e-n-a.org/",
+      "status": "found",
+      "pages": 3,
+      "events": 6,
+      "methods": [
+        "dated_listing",
+        "feed_date_in_body"
+      ],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-207",
+      "name": "Театр имени Камала",
+      "url": "https://kamalteatr.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-208",
+      "name": "Казанский театр оперы и балета",
+      "url": "https://kazantheatre.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-209",
+      "name": "Национальная библиотека Татарстана",
+      "url": "https://kitaphane.tatar/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-210",
+      "name": "Ельцин Центр",
+      "url": "https://yeltsin.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-211",
+      "name": "Урал Опера Балет",
+      "url": "https://uralopera.ru/",
+      "status": "found",
+      "pages": 2,
+      "events": 100,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page"
+      ],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-212",
+      "name": "Коляда-Театр",
+      "url": "https://kolyada-theatre.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectTimeout"
+    },
+    {
+      "id": "SRC-213",
+      "name": "Пермский театр оперы и балета",
+      "url": "https://permopera.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-214",
+      "name": "ЦСИ Арсенал",
+      "url": "https://arsenal-museum.art/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-215",
+      "name": "Пакгаузы",
+      "url": "https://pakgauzy.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-216",
+      "name": "Театр драмы Нижнего Новгорода",
+      "url": "https://drama.nnov.ru/",
+      "status": "found",
+      "pages": 2,
+      "events": 9,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-217",
+      "name": "Новосибирский театр оперы и балета НОВАТ",
+      "url": "https://novat.ru/",
+      "status": "found",
+      "pages": 2,
+      "events": 11,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-218",
+      "name": "Театр Красный факел",
+      "url": "https://red-torch.ru/",
+      "status": "found",
+      "pages": 2,
+      "events": 97,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-219",
+      "name": "Приморская сцена Мариинки",
+      "url": "https://prim.mariinsky.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "SRC-220",
+      "name": "Приморская филармония",
+      "url": "https://primfil.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-221",
+      "name": "Концертный центр Сириус",
+      "url": "https://concert.sirius.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "Слишком большой ответ"
+    },
+    {
+      "id": "SRC-222",
+      "name": "Краснодарский театр драмы",
+      "url": "https://www.dram-teatr.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-223",
+      "name": "Краснодарская филармония",
+      "url": "https://www.kubanfila.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectionError"
+    },
+    {
+      "id": "SRC-224",
+      "name": "Калининградская филармония",
+      "url": "https://filarmonia39.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "ConnectionError: HTTPSConnectionPool(host='filarmonia39.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-225",
+      "name": "Музей Мирового океана",
+      "url": "https://www.world-ocean.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-226",
+      "name": "Балтийский Дом",
+      "url": "https://www.baltic-house.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "SRC-227",
+      "name": "Театр драмы имени Качалова",
+      "url": "https://teatrkachalov.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-228",
+      "name": "Театр-Театр",
+      "url": "https://teatr-teatr.com/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-229",
+      "name": "Шереметевский дворец / Музей музыки",
+      "url": "https://theatremuseum.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "C"
+    },
+    {
+      "id": "SRC-230",
+      "name": "RedKassa",
+      "url": "https://redkassa.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 60,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page",
+        "jsonld"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-231",
+      "name": "Concert.ru",
+      "url": "https://concert.ru/",
+      "status": "found",
+      "pages": 3,
+      "events": 31,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-232",
+      "name": "Intickets",
+      "url": "https://intickets.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-233",
+      "name": "БигБилет",
+      "url": "https://bigbilet.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-234",
+      "name": "Ponominalu",
+      "url": "https://ponominalu.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt ответил HTTP 301"
+    },
+    {
+      "id": "SRC-235",
+      "name": "Kassy.ru",
+      "url": "https://kassy.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-236",
+      "name": "Qtickets",
+      "url": "https://qtickets.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-237",
+      "name": "Рамблер Касса",
+      "url": "https://kassa.rambler.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "Перенаправление на другой домен или небезопасный URL"
+    },
+    {
+      "id": "SRC-238",
+      "name": "Ticketscloud",
+      "url": "https://ticketscloud.com/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "SRC-239",
+      "name": "Radario",
+      "url": "https://radario.ru/",
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "Перенаправление на другой домен или небезопасный URL"
+    },
+    {
+      "id": "SRC-240",
+      "name": "Центр AZ/ART",
+      "url": "https://azart.moscow/",
+      "status": "found",
+      "pages": 4,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "SRC-241",
+      "name": "Продюсерский центр Бродвей Москва",
+      "url": "https://broadway-moscow.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
     }
   ],
-  "note": "Автоматическая проверка выполнена"
+  "note": "Попытка проверки всего реестра: HTTP-доступ не гарантирует наличие событий; учитываются только записи с датами. Часть сайтов требует отдельных интеграций."
 }
