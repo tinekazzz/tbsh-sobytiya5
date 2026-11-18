@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T11:17:34+03:00",
+  "updated_at": "2026-11-18T11:32:55+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
@@ -7,29 +7,30 @@
   "tracked_people": 332,
   "configured_collectors": 241,
   "sources_checked_today": 241,
-  "sources_reached_today": 165,
-  "sources_with_events_today": 42,
-  "sources_no_dated_events_today": 123,
+  "sources_reached_today": 154,
+  "sources_with_events_today": 38,
+  "sources_no_dated_events_today": 116,
   "sources_needing_javascript_today": 0,
-  "sources_blocked_today": 68,
-  "sources_failed_today": 8,
-  "events_extracted_today": 1027,
-  "new_events_added_today": 3,
-  "events_with_people_today": 51,
-  "events_in_catalog": 815,
-  "events_with_images": 762,
-  "images_checked_today": 60,
-  "image_pages_requested_today": 61,
-  "image_detail_links_followed_today": 1,
-  "poster_overrides_applied_today": 0,
-  "images_found_today": 50,
+  "sources_blocked_today": 78,
+  "sources_failed_today": 9,
+  "events_extracted_today": 973,
+  "new_events_added_today": 195,
+  "events_with_people_today": 52,
+  "events_in_catalog": 997,
+  "events_with_multiple_sources": 97,
+  "events_with_images": 943,
+  "images_checked_today": 38,
+  "image_pages_requested_today": 38,
+  "image_detail_links_followed_today": 0,
+  "poster_overrides_applied_today": 1,
+  "images_found_today": 30,
   "image_checks_blocked_today": 1,
   "source_status_counts": {
-    "found": 42,
-    "no_events": 123,
+    "found": 38,
+    "no_events": 116,
     "needs_javascript": 0,
-    "blocked": 68,
-    "error": 8,
+    "blocked": 78,
+    "error": 9,
     "invalid_url": 0,
     "unsupported": 0
   },
@@ -61,13 +62,12 @@
       "id": "SRC-003",
       "name": "МТС Live — Москва",
       "url": "https://live.mts.ru/moscow",
-      "status": "found",
-      "pages": 4,
-      "events": 53,
-      "methods": [
-        "dated_listing"
-      ],
-      "priority": "A"
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ReadTimeout"
     },
     {
       "id": "SRC-004",
@@ -109,13 +109,12 @@
       "id": "SRC-007",
       "name": "Time Out Москва",
       "url": "https://www.timeout.ru/msk",
-      "status": "found",
-      "pages": 5,
-      "events": 1,
-      "methods": [
-        "detail_dated_page"
-      ],
-      "priority": "A"
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.timeout.ru', port=443): Read timed out. (read timeout=10)"
     },
     {
       "id": "SRC-008",
@@ -273,23 +272,23 @@
       "id": "SRC-022",
       "name": "Театр на Бронной",
       "url": "https://mbronnaya.ru/events",
-      "status": "no_events",
-      "pages": 2,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
     },
     {
       "id": "SRC-023",
       "name": "Театр им. Пушкина",
       "url": "https://teatrpushkin.ru/",
-      "status": "found",
-      "pages": 4,
-      "events": 1,
-      "methods": [
-        "detail_dated_page"
-      ],
-      "priority": "A"
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-024",
@@ -355,11 +354,12 @@
       "id": "SRC-030",
       "name": "Театр Сатирикон",
       "url": "https://satirikon.ru/",
-      "status": "no_events",
-      "pages": 4,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectionError"
     },
     {
       "id": "SRC-031",
@@ -390,7 +390,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt запрещает этот адрес"
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-034",
@@ -534,11 +534,12 @@
       "id": "SRC-047",
       "name": "Мастерская 12 Никиты Михалкова",
       "url": "https://www.mikhalkov12.ru/",
-      "status": "no_events",
-      "pages": 4,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-048",
@@ -665,7 +666,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt запрещает этот адрес"
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-059",
@@ -833,11 +834,12 @@
       "id": "SRC-074",
       "name": "Московский дворец молодежи МДМ",
       "url": "https://broadway-moscow.ru/mdm/",
-      "status": "no_events",
-      "pages": 4,
+      "status": "error",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='broadway-moscow.ru', port=443): Read timed out. (read timeout=10)"
     },
     {
       "id": "SRC-075",
@@ -1473,12 +1475,12 @@
       "id": "SRC-134",
       "name": "Московский музей дизайна",
       "url": "https://moscowdesignmuseum.ru/",
-      "status": "error",
+      "status": "blocked",
       "pages": 0,
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "HTTP 500"
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-135",
@@ -1659,11 +1661,12 @@
       "id": "SRC-152",
       "name": "Фестиваль Новая Голландия",
       "url": "https://www.newhollandsp.ru/",
-      "status": "no_events",
-      "pages": 3,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-153",
@@ -2097,13 +2100,12 @@
       "id": "SRC-194",
       "name": "БДТ имени Товстоногова",
       "url": "https://bdt.spb.ru/",
-      "status": "found",
-      "pages": 3,
-      "events": 1,
-      "methods": [
-        "detail_dated_page"
-      ],
-      "priority": "B"
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-195",
@@ -2245,11 +2247,12 @@
       "id": "SRC-207",
       "name": "Театр имени Камала",
       "url": "https://kamalteatr.ru/",
-      "status": "no_events",
-      "pages": 2,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "C"
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectionError"
     },
     {
       "id": "SRC-208",
@@ -2390,11 +2393,12 @@
       "id": "SRC-220",
       "name": "Приморская филармония",
       "url": "https://primfil.ru/",
-      "status": "no_events",
-      "pages": 2,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "C"
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectionError"
     },
     {
       "id": "SRC-221",
@@ -2496,7 +2500,7 @@
       "url": "https://redkassa.ru/",
       "status": "found",
       "pages": 3,
-      "events": 60,
+      "events": 63,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -2510,7 +2514,7 @@
       "url": "https://concert.ru/",
       "status": "found",
       "pages": 2,
-      "events": 29,
+      "events": 28,
       "methods": [
         "dated_listing"
       ],
