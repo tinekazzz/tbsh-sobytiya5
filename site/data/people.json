@@ -1,2990 +1,4052 @@
 [
   {
+    "aliases": "Богомолов; Konstantin Bogomolov",
     "person_id": "PER-001",
     "name": "Константин Богомолов",
-    "aliases": "Богомолов; Konstantin Bogomolov",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Громкие театральные премьеры и постановки на Бронной",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Писарев; Evgeny Pisarev",
     "person_id": "PER-002",
     "name": "Евгений Писарев",
-    "aliases": "Писарев; Evgeny Pisarev",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Театр Пушкина и музыкальные спектакли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Панков; SounDrama",
     "person_id": "PER-003",
     "name": "Владимир Панков",
-    "aliases": "Панков; SounDrama",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Музыкально-драматические премьеры и режиссура",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Антон Федоров; Anton Fedorov",
     "person_id": "PER-004",
     "name": "Антон Фёдоров",
-    "aliases": "Антон Федоров; Anton Fedorov",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Пространство Внутри, Театр Наций, независимая сцена",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Фокин; Valery Fokin",
     "person_id": "PER-005",
     "name": "Валерий Фокин",
-    "aliases": "Фокин; Valery Fokin",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Александринский театр и крупные постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Женовач; Sergey Zhenovach",
     "person_id": "PER-006",
     "name": "Сергей Женовач",
-    "aliases": "Женовач; Sergey Zhenovach",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Студия театрального искусства",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Гинкас; Kama Ginkas",
     "person_id": "PER-007",
     "name": "Кама Гинкас",
-    "aliases": "Гинкас; Kama Ginkas",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "МТЮЗ и независимые проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Додин; Lev Dodin",
     "person_id": "PER-008",
     "name": "Лев Додин",
-    "aliases": "Додин; Lev Dodin",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "МДТ — Театр Европы, гастрольные спектакли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Рощин; Nikolay Roshchin",
     "person_id": "PER-009",
     "name": "Николай Рощин",
-    "aliases": "Рощин; Nikolay Roshchin",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Сатирикон и авторские постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Бородин; Alexey Borodin",
     "person_id": "PER-010",
     "name": "Алексей Бородин",
-    "aliases": "Бородин; Alexey Borodin",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "РАМТ, театр для взрослых и молодежи",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Могучий; Andrey Moguchiy",
     "person_id": "PER-011",
     "name": "Андрей Могучий",
-    "aliases": "Могучий; Andrey Moguchiy",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Экспериментальная сцена и крупная драматургия",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Рыжаков; Viktor Ryzhakov",
     "person_id": "PER-012",
     "name": "Виктор Рыжаков",
-    "aliases": "Рыжаков; Viktor Ryzhakov",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Современная драматургия и фестивальные постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Перегудов; Egor Peregudov",
     "person_id": "PER-013",
     "name": "Егор Перегудов",
-    "aliases": "Перегудов; Egor Peregudov",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Новые интерпретации классики",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Астрахан; Dmitry Astrakhan",
     "person_id": "PER-014",
     "name": "Дмитрий Астрахан",
-    "aliases": "Астрахан; Dmitry Astrakhan",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Театр на Трубной и гастрольные постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Петр Шерешевский; Shereshevsky",
     "person_id": "PER-015",
     "name": "Пётр Шерешевский",
-    "aliases": "Петр Шерешевский; Shereshevsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Современная режиссура, камерные спектакли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Кобелев; Nikita Kobelev",
     "person_id": "PER-016",
     "name": "Никита Кобелев",
-    "aliases": "Кобелев; Nikita Kobelev",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Современные театральные премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Диденко; Maxim Didenko",
     "person_id": "PER-017",
     "name": "Максим Диденко",
-    "aliases": "Диденко; Maxim Didenko",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Физический театр и визуальные спектакли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Квятковский; Yuri Kvyatkovsky",
     "person_id": "PER-018",
     "name": "Юрий Квятковский",
-    "aliases": "Квятковский; Yuri Kvyatkovsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Музыкальный театр и современный перформанс",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Франдетти; Alexey Frandetti",
     "person_id": "PER-019",
     "name": "Алексей Франдетти",
-    "aliases": "Франдетти; Alexey Frandetti",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Мюзиклы, постановки с крупными составами",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Габриа; Roman Gabria",
     "person_id": "PER-020",
     "name": "Роман Габриа",
-    "aliases": "Габриа; Roman Gabria",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Современная драматургия",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Савельев; Savva Savelyev",
     "person_id": "PER-021",
     "name": "Савва Савельев",
-    "aliases": "Савельев; Savva Savelyev",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Независимый театр и современная режиссура",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Александр Золотовицкий; Zolotovitskiy",
     "person_id": "PER-022",
     "name": "Саша Золотовицкий",
-    "aliases": "Александр Золотовицкий; Zolotovitskiy",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Экспериментальный театр",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Коляда; Nikolay Kolyada",
     "person_id": "PER-023",
     "name": "Николай Коляда",
-    "aliases": "Коляда; Nikolay Kolyada",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Коляда-театр, пьесы и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Яковлев; Anton Yakovlev",
     "person_id": "PER-024",
     "name": "Антон Яковлев",
-    "aliases": "Яковлев; Anton Yakovlev",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Театр Гоголя",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Волкострелов; Volkostrelov",
     "person_id": "PER-025",
     "name": "Дмитрий Волкострелов",
-    "aliases": "Волкострелов; Volkostrelov",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Экспериментальный театр и перформансы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Зальцман; Salzman",
     "person_id": "PER-026",
     "name": "Галина Зальцман",
-    "aliases": "Зальцман; Salzman",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Новая театральная режиссура",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Чащин; Danil Chashchin",
     "person_id": "PER-027",
     "name": "Данил Чащин",
-    "aliases": "Чащин; Danil Chashchin",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Новые драматические постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мовсесян; Ruzanna Movsesyan",
     "person_id": "PER-028",
     "name": "Рузанна Мовсесян",
-    "aliases": "Мовсесян; Ruzanna Movsesyan",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Пространство Внутри и камерный театр",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Паутова; Anastasia Pautova",
     "person_id": "PER-029",
     "name": "Анастасия Паутова",
-    "aliases": "Паутова; Anastasia Pautova",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Современные независимые постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Владимир Иванов Вахтангов; Vladimir Ivanov theatre",
     "person_id": "PER-030",
     "name": "Владимир Иванов",
-    "aliases": "Владимир Иванов Вахтангов; Vladimir Ivanov theatre",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Постановки в Театре Вахтангова; искать с уточнением",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Газаров; Sergey Gazarov",
     "person_id": "PER-031",
     "name": "Сергей Газаров",
-    "aliases": "Газаров; Sergey Gazarov",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Театральные постановки и актерские проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Самгин; Roman Samgin",
     "person_id": "PER-032",
     "name": "Роман Самгин",
-    "aliases": "Самгин; Roman Samgin",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Театр на Трубной и драматические премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Каменькович; Fomenko",
     "person_id": "PER-033",
     "name": "Евгений Каменькович",
-    "aliases": "Каменькович; Fomenko",
+    "region": "Россия, Москва в приоритете",
     "category": "Режиссёры драматического театра",
-    "priority": "A",
     "why": "Мастерская Фоменко и авторские постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Хабенский; Khabensky",
     "person_id": "PER-034",
     "name": "Константин Хабенский",
-    "aliases": "Хабенский; Khabensky",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "МХТ и большие театральные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Миронов; Evgeny Mironov",
     "person_id": "PER-035",
     "name": "Евгений Миронов",
-    "aliases": "Миронов; Evgeny Mironov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр Наций и гастрольные постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Машков; Vladimir Mashkov",
     "person_id": "PER-036",
     "name": "Владимир Машков",
-    "aliases": "Машков; Vladimir Mashkov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Московские театры и творческие вечера",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Меньшиков; Oleg Menshikov",
     "person_id": "PER-037",
     "name": "Олег Меньшиков",
-    "aliases": "Меньшиков; Oleg Menshikov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр Ермоловой и специальные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Безруков; Bezrukov",
     "person_id": "PER-038",
     "name": "Сергей Безруков",
-    "aliases": "Безруков; Bezrukov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Московский Губернский театр и большие гастроли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сухоруков; Viktor Sukhorukov",
     "person_id": "PER-039",
     "name": "Виктор Сухоруков",
-    "aliases": "Сухоруков; Viktor Sukhorukov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр, творческие вечера",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Матвеев; Maxim Matveev",
     "person_id": "PER-040",
     "name": "Максим Матвеев",
-    "aliases": "Матвеев; Maxim Matveev",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театральные премьеры с известными исполнителями",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Александр Петров актер; Alexander Petrov",
     "person_id": "PER-041",
     "name": "Александр Петров",
-    "aliases": "Александр Петров актер; Alexander Petrov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Актерские моноспектакли и сценические проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Пересильд; Yulia Peresild",
     "person_id": "PER-042",
     "name": "Юлия Пересильд",
-    "aliases": "Пересильд; Yulia Peresild",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр и специальные сценические события",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Андреева; Paulina Andreeva",
     "person_id": "PER-043",
     "name": "Паулина Андреева",
-    "aliases": "Андреева; Paulina Andreeva",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр и кино, творческие программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Ефремов; Nikita Efremov",
     "person_id": "PER-044",
     "name": "Никита Ефремов",
-    "aliases": "Ефремов; Nikita Efremov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театральные премьеры и читки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Бикович; Milos Bikovic",
     "person_id": "PER-045",
     "name": "Милош Бикович",
-    "aliases": "Бикович; Milos Bikovic",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Гастрольные спектакли и кинопремьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Юрий Борисов; Yura Borisov",
     "person_id": "PER-046",
     "name": "Юра Борисов",
-    "aliases": "Юрий Борисов; Yura Borisov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Кино, читки и театральные события",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Цыганов; Evgeny Tsyganov",
     "person_id": "PER-047",
     "name": "Евгений Цыганов",
-    "aliases": "Цыганов; Evgeny Tsyganov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр и собственные музыкальные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Трибунцев; Timofey Tribuntsev",
     "person_id": "PER-048",
     "name": "Тимофей Трибунцев",
-    "aliases": "Трибунцев; Timofey Tribuntsev",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр Наций и нестандартные постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Урсуляк; Aleksandra Ursulyak",
     "person_id": "PER-049",
     "name": "Александра Урсуляк",
-    "aliases": "Урсуляк; Aleksandra Ursulyak",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр и музыкально-драматические спектакли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Пегова; Irina Pegova",
     "person_id": "PER-050",
     "name": "Ирина Пегова",
-    "aliases": "Пегова; Irina Pegova",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Драматические спектакли и гастроли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Добронравов; Viktor Dobronravov",
     "person_id": "PER-051",
     "name": "Виктор Добронравов",
-    "aliases": "Добронравов; Viktor Dobronravov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр и музыкальные программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Федор Добронравов; Fyodor Dobronravov",
     "person_id": "PER-052",
     "name": "Фёдор Добронравов",
-    "aliases": "Федор Добронравов; Fyodor Dobronravov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Гастрольные комедии и творческие вечера",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Назаров; Dmitriy Nazarov",
     "person_id": "PER-053",
     "name": "Дмитрий Назаров",
-    "aliases": "Назаров; Dmitriy Nazarov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Репертуарные и гастрольные проекты; проверять географию",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Маковецкий; Sergey Makovetsky",
     "person_id": "PER-054",
     "name": "Сергей Маковецкий",
-    "aliases": "Маковецкий; Sergey Makovetsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр Вахтангова и спектакли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Гуськов; Aleksey Guskov",
     "person_id": "PER-055",
     "name": "Алексей Гуськов",
-    "aliases": "Гуськов; Aleksey Guskov",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Гастрольные спектакли и театр",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Козловский; Danila Kozlovsky",
     "person_id": "PER-056",
     "name": "Данила Козловский",
-    "aliases": "Козловский; Danila Kozlovsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Моноспектакли и специальные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Исакова; Viktoriya Isakova",
     "person_id": "PER-057",
     "name": "Виктория Исакова",
-    "aliases": "Исакова; Viktoriya Isakova",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театр и новые премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Бабушкина; Kristina Babushkina",
     "person_id": "PER-058",
     "name": "Кристина Бабушкина",
-    "aliases": "Бабушкина; Kristina Babushkina",
+    "region": "Россия, Москва в приоритете",
     "category": "Актёры и театральные звёзды",
-    "priority": "A",
     "why": "Театральные спектакли и мюзиклы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Гагарина; Polina Gagarina",
     "person_id": "PER-059",
     "name": "Полина Гагарина",
-    "aliases": "Гагарина; Polina Gagarina",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Сольные концерты и концертные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Виктор Белан; Dima Bilan",
     "person_id": "PER-060",
     "name": "Дима Билан",
-    "aliases": "Виктор Белан; Dima Bilan",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Аренные концерты и телевизионные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Лазарев; Sergey Lazarev",
     "person_id": "PER-061",
     "name": "Сергей Лазарев",
-    "aliases": "Лазарев; Sergey Lazarev",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Большие шоу, сольные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Киркоров; Philipp Kirkorov",
     "person_id": "PER-062",
     "name": "Филипп Киркоров",
-    "aliases": "Киркоров; Philipp Kirkorov",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Шоу и большие концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Агутин; Leonid Agutin",
     "person_id": "PER-063",
     "name": "Леонид Агутин",
-    "aliases": "Агутин; Leonid Agutin",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Концерты, музыкальные премии",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Варум; Anzhelika Varum",
     "person_id": "PER-064",
     "name": "Анжелика Варум",
-    "aliases": "Варум; Anzhelika Varum",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Концерты и совместные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Лепс; Grigory Leps",
     "person_id": "PER-065",
     "name": "Григорий Лепс",
-    "aliases": "Лепс; Grigory Leps",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Крупные концерты и гастрольные программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Михайлов; Stas Mihaylov",
     "person_id": "PER-066",
     "name": "Стас Михайлов",
-    "aliases": "Михайлов; Stas Mihaylov",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Эстрадные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Басков; Nikolay Baskov",
     "person_id": "PER-067",
     "name": "Николай Басков",
-    "aliases": "Басков; Nikolay Baskov",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Эстрадные концерты и спецшоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Лолита; Lolita",
     "person_id": "PER-068",
     "name": "Лолита Милявская",
-    "aliases": "Лолита; Lolita",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Сольные шоу и концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Каролина Куек; Ani Lorak",
     "person_id": "PER-069",
     "name": "Ани Лорак",
-    "aliases": "Каролина Куек; Ani Lorak",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-концерты и аренные выступления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Алла Перфилова; Valeriya",
     "person_id": "PER-070",
     "name": "Валерия",
-    "aliases": "Алла Перфилова; Valeriya",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Концертные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Пелагея Ханова; Pelageya",
     "person_id": "PER-071",
     "name": "Пелагея",
-    "aliases": "Пелагея Ханова; Pelageya",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Этно-музыка и большие концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Ваенга; Elena Vaenga",
     "person_id": "PER-072",
     "name": "Елена Ваенга",
-    "aliases": "Ваенга; Elena Vaenga",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Сольные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Арбенина; Ночные Снайперы",
     "person_id": "PER-073",
     "name": "Диана Арбенина",
-    "aliases": "Арбенина; Ночные Снайперы",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Рок-концерты и сольные выступления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Фадеев; Maxim Fadeev",
     "person_id": "PER-074",
     "name": "Максим Фадеев",
-    "aliases": "Фадеев; Maxim Fadeev",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Продюсерские и концертные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Жуков; Руки Вверх",
     "person_id": "PER-075",
     "name": "Сергей Жуков",
-    "aliases": "Жуков; Руки Вверх",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Ретро-поп, большие концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Шатунов; Ласковый май",
     "person_id": "PER-076",
     "name": "Юрий Шатунов",
-    "aliases": "Шатунов; Ласковый май",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические музыканты — трибьюты",
-    "priority": "C",
     "why": "Не действующий артист: искать только трибьют-концерты и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "C"
   },
   {
+    "aliases": "Бутусов; Наутилус Помпилиус",
     "person_id": "PER-077",
     "name": "Вячеслав Бутусов",
-    "aliases": "Бутусов; Наутилус Помпилиус",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Рок-концерты, юбилейные программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Земфира Рамазанова; Zemfira",
     "person_id": "PER-078",
     "name": "Земфира",
-    "aliases": "Земфира Рамазанова; Zemfira",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Анонсы по России проверять отдельно; зарубежные концерты исключать; геофильтр обязателен — только события в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Успенская; Lyubov Uspenskaya",
     "person_id": "PER-079",
     "name": "Любовь Успенская",
-    "aliases": "Успенская; Lyubov Uspenskaya",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Эстрадные и юбилейные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Розенбаум; Alexander Rosenbaum",
     "person_id": "PER-080",
     "name": "Александр Розенбаум",
-    "aliases": "Розенбаум; Alexander Rosenbaum",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Юбилейные концерты и авторская песня",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сукачев; Гарик Сукачёв",
     "person_id": "PER-081",
     "name": "Гарик Сукачёв",
-    "aliases": "Сукачев; Гарик Сукачёв",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Большие рок-шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Николаев; Igor Nikolaev",
     "person_id": "PER-082",
     "name": "Игорь Николаев",
-    "aliases": "Николаев; Igor Nikolaev",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Эстрадные и юбилейные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дубцова; Irina Dubtsova",
     "person_id": "PER-083",
     "name": "Ирина Дубцова",
-    "aliases": "Дубцова; Irina Dubtsova",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Савичева; Yulia Savicheva",
     "person_id": "PER-084",
     "name": "Юлия Савичева",
-    "aliases": "Савичева; Yulia Savicheva",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Клавдия Высокова; Klava Koka",
     "person_id": "PER-085",
     "name": "Клава Кока",
-    "aliases": "Клавдия Высокова; Klava Koka",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Молодежные поп-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Марина Жадан; Marie Kraymbreri",
     "person_id": "PER-086",
     "name": "Мари Краймбрери",
-    "aliases": "Марина Жадан; Marie Kraymbreri",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Большие поп-шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Чеботина; Lusya Chebotina",
     "person_id": "PER-087",
     "name": "Люся Чеботина",
-    "aliases": "Чеботина; Lusya Chebotina",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-концерты и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Иван Дмитриенко; Vanya Dmitrienko",
     "person_id": "PER-088",
     "name": "Ваня Дмитриенко",
-    "aliases": "Иван Дмитриенко; Vanya Dmitrienko",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Молодежные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Егор Булаткин; Egor Kreed",
     "person_id": "PER-089",
     "name": "Егор Крид",
-    "aliases": "Егор Булаткин; Egor Kreed",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-рэп и ареные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Джахид Гусейнли; Джони",
     "person_id": "PER-090",
     "name": "JONY",
-    "aliases": "Джахид Гусейнли; Джони",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп, RnB, сольные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Юлия Зиверт; Зиверт",
     "person_id": "PER-091",
     "name": "Zivert",
-    "aliases": "Юлия Зиверт; Зиверт",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Масштабные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Анна Дзюба; Анна Асти",
     "person_id": "PER-092",
     "name": "ANNA ASTI",
-    "aliases": "Анна Дзюба; Анна Асти",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-арены и музыкальные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Матвей Мельников; MOT",
     "person_id": "PER-093",
     "name": "Мот",
-    "aliases": "Матвей Мельников; MOT",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-рэп, крупные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Данил Прытков; Нилетто",
     "person_id": "PER-094",
     "name": "NILETTO",
-    "aliases": "Данил Прытков; Нилетто",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп и танцевальные концертные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Ярослав Дронов; Шаман",
     "person_id": "PER-095",
     "name": "SHAMAN",
-    "aliases": "Ярослав Дронов; Шаман",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Крупные концертные программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Куртукова; Tatyana Kurtukova",
     "person_id": "PER-096",
     "name": "Татьяна Куртукова",
-    "aliases": "Куртукова; Tatyana Kurtukova",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Фолк-поп и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мона; Дарья Кустовская",
     "person_id": "PER-097",
     "name": "MONA",
-    "aliases": "Мона; Дарья Кустовская",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Миа Бойка; Мария Бойко",
     "person_id": "PER-098",
     "name": "MIA BOYKA",
-    "aliases": "Миа Бойка; Мария Бойко",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Марина Абросимова; Максим певица",
     "person_id": "PER-099",
     "name": "МакSим",
-    "aliases": "Марина Абросимова; Максим певица",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп, сольные и фестивальные выступления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Подольская; Natalia Podolskaya",
     "person_id": "PER-100",
     "name": "Наталья Подольская",
-    "aliases": "Подольская; Natalia Podolskaya",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Эстрадные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Пресняков; Vladimir Presnyakov",
     "person_id": "PER-101",
     "name": "Владимир Пресняков",
-    "aliases": "Пресняков; Vladimir Presnyakov",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-рок концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Шуфутинский; Mikhail Shufutinsky",
     "person_id": "PER-102",
     "name": "Михаил Шуфутинский",
-    "aliases": "Шуфутинский; Mikhail Shufutinsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Шансон-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Хасанова; Guzel Khasanova",
     "person_id": "PER-103",
     "name": "Гузель Хасанова",
-    "aliases": "Хасанова; Guzel Khasanova",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Поп-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Иванушки; Кирилл Туриченко",
     "person_id": "PER-104",
     "name": "Иванушки International",
-    "aliases": "Иванушки; Кирилл Туриченко",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Коллектив, отслеживать как групповой alias",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Тату; Tatu; Лена Катина; Юлия Волкова",
     "person_id": "PER-105",
     "name": "t.A.T.u.",
-    "aliases": "Тату; Tatu; Лена Катина; Юлия Волкова",
+    "region": "Россия, Москва в приоритете",
     "category": "Поп, эстрада и большие концерты",
-    "priority": "A",
     "why": "Потенциальные концерты воссоединения и специальные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Кинчев; Алиса",
     "person_id": "PER-106",
     "name": "Константин Кинчев",
-    "aliases": "Кинчев; Алиса",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Лидер группы Алиса, большие рок-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Шклярский; Пикник",
     "person_id": "PER-107",
     "name": "Эдмунд Шклярский",
-    "aliases": "Шклярский; Пикник",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Концерты группы Пикник",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Шнуров; Ленинград; Шнур",
     "person_id": "PER-108",
     "name": "Сергей Шнуров",
-    "aliases": "Шнуров; Ленинград; Шнур",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Концертное шоу группы Ленинград",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Шахрин; Чайф",
     "person_id": "PER-109",
     "name": "Владимир Шахрин",
-    "aliases": "Шахрин; Чайф",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Большие концерты Чайфа",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Князев; КняZz; Князь",
     "person_id": "PER-110",
     "name": "Андрей Князев",
-    "aliases": "Князев; КняZz; Князь",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Рок-шоу и трибьют-программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Кипелов; Кипелов группа",
     "person_id": "PER-111",
     "name": "Валерий Кипелов",
-    "aliases": "Кипелов; Кипелов группа",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Классический российский хард-рок",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Петкун; Танцы Минус",
     "person_id": "PER-112",
     "name": "Вячеслав Петкун",
-    "aliases": "Петкун; Танцы Минус",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Инди и рок-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Самойлов; The Matrixx",
     "person_id": "PER-113",
     "name": "Глеб Самойлов",
-    "aliases": "Самойлов; The Matrixx",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Альтернативный рок",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Самойлов Вадим; Агата Кристи",
     "person_id": "PER-114",
     "name": "Вадим Самойлов",
-    "aliases": "Самойлов Вадим; Агата Кристи",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Большие рок-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Васильев Сплин; Сплин",
     "person_id": "PER-115",
     "name": "Александр Васильев",
-    "aliases": "Васильев Сплин; Сплин",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Концерты Сплин, учитывать географию",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Хелависа; Мельница",
     "person_id": "PER-116",
     "name": "Наталья О’Шей",
-    "aliases": "Хелависа; Мельница",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Фолк-рок и специальные музыкальные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сурганова; Сурганова и Оркестр",
     "person_id": "PER-117",
     "name": "Светлана Сурганова",
-    "aliases": "Сурганова; Сурганова и Оркестр",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Музыка и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Чиж; Чиж & Co",
     "person_id": "PER-118",
     "name": "Сергей Чиграков",
-    "aliases": "Чиж; Чиж & Co",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Рок-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Скляр; Ва-Банкъ",
     "person_id": "PER-119",
     "name": "Александр Ф. Скляр",
-    "aliases": "Скляр; Ва-Банкъ",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Рок и камерные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сироткин; Sirotkin",
     "person_id": "PER-120",
     "name": "Сергей Сироткин",
-    "aliases": "Сироткин; Sirotkin",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Инди-сцена",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Моя Мишель; Ткачук",
     "person_id": "PER-121",
     "name": "Татьяна Ткачук",
-    "aliases": "Моя Мишель; Ткачук",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Солистка группы Моя Мишель",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Хаски; Husky",
     "person_id": "PER-122",
     "name": "Дмитрий Кузнецов",
-    "aliases": "Хаски; Husky",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Рэп и концептуальные живые шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Гуф; Guf",
     "person_id": "PER-123",
     "name": "Алексей Долматов",
-    "aliases": "Гуф; Guf",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Рэп, концерты и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Баста; Ноггано; N1NT3ND0",
     "person_id": "PER-124",
     "name": "Василий Вакуленко",
-    "aliases": "Баста; Ноггано; N1NT3ND0",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Аренные рэп-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Macan; Макан",
     "person_id": "PER-125",
     "name": "Андрей Косолапов",
-    "aliases": "Macan; Макан",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Рэп-концерты; учитывать актуальный статус выступлений",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Три дня дождя; Глеб Три дня дождя",
     "person_id": "PER-126",
     "name": "Глеб Викторов",
-    "aliases": "Три дня дождя; Глеб Три дня дождя",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Альтернативная сцена",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дельфин; Dolphin",
     "person_id": "PER-127",
     "name": "Андрей Лысиков",
-    "aliases": "Дельфин; Dolphin",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Концерты Дельфина",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Radio Tapok; Радио Тапок",
     "person_id": "PER-128",
     "name": "Олег Абрамов",
-    "aliases": "Radio Tapok; Радио Тапок",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Большие рок-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Dead Blonde; Dead Blonde Арина",
     "person_id": "PER-129",
     "name": "Арина Буланова",
-    "aliases": "Dead Blonde; Dead Blonde Арина",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Рейв и концертные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дора; Dora",
     "person_id": "PER-130",
     "name": "Дарья Шиханова",
-    "aliases": "Дора; Dora",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Инди-поп",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Хмыров; Khmyrov",
     "person_id": "PER-131",
     "name": "Хмыров",
-    "aliases": "Хмыров; Khmyrov",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Альтернативная сцена, проверять имя по афише",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Антоха МС; Антоха MC",
     "person_id": "PER-132",
     "name": "Антон Криворотов",
-    "aliases": "Антоха МС; Антоха MC",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Фанк, рэп и авторские выступления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мукка; Mukka",
     "person_id": "PER-133",
     "name": "Серафим Сидорин",
-    "aliases": "Мукка; Mukka",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Поп-панк и альтернативные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "ЛСП; LSP",
     "person_id": "PER-134",
     "name": "Олег Савченко",
-    "aliases": "ЛСП; LSP",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Хип-хоп, музыкальные гастроли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Noize MC; Нойз МС",
     "person_id": "PER-135",
     "name": "Иван Алексеев",
-    "aliases": "Noize MC; Нойз МС",
+    "region": "Россия, Москва в приоритете",
     "category": "Инди, рок и альтернативная сцена",
-    "priority": "A",
     "why": "Проверять Россию и географию; зарубежные концерты исключать",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Хэттерс; Шляпники",
     "person_id": "PER-136",
     "name": "The Hatters",
-    "aliases": "Хэттерс; Шляпники",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Большие музыкальные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Крим сода; Крем Сода",
     "person_id": "PER-137",
     "name": "Cream Soda",
-    "aliases": "Крим сода; Крем Сода",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Электронная музыка и клубная сцена",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Моя Мишель; Татьяна Ткачук",
     "person_id": "PER-138",
     "name": "Моя Мишель",
-    "aliases": "Моя Мишель; Татьяна Ткачук",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Сольные и фестивальные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Комната культуры; Женя Трофимов",
     "person_id": "PER-139",
     "name": "Комната культуры",
-    "aliases": "Комната культуры; Женя Трофимов",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Молодежная поп-рок сцена",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Дайте танк; Dajte Tank",
     "person_id": "PER-140",
     "name": "Дайте танк (!)",
-    "aliases": "Дайте танк; Dajte Tank",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Инди и альтернативная музыка",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Бонд с кнопкой",
     "person_id": "PER-141",
     "name": "Бонд с кнопкой",
-    "aliases": "Бонд с кнопкой",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Современная инди-сцена",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Диктофон группа; Diktofon",
     "person_id": "PER-142",
     "name": "Диктофон",
-    "aliases": "Диктофон группа; Diktofon",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Новая волна постпанка",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Хадн Дадн; Hadn Dadn",
     "person_id": "PER-143",
     "name": "Хадн дадн",
-    "aliases": "Хадн Дадн; Hadn Dadn",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Инди-музыка и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Самое Большое Простое Число; СБПЧ",
     "person_id": "PER-144",
     "name": "СБПЧ",
-    "aliases": "Самое Большое Простое Число; СБПЧ",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Инди и концептуальные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Ленинград; Сергей Шнуров",
     "person_id": "PER-145",
     "name": "Ленинград",
-    "aliases": "Ленинград; Сергей Шнуров",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Аренные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Алиса группа; Константин Кинчев",
     "person_id": "PER-146",
     "name": "Алиса",
-    "aliases": "Алиса группа; Константин Кинчев",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Большие рок-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Пикник группа; Эдмунд Шклярский",
     "person_id": "PER-147",
     "name": "Пикник",
-    "aliases": "Пикник группа; Эдмунд Шклярский",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Рок и сценическое шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Би2; Би-2",
     "person_id": "PER-148",
     "name": "Би-2",
-    "aliases": "Би2; Би-2",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Зарубежные концерты фильтровать, РФ отдельно; геофильтр обязателен — только события в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Кино группа; Виктор Цой; Кино 2026",
     "person_id": "PER-149",
     "name": "Кино",
-    "aliases": "Кино группа; Виктор Цой; Кино 2026",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Концертные трибьюты и современные шоу группы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Три дня дождя; Глеб Викторов",
     "person_id": "PER-150",
     "name": "Три дня дождя",
-    "aliases": "Три дня дождя; Глеб Викторов",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Популярные молодёжные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Rock Privet; Рок Привет",
     "person_id": "PER-151",
     "name": "Rock Privet",
-    "aliases": "Rock Privet; Рок Привет",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Трибьюты и кавер-шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Дайте два; Люся Махова",
     "person_id": "PER-152",
     "name": "Дайте Два",
-    "aliases": "Дайте два; Люся Махова",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Живые инди-рок выступления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Сектор Газа; Юрий Клинских",
     "person_id": "PER-153",
     "name": "Сектор Газа",
-    "aliases": "Сектор Газа; Юрий Клинских",
+    "region": "Россия, Москва в приоритете",
     "category": "Музыкальные коллективы и сценические бренды",
-    "priority": "B",
     "why": "Только трибьюты и возобновленные сценические проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Гергиев; Gergiev",
     "person_id": "PER-154",
     "name": "Валерий Гергиев",
-    "aliases": "Гергиев; Gergiev",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Большой и Мариинский театры, симфонические концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Курентзис; Currentzis; musicAeterna",
     "person_id": "PER-155",
     "name": "Теодор Курентзис",
-    "aliases": "Курентзис; Currentzis; musicAeterna",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Оркестр musicAeterna и музыкальные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Башмет; Bashmet",
     "person_id": "PER-156",
     "name": "Юрий Башмет",
-    "aliases": "Башмет; Bashmet",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Фестивали, сольные и камерные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Спиваков; Spivakov",
     "person_id": "PER-157",
     "name": "Владимир Спиваков",
-    "aliases": "Спиваков; Spivakov",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Виртуозы Москвы и Дом музыки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Федосеев; Fedoseyev",
     "person_id": "PER-158",
     "name": "Владимир Федосеев",
-    "aliases": "Федосеев; Fedoseyev",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Симфонические концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Чижевский; Filipp Chizhevsky",
     "person_id": "PER-159",
     "name": "Филипп Чижевский",
-    "aliases": "Чижевский; Filipp Chizhevsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Новая интерпретация классики",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Никифорчин; Nikiforchin",
     "person_id": "PER-160",
     "name": "Иван Никифорчин",
-    "aliases": "Никифорчин; Nikiforchin",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Симфонические программы и Зарядье",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Емельянычев; Emelyanychev",
     "person_id": "PER-161",
     "name": "Максим Емельянычев",
-    "aliases": "Емельянычев; Emelyanychev",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Мировые и российские оркестровые проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Юровский; Dmitry Jurowski",
     "person_id": "PER-162",
     "name": "Дмитрий Юровский",
-    "aliases": "Юровский; Dmitry Jurowski",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Опера и симфонические концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сладковский; Alexander Sladkovsky",
     "person_id": "PER-163",
     "name": "Александр Сладковский",
-    "aliases": "Сладковский; Alexander Sladkovsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Татарстанский симфонический оркестр и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Коробов; Felix Korobov",
     "person_id": "PER-164",
     "name": "Феликс Коробов",
-    "aliases": "Коробов; Felix Korobov",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Опера и оркестровые концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Рудин; Ivan Rudin",
     "person_id": "PER-165",
     "name": "Иван Рудин",
-    "aliases": "Рудин; Ivan Rudin",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Дирижерские и фортепианные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Рамм; Alexander Ramm",
     "person_id": "PER-166",
     "name": "Александр Рамм",
-    "aliases": "Рамм; Alexander Ramm",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Сольные и камерные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Трифонов; Daniil Trifonov",
     "person_id": "PER-167",
     "name": "Даниил Трифонов",
-    "aliases": "Трифонов; Daniil Trifonov",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Российские выступления проверять отдельно",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мацуев; Denis Matsuev",
     "person_id": "PER-168",
     "name": "Денис Мацуев",
-    "aliases": "Мацуев; Denis Matsuev",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Масштабные фортепианные концерты и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Березовский пианист; Boris Berezovsky pianist",
     "person_id": "PER-169",
     "name": "Борис Березовский",
-    "aliases": "Березовский пианист; Boris Berezovsky pianist",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Фортепианная классика",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Абдразаков; Ildar Abdrazakov",
     "person_id": "PER-170",
     "name": "Ильдар Абдразаков",
-    "aliases": "Абдразаков; Ildar Abdrazakov",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Опера, концерты, фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Герзмава; Hibla Gerzmava",
     "person_id": "PER-171",
     "name": "Хибла Герзмава",
-    "aliases": "Герзмава; Hibla Gerzmava",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Оперная сцена и концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Нетребко; Anna Netrebko",
     "person_id": "PER-172",
     "name": "Анна Нетребко",
-    "aliases": "Нетребко; Anna Netrebko",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Проверять географию российских выступлений",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Эйвазов; Yusif Eyvazov",
     "person_id": "PER-173",
     "name": "Юсиф Эйвазов",
-    "aliases": "Эйвазов; Yusif Eyvazov",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Оперные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Бержанская; Vasilisa Berzhanskaya",
     "person_id": "PER-174",
     "name": "Василиса Бержанская",
-    "aliases": "Бержанская; Vasilisa Berzhanskaya",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Опера, концертные программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мечетина; Ekaterina Mechetina",
     "person_id": "PER-175",
     "name": "Екатерина Мечетина",
-    "aliases": "Мечетина; Ekaterina Mechetina",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Фортепиано и творческие программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Репин скрипач; Vadim Repin",
     "person_id": "PER-176",
     "name": "Вадим Репин",
-    "aliases": "Репин скрипач; Vadim Repin",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Скрипичные концерты и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Эйленкриг; Eilenkrig",
     "person_id": "PER-177",
     "name": "Вадим Эйленкриг",
-    "aliases": "Эйленкриг; Eilenkrig",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Джазовые концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Бутман; Igor Butman",
     "person_id": "PER-178",
     "name": "Игорь Бутман",
-    "aliases": "Бутман; Igor Butman",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Джаз, фестивали, большие оркестры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Жилин; Фонограф",
     "person_id": "PER-179",
     "name": "Сергей Жилин",
-    "aliases": "Жилин; Фонограф",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Джаз, шоу и концерты оркестра",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мерабова; Mariam Merabova",
     "person_id": "PER-180",
     "name": "Мариам Мерабова",
-    "aliases": "Мерабова; Mariam Merabova",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Джаз и соул",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Петр Налич; Pyotr Nalich",
     "person_id": "PER-181",
     "name": "Пётр Налич",
-    "aliases": "Петр Налич; Pyotr Nalich",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Камерные концерты, авторская музыка",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Козлов джаз; Alexey Kozlov jazz",
     "person_id": "PER-182",
     "name": "Алексей Козлов",
-    "aliases": "Козлов джаз; Alexey Kozlov jazz",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Фестивали, джаз-клуб",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Визбор; Varvara Vizbor",
     "person_id": "PER-183",
     "name": "Варвара Визбор",
-    "aliases": "Визбор; Varvara Vizbor",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Джазовые и авторские концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Милюков скрипка; Pavel Milyukov",
     "person_id": "PER-184",
     "name": "Павел Милюков",
-    "aliases": "Милюков скрипка; Pavel Milyukov",
+    "region": "Россия, Москва в приоритете",
     "category": "Классика, дирижёры, джаз, опера",
-    "priority": "A",
     "why": "Концерты классической музыки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Эйфман; Eifman",
     "person_id": "PER-185",
     "name": "Борис Эйфман",
-    "aliases": "Эйфман; Eifman",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Спектакли Театра балета Эйфмана, гастроли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Самодуров; Samodurov",
     "person_id": "PER-186",
     "name": "Вячеслав Самодуров",
-    "aliases": "Самодуров; Samodurov",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Современные балетные постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сигалова; Alla Sigalova",
     "person_id": "PER-187",
     "name": "Алла Сигалова",
-    "aliases": "Сигалова; Alla Sigalova",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Хореография в драматических и балетных спектаклях",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дружинин; Yegor Druzhinin",
     "person_id": "PER-188",
     "name": "Егор Дружинин",
-    "aliases": "Дружинин; Yegor Druzhinin",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Танцевальные шоу и мюзиклы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Глушков хореограф; Oleg Glushkov",
     "person_id": "PER-189",
     "name": "Олег Глушков",
-    "aliases": "Глушков хореограф; Oleg Glushkov",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Пластические спектакли и театральные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Могилев хореограф; Mogilev",
     "person_id": "PER-190",
     "name": "Александр Могилёв",
-    "aliases": "Могилев хореограф; Mogilev",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Современная хореография и телешоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Решетникова хореограф; Reshetnikova",
     "person_id": "PER-191",
     "name": "Екатерина Решетникова",
-    "aliases": "Решетникова хореограф; Reshetnikova",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Танцевальные шоу и сценическая хореография",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Поклитару; Radu Poklitaru",
     "person_id": "PER-192",
     "name": "Раду Поклитару",
-    "aliases": "Поклитару; Radu Poklitaru",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Современный балет; проверять гастроли в России; геофильтр обязателен — только события в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Петипа; Petipa",
     "person_id": "PER-193",
     "name": "Мариус Петипа",
-    "aliases": "Петипа; Petipa",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические хореографы — новые постановки",
-    "priority": "B",
     "why": "Не живой участник: искать новые постановки и реставрации наследия",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Баланчин; Balanchine",
     "person_id": "PER-194",
     "name": "Джордж Баланчин",
-    "aliases": "Баланчин; Balanchine",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические хореографы — новые постановки",
-    "priority": "B",
     "why": "Не живой участник: искать новые постановки и реставрации наследия",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Посохов; Yuri Possokhov",
     "person_id": "PER-195",
     "name": "Юрий Посохов",
-    "aliases": "Посохов; Yuri Possokhov",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Балетные премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мессерер; Mikhail Messerer",
     "person_id": "PER-196",
     "name": "Михаил Мессерер",
-    "aliases": "Мессерер; Mikhail Messerer",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Постановки балета и редакции классики",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Экман; Alexander Ekman",
     "person_id": "PER-197",
     "name": "Александр Экман",
-    "aliases": "Экман; Alexander Ekman",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Зарубежная хореография, показы в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Варнава хореограф; Vladimir Varnava",
     "person_id": "PER-198",
     "name": "Владимир Варнава",
-    "aliases": "Варнава хореограф; Vladimir Varnava",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Современный танец, музыкальные спектакли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Баганова; Tatiana Baganova",
     "person_id": "PER-199",
     "name": "Татьяна Баганова",
-    "aliases": "Баганова; Tatiana Baganova",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Театр современного танца и хореография",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Михеева хореограф; Ksenia Mikheeva",
     "person_id": "PER-200",
     "name": "Ксения Михеева",
-    "aliases": "Михеева хореограф; Ksenia Mikheeva",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Современная сценическая пластика",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Рябов хореограф; Pavel Ryabov",
     "person_id": "PER-201",
     "name": "Павел Рябов",
-    "aliases": "Рябов хореограф; Pavel Ryabov",
+    "region": "Россия, Москва в приоритете",
     "category": "Балет, хореография и пластический театр",
-    "priority": "A",
     "why": "Танцевальные премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Щербаков стендап; Alexey Shcherbakov",
     "person_id": "PER-202",
     "name": "Алексей Щербаков",
-    "aliases": "Щербаков стендап; Alexey Shcherbakov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Сольные стендап-концерты и комедийные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Чебатков; Evgeny Chebatkov",
     "person_id": "PER-203",
     "name": "Евгений Чебатков",
-    "aliases": "Чебатков; Evgeny Chebatkov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап, музыкально-комедийные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сабуров; Nurlan Saburov",
     "person_id": "PER-204",
     "name": "Нурлан Сабуров",
-    "aliases": "Сабуров; Nurlan Saburov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Сольный стендап, гастроли при наличии дат в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Абрамов стендап; Ivan Abramov",
     "person_id": "PER-205",
     "name": "Иван Абрамов",
-    "aliases": "Абрамов стендап; Ivan Abramov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Музыкальный стендап и шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Орлов стендап; Sergey Orlov standup",
     "person_id": "PER-206",
     "name": "Сергей Орлов",
-    "aliases": "Орлов стендап; Sergey Orlov standup",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Сольные программы и концертные туры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мягкова стендап; Irina Myagkova",
     "person_id": "PER-207",
     "name": "Ирина Мягкова",
-    "aliases": "Мягкова стендап; Irina Myagkova",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Женский стендап, сольные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дедищев; Pavel Dedishchev",
     "person_id": "PER-208",
     "name": "Павел Дедищев",
-    "aliases": "Дедищев; Pavel Dedishchev",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Сольные стендап-программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Александр Малой; Sasha Maloy",
     "person_id": "PER-209",
     "name": "Саша Малой",
-    "aliases": "Александр Малой; Sasha Maloy",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Артем Винокур; Vinokur standup",
     "person_id": "PER-210",
     "name": "Артём Винокур",
-    "aliases": "Артем Винокур; Vinokur standup",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап и новые программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мазур стендап; Kirill Mazur",
     "person_id": "PER-211",
     "name": "Кирилл Мазур",
-    "aliases": "Мазур стендап; Kirill Mazur",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Чабдаров; Rasul Chabdarov",
     "person_id": "PER-212",
     "name": "Расул Чабдаров",
-    "aliases": "Чабдаров; Rasul Chabdarov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап и гастрольные выступления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Тринадцатко; Yaroslava Trinadtsatko",
     "person_id": "PER-213",
     "name": "Ярослава Тринадцатко",
-    "aliases": "Тринадцатко; Yaroslava Trinadtsatko",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап, сольные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Юсупова стендап; Saule Yusupova",
     "person_id": "PER-214",
     "name": "Сауле Юсупова",
-    "aliases": "Юсупова стендап; Saule Yusupova",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Женский стендап",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Надежда Джабраилова; Dzhabrailova",
     "person_id": "PER-215",
     "name": "Надя Джабраилова",
-    "aliases": "Надежда Джабраилова; Dzhabrailova",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Сольный стендап",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Родина стендап; Margarita Rodina",
     "person_id": "PER-216",
     "name": "Маргарита Родина",
-    "aliases": "Родина стендап; Margarita Rodina",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Женский стендап и гастроли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Новикова стендап; Elena Novikova",
     "person_id": "PER-217",
     "name": "Елена Новикова",
-    "aliases": "Новикова стендап; Elena Novikova",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап, камерные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сидоров стендап; Valentin Sidorov",
     "person_id": "PER-218",
     "name": "Валентин Сидоров",
-    "aliases": "Сидоров стендап; Valentin Sidorov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Сольные комедийные выступления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Атлас стендап; Andrey Atlas",
     "person_id": "PER-219",
     "name": "Андрей Атлас",
-    "aliases": "Атлас стендап; Andrey Atlas",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап-концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Соболев; Ilya Sobolev",
     "person_id": "PER-220",
     "name": "Илья Соболев",
-    "aliases": "Соболев; Ilya Sobolev",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап, концертные и телевизионные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Харламов; Garik Kharlamov",
     "person_id": "PER-221",
     "name": "Гарик Харламов",
-    "aliases": "Харламов; Garik Kharlamov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Комедийные шоу с составом участников",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Каргинов; Timur Karginov",
     "person_id": "PER-222",
     "name": "Тимур Каргинов",
-    "aliases": "Каргинов; Timur Karginov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Стендап и комедийные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Шастун; Anton Shastun",
     "person_id": "PER-223",
     "name": "Антон Шастун",
-    "aliases": "Шастун; Anton Shastun",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Импровизация, игровые шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Попов импровизаторы; Arseniy Popov",
     "person_id": "PER-224",
     "name": "Арсений Попов",
-    "aliases": "Попов импровизаторы; Arseniy Popov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Импровизационные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Позов; Dmitry Pozov",
     "person_id": "PER-225",
     "name": "Дмитрий Позов",
-    "aliases": "Позов; Dmitry Pozov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Импровизационные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Матвиенко импровизаторы; Sergey Matvienko improv",
     "person_id": "PER-226",
     "name": "Сергей Матвиенко",
-    "aliases": "Матвиенко импровизаторы; Sergey Matvienko improv",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Импровизационные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Гудков; Aleksandr Gudkov",
     "person_id": "PER-227",
     "name": "Александр Гудков",
-    "aliases": "Гудков; Aleksandr Gudkov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Комедийные концерты, шоу и коллаборации",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Мусагалиев; Azamat Musagaliev",
     "person_id": "PER-228",
     "name": "Азамат Мусагалиев",
-    "aliases": "Мусагалиев; Azamat Musagaliev",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Масштабные юмористические проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дорохов; Denis Dorokhov",
     "person_id": "PER-229",
     "name": "Денис Дорохов",
-    "aliases": "Дорохов; Denis Dorokhov",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Шоу и комедийные гастроли",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Галустян; Mikhail Galustyan",
     "person_id": "PER-230",
     "name": "Михаил Галустян",
-    "aliases": "Галустян; Mikhail Galustyan",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Шоу и гастрольные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Щербакова стендап; Varvara Shcherbakova",
     "person_id": "PER-231",
     "name": "Варвара Щербакова",
-    "aliases": "Щербакова стендап; Varvara Shcherbakova",
+    "region": "Россия, Москва в приоритете",
     "category": "Стендап, юмор, импровизация",
-    "priority": "A",
     "why": "Женский стендап и сольные концерты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Айвазовский; Aivazovsky",
     "person_id": "PER-232",
     "name": "Иван Айвазовский",
-    "aliases": "Айвазовский; Aivazovsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Выставки, юбилеи, музейные программы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Бакст; Leon Bakst",
     "person_id": "PER-233",
     "name": "Лев Бакст",
-    "aliases": "Бакст; Leon Bakst",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "История театра, костюма и моды, выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Кандинский; Kandinsky",
     "person_id": "PER-234",
     "name": "Василий Кандинский",
-    "aliases": "Кандинский; Kandinsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Русский авангард, выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Малевич; Malevich",
     "person_id": "PER-235",
     "name": "Казимир Малевич",
-    "aliases": "Малевич; Malevich",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Супрематизм, авангард",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Шагал; Chagall",
     "person_id": "PER-236",
     "name": "Марк Шагал",
-    "aliases": "Шагал; Chagall",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Живопись, театр, крупные выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Дейнека; Deineka",
     "person_id": "PER-237",
     "name": "Александр Дейнека",
-    "aliases": "Дейнека; Deineka",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Советское искусство, ретроспективы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Репин; Repin",
     "person_id": "PER-238",
     "name": "Илья Репин",
-    "aliases": "Репин; Repin",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Ретроспективы и музейные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Серов художник; Valentin Serov",
     "person_id": "PER-239",
     "name": "Валентин Серов",
-    "aliases": "Серов художник; Valentin Serov",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Музейные выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Врубель; Vrubel",
     "person_id": "PER-240",
     "name": "Михаил Врубель",
-    "aliases": "Врубель; Vrubel",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Большие музейные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Петров-Водкин; Petrov-Vodkin",
     "person_id": "PER-241",
     "name": "Кузьма Петров-Водкин",
-    "aliases": "Петров-Водкин; Petrov-Vodkin",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Русская живопись XX века",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Куинджи; Kuindzhi",
     "person_id": "PER-242",
     "name": "Архип Куинджи",
-    "aliases": "Куинджи; Kuindzhi",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Живопись и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Левитан художник; Levitan",
     "person_id": "PER-243",
     "name": "Исаак Левитан",
-    "aliases": "Левитан художник; Levitan",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Живопись и музейные события",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Кустодиев; Kustodiev",
     "person_id": "PER-244",
     "name": "Борис Кустодиев",
-    "aliases": "Кустодиев; Kustodiev",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Выставки русского искусства",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Кончаловский; Konchalovsky painter",
     "person_id": "PER-245",
     "name": "Пётр Кончаловский",
-    "aliases": "Кончаловский; Konchalovsky painter",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Модернизм, живопись",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Родченко; Rodchenko",
     "person_id": "PER-246",
     "name": "Александр Родченко",
-    "aliases": "Родченко; Rodchenko",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Фотография, дизайн, конструктивизм",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Экстер; Alexandra Exter",
     "person_id": "PER-247",
     "name": "Александра Экстер",
-    "aliases": "Экстер; Alexandra Exter",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Авангард и театр",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Попова художница; Lyubov Popova",
     "person_id": "PER-248",
     "name": "Любовь Попова",
-    "aliases": "Попова художница; Lyubov Popova",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Конструктивизм, дизайн, выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Филонов; Filonov",
     "person_id": "PER-249",
     "name": "Павел Филонов",
-    "aliases": "Филонов; Filonov",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Русский авангард",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Гончарова художница; Natalia Goncharova",
     "person_id": "PER-250",
     "name": "Наталья Гончарова",
-    "aliases": "Гончарова художница; Natalia Goncharova",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Живопись, сценография и театр",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Ларионов художник; Mikhail Larionov",
     "person_id": "PER-251",
     "name": "Михаил Ларионов",
-    "aliases": "Ларионов художник; Mikhail Larionov",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Авангард и дягилевские сезоны",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Шехтель; Schechtel",
     "person_id": "PER-252",
     "name": "Фёдор Шехтель",
-    "aliases": "Шехтель; Schechtel",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Архитектура и дизайн, выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Лисицкий; El Lissitzky",
     "person_id": "PER-253",
     "name": "Эль Лисицкий",
-    "aliases": "Лисицкий; El Lissitzky",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Конструктивизм, графика, дизайн",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Мухина скульптор; Vera Mukhina",
     "person_id": "PER-254",
     "name": "Вера Мухина",
-    "aliases": "Мухина скульптор; Vera Mukhina",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Скульптура, история искусства",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Булатов художник; Erik Bulatov",
     "person_id": "PER-255",
     "name": "Эрик Булатов",
-    "aliases": "Булатов художник; Erik Bulatov",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Историческая персона; искать только выставки, лекции и ретроспективы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Кабаков художник; Ilya Kabakov",
     "person_id": "PER-256",
     "name": "Илья Кабаков",
-    "aliases": "Кабаков художник; Ilya Kabakov",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Историческая персона; искать только выставки, лекции и ретроспективы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Рабин художник; Oscar Rabin",
     "person_id": "PER-257",
     "name": "Оскар Рабин",
-    "aliases": "Рабин художник; Oscar Rabin",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Нонконформизм и ретроспективы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Зверев художник; Anatoly Zverev",
     "person_id": "PER-258",
     "name": "Анатолий Зверев",
-    "aliases": "Зверев художник; Anatoly Zverev",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Музей АЗ, ретроспективы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Васнецов; Viktor Vasnetsov",
     "person_id": "PER-259",
     "name": "Виктор Васнецов",
-    "aliases": "Васнецов; Viktor Vasnetsov",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Русские сказки, историческая живопись",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Нестеров художник; Mikhail Nesterov",
     "person_id": "PER-260",
     "name": "Михаил Нестеров",
-    "aliases": "Нестеров художник; Mikhail Nesterov",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Русская живопись",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Рерих; Nicholas Roerich",
     "person_id": "PER-261",
     "name": "Николай Рерих",
-    "aliases": "Рерих; Nicholas Roerich",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Выставки, ретроспективы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Матюшин художник; Mikhail Matyushin",
     "person_id": "PER-262",
     "name": "Михаил Матюшин",
-    "aliases": "Матюшин художник; Mikhail Matyushin",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Авангард и музыкально-визуальные исследования",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Голубкина; Anna Golubkina",
     "person_id": "PER-263",
     "name": "Анна Голубкина",
-    "aliases": "Голубкина; Anna Golubkina",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Скульптура и музейные выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Степанова конструктивизм; Varvara Stepanova",
     "person_id": "PER-264",
     "name": "Варвара Степанова",
-    "aliases": "Степанова конструктивизм; Varvara Stepanova",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Мода, дизайн, конструктивизм",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Эйзенштейн; Sergei Eisenstein",
     "person_id": "PER-265",
     "name": "Сергей Эйзенштейн",
-    "aliases": "Эйзенштейн; Sergei Eisenstein",
+    "region": "Россия, Москва в приоритете",
     "category": "Исторические художники — темы выставок",
-    "priority": "B",
     "why": "Историческая персона; искать только выставки, лекции и ретроспективы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Отдельнов; Pavel Otdelnov",
     "person_id": "PER-266",
     "name": "Павел Отдельнов",
-    "aliases": "Отдельнов; Pavel Otdelnov",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Персональные выставки, современное искусство",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Нахова; Irina Nakhova",
     "person_id": "PER-267",
     "name": "Ирина Нахова",
-    "aliases": "Нахова; Irina Nakhova",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Инсталляции, художественные выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Пивоваров; Viktor Pivovarov",
     "person_id": "PER-268",
     "name": "Виктор Пивоваров",
-    "aliases": "Пивоваров; Viktor Pivovarov",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Московский концептуализм, выставки в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Чернышева художница; Olga Chernysheva",
     "person_id": "PER-269",
     "name": "Ольга Чернышева",
-    "aliases": "Чернышева художница; Olga Chernysheva",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Видеоарт, графика и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Григорий Брускин; Grisha Bruskin",
     "person_id": "PER-270",
     "name": "Гриша Брускин",
-    "aliases": "Григорий Брускин; Grisha Bruskin",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Концептуализм, выставочные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Гутов художник; Dmitry Gutov",
     "person_id": "PER-271",
     "name": "Дмитрий Гутов",
-    "aliases": "Гутов художник; Dmitry Gutov",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Современное искусство и лекции",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Бродский художник архитектор; Alexander Brodsky",
     "person_id": "PER-272",
     "name": "Александр Бродский",
-    "aliases": "Бродский художник архитектор; Alexander Brodsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Инсталляции, архитектура, выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Арсений Пыженков; Pokras Lampas",
     "person_id": "PER-273",
     "name": "Покрас Лампас",
-    "aliases": "Арсений Пыженков; Pokras Lampas",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Масштабные арт-проекты и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Филатов художник; Artem Filatov",
     "person_id": "PER-274",
     "name": "Артём Филатов",
-    "aliases": "Филатов художник; Artem Filatov",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Арт-инсталляции и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Сухарева художник; Alexandra Sukhareva",
     "person_id": "PER-275",
     "name": "Александра Сухарева",
-    "aliases": "Сухарева художник; Alexandra Sukhareva",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Современные выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Осмоловский; Anatoly Osmolovsky",
     "person_id": "PER-276",
     "name": "Анатолий Осмоловский",
-    "aliases": "Осмоловский; Anatoly Osmolovsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Современное искусство и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Пепперштейн; Pavel Pepperstein",
     "person_id": "PER-277",
     "name": "Павел Пепперштейн",
-    "aliases": "Пепперштейн; Pavel Pepperstein",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Художественные выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Полисский; Nikolay Polissky",
     "person_id": "PER-278",
     "name": "Николай Полисский",
-    "aliases": "Полисский; Nikolay Polissky",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Лэнд-арт и Архстояние",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Антуфьев; Evgeny Antufiev",
     "person_id": "PER-279",
     "name": "Евгений Антуфьев",
-    "aliases": "Антуфьев; Evgeny Antufiev",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Современная скульптура и арт-проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Муратов художник; Damir Muratov",
     "person_id": "PER-280",
     "name": "Дамир Муратов",
-    "aliases": "Муратов художник; Damir Muratov",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Современные выставки и арт-проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "АЕС+Ф; АЕС+F; AES+F",
     "person_id": "PER-281",
     "name": "AES+F",
-    "aliases": "АЕС+Ф; АЕС+F; AES+F",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Художественный коллектив; видео, мультимедиа",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Luka; Алексей Лука художник",
     "person_id": "PER-282",
     "name": "Алексей Лука",
-    "aliases": "Luka; Алексей Лука художник",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Уличное искусство и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Рева скульптор; Mikhail Reva",
     "person_id": "PER-283",
     "name": "Михаил Рева",
-    "aliases": "Рева скульптор; Mikhail Reva",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Скульптура и публичные арт-проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Виноградов художник; Виноградов и Дубосарский",
     "person_id": "PER-284",
     "name": "Александр Виноградов",
-    "aliases": "Виноградов художник; Виноградов и Дубосарский",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Современная живопись и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дубосарский художник; Виноградов и Дубосарский",
     "person_id": "PER-285",
     "name": "Владимир Дубосарский",
-    "aliases": "Дубосарский художник; Виноградов и Дубосарский",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Современная живопись",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Миша Мост; Misha Most",
     "person_id": "PER-286",
     "name": "Миша Most",
-    "aliases": "Миша Мост; Misha Most",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Уличное искусство и выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Кирилл Кто художник; Kirill Kto",
     "person_id": "PER-287",
     "name": "Кирилл Кто",
-    "aliases": "Кирилл Кто художник; Kirill Kto",
+    "region": "Россия, Москва в приоритете",
     "category": "Современные художники и арт-проекты",
-    "priority": "A",
     "why": "Стрит-арт и культурные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Свиблова; Olga Sviblova",
     "person_id": "PER-288",
     "name": "Ольга Свиблова",
-    "aliases": "Свиблова; Olga Sviblova",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Выставки, мультимедиа и фотография",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Анна Гор куратор; Anna Gor",
     "person_id": "PER-289",
     "name": "Анна Гор",
-    "aliases": "Анна Гор куратор; Anna Gor",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Современное искусство, региональные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Лошак; Marina Loshak",
     "person_id": "PER-290",
     "name": "Марина Лошак",
-    "aliases": "Лошак; Marina Loshak",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Выставочные проекты и кураторство",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Трегулова; Zelfira Tregulova",
     "person_id": "PER-291",
     "name": "Зельфира Трегулова",
-    "aliases": "Трегулова; Zelfira Tregulova",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Крупные выставки и арт-проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Бонами; Francesco Bonami",
     "person_id": "PER-292",
     "name": "Франческо Бонами",
-    "aliases": "Бонами; Francesco Bonami",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Кураторские выставки в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Шишко куратор; Olga Shishko",
     "person_id": "PER-293",
     "name": "Ольга Шишко",
-    "aliases": "Шишко куратор; Olga Shishko",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Медиаискусство и новые форматы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Опалева; Natalya Opaleva",
     "person_id": "PER-294",
     "name": "Наталия Опалева",
-    "aliases": "Опалева; Natalya Opaleva",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Выставки частных музеев",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Аскери; Polina Askeri",
     "person_id": "PER-295",
     "name": "Полина Аскери",
-    "aliases": "Аскери; Polina Askeri",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Галерейные выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Бортнюк; Ilya Bortnyuk",
     "person_id": "PER-296",
     "name": "Илья Бортнюк",
-    "aliases": "Бортнюк; Ilya Bortnyuk",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Фестивали и концертные проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Соловьева продюсер; Nadezhda Solovieva",
     "person_id": "PER-297",
     "name": "Надежда Соловьёва",
-    "aliases": "Соловьева продюсер; Nadezhda Solovieva",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Концертные и продюсерские проекты",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Церетели; Vasily Tsereteli",
     "person_id": "PER-298",
     "name": "Василий Церетели",
-    "aliases": "Церетели; Vasily Tsereteli",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Современное искусство, выставки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Богачёв мюзиклы; Dmitry Bogachev musicals",
     "person_id": "PER-299",
     "name": "Дмитрий Богачёв",
-    "aliases": "Богачёв мюзиклы; Dmitry Bogachev musicals",
+    "region": "Россия, Москва в приоритете",
     "category": "Кураторы, продюсеры и культурные лидеры",
-    "priority": "B",
     "why": "Мюзиклы и продюсерские премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Андрей Першин; Zhora Kryzhovnikov",
     "person_id": "PER-300",
     "name": "Жора Крыжовников",
-    "aliases": "Андрей Першин; Zhora Kryzhovnikov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кино, премьеры и публичные показы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Бондарчук режиссер; Fedor Bondarchuk",
     "person_id": "PER-301",
     "name": "Фёдор Бондарчук",
-    "aliases": "Бондарчук режиссер; Fedor Bondarchuk",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кинопремьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Быков режиссер; Yury Bykov",
     "person_id": "PER-302",
     "name": "Юрий Быков",
-    "aliases": "Быков режиссер; Yury Bykov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Авторское кино, встречи со зрителями",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Хлебников режиссер; Boris Khlebnikov",
     "person_id": "PER-303",
     "name": "Борис Хлебников",
-    "aliases": "Хлебников режиссер; Boris Khlebnikov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Премьеры авторского кино",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Велединский; Aleksandr Veledinsky",
     "person_id": "PER-304",
     "name": "Александр Велединский",
-    "aliases": "Велединский; Aleksandr Veledinsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кино, специальные показы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Герман младший; Aleksei German Jr",
     "person_id": "PER-305",
     "name": "Алексей Герман-младший",
-    "aliases": "Герман младший; Aleksei German Jr",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кинофестивали и премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Звягинцев; Andrey Zvyagintsev",
     "person_id": "PER-306",
     "name": "Андрей Звягинцев",
-    "aliases": "Звягинцев; Andrey Zvyagintsev",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Авторское кино, возможные российские ретроспективы; геофильтр обязателен — только события в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Учитель режиссер; Alexey Uchitel",
     "person_id": "PER-307",
     "name": "Алексей Учитель",
-    "aliases": "Учитель режиссер; Alexey Uchitel",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кинопремьеры и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Соснин режиссер; Ivan Sosnin",
     "person_id": "PER-308",
     "name": "Иван Соснин",
-    "aliases": "Соснин режиссер; Ivan Sosnin",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Современное российское кино",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Битоков; Vladimir Bitokov",
     "person_id": "PER-309",
     "name": "Владимир Битоков",
-    "aliases": "Битоков; Vladimir Bitokov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Авторское кино",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Бекмамбетов; Timur Bekmambetov",
     "person_id": "PER-310",
     "name": "Тимур Бекмамбетов",
-    "aliases": "Бекмамбетов; Timur Bekmambetov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кино и специальные показы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Кончаловский режиссер; Andrei Konchalovsky",
     "person_id": "PER-311",
     "name": "Андрей Кончаловский",
-    "aliases": "Кончаловский режиссер; Andrei Konchalovsky",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Театр, кино, премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Михалков режиссер; Nikita Mikhalkov",
     "person_id": "PER-312",
     "name": "Никита Михалков",
-    "aliases": "Михалков режиссер; Nikita Mikhalkov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Театр, кино, фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Буслов; Pyotr Buslov",
     "person_id": "PER-313",
     "name": "Пётр Буслов",
-    "aliases": "Буслов; Pyotr Buslov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кинопремьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Петр Тодоровский младший; Pyotr Todorovsky Jr",
     "person_id": "PER-314",
     "name": "Пётр Тодоровский-младший",
-    "aliases": "Петр Тодоровский младший; Pyotr Todorovsky Jr",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Авторское кино",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Хант режиссер; Aleksandr Khant",
     "person_id": "PER-315",
     "name": "Александр Хант",
-    "aliases": "Хант режиссер; Aleksandr Khant",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Независимое кино",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Мещанинова; Natalya Meshchaninova",
     "person_id": "PER-316",
     "name": "Наталья Мещанинова",
-    "aliases": "Мещанинова; Natalya Meshchaninova",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Авторское кино",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Меликян; Anna Melikyan",
     "person_id": "PER-317",
     "name": "Анна Меликян",
-    "aliases": "Меликян; Anna Melikyan",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кино, премьеры и фестивали",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Балагов; Kantemir Balagov",
     "person_id": "PER-318",
     "name": "Кантемир Балагов",
-    "aliases": "Балагов; Kantemir Balagov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Показы в РФ, фестивальные ретроспективы; геофильтр обязателен — только события в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Маслов режиссер; Anton Maslov",
     "person_id": "PER-319",
     "name": "Антон Маслов",
-    "aliases": "Маслов режиссер; Anton Maslov",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Российские кинопремьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Илья Учитель режиссёр; Ilya Uchitel",
     "person_id": "PER-320",
     "name": "Илья Учитель",
-    "aliases": "Илья Учитель режиссёр; Ilya Uchitel",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кино, премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Горчилин; Aleksandr Gorchilin",
     "person_id": "PER-321",
     "name": "Александр Горчилин",
-    "aliases": "Горчилин; Aleksandr Gorchilin",
+    "region": "Россия, Москва в приоритете",
     "category": "Кинорежиссёры — премьеры и показы",
-    "priority": "B",
     "why": "Кино, театр, специальные показы",
-    "region": "Россия, Москва в приоритете"
+    "priority": "B"
   },
   {
+    "aliases": "Навка; Navka Show",
     "person_id": "PER-322",
     "name": "Татьяна Навка",
-    "aliases": "Навка; Navka Show",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Ледовые шоу, сезонные премьеры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Плющенко; Angels of Plushenko",
     "person_id": "PER-323",
     "name": "Евгений Плющенко",
-    "aliases": "Плющенко; Angels of Plushenko",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Ледовые шоу, семейные постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Авербух; Ilya Averbukh",
     "person_id": "PER-324",
     "name": "Илья Авербух",
-    "aliases": "Авербух; Ilya Averbukh",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Ледовые шоу, постановки и туры",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Запашный Эдгард; Edgard Zapashny",
     "person_id": "PER-325",
     "name": "Эдгард Запашный",
-    "aliases": "Запашный Эдгард; Edgard Zapashny",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Большие цирковые шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Запашный Аскольд; Askold Zapashny",
     "person_id": "PER-326",
     "name": "Аскольд Запашный",
-    "aliases": "Запашный Аскольд; Askold Zapashny",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Большие цирковые шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Куклачев; Kuklachev",
     "person_id": "PER-327",
     "name": "Юрий Куклачёв",
-    "aliases": "Куклачев; Kuklachev",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Семейные цирковые представления",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Полунин танцовщик; Sergei Polunin",
     "person_id": "PER-328",
     "name": "Сергей Полунин",
-    "aliases": "Полунин танцовщик; Sergei Polunin",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Балетные и танцевальные шоу при датах в РФ",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Дробязко; Margarita Drobiazko",
     "person_id": "PER-329",
     "name": "Маргарита Дробязко",
-    "aliases": "Дробязко; Margarita Drobiazko",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Ледовые проекты и шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Бережная; Elena Berezhnaya",
     "person_id": "PER-330",
     "name": "Елена Бережная",
-    "aliases": "Бережная; Elena Berezhnaya",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Ледовые шоу, постановки",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Энберт; Alexander Enbert",
     "person_id": "PER-331",
     "name": "Александр Энберт",
-    "aliases": "Энберт; Alexander Enbert",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Ледовые шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
   },
   {
+    "aliases": "Гальперин иллюзионист; Mark Galperin",
     "person_id": "PER-332",
     "name": "Марк Гальперин",
-    "aliases": "Гальперин иллюзионист; Mark Galperin",
+    "region": "Россия, Москва в приоритете",
     "category": "Ледовые, цирковые и семейные шоу",
-    "priority": "A",
     "why": "Цирк и иллюзионные шоу",
-    "region": "Россия, Москва в приоритете"
+    "priority": "A"
+  },
+  {
+    "aliases": "Robert Lepage;Лепаж",
+    "person_id": "NEW-PER-001",
+    "name": "Робер Лепаж",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Наций: «Мастер и Маргарита», «Гамлет | Коллаж»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Robert Wilson;Bob Wilson;Боб Уилсон",
+    "person_id": "NEW-PER-002",
+    "name": "Роберт Уилсон",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Наций: «Сказки Пушкина»; показы TheatreHD",
+    "priority": "A"
+  },
+  {
+    "aliases": "Mou Sen;Моу Сен",
+    "person_id": "NEW-PER-003",
+    "name": "Моу Сэнь",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Наций: «Тихий Дон» (2026)",
+    "priority": "A"
+  },
+  {
+    "aliases": "Мурат Абулкатинов",
+    "person_id": "NEW-PER-004",
+    "name": "Мурат Абулкатинов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "«Тихий Дон», «Десять посещений моей возлюбленной» в Театре Наций",
+    "priority": "A"
+  },
+  {
+    "aliases": "Stéphane Braunschweig;Stephane Braunschweig",
+    "person_id": "NEW-PER-005",
+    "name": "Стефан Брауншвейг",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Наций: «Дядя Ваня»",
+    "priority": "A"
+  },
+  {
+    "aliases": "James Ngcobo;James Nobo",
+    "person_id": "NEW-PER-006",
+    "name": "Джеймс Нобо",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Наций: «Жюли»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Филипп Гуревич",
+    "person_id": "NEW-PER-007",
+    "name": "Филипп Гуревич",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Наций: «Горький. Любовь»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Дмитрий Крестьянкин",
+    "person_id": "NEW-PER-008",
+    "name": "Дмитрий Крестьянкин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Наций: «День закрытых дверей»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Владислав Миллер",
+    "person_id": "NEW-PER-009",
+    "name": "Владислав Миллер",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Олега Табакова: «Звёздный час по местному времени»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Дин Итэн;Ding Yiteng",
+    "person_id": "NEW-PER-010",
+    "name": "Дин Итэн",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "«Один день что три осени», театр «Старый дом»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Александр Шумилин",
+    "person_id": "NEW-PER-011",
+    "name": "Александр Шумилин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Новая опера переживаний «Жизнь» в Театре Наций",
+    "priority": "B"
+  },
+  {
+    "aliases": "Kirill Serebrennikov",
+    "person_id": "NEW-PER-012",
+    "name": "Кирилл Серебренников",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Исторические постановки, театральные показы, ретроспективы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Timofey Kulyabin;Kulyabin",
+    "person_id": "NEW-PER-013",
+    "name": "Тимофей Кулябин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театральные постановки и кинотеатральные показы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Rimas Tuminas;Туминас",
+    "person_id": "NEW-PER-014",
+    "name": "Римас Туминас",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Репертуарные постановки и записи спектаклей",
+    "priority": "B"
+  },
+  {
+    "aliases": "Eimuntas Nekrosius;Някрошюс",
+    "person_id": "NEW-PER-015",
+    "name": "Эймунтас Някрошюс",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Репертуарные постановки, показы и ретроспективы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Anatoly Vasiliev",
+    "person_id": "NEW-PER-016",
+    "name": "Анатолий Васильев",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Сценические работы, театральные показы и ретроспективы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Филипп Григорьян",
+    "person_id": "NEW-PER-017",
+    "name": "Филипп Григорьян",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Экспериментальный театр и музыкальные постановки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Марат Гацалов",
+    "person_id": "NEW-PER-018",
+    "name": "Марат Гацалов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Современная режиссура, театральные премьеры",
+    "priority": "B"
+  },
+  {
+    "aliases": "Андрей Прикотенко",
+    "person_id": "NEW-PER-019",
+    "name": "Андрей Прикотенко",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Режиссёрские премьеры, гастроли из Санкт-Петербурга",
+    "priority": "B"
+  },
+  {
+    "aliases": "Михаил Бычков",
+    "person_id": "NEW-PER-020",
+    "name": "Михаил Бычков",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театральные премьеры и фестивали",
+    "priority": "B"
+  },
+  {
+    "aliases": "Роман Феодори",
+    "person_id": "NEW-PER-021",
+    "name": "Роман Феодори",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театральные и музыкальные постановки, гастроли",
+    "priority": "B"
+  },
+  {
+    "aliases": "Семен Александровский;Semyon Aleksandrovsky",
+    "person_id": "NEW-PER-022",
+    "name": "Семён Александровский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Независимый и иммерсивный театр",
+    "priority": "B"
+  },
+  {
+    "aliases": "Declan Donnellan",
+    "person_id": "NEW-PER-023",
+    "name": "Деклан Доннеллан",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Гастрольные, архивные и экранные театральные постановки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Katie Mitchell",
+    "person_id": "NEW-PER-024",
+    "name": "Кэти Митчелл",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Международные театральные постановки и кинотеатральные трансляции",
+    "priority": "C"
+  },
+  {
+    "aliases": "Heiner Goebbels",
+    "person_id": "NEW-PER-025",
+    "name": "Хайнер Геббельс",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Музыкальный театр, современная опера и перформанс",
+    "priority": "C"
+  },
+  {
+    "aliases": "Thomas Ostermeier",
+    "person_id": "NEW-PER-026",
+    "name": "Томас Остермайер",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театральные трансляции и возможные гастроли",
+    "priority": "C"
+  },
+  {
+    "aliases": "Romeo Castellucci",
+    "person_id": "NEW-PER-027",
+    "name": "Ромео Кастеллуччи",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Экспериментальный театр и международные показы",
+    "priority": "C"
+  },
+  {
+    "aliases": "Simon McBurney",
+    "person_id": "NEW-PER-028",
+    "name": "Саймон Макберни",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Complicité, театральные кинопоказы и гастроли",
+    "priority": "C"
+  },
+  {
+    "aliases": "Александр Мохов",
+    "person_id": "NEW-PER-029",
+    "name": "Александр Мохов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр Олега Табакова и режиссёрские постановки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Dmitry Krymov",
+    "person_id": "NEW-PER-030",
+    "name": "Дмитрий Крымов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Спектакли, гастроли и театральные кинопоказы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Юрий Грымов",
+    "person_id": "NEW-PER-031",
+    "name": "Юрий Грымов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр «Модерн» и режиссёрские премьеры",
+    "priority": "B"
+  },
+  {
+    "aliases": "Марк Розовский",
+    "person_id": "NEW-PER-032",
+    "name": "Марк Розовский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театр — режиссёры и постановщики",
+    "why": "Театр «У Никитских ворот»",
+    "priority": "B"
+  },
+  {
+    "aliases": "Diana Vishneva;Диана Вишнева",
+    "person_id": "NEW-PER-033",
+    "name": "Диана Вишнёва",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Фестиваль Context, танцевальные премьеры и гастроли",
+    "priority": "A"
+  },
+  {
+    "aliases": "Ohad Naharin;Gaga dance",
+    "person_id": "NEW-PER-034",
+    "name": "Охад Наарин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Context и постановки современной хореографии",
+    "priority": "A"
+  },
+  {
+    "aliases": "Павел Глухов",
+    "person_id": "NEW-PER-035",
+    "name": "Павел Глухов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Хореография и фестиваль Context",
+    "priority": "A"
+  },
+  {
+    "aliases": "Кирилл Радев",
+    "person_id": "NEW-PER-036",
+    "name": "Кирилл Радев",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Хореография Context, российские премьеры",
+    "priority": "A"
+  },
+  {
+    "aliases": "Константин Кейхель",
+    "person_id": "NEW-PER-037",
+    "name": "Константин Кейхель",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Современная хореография, Context",
+    "priority": "A"
+  },
+  {
+    "aliases": "Илья Живой",
+    "person_id": "NEW-PER-038",
+    "name": "Илья Живой",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Российский современный балет",
+    "priority": "B"
+  },
+  {
+    "aliases": "Антон Пимонов",
+    "person_id": "NEW-PER-039",
+    "name": "Антон Пимонов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Современный балет и репертуарные постановки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Юрий Смекалов",
+    "person_id": "NEW-PER-040",
+    "name": "Юрий Смекалов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Хореограф и автор новых балетов",
+    "priority": "B"
+  },
+  {
+    "aliases": "Rima Pipoyan",
+    "person_id": "NEW-PER-041",
+    "name": "Рима Пипоян",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Хореография Context, гастроли",
+    "priority": "B"
+  },
+  {
+    "aliases": "Алексей Рукинов",
+    "person_id": "NEW-PER-042",
+    "name": "Алексей Рукинов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Новые хореографические постановки Context",
+    "priority": "B"
+  },
+  {
+    "aliases": "Pina Bausch",
+    "person_id": "NEW-PER-043",
+    "name": "Пина Бауш",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Ретроспективы танцтеатра, записи и гастроли труппы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Jiří Kylián;Jiri Kylian",
+    "person_id": "NEW-PER-044",
+    "name": "Йиржи Килиан",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Балетный репертуар и театральные кинопоказы",
+    "priority": "B"
+  },
+  {
+    "aliases": "William Forsythe",
+    "person_id": "NEW-PER-045",
+    "name": "Уильям Форсайт",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Постановки современного балета, показы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Crystal Pite",
+    "person_id": "NEW-PER-046",
+    "name": "Кристал Пайт",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Современный танец, репертуар и кинотеатральные показы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Sharon Eyal",
+    "person_id": "NEW-PER-047",
+    "name": "Шэрон Эяль",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Хореография и гастроли",
+    "priority": "B"
+  },
+  {
+    "aliases": "Akram Khan",
+    "person_id": "NEW-PER-048",
+    "name": "Акрам Хан",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Современная хореография и гастроли",
+    "priority": "B"
+  },
+  {
+    "aliases": "Angelin Preljocaj",
+    "person_id": "NEW-PER-049",
+    "name": "Анжелен Прельжокаж",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Современный балет, архивные и новые постановки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Maurice Béjart;Морис Бежар",
+    "person_id": "NEW-PER-050",
+    "name": "Морис Бежар",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Репертуарные танцевальные постановки и кинотеатральные показы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Antonio Najarro",
+    "person_id": "NEW-PER-051",
+    "name": "Антонио Нахарро",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Танцевальные гастроли и фестиваль Dance Open",
+    "priority": "B"
+  },
+  {
+    "aliases": "Светлана Захарова",
+    "person_id": "NEW-PER-052",
+    "name": "Светлана Захарова",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Балетные премьеры и гала-концерты",
+    "priority": "A"
+  },
+  {
+    "aliases": "Владислав Лантратов",
+    "person_id": "NEW-PER-053",
+    "name": "Владислав Лантратов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Балетные премьеры, спектакли и гала",
+    "priority": "A"
+  },
+  {
+    "aliases": "Элеонора Севенард",
+    "person_id": "NEW-PER-054",
+    "name": "Элеонора Севенард",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современный танец и балет",
+    "why": "Балетные спектакли и гала",
+    "priority": "B"
+  },
+  {
+    "aliases": "Dmitri Tcherniakov",
+    "person_id": "NEW-PER-055",
+    "name": "Дмитрий Черняков",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Оперная режиссура, репертуар и экранные трансляции",
+    "priority": "A"
+  },
+  {
+    "aliases": "Vasily Barkhatov",
+    "person_id": "NEW-PER-056",
+    "name": "Василий Бархатов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Опера и музыкальный театр, премьеры",
+    "priority": "B"
+  },
+  {
+    "aliases": "Дмитрий Бертман",
+    "person_id": "NEW-PER-057",
+    "name": "Дмитрий Бертман",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Геликон-опера, режиссёрские постановки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Александр Титель",
+    "person_id": "NEW-PER-058",
+    "name": "Александр Титель",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "МАМТ, оперные постановки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Георгий Исаакян",
+    "person_id": "NEW-PER-059",
+    "name": "Георгий Исаакян",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Детский музыкальный театр имени Сац",
+    "priority": "B"
+  },
+  {
+    "aliases": "Юрий Александров",
+    "person_id": "NEW-PER-060",
+    "name": "Юрий Александров",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Оперная режиссура, постановки и гастроли",
+    "priority": "B"
+  },
+  {
+    "aliases": "Дмитрий Синьковский",
+    "person_id": "NEW-PER-061",
+    "name": "Дмитрий Синьковский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Барочная музыка, дирижирование и концерты",
+    "priority": "B"
+  },
+  {
+    "aliases": "Федор Безносиков",
+    "person_id": "NEW-PER-062",
+    "name": "Фёдор Безносиков",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Новая Опера, дирижёрские программы",
+    "priority": "A"
+  },
+  {
+    "aliases": "Kirill Richter",
+    "person_id": "NEW-PER-063",
+    "name": "Кирилл Рихтер",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Неоклассические концерты, мультимедийные постановки",
+    "priority": "A"
+  },
+  {
+    "aliases": "Антон Батагов",
+    "person_id": "NEW-PER-064",
+    "name": "Антон Батагов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Современная минималистическая и академическая музыка",
+    "priority": "B"
+  },
+  {
+    "aliases": "Алексей Айги",
+    "person_id": "NEW-PER-065",
+    "name": "Алексей Айги",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Камерная музыка и кино-концерты",
+    "priority": "B"
+  },
+  {
+    "aliases": "Владимир Мартынов",
+    "person_id": "NEW-PER-066",
+    "name": "Владимир Мартынов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Новая академическая музыка и ретроспективы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Настасья Хрущева",
+    "person_id": "NEW-PER-067",
+    "name": "Настасья Хрущёва",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Современная музыка, перформансы, программы театров",
+    "priority": "A"
+  },
+  {
+    "aliases": "Николай Попов",
+    "person_id": "NEW-PER-068",
+    "name": "Николай Попов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "ЦЭАМ, мультимедийные музыкальные проекты",
+    "priority": "A"
+  },
+  {
+    "aliases": "Alexander Khubeev",
+    "person_id": "NEW-PER-069",
+    "name": "Александр Хубеев",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "ЦЭАМ, экспериментальная музыка и видеопроекты",
+    "priority": "A"
+  },
+  {
+    "aliases": "Sergej Newski",
+    "person_id": "NEW-PER-070",
+    "name": "Сергей Невский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Новая опера, электроакустика, концерты",
+    "priority": "B"
+  },
+  {
+    "aliases": "Дмитрий Курляндский",
+    "person_id": "NEW-PER-071",
+    "name": "Дмитрий Курляндский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Новая академическая музыка, опера и театр",
+    "priority": "B"
+  },
+  {
+    "aliases": "Николай Луганский",
+    "person_id": "NEW-PER-072",
+    "name": "Николай Луганский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Фортепианные концерты и фестивали",
+    "priority": "B"
+  },
+  {
+    "aliases": "Александр Маноцков",
+    "person_id": "NEW-PER-073",
+    "name": "Александр Маноцков",
+    "region": "Россия, Москва в приоритете",
+    "category": "Опера, новая академическая музыка",
+    "why": "Опера, современная музыка и театр",
+    "priority": "B"
+  },
+  {
+    "aliases": "Жанна Шмакова",
+    "person_id": "NEW-PER-074",
+    "name": "Жанна Шмакова",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "«Сны Пушкина» — постановка большого циркового шоу",
+    "priority": "A"
+  },
+  {
+    "aliases": "Юрий Антизерский",
+    "person_id": "NEW-PER-075",
+    "name": "Юрий Антизерский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Художник шоу «Сны Пушкина»; сценические костюмы и декорации",
+    "priority": "A"
+  },
+  {
+    "aliases": "Елизавета Гамбург",
+    "person_id": "NEW-PER-076",
+    "name": "Елизавета Гамбург",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Продюсер шоу «Сны Пушкина»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Роман Мунин",
+    "person_id": "NEW-PER-077",
+    "name": "Роман Мунин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Цирковые выступления, связь с Cirque du Soleil",
+    "priority": "B"
+  },
+  {
+    "aliases": "Элиза Хачатрян",
+    "person_id": "NEW-PER-078",
+    "name": "Элиза Хачатрян",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Воздушная и канатная акробатика",
+    "priority": "B"
+  },
+  {
+    "aliases": "Тарас Демчук",
+    "person_id": "NEW-PER-079",
+    "name": "Тарас Демчук",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Музыка для цирковых шоу",
+    "priority": "B"
+  },
+  {
+    "aliases": "Daniele Finzi Pasca",
+    "person_id": "NEW-PER-080",
+    "name": "Даниэле Финци Паска",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Мировая цирковая режиссура; гастроли и кинотеатральные показы",
+    "priority": "B"
+  },
+  {
+    "aliases": "James Thierrée;James Thierree",
+    "person_id": "NEW-PER-081",
+    "name": "Джеймс Тьерре",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Визуальный театр, цирковая пластика и гастроли",
+    "priority": "B"
+  },
+  {
+    "aliases": "Franco Dragone",
+    "person_id": "NEW-PER-082",
+    "name": "Франко Драгоне",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Повторы постановок и шоу, режиссёрское наследие",
+    "priority": "C"
+  },
+  {
+    "aliases": "Мария Трегубова",
+    "person_id": "NEW-PER-083",
+    "name": "Мария Трегубова",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Театральная сценография и костюмы",
+    "priority": "A"
+  },
+  {
+    "aliases": "Ксения Перетрухина",
+    "person_id": "NEW-PER-084",
+    "name": "Ксения Перетрухина",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Художник-постановщик, пространство и свет",
+    "priority": "A"
+  },
+  {
+    "aliases": "Нана Абдрашитова",
+    "person_id": "NEW-PER-085",
+    "name": "Нана Абдрашитова",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Сценография и театральные премьеры",
+    "priority": "B"
+  },
+  {
+    "aliases": "Николай Симонов",
+    "person_id": "NEW-PER-086",
+    "name": "Николай Симонов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Сценография спектаклей",
+    "priority": "B"
+  },
+  {
+    "aliases": "Виктория Севрюкова",
+    "person_id": "NEW-PER-087",
+    "name": "Виктория Севрюкова",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Костюмы «Мастера и Маргариты» Робера Лепажа и других спектаклей",
+    "priority": "A"
+  },
+  {
+    "aliases": "Geneviève Lizotte;Genevieve Lizotte",
+    "person_id": "NEW-PER-088",
+    "name": "Женевьев Лизотт",
+    "region": "Россия, Москва в приоритете",
+    "category": "Шоу, цирк и сценография",
+    "why": "Сценография «Мастера и Маргариты» в Театре Наций",
+    "priority": "B"
+  },
+  {
+    "aliases": "Maurizio Cattelan",
+    "person_id": "NEW-PER-089",
+    "name": "Маурицио Каттелан",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Международное современное искусство, «ГЭС-2»",
+    "priority": "A"
+  },
+  {
+    "aliases": "Francisco Infante-Arana",
+    "person_id": "NEW-PER-090",
+    "name": "Франциско Инфанте-Арана",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Кинетическое и современное искусство, ретроспективы",
+    "priority": "A"
+  },
+  {
+    "aliases": "Ирина Корина",
+    "person_id": "NEW-PER-091",
+    "name": "Ирина Корина",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Современные масштабные инсталляции",
+    "priority": "A"
+  },
+  {
+    "aliases": "Taus Makhacheva",
+    "person_id": "NEW-PER-092",
+    "name": "Таус Махачева",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Перформанс и современное искусство",
+    "priority": "A"
+  },
+  {
+    "aliases": "Marina Abramović;Marina Abramovic",
+    "person_id": "NEW-PER-093",
+    "name": "Марина Абрамович",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Международные перформансы, показы и выставки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Olafur Eliasson",
+    "person_id": "NEW-PER-094",
+    "name": "Олафур Элиассон",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Иммерсивные инсталляции, международные выставки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Bill Viola",
+    "person_id": "NEW-PER-095",
+    "name": "Билл Виола",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Видеоарт, ретроспективы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Yayoi Kusama",
+    "person_id": "NEW-PER-096",
+    "name": "Яёи Кусама",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Международные выставки и инсталляции",
+    "priority": "B"
+  },
+  {
+    "aliases": "Ai Weiwei",
+    "person_id": "NEW-PER-097",
+    "name": "Ай Вэйвэй",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Международные выставки и спецпроекты",
+    "priority": "B"
+  },
+  {
+    "aliases": "Urs Fischer",
+    "person_id": "NEW-PER-098",
+    "name": "Урс Фишер",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Современная скульптура и выставки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Takashi Murakami",
+    "person_id": "NEW-PER-099",
+    "name": "Такаси Мураками",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Выставки, современное искусство",
+    "priority": "B"
+  },
+  {
+    "aliases": "Anish Kapoor",
+    "person_id": "NEW-PER-100",
+    "name": "Аниш Капур",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Инсталляции и масштабная скульптура",
+    "priority": "B"
+  },
+  {
+    "aliases": "Jeff Koons",
+    "person_id": "NEW-PER-101",
+    "name": "Джефф Кунс",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Современная скульптура, выставки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Олег Кулик",
+    "person_id": "NEW-PER-102",
+    "name": "Олег Кулик",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Выставки и история российского акционизма",
+    "priority": "B"
+  },
+  {
+    "aliases": "Юрий Альберт",
+    "person_id": "NEW-PER-103",
+    "name": "Юрий Альберт",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Современное российское искусство",
+    "priority": "B"
+  },
+  {
+    "aliases": "Дмитрий Каварга",
+    "person_id": "NEW-PER-104",
+    "name": "Дмитрий Каварга",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Интерактивные инсталляции и медиаарт",
+    "priority": "B"
+  },
+  {
+    "aliases": "Андрей Бартенев",
+    "person_id": "NEW-PER-105",
+    "name": "Андрей Бартенев",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Перформансы, костюмы, арт-выставки",
+    "priority": "B"
+  },
+  {
+    "aliases": "Mikhail Shemyakin",
+    "person_id": "NEW-PER-106",
+    "name": "Михаил Шемякин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Скульптура, сценография, ретроспективы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Arseny Zhilyaev",
+    "person_id": "NEW-PER-107",
+    "name": "Арсений Жиляев",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Кураторские проекты и современное искусство",
+    "priority": "B"
+  },
+  {
+    "aliases": "Анна Желудь",
+    "person_id": "NEW-PER-108",
+    "name": "Анна Желудь",
+    "region": "Россия, Москва в приоритете",
+    "category": "Современное искусство и выставки",
+    "why": "Скульптура, выставки и музейные проекты",
+    "priority": "B"
+  },
+  {
+    "aliases": "Евгений Гришковец",
+    "person_id": "NEW-PER-109",
+    "name": "Евгений Гришковец",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Авторские моноспектакли и гастроли",
+    "priority": "A"
+  },
+  {
+    "aliases": "Игорь Миркурбанов",
+    "person_id": "NEW-PER-110",
+    "name": "Игорь Миркурбанов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Драматические спектакли, режиссёрские проекты",
+    "priority": "B"
+  },
+  {
+    "aliases": "Сергей Чонишвили",
+    "person_id": "NEW-PER-111",
+    "name": "Сергей Чонишвили",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Театральные роли, литературные спектакли",
+    "priority": "B"
+  },
+  {
+    "aliases": "Виктор Вержбицкий",
+    "person_id": "NEW-PER-112",
+    "name": "Виктор Вержбицкий",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Репертуарный театр, «Мастер и Маргарита»",
+    "priority": "B"
+  },
+  {
+    "aliases": "Сергей Угрюмов",
+    "person_id": "NEW-PER-113",
+    "name": "Сергей Угрюмов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Репертуар Театра Олега Табакова",
+    "priority": "B"
+  },
+  {
+    "aliases": "Александр Сокуров",
+    "person_id": "NEW-PER-114",
+    "name": "Александр Сокуров",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Авторское кино, ретроспективы и спецпоказы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Роман Михайлов",
+    "person_id": "NEW-PER-115",
+    "name": "Роман Михайлов",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Независимое кино и премьеры",
+    "priority": "B"
+  },
+  {
+    "aliases": "Ivan I. Tverdovsky;Иван Твердовский",
+    "person_id": "NEW-PER-116",
+    "name": "Иван И. Твердовский",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Авторское кино и специальные показы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Michael Lockshin",
+    "person_id": "NEW-PER-117",
+    "name": "Михаил Локшин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Кинопремьеры и спецпоказы",
+    "priority": "B"
+  },
+  {
+    "aliases": "Станислав Тыркин",
+    "person_id": "NEW-PER-118",
+    "name": "Стас Тыркин",
+    "region": "Россия, Москва в приоритете",
+    "category": "Театральные звёзды и кино",
+    "why": "Программный директор «Художественного», фестивальные показы",
+    "priority": "B"
   }
 ]

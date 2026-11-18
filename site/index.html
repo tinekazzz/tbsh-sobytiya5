@@ -40,8 +40,8 @@
         </nav>
         <p class="sidebar-label sidebar-section">БАЗА МОНИТОРИНГА</p>
         <nav class="sidebar-nav">
-          <button data-view="sources" class="nav-link" type="button"><span class="nav-ic">⌁</span> Источники <span class="nav-short">241</span></button>
-          <button data-view="people" class="nav-link" type="button"><span class="nav-ic">✥</span> Имена <span class="nav-short">332</span></button>
+          <button data-view="sources" class="nav-link" type="button"><span class="nav-ic">⌁</span> Источники <span id="sidebar-sources-count" class="nav-short">274</span></button>
+          <button data-view="people" class="nav-link" type="button"><span class="nav-ic">✥</span> Имена <span id="sidebar-people-count" class="nav-short">450</span></button>
           <button data-view="about" class="nav-link" type="button"><span class="nav-ic">ⓘ</span> Как это работает </button>
         </nav>
       </div>
@@ -78,8 +78,8 @@
       <section id="metrics" class="metric-grid" aria-label="Сводка данных">
         <div class="metric"><span class="metric-label">СОБЫТИЙ В МЕСЯЦЕ</span><span id="metric-events" class="metric-value">—</span><span class="metric-foot">с подтверждёнными датами</span></div>
         <div class="metric"><span class="metric-label">НЕДАВНО ДОБАВЛЕНО</span><span id="metric-new" class="metric-value">—</span><span class="metric-foot">в течение 7 дней</span></div>
-        <div class="metric"><span class="metric-label">ИСТОЧНИКОВ В БАЗЕ</span><span id="metric-sources" class="metric-value">241</span><span class="metric-foot">официальные сайты и медиа</span></div>
-        <div class="metric"><span class="metric-label">ИМЁН НА РАДАРЕ</span><span id="metric-people" class="metric-value">332</span><span class="metric-foot">артисты, авторы, режиссёры</span></div>
+        <div class="metric"><span class="metric-label">ИСТОЧНИКОВ В БАЗЕ</span><span id="metric-sources" class="metric-value">274</span><span class="metric-foot">официальные сайты и медиа</span></div>
+        <div class="metric"><span class="metric-label">ИМЁН НА РАДАРЕ</span><span id="metric-people" class="metric-value">450</span><span class="metric-foot">артисты, авторы, режиссёры</span></div>
       </section>
 
       <section id="editorial-intro" class="editorial-intro hidden" aria-label="Выбор редакции ТБШ">
@@ -106,7 +106,7 @@
 
       <section id="about-section" class="about-section hidden">
         <div class="about-intro"><span class="about-ornament">✳</span><h2>Не просто афиша.<br />Система культурной разведки.</h2><p>Радар постоянно проверяет первоисточники, ищет совпадения с нашей базой имён, отбирает события по месяцу и показывает, откуда взялась информация.</p></div>
-        <div class="about-steps"><div><span>01 / ИСТОЧНИКИ</span><h3>241 сайт</h3><p>Театры, музеи, концертные площадки, арт-центры, фестивали и культурные медиа.</p></div><div><span>02 / КЛЮЧЕВЫЕ ИМЕНА</span><h3>332 объекта</h3><p>Режиссёры, исполнители, художники и сценические проекты — для целевого поиска.</p></div><div><span>03 / ДАТЫ И ФАКТЫ</span><h3>Только проверяемое</h3><p>Дата, место и ссылка на страницу анонса обязательны; источники без доступа отмечаются отдельно.</p></div><div><span>04 / КАЛЕНДАРЬ</span><h3>Каждый день</h3><p>После публикации сайта автоматический сборщик запускается ежедневно; новые события появляются после проверки.</p></div></div>
+        <div class="about-steps"><div><span>01 / ИСТОЧНИКИ</span><h3 id="about-source-count">274 сайта</h3><p>Театры, музеи, концертные площадки, арт-центры, фестивали и культурные медиа.</p></div><div><span>02 / КЛЮЧЕВЫЕ ИМЕНА</span><h3 id="about-people-count">450 имён</h3><p>Режиссёры, исполнители, художники и сценические проекты — для целевого поиска.</p></div><div><span>03 / ДАТЫ И ФАКТЫ</span><h3>Только проверяемое</h3><p>Дата, место и ссылка на страницу анонса обязательны; источники без доступа отмечаются отдельно.</p></div><div><span>04 / КАЛЕНДАРЬ</span><h3>Каждый день</h3><p>После публикации сайта автоматический сборщик запускается ежедневно; новые события появляются после проверки.</p></div></div>
         <div class="about-callout"><div><strong id="about-status-title">Статус проекта</strong><p id="about-status-text">Загружаем сведения о последнем обновлении...</p></div><span class="about-status-icon">◉</span></div>
       </section>
       <footer class="footer"><span>© 2026 ТБШ СОБЫТИЯ / ТЕОРИЯ БОЛЬШОГО ШОУ</span><span>Информация требует проверки перед публикацией. <button type="button" data-view="about">О методологии ↗</button></span></footer>
