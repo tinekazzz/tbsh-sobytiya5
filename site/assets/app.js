@@ -20,6 +20,7 @@ const SCREENS = {
 };
 const todayMSK = new Date(new Date().toLocaleString('en-US', {timeZone:'Europe/Moscow'}));
 let month = new Date(todayMSK.getFullYear(),todayMSK.getMonth()+1,1);
+let monthBeforeEditors = null;
 const state={view:'overview',category:'Все',city:'moscow',sort:'curated',term:'',limit:9,registryLimit:48,registryCategory:'all',sources:[],people:[],events:[],picks:[],status:{},favorites:new Set(),loaded:false};
 try { state.favorites=new Set(JSON.parse(localStorage.getItem('kultradar:favorites')||'[]')); } catch { state.favorites=new Set(); }
 const escapeHtml=(raw)=>String(raw??'').replace(/[&<>"']/g,(x)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
@@ -44,6 +45,18 @@ function collapseCatalogGroup(group){if(group.length===1)return group[0];const r
 function deduplicateEvents(records){const byTitle=new Map();for(const item of records){if(!item||!item.title)continue;const key=identityText(item.title),groups=byTitle.get(key)||[];const found=groups.find(group=>clusterCompatible(item,group));if(found)found.push(item);else groups.push([item]);byTitle.set(key,groups);}return [...byTitle.values()].flatMap(groups=>groups.map(collapseCatalogGroup));}
 const aliasMatches=(record,id)=>record.id===id||(record.duplicate_ids||[]).includes(id);
 const pickMatches=(pick,record)=>aliasMatches(record,pick.id);
+const pickMatchesByEvent=(pick,record)=>pickMatches(pick,record)||!!(pick.event?.title&&sameEvent(pick.event,record));
+// The November editorial edition is intentionally NOT part of the automatic catalog.
+// Shared event titles from other feeds are hidden in the regular catalog only when
+// the venue and period identify the same show.
+const isEditorialExclusiveRecord=(record)=>!!record.editorial_only||state.picks.some(p=>p.event?.editorial_only===true&&pickMatchesByEvent(p,record));
+const monthHasPicks=(ym)=>state.picks.some(p=>{const e=p.event||{};return String(e.start_date||'').slice(0,7)<=ym && String(e.end_date||e.start_date||'').slice(0,7)>=ym;});
+function switchToEditorialMonth(){
+ const now=monthPrefix();
+ if(monthHasPicks(now))return;
+ const keys=[...new Set(state.picks.map(p=>String(p.event?.start_date||'').slice(0,7)))].filter(k=>/^20\d{2}-\d{2}$/.test(k)).sort().reverse();
+ if(keys.length){const [y,m]=keys[0].split('-').map(Number);month=new Date(y,m-1,1);renderMonth();}
+}
 
 const dayText=(iso)=>iso ? new Date(iso.slice(0,10)+'T12:00:00') : null;
 const monthPrefix=()=>`${month.getFullYear()}-${String(month.getMonth()+1).padStart(2,'0')}`;
@@ -66,21 +79,25 @@ let displayedEvents=[];let toastTimer;
 function notify(msg){let el=$('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2500);}
 function saveFavs(){try{localStorage.setItem('kultradar:favorites',JSON.stringify([...state.favorites]));}catch{}$('fav-counter').textContent=String(state.favorites.size);}
 function editorialEvents(){
- const seen=new Set();
+ const seen=new Set(),seenRecords=[];
  return state.picks.map((item,i)=>{
   const snapshot=(item.event&&typeof item.event==='object')?item.event:{};
-  const current=state.events.find(e=>pickMatches(item,e))||{};
-  const ev={...snapshot,...current};
-  ev.id=current.id||item.id||ev.id;
+  const current=state.events.find(e=>pickMatchesByEvent(item,e))||{};
+  // Preserve the editor's title/date and editor-only flag, but prefer a working
+  // poster from the crawled event when the editorial snapshot has no image.
+  const ev={...current,...snapshot};
+  ev.id=item.id||ev.id;
+  ev.duplicate_ids=[...(current.duplicate_ids||[]),...(snapshot.duplicate_ids||[])];
+  if(!safeImageUrl(snapshot.image_url)&&safeImageUrl(current.image_url))ev.image_url=current.image_url;
   ev.editorial_pick=true;
   ev.editorial_note=String(item.note||'').slice(0,500);
   ev.editorial_order=i;
   if(safeImageUrl(item.image_url))ev.image_url=item.image_url;
   return ev;
- }).filter(e=>{if(!e.id||!e.start_date||!e.title||seen.has(e.id))return false;seen.add(e.id);return true;});
+ }).filter(e=>{if(!e.id||!e.start_date||!e.title||seen.has(e.id)||seenRecords.some(x=>sameEvent(x,e)))return false;seen.add(e.id);seenRecords.push(e);return true;});
 }
 function matchingEvents(){
- const pool=state.view==='editors'?editorialEvents():state.events.map(e=>{
+ const pool=state.view==='editors'?editorialEvents():state.events.filter(e=>!isEditorialExclusiveRecord(e)).map(e=>{
   const index=state.picks.findIndex(p=>pickMatches(p,e));
   if(index<0)return e;
   const pick=state.picks[index];
@@ -99,7 +116,7 @@ function poster(ev){
  // hotlink failures never turn a card into a blank rectangle.
  return `${fallback}<img class="poster-real-image" src="${escapeHtml(img)}" alt="Афиша: ${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="poster-photo-shade"></span>`;
 }
-function eventCard(e){const ongoing=(e.start_date||'')<monthStart(),d=dayText(ongoing?monthStart():e.start_date),dateLabel=ongoing?'ВЕСЬ':MONTHS_SHORT[d?.getMonth()||0],dateDay=ongoing?'↳':String(d?.getDate()||'—'),cls=CSS_CLASSES[e.category]||'other';
+function eventCard(e){const ongoing=e.date_precision!=='month'&&(e.start_date||'')<monthStart(),d=dayText(ongoing?monthStart():e.start_date),monthOnly=e.date_precision==='month',dateLabel=monthOnly?String(d?.getFullYear()||'2026'):ongoing?'ВЕСЬ':MONTHS_SHORT[d?.getMonth()||0],dateDay=monthOnly?MONTHS_SHORT[d?.getMonth()||10]:ongoing?'↳':String(d?.getDate()||'—'),cls=CSS_CLASSES[e.category]||'other';
  const isPicked=!!e.editorial_pick||state.picks.some(x=>pickMatches(x,e));
  const fav=state.favorites.has(e.id),desc=e.description||'Описание уточняется на странице организатора.', tag=ongoing?'ПРОДОЛЖАЕТСЯ':(e.tag|| (isRecent(e)&&e.origin==='automatic'?'НОВОЕ':'')).toUpperCase();
  return `<article class="event-card ${isPicked?'is-editorial':''}">
@@ -116,7 +133,7 @@ function updateMetrics(){const inMonth=state.events.filter(e=>isInMonth(e)&&isIn
 function renderGenres(){const el=$('genre-pills');el.innerHTML=CATS.map(cat=>`<button type="button" data-cat="${escapeHtml(cat)}" class="category-pill ${cat===state.category?'selected':''}">${escapeHtml(cat)}</button>`).join('');}
 function emptyEvents(){return `<div class="empty-state"><span>✳</span><h3>${state.view==='editors'?'Подборка готовится':'Пока ничего не нашлось'}</h3><p>${state.view==='editors'?'Пока редакция не опубликовала события для выбранного месяца. Загляните позже или выберите другой месяц.':state.view==='favorites'?'Добавьте события в избранное с помощью сердечка на карточке.':'В этом разделе пока нет подходящих событий. Попробуйте другой жанр, месяц или город.'}</p>${state.view==='editors'?'':`<button data-clear="true" type="button">Сбросить фильтры</button>`}</div>`;}
 function updateGrid(){displayedEvents=matchingEvents();const filtered=displayedEvents.slice(0,state.limit);$('events-grid').innerHTML=filtered.length?filtered.map(eventCard).join(''):emptyEvents();
- const isOverview=state.view==='overview';const suffix=state.view==='editors'?'рекомендаций редакции':state.view==='fresh'?'недавно добавленных':state.view==='favorites'?'сохранённых':'событий';
+ const isOverview=state.view==='overview';const count=displayedEvents.length;const recWord=count%10===1&&count%100!==11?'рекомендация':count%10>=2&&count%10<=4&&(count%100<12||count%100>14)?'рекомендации':'рекомендаций';const suffix=state.view==='editors'?recWord+' редакции':state.view==='fresh'?'недавно добавленных':state.view==='favorites'?'сохранённых':'событий';
  $('result-meta').innerHTML=`<span>НАЙДЕНО <strong>${displayedEvents.length}</strong> ${suffix}</span><span class="meta-refresh">${escapeHtml(niceMonth())}</span>`;
  $('event-more').innerHTML=displayedEvents.length>state.limit?`<button type="button" class="show-more" id="show-more">Показать ещё · ${displayedEvents.length-state.limit}</button>`:'';
  $('events-section-title').textContent=state.view==='editors'?'Рекомендует редакция ТБШ':state.view==='fresh'?'Недавно обнаруженные события':state.view==='favorites'?'Выбранное для будущего выпуска':isOverview?'События, которые стоят внимания':'Вся афиша на месяц';
@@ -139,10 +156,14 @@ function renderStatus(){const st=state.status||{};const on=st.mode==='daily_coll
 }
 function setView(view,scroll=true){
  if(view==='editors' && state.view!=='editors'){
+  monthBeforeEditors=new Date(month);
   state.category='Все';state.city='all';state.sort='curated';state.term='';
   $('global-search').value='';$('city-select').value='all';$('sort-select').value='curated';renderGenres();
+  switchToEditorialMonth();
+ }else if(view!=='editors' && state.view==='editors' && monthBeforeEditors){
+  month=new Date(monthBeforeEditors);monthBeforeEditors=null;renderMonth();
  }
- state.view=SCREENS[view]?view:'overview';state.limit=view==='overview'?9:24;state.registryLimit=48;
+ state.view=SCREENS[view]?view:'overview';state.limit=view==='overview'?9:view==='editors'?30:24;state.registryLimit=48;
  document.querySelectorAll('[data-view]').forEach(btn=>btn.classList.toggle('active',btn.dataset.view===state.view));
  $('screen-title').innerHTML=escapeHtml(SCREENS[state.view][0])+'<span class="title-dot">.</span>';
  $('screen-description').textContent=SCREENS[state.view][1];$('breadcrumb-view').textContent='/ '+SCREENS[state.view][2];
@@ -170,7 +191,7 @@ function renderRegistry(refreshControls=true){const sourceMode=state.view==='sou
 function sourceRow(x,i){const st=state.status?.source_log?.find(y=>y.id===x.source_id);const stateLabels={found:`событий: ${st?.events||0}`,no_events:'сайт открылся, дат нет',needs_javascript:'нужен JavaScript',blocked:'доступ ограничен',error:'ошибка соединения',invalid_url:'некорректный адрес',unsupported:'формат не поддерживается',ok:'сайт открылся'};const status=st?`Проверка: ${stateLabels[st.status]||st.status}`:'Нет результатов последней проверки';return `<article class="registry-row"><span class="registry-icon">${i%3===0?'◈':i%3===1?'⌁':'✳'}</span><div class="registry-body"><strong class="registry-name">${escapeHtml(x.name)}</strong><p class="registry-description">${escapeHtml(x.why)}</p><div class="registry-meta"><span class="tag">${escapeHtml(x.category)}</span><span>${escapeHtml(x.region)}</span><span class="registry-status">${escapeHtml(status)}</span></div></div><span class="registry-priority priority-${escapeHtml(x.priority)}">${escapeHtml(x.priority)}</span><a class="registry-external" title="Открыть источник" href="${escapeHtml(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer" aria-label="Открыть ${escapeHtml(x.name)}">↗</a></article>`;}
 function personRow(x,i){const matches=state.events.filter(e=>Array.isArray(e.people)&&e.people.includes(x.name)).length;return `<article class="registry-row"><span class="registry-icon">${i%3===0?'✳':i%3===1?'♬':'◈'}</span><div class="registry-body"><strong class="registry-name">${escapeHtml(x.name)}</strong><p class="registry-description">${escapeHtml(x.why)}</p><div class="registry-meta"><span class="tag">${escapeHtml(x.category)}</span><span>${matches?matches+' событий в базе':'мониторинг по имени'}</span></div></div><span class="registry-priority priority-${escapeHtml(x.priority)}">${escapeHtml(x.priority)}</span><button type="button" class="registry-person-button" data-person="${escapeHtml(x.name)}" title="Искать события по этому имени">Искать ↗</button></article>`;}
 function showEvent(id){const e=editorialEvents().find(x=>aliasMatches(x,id))||state.events.find(x=>aliasMatches(x,id));if(!e)return;const cl=CSS_CLASSES[e.category]||'other';const fav=state.favorites.has(id);
- $('modal-root').innerHTML=`<div class="modal-backdrop" role="presentation" data-modal-close="1"><div class="modal" role="dialog" aria-modal="true" aria-label="Информация о событии"><div class="modal-visual poster-${cl}${safeImageUrl(e.image_url)?' poster-has-source':''}">${poster(e)}<button type="button" class="modal-close" data-modal-close="1" aria-label="Закрыть">×</button></div><div class="modal-body"><span class="modal-category">${escapeHtml(e.category)} · ${escapeHtml(e.city||'Россия')}</span><h2>${escapeHtml(e.title)}</h2>${e.editorial_note?`<p class="editorial-note">✦ ${escapeHtml(e.editorial_note)}</p>`:''}<p>${escapeHtml(e.description||'Описание смотрите в первоисточнике.')}</p><div class="modal-details"><div class="modal-detail"><span>КОГДА</span><strong>${escapeHtml(presentDate(e.start_date))}${e.end_date&&e.end_date!==e.start_date?' — '+escapeHtml(presentDate(e.end_date)):''}${e.time?' / '+escapeHtml(e.time):''}</strong></div><div class="modal-detail"><span>ГДЕ</span><strong>${escapeHtml(e.venue||'Площадка уточняется')}</strong></div><div class="modal-detail"><span>ИСТОЧНИК</span><strong>${escapeHtml(e.source_name||'Официальная страница')}</strong></div><div class="modal-detail"><span>УЧАСТНИКИ / АВТОРЫ</span><strong>${escapeHtml((e.people||[]).join(', ')||'Уточняйте у организатора')}</strong></div></div><div class="modal-footer"><a class="modal-primary" href="${escapeHtml(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">Открыть первоисточник ↗</a><button type="button" class="modal-secondary ${fav?'saved':''}" data-fav="${escapeHtml(e.id)}">${fav?'♥ В избранном':'♡ В избранное'}</button></div><p class="modal-footer-note">${escapeHtml(e.verification||'Проверьте подробности у организатора.')} · Добавлено в базу: ${escapeHtml(clockFmt(e.discovered_at))}</p></div></div></div>`;
+ $('modal-root').innerHTML=`<div class="modal-backdrop" role="presentation" data-modal-close="1"><div class="modal" role="dialog" aria-modal="true" aria-label="Информация о событии"><div class="modal-visual poster-${cl}${safeImageUrl(e.image_url)?' poster-has-source':''}">${poster(e)}<button type="button" class="modal-close" data-modal-close="1" aria-label="Закрыть">×</button></div><div class="modal-body"><span class="modal-category">${escapeHtml(e.category)} · ${escapeHtml(e.city||'Россия')}</span><h2>${escapeHtml(e.title)}</h2>${e.editorial_note?`<p class="editorial-note">✦ ${escapeHtml(e.editorial_note)}</p>`:''}<p>${escapeHtml(e.description||'Описание смотрите в первоисточнике.')}</p><div class="modal-details"><div class="modal-detail"><span>КОГДА</span><strong>${e.date_precision==='month'?escapeHtml(MONTHS[e.start_date.slice(5,7)*1-1]+' '+e.start_date.slice(0,4)+' · точный день уточняйте у организатора'):escapeHtml(presentDate(e.start_date))+(e.end_date&&e.end_date!==e.start_date?' — '+escapeHtml(presentDate(e.end_date)):'')+(e.time?' / '+escapeHtml(e.time):'')}</strong></div><div class="modal-detail"><span>ГДЕ</span><strong>${escapeHtml(e.venue||'Площадка уточняется')}</strong></div><div class="modal-detail"><span>ИСТОЧНИК</span><strong>${escapeHtml(e.source_name||'Официальная страница')}</strong></div><div class="modal-detail"><span>УЧАСТНИКИ / АВТОРЫ</span><strong>${escapeHtml((e.people||[]).join(', ')||'Уточняйте у организатора')}</strong></div></div><div class="modal-footer"><a class="modal-primary" href="${escapeHtml(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">Открыть первоисточник ↗</a><button type="button" class="modal-secondary ${fav?'saved':''}" data-fav="${escapeHtml(e.id)}">${fav?'♥ В избранном':'♡ В избранное'}</button></div><p class="modal-footer-note">${escapeHtml(e.verification||'Проверьте подробности у организатора.')} · Добавлено в базу: ${escapeHtml(clockFmt(e.discovered_at))}</p></div></div></div>`;
  document.body.style.overflow='hidden';
 }
 function closeModal(){$('modal-root').innerHTML='';document.body.style.overflow='';}
@@ -233,23 +254,31 @@ function wireEvents(){
  });
 }
 async function readFile(rel){const res=await fetch(rel+'?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status+' '+rel);return res.json();}
-async function init(){wireEvents();let bundle,sources,people,status,picks;
- if(window.__RADAR_PREVIEW__){({bundle,sources,people,status,picks}=window.__RADAR_PREVIEW__);}
- else {try{[bundle,sources,people,status,picks]=await Promise.all([readFile('./data/events.json'),readFile('./data/sources.json'),readFile('./data/people.json'),readFile('./data/status.json'),readFile('./data/editorial_picks.json').catch(()=>({items:[]}))]);}
+async function init(){wireEvents();let bundle,sources,people,status,picks,november;
+ if(window.__RADAR_PREVIEW__){({bundle,sources,people,status,picks,november}=window.__RADAR_PREVIEW__);}
+ else {try{[bundle,sources,people,status,picks,november]=await Promise.all([readFile('./data/events.json'),readFile('./data/sources.json'),readFile('./data/people.json'),readFile('./data/status.json'),readFile('./data/editorial_picks.json').catch(()=>({items:[]})),readFile('./data/editorial_november_2026.json').catch(()=>({items:[]}))]);}
  catch(error){console.error(error); $('events-grid').innerHTML='<div class="empty-state"><span>!</span><h3>Данные не загрузились</h3><p>Откройте сайт через HTTP-сервер: python -m http.server 8000 в папке site.</p></div>';notify('Не удалось загрузить базу');return;}}
- state.events=deduplicateEvents(Array.isArray(bundle?.events)?bundle.events:[]);state.sources=Array.isArray(sources)?sources:[];state.people=Array.isArray(people)?people:[];state.picks=Array.isArray(picks?.items)?picks.items.filter(x=>x&&x.id&&x.event):[];state.status=status||{};state.loaded=true;
+ state.events=deduplicateEvents(Array.isArray(bundle?.events)?bundle.events:[]);state.sources=Array.isArray(sources)?sources:[];state.people=Array.isArray(people)?people:[];
+ const editorPublished=Array.isArray(picks?.items)?picks.items.filter(x=>x&&x.id&&x.event):[];
+ const editorialSeed=Array.isArray(november?.items)?november.items.filter(x=>x&&x.id&&x.event):[];
+ const hidden=new Set(Array.isArray(picks?.hidden_ids)?picks.hidden_ids:[]);
+ const pickMap=new Map();
+ // An editor's published order overrides the default November seed order.
+ for(const item of editorPublished)if(!hidden.has(item.id))pickMap.set(item.id,item);
+ for(const item of editorialSeed)if(!hidden.has(item.id)&&!pickMap.has(item.id))pickMap.set(item.id,item);
+ state.picks=[...pickMap.values()];state.status=status||{};state.loaded=true;
  if($('sidebar-sources-count'))$('sidebar-sources-count').textContent=String(state.sources.length);
  if($('sidebar-people-count'))$('sidebar-people-count').textContent=String(state.people.length);
  if($('about-source-count'))$('about-source-count').textContent=state.sources.length+' сайтов';
  if($('about-people-count'))$('about-people-count').textContent=state.people.length+' имён';
  // Manually authored events remain visible even if automatic collection does not know about them.
- for(const pick of state.picks){if(pick.event?.origin==='editorial_manual'&&!state.events.some(e=>pickMatches(pick,e)))state.events.push(pick.event);}
+ for(const pick of state.picks){if(pick.event?.origin==='editorial_manual' && pick.event?.editorial_only!==true && !state.events.some(e=>pickMatches(pick,e)))state.events.push(pick.event);}
  state.events=deduplicateEvents(state.events);
  // Favorites from an older duplicated record survive migration to a single card.
  const idMapping=new Map();for(const e of state.events){idMapping.set(e.id,e.id);for(const alias of e.duplicate_ids||[])idMapping.set(alias,e.id);}
  state.favorites=new Set([...state.favorites].map(id=>idMapping.get(id)||id));
  try{localStorage.setItem('kultradar:favorites',JSON.stringify([...state.favorites]));}catch{}
- if($('editorial-counter'))$('editorial-counter').textContent=String(state.picks.length);
+ if($('editorial-counter'))$('editorial-counter').textContent=String(editorialEvents().length);
  $('fav-counter').textContent=String(state.favorites.size);
  renderGenres();renderStatus();renderMonth();
  const initial=location.hash.replace('#','');setView(SCREENS[initial]?initial:'overview',false);
