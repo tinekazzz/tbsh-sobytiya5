@@ -22,6 +22,7 @@ import json
 import logging
 from pathlib import Path
 import re
+import unicodedata
 import time
 import sys
 from urllib.parse import urljoin, urlparse, urldefrag, parse_qs
@@ -515,48 +516,230 @@ class Fetcher:
         self.pages+=1
         return BeautifulSoup(r.content,'html.parser')
 
+# Дедупликация — единый проект/постановка в одном городе и на одной площадке.
+# Разные площадки и не пересекающиеся периоды не объединяем автоматически.
+UNKNOWN_VENUES={
+    '', 'неизвестно', 'не указано', 'не указан', 'уточняется',
+    'площадка уточняется', 'место уточняется', 'по информации организатора',
+    'пока неизвестно', 'разные площадки', 'разные места', 'москва', 'россия'
+}
+GENERIC_VENUE_WORDS={'центр','культурный','культуры','пространство','музей',
+                     'театр','галерея','выставочный','зал','имени','им', 'г'}
+GENERIC_LINK_PATHS={'', '/', '/afisha', '/events', '/tickets', '/program',
+                    '/exhibitions', '/performances', '/concerts', '/shows'}
+
+
+def identity_text(value):
+    value=unicodedata.normalize('NFKC',clean(value)).casefold().replace('ё','е')
+    return ' '.join(re.findall(r'[а-яa-z0-9]+',value))
+
+
+def known_city(value):
+    v=identity_text(value)
+    if not v or v in {'россия','рф','неизвестно','другое'}:return ''
+    if 'московская область' in v or 'подмосков' in v:return 'московская область'
+    if 'москв' in v or v=='москва':return 'москва'
+    if 'петербург' in v or v=='спб':return 'санкт петербург'
+    return v
+
+
+def known_venue(value):
+    v=identity_text(value)
+    if not v or v in UNKNOWN_VENUES:return ''
+    if any(term in v for term in ('афиша ru','яндекс афиша','kudago','time out',
+                                 'неизвестн', 'уточняет', 'мтс live','кассир ru')):
+        return ''
+    words=v.split()
+    while words and words[0] in GENERIC_VENUE_WORDS:words.pop(0)
+    while words and words[-1] in {'москва','московская','область','россия'}:words.pop()
+    return ' '.join(words) if words else v
+
+
+def same_venue(a,b):
+    x=known_venue(a);y=known_venue(b)
+    if not x or not y:return False
+    if x==y:return True
+    # «Центр МАРС» и «МАРС» (но не два разных театра).
+    xset=set(x.split());yset=set(y.split())
+    if not xset or not yset:return False
+    shorter=xset if len(xset)<=len(yset) else yset
+    longer=yset if len(xset)<=len(yset) else xset
+    return len(' '.join(sorted(shorter)))>=4 and shorter.issubset(longer) and len(longer-shorter)<=2
+
+
+def time_overlap(a,b):
+    try:
+        ast=date.fromisoformat(str(a['start_date'])[:10]);aen=date.fromisoformat(str(a.get('end_date') or a['start_date'])[:10])
+        bst=date.fromisoformat(str(b['start_date'])[:10]);ben=date.fromisoformat(str(b.get('end_date') or b['start_date'])[:10])
+        return ast<=ben and bst<=aen
+    except (TypeError,ValueError,KeyError):return False
+
+
+def canonical_link(url):
+    try:
+        parts=urlparse(str(url or ''))
+        if parts.scheme!='https':return ''
+        path=parts.path.rstrip('/').lower() or '/'
+        # General afisha/catalog pages are not evidence of duplicate identity.
+        if path in GENERIC_LINK_PATHS:return ''
+        return (parts.hostname or '').removeprefix('www.')+path
+    except ValueError:return ''
+
+
+def canonical_image(url):
+    try:
+        parsed=urlparse(str(url or ''))
+        return ((parsed.hostname or '').removeprefix('www.')+parsed.path).lower() if parsed.scheme=='https' else ''
+    except ValueError:return ''
+
+
+def same_event(a,b):
+    title=identity_text(a.get('title'))
+    if len(title)<5 or title!=identity_text(b.get('title')):return False
+    city_a=known_city(a.get('city'));city_b=known_city(b.get('city'))
+    if city_a and city_b and city_a!=city_b:return False
+    if not time_overlap(a,b):return False
+    va=known_venue(a.get('venue'));vb=known_venue(b.get('venue'))
+    if va and vb:
+        # Identical exhibition names at two known, different museums stay separate.
+        return same_venue(a['venue'],b['venue'])
+    # When a source says «Неизвестно», require further positive evidence.
+    ia=canonical_image(a.get('image_url'));ib=canonical_image(b.get('image_url'))
+    la=canonical_link(a.get('url'));lb=canonical_link(b.get('url'))
+    if ia and ia==ib:return True
+    if la and la==lb:return True
+    # Distinctive titles + matching date and city, where a venue is missing.
+    tokens=title.split()
+    same_start=str(a.get('start_date'))[:10]==str(b.get('start_date'))[:10]
+    distinctive=len(title)>=25 and len(tokens)>=3
+    if distinctive and ((va or vb) or same_start) and city_a==city_b:return True
+    return False
+
+
+def detail_url_score(e):
+    try:
+        parsed=urlparse(e.get('url') or '')
+        path=parsed.path.rstrip('/').lower() or '/'
+        return 2 if path not in GENERIC_LINK_PATHS and len(path)>13 else (1 if path not in GENERIC_LINK_PATHS else 0)
+    except ValueError:return 0
+
+
+def event_rank(e):
+    return (
+        2 if e.get('origin')=='editorial_manual' else 1 if e.get('origin')=='editorial' else 0,
+        bool(known_venue(e.get('venue'))),detail_url_score(e),bool(e.get('image_url')),
+        len(clean(e.get('description'))),int(e.get('editor_score') or 0)
+    )
+
+
+def combine_same_events(items):
+    ordered=sorted(items,key=event_rank,reverse=True)
+    winner=copy.deepcopy(ordered[0])
+    all_ids=[];links=[];sources=[];people=[]
+    for ev in items:
+        for item_id in [ev.get('id')]+list(ev.get('duplicate_ids') or []):
+            if item_id and item_id not in all_ids:all_ids.append(item_id)
+        for url in [ev.get('url')]+list(ev.get('source_urls') or []):
+            if url and url not in links:links.append(url)
+        for name in [ev.get('source_name')]+list(ev.get('duplicate_sources') or []):
+            if name and name not in sources:sources.append(name)
+        for person in ev.get('people') or []:
+            if person not in people:people.append(person)
+    # Keep editorial IDs stable so existing curated picks stay valid.
+    editorials=[e for e in ordered if e.get('origin') in ('editorial_manual','editorial')]
+    if editorials:winner['id']=editorials[0]['id']
+    winner['duplicate_ids']=[x for x in all_ids if x!=winner['id']]
+    winner['source_urls']=links[:30]
+    winner['duplicate_sources']=sources[:30]
+    winner['people']=people[:12]
+    winner['editor_score']=max(int(e.get('editor_score') or 0) for e in items)
+    winner['featured']=any(e.get('featured') for e in items)
+    dates=[e.get('start_date') for e in items if e.get('start_date')]
+    ends=[e.get('end_date') or e.get('start_date') for e in items if e.get('start_date')]
+    winner['start_date']=min(dates)
+    winner['end_date']=max(ends)
+    for field in ('venue','city'):
+        validity=(known_venue if field=='venue' else known_city)
+        for ev in ordered:
+            if validity(ev.get(field)):
+                winner[field]=ev[field];break
+    for ev in ordered:
+        if ev.get('category') and ev.get('category')!='Другое':
+            winner['category']=ev['category'];break
+    for ev in ordered:
+        if ev.get('image_url'):
+            winner['image_url']=ev['image_url']
+            winner['image_status']='found'
+            if ev.get('image_source_type'):winner['image_source_type']=ev['image_source_type']
+            break
+    for ev in sorted(ordered,key=lambda x:len(clean(x.get('description'))),reverse=True):
+        desc=clean(ev.get('description'))
+        if desc and not desc.lower().startswith('описание уточняется'):
+            winner['description']=desc;break
+    for ev in sorted(ordered,key=lambda x:detail_url_score(x),reverse=True):
+        if detail_url_score(ev)>detail_url_score(winner):
+            winner['url']=ev['url'];winner['source_name']=ev.get('source_name',winner.get('source_name'))
+            break
+    discovered=[str(e['discovered_at']) for e in items if e.get('discovered_at')]
+    verified=[str(e['verified_at']) for e in items if e.get('verified_at')]
+    if discovered:winner['discovered_at']=min(discovered)
+    if verified:winner['verified_at']=max(verified)
+    if not winner.get('image_url'):
+        checks=[e for e in items if e.get('image_checked_at')]
+        if checks:
+            latest=max(checks,key=lambda x:str(x['image_checked_at']))
+            for field in ('image_checked_at','image_checked_version','image_status'):
+                if latest.get(field):winner[field]=latest[field]
+    return winner
+
+
+
+def cluster_compatible(event, cluster):
+    if not any(same_event(event,member) for member in cluster):return False
+    city=known_city(event.get('city'))
+    venue=known_venue(event.get('venue'))
+    # An item with unknown venue must not act as a bridge between two known,
+    # distinct venues carrying the same event poster or title.
+    for member in cluster:
+        other_city=known_city(member.get('city'))
+        if city and other_city and city!=other_city:return False
+        other_venue=known_venue(member.get('venue'))
+        if venue and other_venue and not same_venue(event.get('venue'),member.get('venue')):
+            return False
+    return True
+
+
 def merge_events(editorial,existing,found,people,today):
-    combined={};keys={}
-    for ev in list(editorial)+list(existing)+list(found):
-        ev=copy.deepcopy(ev)
+    """Remove cross-source repeats and retain IDs/images/editorial metadata."""
+    grouped={}
+    for raw in list(editorial)+list(existing)+list(found):
+        ev=copy.deepcopy(raw)
         start=ev.get('start_date');end=ev.get('end_date') or start
         if not in_scope(start,end,today):continue
         title=clean(ev.get('title'));url=ev.get('url')
         if not title or not url or not str(url).startswith('https://'):continue
-        ev['title']=title
-        ev['end_date']=end
+        ev['title']=title;ev['end_date']=end
         ev['people']=list(dict.fromkeys((ev.get('people') or [])+get_people(ev,people)))[:8]
         ev['category']=ev.get('category') or classify(title)
         ev['source_name']=ev.get('source_name') or 'Не указан'
         ev['image_url']=normalize_image_url(ev.get('image_url') or '',ev.get('url') or '')
         ev['id']=ev.get('id') or 'event-'+hashlib.sha256((title+start).encode()).hexdigest()[:12]
-        key=slug(title)+'|'+start[:7]+'|'+slug(ev.get('venue'))
-        if key in keys:
-            prev=combined[keys[key]]
-            # Never discard an event-specific image or the image-check cooldown
-            # when choosing between editorial and automatically found records.
-            if prev.get('origin')=='editorial' and ev.get('origin')!='editorial':
-                if not prev.get('image_url') and ev.get('image_url'):
-                    prev['image_url']=ev['image_url']
-                prev['verified_at']=ev.get('verified_at',prev.get('verified_at'))
-                if not prev.get('image_checked_at') and ev.get('image_checked_at'):
-                    prev['image_checked_at']=ev['image_checked_at']
-                continue
-            if ev.get('origin')=='editorial' or len(ev.get('description',''))>len(prev.get('description','')):
-                ev['discovered_at']=prev.get('discovered_at',ev.get('discovered_at'))
-                if not ev.get('image_url') and prev.get('image_url'):
-                    ev['image_url']=prev['image_url']
-                if not ev.get('image_checked_at') and prev.get('image_checked_at'):
-                    ev['image_checked_at']=prev['image_checked_at']
-                    ev['image_status']=prev.get('image_status','')
-                del combined[prev['id']]
-                combined[ev['id']]=ev
-                keys[key]=ev['id']
-            elif not prev.get('image_url') and ev.get('image_url'):
-                prev['image_url']=ev['image_url']
-        else:
-            combined[ev['id']]=ev;keys[key]=ev['id']
-    return sorted(combined.values(),key=lambda e:(e['start_date'],-e.get('editor_score',50),e['title']))
+        key=identity_text(title)
+        if key not in grouped:grouped[key]=[]
+        # A group may already contain records which bridge two source variants.
+        matches=[i for i,cluster in enumerate(grouped[key]) if cluster_compatible(ev,cluster)]
+        if not matches:grouped[key].append([ev]);continue
+        first=matches[0]
+        grouped[key][first].append(ev)
+        for idx in reversed(matches[1:]):
+            other=grouped[key][idx]
+            if all(cluster_compatible(e,grouped[key][first]) for e in other):
+                grouped[key][first].extend(grouped[key].pop(idx))
+    result=[]
+    for buckets in grouped.values():
+        for items in buckets:
+            result.append(combine_same_events(items) if len(items)>1 else items[0])
+    return sorted(result,key=lambda e:(e['start_date'],-e.get('editor_score',50),e['title']))
 
 
 def apply_poster_source_overrides(events, overrides=None):
@@ -723,7 +906,7 @@ def run(offline=False, max_sources=0, workers=8):
     seen_status={key:sum(x.get('status')==key for x in logs)
                  for key in ('found','no_events','needs_javascript','blocked','error','invalid_url','unsupported')}
     reached=seen_status['found']+seen_status['no_events']+seen_status['needs_javascript']
-    new_events=sum(e.get('origin')=='automatic' and e.get('id') not in previous_ids for e in events)
+    new_events=sum(e.get('origin')=='automatic' and not (set([e.get('id')]+list(e.get('duplicate_ids') or [])) & previous_ids) for e in events)
     status={
         'updated_at':now.isoformat(timespec='seconds'),
         'mode':'offline_preview' if offline else 'daily_collection',
@@ -743,6 +926,7 @@ def run(offline=False, max_sources=0, workers=8):
         'new_events_added_today':new_events,
         'events_with_people_today':sum(bool(e.get('people')) for e in found),
         'events_in_catalog':len(events),
+        'events_with_multiple_sources':sum(bool(e.get('duplicate_ids')) for e in events),
         'events_with_images':sum(bool(e.get('image_url')) for e in events),
         'images_checked_today':image_stats['attempts'],
         'image_pages_requested_today':image_stats['pages_requested'],

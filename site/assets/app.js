@@ -25,6 +25,26 @@ try { state.favorites=new Set(JSON.parse(localStorage.getItem('kultradar:favorit
 const escapeHtml=(raw)=>String(raw??'').replace(/[&<>"']/g,(x)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
 const safeUrl=(raw)=>{try {let u=new URL(raw);return u.protocol==='https:'?u.href:'#';} catch{return '#';}};
 const safeImageUrl=(raw)=>{try {let u=new URL(raw);return u.protocol==='https:'?u.href:'';} catch{return '';}};
+// Secondary deduplication: older published JSONs may still contain cross-source repeats.
+// The Python collector uses the same conservative title + date + location logic.
+const identityText=(value)=>String(value||'').normalize('NFKC').toLowerCase().replace(/ё/g,'е').match(/[а-яa-z0-9]+/g)?.join(' ')||'';
+const knownCity=(value)=>{const s=identityText(value);if(['','россия','рф','неизвестно','другое'].includes(s))return '';if(s.includes('московская область')||s.includes('подмосков'))return 'московская область';if(s.includes('москв')||s==='москва')return 'москва';if(s.includes('петербург')||s==='спб')return 'санкт петербург';return s;};
+const venueGenerics=new Set(['центр','культурный','культуры','пространство','музей','театр','галерея','выставочный','зал','имени','им','г']);
+function knownVenue(value){let s=identityText(value);if(['','неизвестно','не указано','не указан','уточняется','площадка уточняется','место уточняется','москва','россия'].includes(s))return '';if(['афиша ru','яндекс афиша','kudago','time out','неизвестн','уточняет','мтс live','кассир ru'].some(x=>s.includes(x)))return '';let t=s.split(' ');while(t.length&&venueGenerics.has(t[0]))t.shift();while(t.length&&['москва','московская','область','россия'].includes(t[t.length-1]))t.pop();return t.join(' ')||s;}
+function sameVenue(a,b){const x=knownVenue(a),y=knownVenue(b);if(!x||!y)return false;if(x===y)return true;const xs=new Set(x.split(' ')),ys=new Set(y.split(' '));const small=xs.size<=ys.size?xs:ys,big=xs.size<=ys.size?ys:xs;return [...small].sort().join(' ').length>=4&&[...small].every(w=>big.has(w))&&big.size-small.size<=2;}
+function sameDateSpan(a,b){const a0=String(a.start_date||'').slice(0,10),a1=String(a.end_date||a0).slice(0,10),b0=String(b.start_date||'').slice(0,10),b1=String(b.end_date||b0).slice(0,10);return /^20\d{2}-\d{2}-\d{2}$/.test(a0)&&/^20\d{2}-\d{2}-\d{2}$/.test(b0)&&a0<=b1&&b0<=a1;}
+function canonicalLink(raw){try{const u=new URL(raw);const p=u.pathname.toLowerCase().replace(/\/$/,'')||'/';return u.protocol==='https:'&&!new Set(['/','/afisha','/events','/tickets','/program','/exhibitions','/performances','/concerts','/shows']).has(p)?u.hostname.replace(/^www\./,'')+p:'';}catch{return '';}}
+function canonicalPoster(raw){try{const u=new URL(raw);return u.protocol==='https:'?u.hostname.replace(/^www\./,'')+u.pathname:'';}catch{return '';}}
+function sameEvent(a,b){const title=identityText(a.title);if(title.length<5||title!==identityText(b.title))return false;const ac=knownCity(a.city),bc=knownCity(b.city);if(ac&&bc&&ac!==bc)return false;if(!sameDateSpan(a,b))return false;const av=knownVenue(a.venue),bv=knownVenue(b.venue);if(av&&bv)return sameVenue(a.venue,b.venue);const ai=canonicalPoster(a.image_url),bi=canonicalPoster(b.image_url),au=canonicalLink(a.url),bu=canonicalLink(b.url);if(ai&&ai===bi||au&&au===bu)return true;return title.length>=25&&title.split(' ').length>=3&&((av||bv)||String(a.start_date).slice(0,10)===String(b.start_date).slice(0,10))&&ac===bc;}
+function clusterCompatible(e,cluster){if(!cluster.some(c=>sameEvent(e,c)))return false;return cluster.every(c=>{const a=knownCity(e.city),b=knownCity(c.city),av=knownVenue(e.venue),bv=knownVenue(c.venue);return !(a&&b&&a!==b)&&!(av&&bv&&!sameVenue(e.venue,c.venue));});}
+const detailScore=e=>canonicalLink(e.url)?1:0;
+const quality=e=>[(e.origin==='editorial_manual'?2:e.origin==='editorial'?1:0),Number(!!knownVenue(e.venue)),detailScore(e),Number(!!safeImageUrl(e.image_url)),String(e.description||'').length,Number(e.editor_score||0)];
+function compareQuality(a,b){const aq=quality(a),bq=quality(b);for(let i=0;i<aq.length;i++){if(aq[i]!==bq[i])return bq[i]-aq[i];}return 0;}
+function collapseCatalogGroup(group){if(group.length===1)return group[0];const ranked=[...group].sort(compareQuality),best={...ranked[0]};const allIds=[],allUrls=[],allSources=[],people=[];for(const ev of group){for(const id of [ev.id,...(ev.duplicate_ids||[])])if(id&&!allIds.includes(id))allIds.push(id);for(const url of [ev.url,...(ev.source_urls||[])])if(url&&!allUrls.includes(url))allUrls.push(url);for(const src of [ev.source_name,...(ev.duplicate_sources||[])])if(src&&!allSources.includes(src))allSources.push(src);for(const p of ev.people||[])if(!people.includes(p))people.push(p);}const editorial=ranked.find(e=>['editorial','editorial_manual'].includes(e.origin));if(editorial)best.id=editorial.id;best.duplicate_ids=allIds.filter(id=>id!==best.id);best.source_urls=allUrls;best.duplicate_sources=allSources;best.people=people;best.editor_score=Math.max(...group.map(e=>Number(e.editor_score||0)));best.featured=group.some(e=>e.featured);best.start_date=[...group].map(e=>e.start_date).sort()[0];best.end_date=[...group].map(e=>e.end_date||e.start_date).sort().at(-1);for(const field of ['venue','city']){const check=field==='venue'?knownVenue:knownCity;const found=ranked.find(e=>check(e[field]));if(found)best[field]=found[field];}const classified=ranked.find(e=>e.category&&e.category!=='Другое');if(classified)best.category=classified.category;const pictured=ranked.find(e=>safeImageUrl(e.image_url));if(pictured)best.image_url=pictured.image_url;const described=[...ranked].sort((a,b)=>String(b.description||'').length-String(a.description||'').length).find(e=>e.description&&!e.description.toLowerCase().startsWith('описание уточняется'));if(described)best.description=described.description;const dated=group.map(e=>e.discovered_at).filter(Boolean).sort();if(dated.length)best.discovered_at=dated[0];return best;}
+function deduplicateEvents(records){const byTitle=new Map();for(const item of records){if(!item||!item.title)continue;const key=identityText(item.title),groups=byTitle.get(key)||[];const found=groups.find(group=>clusterCompatible(item,group));if(found)found.push(item);else groups.push([item]);byTitle.set(key,groups);}return [...byTitle.values()].flatMap(groups=>groups.map(collapseCatalogGroup));}
+const aliasMatches=(record,id)=>record.id===id||(record.duplicate_ids||[]).includes(id);
+const pickMatches=(pick,record)=>aliasMatches(record,pick.id);
+
 const dayText=(iso)=>iso ? new Date(iso.slice(0,10)+'T12:00:00') : null;
 const monthPrefix=()=>`${month.getFullYear()}-${String(month.getMonth()+1).padStart(2,'0')}`;
 const monthStart=()=>monthPrefix()+'-01';
@@ -46,21 +66,22 @@ let displayedEvents=[];let toastTimer;
 function notify(msg){let el=$('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2500);}
 function saveFavs(){try{localStorage.setItem('kultradar:favorites',JSON.stringify([...state.favorites]));}catch{}$('fav-counter').textContent=String(state.favorites.size);}
 function editorialEvents(){
+ const seen=new Set();
  return state.picks.map((item,i)=>{
   const snapshot=(item.event&&typeof item.event==='object')?item.event:{};
-  const current=state.events.find(e=>e.id===item.id)||{};
+  const current=state.events.find(e=>pickMatches(item,e))||{};
   const ev={...snapshot,...current};
-  ev.id=item.id||ev.id;
+  ev.id=current.id||item.id||ev.id;
   ev.editorial_pick=true;
   ev.editorial_note=String(item.note||'').slice(0,500);
   ev.editorial_order=i;
   if(safeImageUrl(item.image_url))ev.image_url=item.image_url;
   return ev;
- }).filter(e=>e.id&&e.start_date&&e.title);
+ }).filter(e=>{if(!e.id||!e.start_date||!e.title||seen.has(e.id))return false;seen.add(e.id);return true;});
 }
 function matchingEvents(){
  const pool=state.view==='editors'?editorialEvents():state.events.map(e=>{
-  const index=state.picks.findIndex(p=>p.id===e.id);
+  const index=state.picks.findIndex(p=>pickMatches(p,e));
   if(index<0)return e;
   const pick=state.picks[index];
   return {...e, editorial_pick:true, editor_score:1000-index, image_url:safeImageUrl(pick.image_url)?pick.image_url:e.image_url};
@@ -79,7 +100,7 @@ function poster(ev){
  return `${fallback}<img class="poster-real-image" src="${escapeHtml(img)}" alt="Афиша: ${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="poster-photo-shade"></span>`;
 }
 function eventCard(e){const ongoing=(e.start_date||'')<monthStart(),d=dayText(ongoing?monthStart():e.start_date),dateLabel=ongoing?'ВЕСЬ':MONTHS_SHORT[d?.getMonth()||0],dateDay=ongoing?'↳':String(d?.getDate()||'—'),cls=CSS_CLASSES[e.category]||'other';
- const isPicked=!!e.editorial_pick||state.picks.some(x=>x.id===e.id);
+ const isPicked=!!e.editorial_pick||state.picks.some(x=>pickMatches(x,e));
  const fav=state.favorites.has(e.id),desc=e.description||'Описание уточняется на странице организатора.', tag=ongoing?'ПРОДОЛЖАЕТСЯ':(e.tag|| (isRecent(e)&&e.origin==='automatic'?'НОВОЕ':'')).toUpperCase();
  return `<article class="event-card ${isPicked?'is-editorial':''}">
  <div class="card-visual poster-${cls}${safeImageUrl(e.image_url)?' poster-has-source':''}">${poster(e)}
@@ -148,12 +169,12 @@ function renderRegistry(refreshControls=true){const sourceMode=state.view==='sou
 }
 function sourceRow(x,i){const st=state.status?.source_log?.find(y=>y.id===x.source_id);const stateLabels={found:`событий: ${st?.events||0}`,no_events:'сайт открылся, дат нет',needs_javascript:'нужен JavaScript',blocked:'доступ ограничен',error:'ошибка соединения',invalid_url:'некорректный адрес',unsupported:'формат не поддерживается',ok:'сайт открылся'};const status=st?`Проверка: ${stateLabels[st.status]||st.status}`:'Нет результатов последней проверки';return `<article class="registry-row"><span class="registry-icon">${i%3===0?'◈':i%3===1?'⌁':'✳'}</span><div class="registry-body"><strong class="registry-name">${escapeHtml(x.name)}</strong><p class="registry-description">${escapeHtml(x.why)}</p><div class="registry-meta"><span class="tag">${escapeHtml(x.category)}</span><span>${escapeHtml(x.region)}</span><span class="registry-status">${escapeHtml(status)}</span></div></div><span class="registry-priority priority-${escapeHtml(x.priority)}">${escapeHtml(x.priority)}</span><a class="registry-external" title="Открыть источник" href="${escapeHtml(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer" aria-label="Открыть ${escapeHtml(x.name)}">↗</a></article>`;}
 function personRow(x,i){const matches=state.events.filter(e=>Array.isArray(e.people)&&e.people.includes(x.name)).length;return `<article class="registry-row"><span class="registry-icon">${i%3===0?'✳':i%3===1?'♬':'◈'}</span><div class="registry-body"><strong class="registry-name">${escapeHtml(x.name)}</strong><p class="registry-description">${escapeHtml(x.why)}</p><div class="registry-meta"><span class="tag">${escapeHtml(x.category)}</span><span>${matches?matches+' событий в базе':'мониторинг по имени'}</span></div></div><span class="registry-priority priority-${escapeHtml(x.priority)}">${escapeHtml(x.priority)}</span><button type="button" class="registry-person-button" data-person="${escapeHtml(x.name)}" title="Искать события по этому имени">Искать ↗</button></article>`;}
-function showEvent(id){const e=editorialEvents().find(x=>x.id===id)||state.events.find(x=>x.id===id);if(!e)return;const cl=CSS_CLASSES[e.category]||'other';const fav=state.favorites.has(id);
+function showEvent(id){const e=editorialEvents().find(x=>aliasMatches(x,id))||state.events.find(x=>aliasMatches(x,id));if(!e)return;const cl=CSS_CLASSES[e.category]||'other';const fav=state.favorites.has(id);
  $('modal-root').innerHTML=`<div class="modal-backdrop" role="presentation" data-modal-close="1"><div class="modal" role="dialog" aria-modal="true" aria-label="Информация о событии"><div class="modal-visual poster-${cl}${safeImageUrl(e.image_url)?' poster-has-source':''}">${poster(e)}<button type="button" class="modal-close" data-modal-close="1" aria-label="Закрыть">×</button></div><div class="modal-body"><span class="modal-category">${escapeHtml(e.category)} · ${escapeHtml(e.city||'Россия')}</span><h2>${escapeHtml(e.title)}</h2>${e.editorial_note?`<p class="editorial-note">✦ ${escapeHtml(e.editorial_note)}</p>`:''}<p>${escapeHtml(e.description||'Описание смотрите в первоисточнике.')}</p><div class="modal-details"><div class="modal-detail"><span>КОГДА</span><strong>${escapeHtml(presentDate(e.start_date))}${e.end_date&&e.end_date!==e.start_date?' — '+escapeHtml(presentDate(e.end_date)):''}${e.time?' / '+escapeHtml(e.time):''}</strong></div><div class="modal-detail"><span>ГДЕ</span><strong>${escapeHtml(e.venue||'Площадка уточняется')}</strong></div><div class="modal-detail"><span>ИСТОЧНИК</span><strong>${escapeHtml(e.source_name||'Официальная страница')}</strong></div><div class="modal-detail"><span>УЧАСТНИКИ / АВТОРЫ</span><strong>${escapeHtml((e.people||[]).join(', ')||'Уточняйте у организатора')}</strong></div></div><div class="modal-footer"><a class="modal-primary" href="${escapeHtml(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">Открыть первоисточник ↗</a><button type="button" class="modal-secondary ${fav?'saved':''}" data-fav="${escapeHtml(e.id)}">${fav?'♥ В избранном':'♡ В избранное'}</button></div><p class="modal-footer-note">${escapeHtml(e.verification||'Проверьте подробности у организатора.')} · Добавлено в базу: ${escapeHtml(clockFmt(e.discovered_at))}</p></div></div></div>`;
  document.body.style.overflow='hidden';
 }
 function closeModal(){$('modal-root').innerHTML='';document.body.style.overflow='';}
-function toggleFav(id){if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);saveFavs();if($('modal-root').children.length)showEvent(id);if(['overview','events','editors','fresh','favorites'].includes(state.view))updateGrid();notify(state.favorites.has(id)?'Сохранено в избранное':'Удалено из избранного');}
+function toggleFav(id){const e=state.events.find(x=>aliasMatches(x,id));if(e)id=e.id;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);saveFavs();if($('modal-root').children.length)showEvent(id);if(['overview','events','editors','fresh','favorites'].includes(state.view))updateGrid();notify(state.favorites.has(id)?'Сохранено в избранное':'Удалено из избранного');}
 function resetFilters(){state.category='Все';state.city='moscow';state.term='';state.sort='curated';$('global-search').value='';$('city-select').value='moscow';$('sort-select').value='curated';renderGenres();if(['sources','people'].includes(state.view))renderRegistry();else updateGrid();}
 function csvExport(){let events=matchingEvents();if(state.view==='overview')events=matchingEvents();
  const headers=['Название','Категория','Дата начала','Дата окончания','Время','Город','Площадка','Участники','Источник','Ссылка','Описание','Комментарий редакции'];
@@ -216,9 +237,14 @@ async function init(){wireEvents();let bundle,sources,people,status,picks;
  if(window.__RADAR_PREVIEW__){({bundle,sources,people,status,picks}=window.__RADAR_PREVIEW__);}
  else {try{[bundle,sources,people,status,picks]=await Promise.all([readFile('./data/events.json'),readFile('./data/sources.json'),readFile('./data/people.json'),readFile('./data/status.json'),readFile('./data/editorial_picks.json').catch(()=>({items:[]}))]);}
  catch(error){console.error(error); $('events-grid').innerHTML='<div class="empty-state"><span>!</span><h3>Данные не загрузились</h3><p>Откройте сайт через HTTP-сервер: python -m http.server 8000 в папке site.</p></div>';notify('Не удалось загрузить базу');return;}}
- state.events=Array.isArray(bundle?.events)?bundle.events:[];state.sources=Array.isArray(sources)?sources:[];state.people=Array.isArray(people)?people:[];state.picks=Array.isArray(picks?.items)?picks.items.filter(x=>x&&x.id&&x.event):[];state.status=status||{};state.loaded=true;
+ state.events=deduplicateEvents(Array.isArray(bundle?.events)?bundle.events:[]);state.sources=Array.isArray(sources)?sources:[];state.people=Array.isArray(people)?people:[];state.picks=Array.isArray(picks?.items)?picks.items.filter(x=>x&&x.id&&x.event):[];state.status=status||{};state.loaded=true;
  // Manually authored events remain visible even if automatic collection does not know about them.
- for(const pick of state.picks){if(pick.event?.origin==='editorial_manual'&&!state.events.some(e=>e.id===pick.id))state.events.push(pick.event);}
+ for(const pick of state.picks){if(pick.event?.origin==='editorial_manual'&&!state.events.some(e=>pickMatches(pick,e)))state.events.push(pick.event);}
+ state.events=deduplicateEvents(state.events);
+ // Favorites from an older duplicated record survive migration to a single card.
+ const idMapping=new Map();for(const e of state.events){idMapping.set(e.id,e.id);for(const alias of e.duplicate_ids||[])idMapping.set(alias,e.id);}
+ state.favorites=new Set([...state.favorites].map(id=>idMapping.get(id)||id));
+ try{localStorage.setItem('kultradar:favorites',JSON.stringify([...state.favorites]));}catch{}
  if($('editorial-counter'))$('editorial-counter').textContent=String(state.picks.length);
  $('fav-counter').textContent=String(state.favorites.size);
  renderGenres();renderStatus();renderMonth();
