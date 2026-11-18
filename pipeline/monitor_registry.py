@@ -249,7 +249,7 @@ def parse_microdata(soup,page_url,source,core,today):
         if not start or not name or not core.in_scope(start,end,today):continue
         url=urljoin(page_url,prop('url') or page_url)
         if not valid_https(url):continue
-        ev=core.build_event(name,start,end,prop('description'),prop('location') or source['name'],url,source)
+        ev=core.build_event(name,start,end,prop('description'),prop('location') or source['name'],url,source,image_url=prop('image'))
         ev['extraction_method']='microdata'
         events.append(ev)
     return events
@@ -278,7 +278,8 @@ def extract_listing_anchors(soup,page_url,source,core,today):
         if not dates or not core.in_scope(dates[0],dates[-1],today):continue
         cue=EVENT_TERMS.search(text) or any(x in urlparse(href).path.lower() for x in FUTURE_LINK_TERMS)
         if not cue:continue
-        ev=core.build_event(name,dates[0],dates[-1],'',source['name'],href,source)
+        image_url=core.fragment_image_url(parent,page_url) if parent else ''
+        ev=core.build_event(name,dates[0],dates[-1],'',source['name'],href,source,image_url=image_url)
         ev['extraction_method']='dated_listing'
         found.append(ev)
     return found[:100]
@@ -354,7 +355,10 @@ def scan_one(source,client,core,today):
                         if 'html' not in detail_ctype.casefold():continue
                         page=BeautifulSoup(detail_raw,'html.parser')
                         for e in core.jsonld_events(page,detail_url,source,today):
-                            e['extraction_method']='detail_jsonld';evs.append(e)
+                            e['extraction_method']='detail_jsonld'
+                            if not e.get('image_url') and not core.is_listing_page(detail_url):
+                                e['image_url']=core.extract_image_url(page,detail_url)
+                            evs.append(e)
                         evs.extend(parse_microdata(page,detail_url,source,core,today))
                         if not source.get('editorial_media'):
                             for e in core.page_event(page,detail_url,source,today):

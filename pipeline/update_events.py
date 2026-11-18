@@ -129,7 +129,7 @@ def first_meta(soup, selectors):
     return ''
 
 def normalize_image_url(raw, base=''):
-    raw=clean(raw)
+    raw=clean(raw).strip('\"\'')
     if not raw:return ''
     if raw.startswith('//'):raw='https:'+raw
     elif base and not raw.startswith('http'):raw=urljoin(base,raw)
@@ -137,8 +137,10 @@ def normalize_image_url(raw, base=''):
         parsed=urlparse(raw)
     except Exception:
         return ''
-    if parsed.scheme!='https':return ''
-    if parsed.path.lower().endswith(('.svg', '.ico')):
+    if parsed.scheme!='https' or not parsed.hostname or len(raw)>2048:return ''
+    if parsed.path.lower().endswith(('.svg', '.ico')):return ''
+    # Generic logos and icons make misleading event posters.
+    if re.search(r'(?i)(?:^|[/_.-])(logo|favicon|sprite|icon|avatar|placeholder|pixel|spacer|brandmark)(?:[/_.-]|$)',parsed.path):
         return ''
     return raw
 
@@ -149,8 +151,8 @@ def image_from_tag(tag, base=''):
         if tag.get(attr):values.append(tag.get(attr))
     srcset=tag.get('srcset') or tag.get('data-srcset') or ''
     if srcset:
-        first=srcset.split(',')[0].strip().split(' ')[0]
-        if first:values.append(first)
+        last=srcset.split(',')[-1].strip().split(' ')[0]
+        if last:values.append(last)
     for raw in values:
         normalized=normalize_image_url(raw,base)
         if normalized:return normalized
@@ -202,18 +204,75 @@ def extract_image_url(soup, base=''):
             if img:return img
     return ''
 
+
 def fragment_image_url(node, base=''):
+    """Find an event thumbnail inside a matched event card (not random site hero)."""
     if not node:return ''
-    for sel in ('img[src]','img[data-src]','source[srcset]'):
-        tag=node.select_one(sel) if hasattr(node,'select_one') else None
-        img=image_from_tag(tag,base)
-        if img:return img
-    style=(node.get('style') or '') if hasattr(node,'get') else ''
-    m=re.search(r"url\(['\"]?(.*?)['\"]?\)", style)
-    if m:
-        img=normalize_image_url(m.group(1),base)
-        if img:return img
+    for selector in ('img[src]', 'img[data-src]', 'img[data-original]', 'img[srcset]',
+                     'picture source[srcset]', '[itemprop="image"]'):
+        for tag in node.select(selector)[:10]:
+            img=image_from_tag(tag,base)
+            if img:return img
+    for tag in [node]+node.select('[style]')[:15]:
+        style=tag.get('style') or ''
+        match=re.search(r'url\(\s*[\'"]?([^\)\'"]+)',style)
+        if match:
+            img=normalize_image_url(match.group(1),base)
+            if img:return img
     return ''
+
+TOKENIZER=re.compile(r'[а-яёa-z0-9]{3,}',re.I)
+IMAGE_TITLE_STOPWORDS={'концерт','спектакль','выставка','фестиваль','шоу','билеты',
+                       'события','премьера','москва','московский','года','2026','2027'}
+
+def title_similarity(needle, haystack):
+    """A conservative score; do not attach an unrelated poster from a listing."""
+    a=set(TOKENIZER.findall(clean(needle).casefold()))-IMAGE_TITLE_STOPWORDS
+    b=set(TOKENIZER.findall(clean(haystack).casefold()))-IMAGE_TITLE_STOPWORDS
+    if not a or not b:return 0.
+    joined_a=' '.join(sorted(a))
+    joined_b=' '.join(sorted(b))
+    if len(joined_a)>9 and joined_a in joined_b:return 1.
+    common=len(a&b)
+    if common<2 and len(a)>1:return 0.
+    return common/max(1,len(a))
+
+def find_poster_in_listing(soup,title,page_url):
+    """Match a title to its *own* thumbnail on an event-listing page."""
+    candidates=[]
+    for anchor in soup.select('a[href]')[:700]:
+        text=clean(anchor.get_text(' ',strip=True))
+        score=title_similarity(title,text)
+        if score<0.82:continue
+        node=anchor
+        for depth in range(5):
+            if not node:break
+            sample=clean(node.get_text(' ',strip=True))
+            if depth>0 and len(sample)>1100:break
+            img=fragment_image_url(node,page_url)
+            if img:
+                candidates.append((score,-len(sample),img))
+                break
+            node=node.parent
+    # Some cards have separate text and image but no wrapping <a>.
+    if not candidates:
+        for node in soup.select('article,li,[class*="event-card"],[class*="poster-card"],[class*="afisha-card"]')[:600]:
+            txt=clean(node.get_text(' ',strip=True))
+            if len(txt)>600:continue
+            score=title_similarity(title,txt)
+            if score<0.82:continue
+            img=fragment_image_url(node,page_url)
+            if img:candidates.append((score,-len(txt),img))
+    if not candidates:return ''
+    candidates.sort(reverse=True)
+    return candidates[0][2]
+
+def is_listing_page(url):
+    path=urlparse(url).path.rstrip('/').lower()
+    return (not path or path in ('/afisha','/events','/exhibitions','/repertoire',
+                                  '/program','/calendar','/tickets','/concerts',
+                                  '/shows','/performances','/theatre','/theater'))
+
 
 def get_people(event, registry):
     corpus=clean((event.get('title') or '')+' '+(event.get('description') or '')).casefold()
@@ -441,44 +500,109 @@ def merge_events(editorial,existing,found,people,today):
         key=slug(title)+'|'+start[:7]+'|'+slug(ev.get('venue'))
         if key in keys:
             prev=combined[keys[key]]
+            # Never discard an event-specific image or the image-check cooldown
+            # when choosing between editorial and automatically found records.
             if prev.get('origin')=='editorial' and ev.get('origin')!='editorial':
+                if not prev.get('image_url') and ev.get('image_url'):
+                    prev['image_url']=ev['image_url']
                 prev['verified_at']=ev.get('verified_at',prev.get('verified_at'))
+                if not prev.get('image_checked_at') and ev.get('image_checked_at'):
+                    prev['image_checked_at']=ev['image_checked_at']
                 continue
             if ev.get('origin')=='editorial' or len(ev.get('description',''))>len(prev.get('description','')):
                 ev['discovered_at']=prev.get('discovered_at',ev.get('discovered_at'))
+                if not ev.get('image_url') and prev.get('image_url'):
+                    ev['image_url']=prev['image_url']
+                if not ev.get('image_checked_at') and prev.get('image_checked_at'):
+                    ev['image_checked_at']=prev['image_checked_at']
+                    ev['image_status']=prev.get('image_status','')
                 del combined[prev['id']]
                 combined[ev['id']]=ev
                 keys[key]=ev['id']
+            elif not prev.get('image_url') and ev.get('image_url'):
+                prev['image_url']=ev['image_url']
         else:
             combined[ev['id']]=ev;keys[key]=ev['id']
     return sorted(combined.values(),key=lambda e:(e['start_date'],-e.get('editor_score',50),e['title']))
 
-def enrich_missing_images(events, limit=24):
-    pending=[e for e in events if not e.get('image_url') and str(e.get('url','')).startswith('https://')]
-    if not pending or limit<=0:return events
+
+def enrich_missing_images(events, limit=55):
+    """Progressively enrich existing and new records with official event posters.
+
+    The crawler covers event facts. Image metadata is often missing from the
+    listing schema and editorial entries, so we separately inspect their real
+    event pages, in priority order, respecting robots.txt and HTTPS safety.
+    Sites not providing usable public images keep the graphic placeholder.
+    Failed/missing image attempts are retried after a cooldown, not every day.
+    """
+    from monitor_registry import PoliteClient, RobotsDenied, SourceError
+    current=datetime.now(TZ).date()
+    def needs_check(e):
+        if e.get('image_url'):return False
+        url=clean(e.get('url'))
+        if not url.startswith('https://'):return False
+        tried=e.get('image_checked_at')
+        try:
+            if tried and (current-date.fromisoformat(tried[:10])).days<5:return False
+        except (ValueError,TypeError):pass
+        return True
+    pending=[e for e in events if needs_check(e)]
+    if not pending:return {'attempts':0,'found':0,'blocked':0}
+    # Prioritize the forthcoming month, current editorial highlights, Moscow.
+    def rank(e):
+        score=e.get('editor_score') or 60
+        try:st=date.fromisoformat(str(e.get('start_date',''))[:10])
+        except ValueError:st=current
+        month_distance=abs((st.year-current.year)*12+st.month-current.month-1)
+        return (month_distance, 0 if e.get('origin')=='editorial' else 1,
+                0 if 'моск' in str(e.get('city','')).casefold() else 1, -score)
+    pending.sort(key=rank)
+    client=PoliteClient(delay=0.8)
     session=requests.Session()
     session.headers.update(HEADERS)
-    checked=0
-    cache={}
+    attempts=0;found=0;blocked=0;fetched={}
     for ev in pending:
         url=ev.get('url')
-        if url in cache:
-            ev['image_url']=cache[url]
-            continue
-        if checked>=limit:break
-        checked+=1
-        try:
-            r=session.get(url,timeout=12,allow_redirects=True)
-            r.raise_for_status()
-            if 'html' not in r.headers.get('Content-Type','text/html').lower():
-                cache[url]=''; continue
-            soup=BeautifulSoup(r.content,'html.parser')
-            cache[url]=extract_image_url(soup,r.url)
-            ev['image_url']=cache[url]
-        except requests.RequestException:
-            cache[url]=''
+        if url not in fetched:
+            if attempts>=limit:break
+            attempts+=1
+            try:
+                raw,ctype,final_url=client.read(url,session)
+                if 'html' not in ctype.lower():
+                    fetched[url]=(None,final_url,'non_html')
+                else:
+                    fetched[url]=(BeautifulSoup(raw,'html.parser'),final_url,'ok')
+            except (RobotsDenied,SourceError) as ex:
+                fetched[url]=(None,url,'blocked')
+                blocked+=1
+            except (requests.RequestException,ValueError) as ex:
+                fetched[url]=(None,url,'error')
+        soup,final_url,status=fetched[url]
+        ev['image_checked_at']=current.isoformat()
+        ev['image_status']=status
+        if soup is None:continue
+        # A shared listing or homepage may use one generic og:image for every
+        # result. Only accept its own matched card. A distinct event page with
+        # a matching h1/title may safely use its structured image metadata.
+        h1=soup.select_one('h1')
+        heading=clean(h1.get_text(' ',strip=True)) if h1 else ''
+        heading_score=title_similarity(ev['title'],heading)
+        if not heading:
+            heading_score=title_similarity(
+                ev['title'],first_meta(soup,['meta[property="og:title"]','title']))
+        if is_listing_page(final_url) or heading_score<0.7:
+            image=find_poster_in_listing(soup,ev['title'],final_url)
+        else:
+            image=extract_image_url(soup,final_url)
+        if image:
+            ev['image_url']=image
+            ev['image_status']='found'
+            found+=1
+        else:
+            ev['image_status']='not_found'
     session.close()
-    return events
+    return {'attempts':attempts,'found':found,'blocked':blocked}
+
 
 def run(offline=False, max_sources=0, workers=8):
     """Update local catalog and write an honest per-source coverage report.
@@ -504,8 +628,9 @@ def run(offline=False, max_sources=0, workers=8):
                                  workers=workers,max_sources=max_sources)
         for e in found:e['people']=get_people(e,people)
     events=merge_events(editorial,existing,found,people,today)
+    image_stats={'attempts':0,'found':0,'blocked':0}
     if not offline:
-        events=enrich_missing_images(events,limit=36)
+        image_stats=enrich_missing_images(events,limit=55)
     seen_status={key:sum(x.get('status')==key for x in logs)
                  for key in ('found','no_events','needs_javascript','blocked','error','invalid_url','unsupported')}
     reached=seen_status['found']+seen_status['no_events']+seen_status['needs_javascript']
@@ -529,6 +654,10 @@ def run(offline=False, max_sources=0, workers=8):
         'new_events_added_today':new_events,
         'events_with_people_today':sum(bool(e.get('people')) for e in found),
         'events_in_catalog':len(events),
+        'events_with_images':sum(bool(e.get('image_url')) for e in events),
+        'images_checked_today':image_stats['attempts'],
+        'images_found_today':image_stats['found'],
+        'image_checks_blocked_today':image_stats['blocked'],
         'source_status_counts':seen_status,
         'source_log':logs,
         'note':('Попытка проверки всего реестра: HTTP-доступ не гарантирует наличие событий; '

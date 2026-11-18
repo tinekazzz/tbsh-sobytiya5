@@ -1,4 +1,4 @@
-/* ТБШ СОБЫТИЯ — editorial discovery dashboard. No tracking or external JS dependencies. */
+/* ТБШ СОБЫТИЯ — editorial discovery dashboard. Poster images v3, with load-failure fallback. */
 (() => {
 'use strict';
 const $ = (id) => document.getElementById(id);
@@ -23,6 +23,7 @@ const state={view:'overview',category:'Все',city:'moscow',sort:'curated',term
 try { state.favorites=new Set(JSON.parse(localStorage.getItem('kultradar:favorites')||'[]')); } catch { state.favorites=new Set(); }
 const escapeHtml=(raw)=>String(raw??'').replace(/[&<>"']/g,(x)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
 const safeUrl=(raw)=>{try {let u=new URL(raw);return u.protocol==='https:'?u.href:'#';} catch{return '#';}};
+const safeImageUrl=(raw)=>{try {let u=new URL(raw);return u.protocol==='https:'?u.href:'';} catch{return '';}};
 const dayText=(iso)=>iso ? new Date(iso.slice(0,10)+'T12:00:00') : null;
 const monthPrefix=()=>`${month.getFullYear()}-${String(month.getMonth()+1).padStart(2,'0')}`;
 const monthStart=()=>monthPrefix()+'-01';
@@ -48,11 +49,18 @@ function matchingEvents(){return state.events.filter(e=>isInMonth(e)&&isInCity(e
  .filter(e=>state.view!=='favorites'||state.favorites.has(e.id))
  .sort(sortEvents);
 }
-function poster(ev){const cls=CSS_CLASSES[ev.category]||'other',word=POSTERS[ev.category]||'СЦЕНА';return `<span class="poster-decoration deco-a"></span><span class="poster-decoration deco-b"></span><span class="poster-word">${escapeHtml(word)}</span><span class="poster-star">✳</span>`;}
+function poster(ev){
+ const word=POSTERS[ev.category]||'СЦЕНА', img=safeImageUrl(ev.image_url);
+ const fallback=`<span class="poster-decoration deco-a"></span><span class="poster-decoration deco-b"></span><span class="poster-word">${escapeHtml(word)}</span><span class="poster-star">✳</span>`;
+ if(!img)return fallback;
+ // Keep the branded fallback visible until the actual image loads. Browser
+ // hotlink failures never turn a card into a blank rectangle.
+ return `${fallback}<img class="poster-real-image" src="${escapeHtml(img)}" alt="Афиша: ${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="poster-photo-shade"></span>`;
+}
 function eventCard(e){const ongoing=(e.start_date||'')<monthStart(),d=dayText(ongoing?monthStart():e.start_date),dateLabel=ongoing?'ВЕСЬ':MONTHS_SHORT[d?.getMonth()||0],dateDay=ongoing?'↳':String(d?.getDate()||'—'),cls=CSS_CLASSES[e.category]||'other';
  const fav=state.favorites.has(e.id),desc=e.description||'Описание уточняется на странице организатора.', tag=ongoing?'ПРОДОЛЖАЕТСЯ':(e.tag|| (isRecent(e)&&e.origin==='automatic'?'НОВОЕ':'')).toUpperCase();
  return `<article class="event-card">
- <div class="card-visual poster-${cls}">${poster(e)}
+ <div class="card-visual poster-${cls}${safeImageUrl(e.image_url)?' poster-has-source':''}">${poster(e)}
  <div class="card-top-row"><span class="card-date-badge"><strong>${escapeHtml(dateDay)}</strong><small>${escapeHtml(dateLabel)}</small></span><button class="favorite-btn ${fav?'is-saved':''}" type="button" data-fav="${escapeHtml(e.id)}" aria-label="${fav?'Удалить из избранного':'В избранное'}" title="В избранное">${fav?'♥':'♡'}</button></div>
  ${tag?`<span class="poster-tag">${escapeHtml(tag)}</span>`:''}</div>
  <div class="card-content"><span class="card-category">${escapeHtml(e.category||'Другое')} · ${escapeHtml(e.city||'Россия')}</span>
@@ -81,9 +89,10 @@ function renderStatus(){const st=state.status||{};const on=st.mode==='daily_coll
  $('status-label').textContent=!on?'Демоверсия / стартовые данные':ok?'Ежедневный сбор выполнен':'Сбор запущен · есть ошибки';
  $('last-refresh').textContent=clockFmt(st.updated_at);
  $('refresh-description').textContent=!on?'Стартовые анонсы. Автоматическая проверка начнётся после публикации проекта.':`Попыток проверки: ${st.sources_checked_today||0} из ${st.sources_in_registry||241}. Открылись: ${st.sources_reached_today||0}. С датированными событиями: ${st.sources_with_events_today||0}. Новых карточек: ${st.new_events_added_today||0}.`;
+ if(on && Number.isFinite(st.events_with_images)) $('refresh-description').textContent+=` С афишами: ${st.events_with_images} из ${st.events_in_catalog||0}.`;
  $('refresh-frequency').textContent=on?'ежедневно':'ожидает запуска';
  $('about-status-title').textContent=!on?'Стартовая версия, ещё не опубликована':ok?'Автосборщик запускался':'Автосборщик запущен, доступ к сайтам ограничен';
- $('about-status-text').textContent=!on?'Сейчас на сайте стартовые анонсы. Для ежедневной проверки нужен успешный запуск GitHub Actions.':`Последний запуск ${clockFmt(st.updated_at)}. Запрошено: ${st.sources_checked_today||0} из ${st.sources_in_registry||241} источников; открылись: ${st.sources_reached_today||0}; с датированными событиями: ${st.sources_with_events_today||0}; заблокировано: ${st.sources_blocked_today||0}; ошибки: ${st.sources_failed_today||0}. Попытка проверки не означает, что у сайта удалось получить афишу. 332 имени используются для сопоставления с найденными анонсами.`;
+ $('about-status-text').textContent=!on?'Сейчас на сайте стартовые анонсы. Для ежедневной проверки нужен успешный запуск GitHub Actions.':`Последний запуск ${clockFmt(st.updated_at)}. Запрошено: ${st.sources_checked_today||0} из ${st.sources_in_registry||241} источников; открылись: ${st.sources_reached_today||0}; с датированными событиями: ${st.sources_with_events_today||0}; заблокировано: ${st.sources_blocked_today||0}; ошибки: ${st.sources_failed_today||0}. Попытка проверки не означает, что у сайта удалось получить афишу. 332 имени используются для сопоставления с найденными анонсами. ${Number.isFinite(st.events_with_images)?`Карточек со ссылками на афиши: ${st.events_with_images}; найдено изображений за последний запуск: ${st.images_found_today||0}; проверено страниц: ${st.images_checked_today||0}.`:'Статистика афиш появится после запуска обновлённого сборщика.'}`;
 }
 function setView(view,scroll=true){state.view=SCREENS[view]?view:'overview';state.limit=view==='overview'?9:24;state.registryLimit=48;
  document.querySelectorAll('[data-view]').forEach(btn=>btn.classList.toggle('active',btn.dataset.view===state.view));
@@ -113,7 +122,7 @@ function renderRegistry(refreshControls=true){const sourceMode=state.view==='sou
 function sourceRow(x,i){const st=state.status?.source_log?.find(y=>y.id===x.source_id);const stateLabels={found:`событий: ${st?.events||0}`,no_events:'сайт открылся, дат нет',needs_javascript:'нужен JavaScript',blocked:'доступ ограничен',error:'ошибка соединения',invalid_url:'некорректный адрес',unsupported:'формат не поддерживается',ok:'сайт открылся'};const status=st?`Проверка: ${stateLabels[st.status]||st.status}`:'Нет результатов последней проверки';return `<article class="registry-row"><span class="registry-icon">${i%3===0?'◈':i%3===1?'⌁':'✳'}</span><div class="registry-body"><strong class="registry-name">${escapeHtml(x.name)}</strong><p class="registry-description">${escapeHtml(x.why)}</p><div class="registry-meta"><span class="tag">${escapeHtml(x.category)}</span><span>${escapeHtml(x.region)}</span><span class="registry-status">${escapeHtml(status)}</span></div></div><span class="registry-priority priority-${escapeHtml(x.priority)}">${escapeHtml(x.priority)}</span><a class="registry-external" title="Открыть источник" href="${escapeHtml(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer" aria-label="Открыть ${escapeHtml(x.name)}">↗</a></article>`;}
 function personRow(x,i){const matches=state.events.filter(e=>Array.isArray(e.people)&&e.people.includes(x.name)).length;return `<article class="registry-row"><span class="registry-icon">${i%3===0?'✳':i%3===1?'♬':'◈'}</span><div class="registry-body"><strong class="registry-name">${escapeHtml(x.name)}</strong><p class="registry-description">${escapeHtml(x.why)}</p><div class="registry-meta"><span class="tag">${escapeHtml(x.category)}</span><span>${matches?matches+' событий в базе':'мониторинг по имени'}</span></div></div><span class="registry-priority priority-${escapeHtml(x.priority)}">${escapeHtml(x.priority)}</span><button type="button" class="registry-person-button" data-person="${escapeHtml(x.name)}" title="Искать события по этому имени">Искать ↗</button></article>`;}
 function showEvent(id){const e=state.events.find(x=>x.id===id);if(!e)return;const cl=CSS_CLASSES[e.category]||'other';const fav=state.favorites.has(id);
- $('modal-root').innerHTML=`<div class="modal-backdrop" role="presentation" data-modal-close="1"><div class="modal" role="dialog" aria-modal="true" aria-label="Информация о событии"><div class="modal-visual poster-${cl}">${poster(e)}<button type="button" class="modal-close" data-modal-close="1" aria-label="Закрыть">×</button></div><div class="modal-body"><span class="modal-category">${escapeHtml(e.category)} · ${escapeHtml(e.city||'Россия')}</span><h2>${escapeHtml(e.title)}</h2><p>${escapeHtml(e.description||'Описание смотрите в первоисточнике.')}</p><div class="modal-details"><div class="modal-detail"><span>КОГДА</span><strong>${escapeHtml(presentDate(e.start_date))}${e.end_date&&e.end_date!==e.start_date?' — '+escapeHtml(presentDate(e.end_date)):''}${e.time?' / '+escapeHtml(e.time):''}</strong></div><div class="modal-detail"><span>ГДЕ</span><strong>${escapeHtml(e.venue||'Площадка уточняется')}</strong></div><div class="modal-detail"><span>ИСТОЧНИК</span><strong>${escapeHtml(e.source_name||'Официальная страница')}</strong></div><div class="modal-detail"><span>УЧАСТНИКИ / АВТОРЫ</span><strong>${escapeHtml((e.people||[]).join(', ')||'Уточняйте у организатора')}</strong></div></div><div class="modal-footer"><a class="modal-primary" href="${escapeHtml(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">Открыть первоисточник ↗</a><button type="button" class="modal-secondary ${fav?'saved':''}" data-fav="${escapeHtml(e.id)}">${fav?'♥ В избранном':'♡ В избранное'}</button></div><p class="modal-footer-note">${escapeHtml(e.verification||'Проверьте подробности у организатора.')} · Добавлено в базу: ${escapeHtml(clockFmt(e.discovered_at))}</p></div></div></div>`;
+ $('modal-root').innerHTML=`<div class="modal-backdrop" role="presentation" data-modal-close="1"><div class="modal" role="dialog" aria-modal="true" aria-label="Информация о событии"><div class="modal-visual poster-${cl}${safeImageUrl(e.image_url)?' poster-has-source':''}">${poster(e)}<button type="button" class="modal-close" data-modal-close="1" aria-label="Закрыть">×</button></div><div class="modal-body"><span class="modal-category">${escapeHtml(e.category)} · ${escapeHtml(e.city||'Россия')}</span><h2>${escapeHtml(e.title)}</h2><p>${escapeHtml(e.description||'Описание смотрите в первоисточнике.')}</p><div class="modal-details"><div class="modal-detail"><span>КОГДА</span><strong>${escapeHtml(presentDate(e.start_date))}${e.end_date&&e.end_date!==e.start_date?' — '+escapeHtml(presentDate(e.end_date)):''}${e.time?' / '+escapeHtml(e.time):''}</strong></div><div class="modal-detail"><span>ГДЕ</span><strong>${escapeHtml(e.venue||'Площадка уточняется')}</strong></div><div class="modal-detail"><span>ИСТОЧНИК</span><strong>${escapeHtml(e.source_name||'Официальная страница')}</strong></div><div class="modal-detail"><span>УЧАСТНИКИ / АВТОРЫ</span><strong>${escapeHtml((e.people||[]).join(', ')||'Уточняйте у организатора')}</strong></div></div><div class="modal-footer"><a class="modal-primary" href="${escapeHtml(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">Открыть первоисточник ↗</a><button type="button" class="modal-secondary ${fav?'saved':''}" data-fav="${escapeHtml(e.id)}">${fav?'♥ В избранном':'♡ В избранное'}</button></div><p class="modal-footer-note">${escapeHtml(e.verification||'Проверьте подробности у организатора.')} · Добавлено в базу: ${escapeHtml(clockFmt(e.discovered_at))}</p></div></div></div>`;
  document.body.style.overflow='hidden';
 }
 function closeModal(){$('modal-root').innerHTML='';document.body.style.overflow='';}
@@ -127,6 +136,19 @@ function csvExport(){let events=matchingEvents();if(state.view==='overview')even
 }
 function jumpToPerson(name){state.term=name;state.category='Все';state.city='all';$('global-search').value=name;$('city-select').value='all';renderGenres();setView('events');notify(`Поиск по имени: ${name}`);}
 function wireEvents(){
+ document.addEventListener('load',(event)=>{
+  const img=event.target;
+  if(img?.classList?.contains('poster-real-image') && img.naturalWidth>0){
+   img.closest('.card-visual, .modal-visual')?.classList.add('poster-image-loaded');
+  }
+ },true);
+ document.addEventListener('error',(event)=>{
+  const img=event.target;
+  if(img?.classList?.contains('poster-real-image')){
+   img.closest('.card-visual, .modal-visual')?.classList.remove('poster-image-loaded');
+   img.remove();
+  }
+ },true);
  document.addEventListener('click',(event)=>{
   if(event.target.classList.contains('modal-backdrop')){closeModal();return;}
   const el=event.target.closest('button, a, [role="button"]');if(!el)return;
