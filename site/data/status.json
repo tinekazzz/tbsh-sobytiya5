@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T10:43:18+03:00",
+  "updated_at": "2026-11-18T11:17:34+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
@@ -13,16 +13,16 @@
   "sources_needing_javascript_today": 0,
   "sources_blocked_today": 68,
   "sources_failed_today": 8,
-  "events_extracted_today": 1030,
-  "new_events_added_today": 4,
+  "events_extracted_today": 1027,
+  "new_events_added_today": 3,
   "events_with_people_today": 51,
-  "events_in_catalog": 812,
-  "events_with_images": 709,
+  "events_in_catalog": 815,
+  "events_with_images": 762,
   "images_checked_today": 60,
-  "image_pages_requested_today": 65,
-  "image_detail_links_followed_today": 6,
-  "poster_overrides_applied_today": 3,
-  "images_found_today": 47,
+  "image_pages_requested_today": 61,
+  "image_detail_links_followed_today": 1,
+  "poster_overrides_applied_today": 0,
+  "images_found_today": 50,
   "image_checks_blocked_today": 1,
   "source_status_counts": {
     "found": 42,
@@ -50,7 +50,7 @@
       "url": "https://www.afisha.ru/msk/",
       "status": "found",
       "pages": 4,
-      "events": 140,
+      "events": 141,
       "methods": [
         "detail_dated_page",
         "jsonld"
@@ -63,7 +63,7 @@
       "url": "https://live.mts.ru/moscow",
       "status": "found",
       "pages": 4,
-      "events": 56,
+      "events": 53,
       "methods": [
         "dated_listing"
       ],
@@ -2496,7 +2496,7 @@
       "url": "https://redkassa.ru/",
       "status": "found",
       "pages": 3,
-      "events": 62,
+      "events": 60,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -2510,7 +2510,7 @@
       "url": "https://concert.ru/",
       "status": "found",
       "pages": 2,
-      "events": 28,
+      "events": 29,
       "methods": [
         "dated_listing"
       ],
