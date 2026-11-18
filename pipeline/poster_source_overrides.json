@@ -1,0 +1,19 @@
+{
+  "_comment": "Optional editorial links to exact, official event pages. The image is still extracted from the official page; no image URLs are guessed. To add another entry, use the exact event title and a verified HTTPS event page. poster_url is an optional editor-supplied, licensed image URL.",
+  "entries": [
+    {
+      "title": "Лев Бакст",
+      "detail_url": "https://tretyakov.ru/exhibitions/o/vystavka-lev-bakst/"
+    },
+    {
+      "title": "Декабрьские вечера Святослава Рихтера",
+      "detail_url": "https://pushkinmuseum.art/events/archive/2026/concerts/december_evenings/index.php?lang=ru"
+    },
+    {
+      "title": "Пятилетие Дома культуры «ГЭС-2»",
+      "image_pages": [
+        "https://ges-2.org/ges-2-five-years-press-release"
+      ]
+    }
+  ]
+}

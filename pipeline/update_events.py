@@ -32,6 +32,7 @@ from bs4 import BeautifulSoup
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'site/data'
+IMAGE_COLLECTOR_VERSION='4'
 LOG=logging.getLogger('radar')
 TZ=ZoneInfo('Europe/Moscow')
 HEADERS={'User-Agent':'KultRadarResearchBot/0.1 (+non-commercial editorial calendar; honors robots.txt)', 'Accept-Language':'ru-RU,ru;q=0.9,en;q=0.5'}
@@ -145,36 +146,41 @@ def normalize_image_url(raw, base=''):
     return raw
 
 def image_from_tag(tag, base=''):
+    """Prefer real lazy-loaded or responsive poster over a transparent `src` placeholder."""
     if not tag:return ''
-    values=[]
-    for attr in ('content','src','data-src','data-original','data-lazy-src','href'):
-        if tag.get(attr):values.append(tag.get(attr))
-    srcset=tag.get('srcset') or tag.get('data-srcset') or ''
-    if srcset:
-        last=srcset.split(',')[-1].strip().split(' ')[0]
-        if last:values.append(last)
-    for raw in values:
+    candidates=[]
+    for attr in ('data-full', 'data-original', 'data-src', 'data-lazy-src',
+                 'data-image', 'data-poster', 'poster', 'content'):
+        if tag.get(attr):candidates.append(tag[attr])
+    for attr in ('srcset', 'data-srcset'):
+        srcset=tag.get(attr) or ''
+        if srcset:
+            chunks=[]
+            for item in srcset.split(','):
+                raw=item.strip().split(' ')[0]
+                if raw:chunks.append(raw)
+            # srcset commonly lists small to large; highest-quality available wins.
+            candidates.extend(reversed(chunks))
+    for attr in ('src', 'href'):
+        if tag.get(attr):candidates.append(tag[attr])
+    for raw in candidates:
         normalized=normalize_image_url(raw,base)
-        if normalized:return normalized
+        if normalized and not re.search(r'(?i)(?:transparent|blank|1x1|loading\.|spinner\.)',normalized):
+            return normalized
     return ''
 
+
 def extract_image_url(soup, base=''):
-    selectors=[
-        'meta[property="og:image"]',
-        'meta[name="og:image"]',
-        'meta[property="og:image:url"]',
-        'meta[name="twitter:image"]',
-        'meta[property="twitter:image"]',
-        'meta[itemprop="image"]',
-        'link[rel="image_src"]',
-    ]
-    for sel in selectors:
-        tag=soup.select_one(sel)
-        img=image_from_tag(tag,base)
+    """Find an official event image in metadata or meaningful page content."""
+    for sel in ('meta[property="og:image"]', 'meta[name="og:image"]',
+                'meta[property="og:image:url"]', 'meta[name="twitter:image"]',
+                'meta[property="twitter:image"]', 'meta[itemprop="image"]',
+                'link[rel="image_src"]'):
+        img=image_from_tag(soup.select_one(sel),base)
         if img:return img
     for script in soup.select('script[type="application/ld+json"]'):
         try:data=json.loads(script.string or script.get_text())
-        except Exception:continue
+        except (ValueError,TypeError):continue
         stack=[data]
         while stack:
             node=stack.pop()
@@ -183,24 +189,29 @@ def extract_image_url(soup, base=''):
                 if isinstance(image,str):
                     img=normalize_image_url(image,base)
                     if img:return img
-                elif isinstance(image,list):
-                    for item in image:
-                        if isinstance(item,str):
-                            img=normalize_image_url(item,base)
-                            if img:return img
-                        elif isinstance(item,dict):
-                            img=normalize_image_url(item.get('url') or item.get('@id') or '',base)
-                            if img:return img
-                elif isinstance(image,dict):
-                    img=normalize_image_url(image.get('url') or image.get('@id') or '',base)
-                    if img:return img
+                elif isinstance(image,(dict,list)):
+                    candidates=image if isinstance(image,list) else [image]
+                    for item in candidates:
+                        img=normalize_image_url(item if isinstance(item,str) else
+                                                item.get('url') or item.get('@id') or '',base) if isinstance(item,(str,dict)) else ''
+                        if img:return img
                 stack.extend(v for v in node.values() if isinstance(v,(dict,list)))
-            elif isinstance(node,list):
-                stack.extend(node)
-    content=soup.select_one('article, main, .content, .post, .event, .event-card, .afisha-card, .entry-content, .page-content') or soup
-    for sel in ('img[src]','img[data-src]','source[srcset]'):
-        for tag in content.select(sel)[:8]:
+            elif isinstance(node,list):stack.extend(node)
+    root=soup.select_one('article, main, [role="main"], .event-content, .event-detail, .content, .post, .event, .entry-content, .page-content') or soup
+    for sel in ('img[data-full]', 'img[data-original]', 'img[data-src]',
+                'picture source[srcset]', 'img[srcset]', 'img[src]',
+                'video[poster]', '[data-image]', '[data-poster]'):
+        for tag in root.select(sel)[:30]:
+            width=tag.get('width') or tag.get('data-width') or ''
+            height=tag.get('height') or tag.get('data-height') or ''
+            if str(width).isdigit() and str(height).isdigit() and (int(width)<160 or int(height)<110):continue
             img=image_from_tag(tag,base)
+            if img:return img
+    for tag in root.select('[style*="background"]')[:30]:
+        value=tag.get('style') or ''
+        m=re.search(r'url\(\s*[\'"]?([^\)\'"]+)',value)
+        if m:
+            img=normalize_image_url(m.group(1),base)
             if img:return img
     return ''
 
@@ -208,8 +219,9 @@ def extract_image_url(soup, base=''):
 def fragment_image_url(node, base=''):
     """Find an event thumbnail inside a matched event card (not random site hero)."""
     if not node:return ''
-    for selector in ('img[src]', 'img[data-src]', 'img[data-original]', 'img[srcset]',
-                     'picture source[srcset]', '[itemprop="image"]'):
+    for selector in ('img[data-full]', 'img[data-original]', 'img[data-src]',
+                     'picture source[srcset]', 'img[srcset]', 'img[src]',
+                     'video[poster]', '[itemprop="image"]', '[data-image]', '[data-poster]'):
         for tag in node.select(selector)[:10]:
             img=image_from_tag(tag,base)
             if img:return img
@@ -266,6 +278,27 @@ def find_poster_in_listing(soup,title,page_url):
     if not candidates:return ''
     candidates.sort(reverse=True)
     return candidates[0][2]
+
+def find_detail_link_in_listing(soup, title, page_url):
+    """Find a title-matched official detail link, without guessing unrelated URLs."""
+    host=urlparse(page_url).hostname or ''
+    ranked=[]
+    for a in soup.select('a[href]')[:1000]:
+        href=urljoin(page_url,a.get('href') or '')
+        parsed=urlparse(href)
+        if parsed.scheme!='https' or (parsed.hostname or '')!=host:continue
+        if parsed.path.lower().endswith(SKIP_EXT):continue
+        if href.split('#',1)[0].rstrip('/')==page_url.split('#',1)[0].rstrip('/'):continue
+        label=clean(a.get_text(' ',strip=True))
+        if not label:
+            alt=a.select_one('img[alt]')
+            label=clean(alt.get('alt')) if alt else ''
+        score=title_similarity(title,label)
+        if score>=0.84 and label:
+            ranked.append((score,-len(label),href))
+    if not ranked:return ''
+    ranked.sort(reverse=True)
+    return ranked[0][2]
 
 def is_listing_page(url):
     path=urlparse(url).path.rstrip('/').lower()
@@ -526,82 +559,137 @@ def merge_events(editorial,existing,found,people,today):
     return sorted(combined.values(),key=lambda e:(e['start_date'],-e.get('editor_score',50),e['title']))
 
 
-def enrich_missing_images(events, limit=55):
-    """Progressively enrich existing and new records with official event posters.
+def apply_poster_source_overrides(events, overrides=None):
+    """Correct generic editorial links without touching event dates or saved images.
 
-    The crawler covers event facts. Image metadata is often missing from the
-    listing schema and editorial entries, so we separately inspect their real
-    event pages, in priority order, respecting robots.txt and HTTPS safety.
-    Sites not providing usable public images keep the graphic placeholder.
-    Failed/missing image attempts are retried after a cooldown, not every day.
+    The optional file holds ONLY verified, official detail pages and optional
+    editor-controlled poster URLs. Exact title matching prevents collisions.
+    """
+    records=overrides
+    if records is None:
+        records=load_json(ROOT/'pipeline/poster_source_overrides.json',{}).get('entries',[])
+    mapping={slug(x['title']):x for x in records if x.get('title')}
+    applied=0
+    for ev in events:
+        src=mapping.get(slug(ev.get('title')))
+        if not src:continue
+        detail=src.get('detail_url') or ''
+        if detail and normalize_image_url(detail) and ev.get('url')!=detail:
+            ev['url']=detail
+            if not ev.get('image_url'):
+                ev.pop('image_checked_at',None)
+                ev.pop('image_status',None)
+                ev.pop('image_checked_version',None)
+            applied+=1
+        candidate=normalize_image_url(src.get('poster_url') or '')
+        if candidate and not ev.get('image_url'):
+            ev['image_url']=candidate
+            ev['image_source_type']='editorial_poster_url'
+            applied+=1
+        pages=[]
+        for page in src.get('image_pages',[]):
+            if isinstance(page,str) and page.startswith('https://') and page not in pages:pages.append(page)
+        if pages:ev['image_source_pages']=pages[:3]
+    return applied
+
+def enrich_missing_images(events, limit=60):
+    """Find missing posters: detail page -> title-matched listing card -> its detail
+    link -> curated official alternate page. No random image from a listing.
+
+    Each run is bounded and complies with robots.txt. No third-party files are
+    copied or cached in the public repository.
     """
     from monitor_registry import PoliteClient, RobotsDenied, SourceError
     current=datetime.now(TZ).date()
     def needs_check(e):
         if e.get('image_url'):return False
-        url=clean(e.get('url'))
-        if not url.startswith('https://'):return False
+        if not str(e.get('url') or '').startswith('https://'):return False
+        if e.get('image_checked_version')!=IMAGE_COLLECTOR_VERSION:return True
         tried=e.get('image_checked_at')
         try:
-            if tried and (current-date.fromisoformat(tried[:10])).days<5:return False
+            if tried and (current-date.fromisoformat(tried[:10])).days<3:return False
         except (ValueError,TypeError):pass
         return True
     pending=[e for e in events if needs_check(e)]
-    if not pending:return {'attempts':0,'found':0,'blocked':0}
-    # Prioritize the forthcoming month, current editorial highlights, Moscow.
+    if not pending:return {'attempts':0,'found':0,'blocked':0,'pages_requested':0,'followed_detail_links':0}
     def rank(e):
         score=e.get('editor_score') or 60
         try:st=date.fromisoformat(str(e.get('start_date',''))[:10])
         except ValueError:st=current
         month_distance=abs((st.year-current.year)*12+st.month-current.month-1)
-        return (month_distance, 0 if e.get('origin')=='editorial' else 1,
-                0 if 'моск' in str(e.get('city','')).casefold() else 1, -score)
+        return (month_distance,0 if e.get('origin')=='editorial' else 1,
+                0 if 'моск' in str(e.get('city','')).casefold() else 1,-score)
     pending.sort(key=rank)
-    client=PoliteClient(delay=0.8)
-    session=requests.Session()
-    session.headers.update(HEADERS)
-    attempts=0;found=0;blocked=0;fetched={}
-    for ev in pending:
-        url=ev.get('url')
-        if url not in fetched:
-            if attempts>=limit:break
-            attempts+=1
-            try:
-                raw,ctype,final_url=client.read(url,session)
-                if 'html' not in ctype.lower():
-                    fetched[url]=(None,final_url,'non_html')
-                else:
-                    fetched[url]=(BeautifulSoup(raw,'html.parser'),final_url,'ok')
-            except (RobotsDenied,SourceError) as ex:
-                fetched[url]=(None,url,'blocked')
-                blocked+=1
-            except (requests.RequestException,ValueError) as ex:
-                fetched[url]=(None,url,'error')
-        soup,final_url,status=fetched[url]
-        ev['image_checked_at']=current.isoformat()
-        ev['image_status']=status
-        if soup is None:continue
-        # A shared listing or homepage may use one generic og:image for every
-        # result. Only accept its own matched card. A distinct event page with
-        # a matching h1/title may safely use its structured image metadata.
-        h1=soup.select_one('h1')
-        heading=clean(h1.get_text(' ',strip=True)) if h1 else ''
-        heading_score=title_similarity(ev['title'],heading)
-        if not heading:
-            heading_score=title_similarity(
-                ev['title'],first_meta(soup,['meta[property="og:title"]','title']))
-        if is_listing_page(final_url) or heading_score<0.7:
-            image=find_poster_in_listing(soup,ev['title'],final_url)
-        else:
-            image=extract_image_url(soup,final_url)
-        if image:
-            ev['image_url']=image
-            ev['image_status']='found'
-            found+=1
-        else:
-            ev['image_status']='not_found'
-    session.close()
-    return {'attempts':attempts,'found':found,'blocked':blocked}
+    client=PoliteClient(delay=.8)
+    session=requests.Session();session.headers.update(HEADERS)
+    cache={};attempts=0;found=0;blocked=0;pages_requested=0;followed=0
+    detail_limit=20
+    def fetch_soup(url):
+        nonlocal blocked,pages_requested
+        if url in cache:return cache[url]
+        pages_requested+=1
+        try:
+            raw,ctype,final_url=client.read(url,session)
+            result=(BeautifulSoup(raw,'html.parser'),final_url,'ok') if 'html' in ctype.lower() else (None,final_url,'non_html')
+        except RobotsDenied:
+            result=(None,url,'blocked');blocked+=1
+        except (SourceError,requests.RequestException,ValueError):
+            result=(None,url,'error')
+        cache[url]=result
+        return result
+    try:
+        for ev in pending:
+            url=ev.get('url')
+            if url not in cache and attempts>=limit:break
+            if url not in cache:attempts+=1
+            soup,final_url,status=fetch_soup(url)
+            ev['image_checked_at']=current.isoformat()
+            ev['image_checked_version']=IMAGE_COLLECTOR_VERSION
+            ev['image_status']=status
+            image='';image_origin=''
+            if soup is not None:
+                h1=soup.select_one('h1')
+                heading=clean(h1.get_text(' ',strip=True)) if h1 else ''
+                if not heading:heading=first_meta(soup,['meta[property="og:title"]','title'])
+                if not is_listing_page(final_url) and title_similarity(ev['title'],heading)>=.70:
+                    image=extract_image_url(soup,final_url)
+                    if image:image_origin='official_detail_page'
+                if not image:
+                    image=find_poster_in_listing(soup,ev['title'],final_url)
+                    if image:image_origin='matched_listing_card'
+                if not image and detail_limit>followed:
+                    detail=find_detail_link_in_listing(soup,ev['title'],final_url)
+                    if detail:
+                        followed+=1
+                        dsoup,durl,dstatus=fetch_soup(detail)
+                        if dsoup is not None:
+                            dh=dsoup.select_one('h1')
+                            title=clean(dh.get_text(' ',strip=True)) if dh else first_meta(dsoup,['meta[property="og:title"]','title'])
+                            if title_similarity(ev['title'],title)>=.70:
+                                image=extract_image_url(dsoup,durl)
+                                if image:
+                                    image_origin='matched_official_detail'
+                                    # Accurate details for the event become its main link.
+                                    ev['url']=detail
+            if not image:
+                for alt_url in ev.get('image_source_pages',[])[:2]:
+                    asoup,actual,astatus=fetch_soup(alt_url)
+                    if asoup is None:continue
+                    # These URLs were explicitly reviewed for this specific event.
+                    image=extract_image_url(asoup,actual)
+                    if image:
+                        image_origin='editorially_verified_page';break
+            if image:
+                ev['image_url']=image
+                ev['image_status']='found'
+                ev['image_source_type']=image_origin
+                found+=1
+            elif status=='ok':
+                ev['image_status']='not_found'
+    finally:
+        session.close()
+    return {'attempts':attempts,'found':found,'blocked':blocked,
+            'pages_requested':pages_requested,'followed_detail_links':followed}
 
 
 def run(offline=False, max_sources=0, workers=8):
@@ -628,9 +716,10 @@ def run(offline=False, max_sources=0, workers=8):
                                  workers=workers,max_sources=max_sources)
         for e in found:e['people']=get_people(e,people)
     events=merge_events(editorial,existing,found,people,today)
-    image_stats={'attempts':0,'found':0,'blocked':0}
+    overrides_applied=apply_poster_source_overrides(events)
+    image_stats={'attempts':0,'found':0,'blocked':0,'pages_requested':0,'followed_detail_links':0}
     if not offline:
-        image_stats=enrich_missing_images(events,limit=55)
+        image_stats=enrich_missing_images(events,limit=60)
     seen_status={key:sum(x.get('status')==key for x in logs)
                  for key in ('found','no_events','needs_javascript','blocked','error','invalid_url','unsupported')}
     reached=seen_status['found']+seen_status['no_events']+seen_status['needs_javascript']
@@ -656,6 +745,9 @@ def run(offline=False, max_sources=0, workers=8):
         'events_in_catalog':len(events),
         'events_with_images':sum(bool(e.get('image_url')) for e in events),
         'images_checked_today':image_stats['attempts'],
+        'image_pages_requested_today':image_stats['pages_requested'],
+        'image_detail_links_followed_today':image_stats['followed_detail_links'],
+        'poster_overrides_applied_today':overrides_applied,
         'images_found_today':image_stats['found'],
         'image_checks_blocked_today':image_stats['blocked'],
         'source_status_counts':seen_status,

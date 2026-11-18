@@ -242,7 +242,7 @@ def parse_microdata(soup,page_url,source,core,today):
         if not item_type.lower().endswith('event'):continue
         def prop(name):
             t=item.select_one('[itemprop="'+name+'"]')
-            return (t.get('content') or t.get('datetime') or t.get('href') or t.get_text(' ',strip=True)) if t else ''
+            return (t.get('content') or t.get('datetime') or t.get('href') or t.get('src') or t.get('data-src') or t.get_text(' ',strip=True)) if t else ''
         name=core.clean(prop('name'))
         start=core.parse_iso(prop('startDate'))
         end=core.parse_iso(prop('endDate')) or start
@@ -316,7 +316,22 @@ def extract_feed(raw,url,source,core,today):
         if not dates or not core.in_scope(dates[0],dates[-1],today):continue
         href=urljoin(url,fields.get('link') or fields.get('id') or url)
         if not valid_https(href):continue
-        ev=core.build_event(title,dates[0],dates[-1],desc[:290],source['name'],href,source)
+        # Public feeds often attach a real event image in RSS enclosures,
+        # media:thumbnail or content:encoded; publication dates remain ignored.
+        image=''
+        for child in entry:
+            local=child.tag.split('}')[-1].lower()
+            typ=(child.get('type') or child.get('medium') or '').lower()
+            if local in ('thumbnail','content','enclosure','image') and (
+                local in ('thumbnail','image') or 'image/' in typ or typ=='image'):
+                maybe=child.get('url') or child.get('href') or child.text or ''
+                image=core.normalize_image_url(maybe,url)
+                if image:break
+        if not image:
+            html_description=(fields.get('description') or fields.get('content') or '')
+            if '<img' in html_description.lower():
+                image=core.fragment_image_url(BeautifulSoup(html_description,'html.parser'),url)
+        ev=core.build_event(title,dates[0],dates[-1],desc[:290],source['name'],href,source,image_url=image)
         ev['extraction_method']='feed_date_in_body'
         found.append(ev)
     return found
