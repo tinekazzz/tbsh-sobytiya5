@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T10:12:48+03:00",
+  "generated_at": "2026-11-18T10:43:18+03:00",
   "mode": "daily_collection",
   "events": [
     {
@@ -1669,7 +1669,7 @@
       "category": "Выставки",
       "city": "Москва",
       "venue": "Третьяковская галерея, Инженерный корпус",
-      "url": "https://new.tretyakov.ru/tickets/exhibitions/",
+      "url": "https://tretyakov.ru/exhibitions/o/vystavka-lev-bakst/",
       "description": "Выставка работ знаменитого художника театра и балета, создателя ярких сценических образов.",
       "source_name": "Третьяковская галерея, Инженерный корпус",
       "people": [
@@ -1682,7 +1682,10 @@
       "origin": "editorial",
       "verified_at": "2026-11-17",
       "verification": "Проверено по официальной афише",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "blocked"
     },
     {
       "id": "auto-035750512ccac5",
@@ -1786,7 +1789,7 @@
       "category": "Другое",
       "venue": "Третьяковская галерея",
       "city": "Москва",
-      "url": "https://www.afisha.ru/exhibition/lev-bakst-1016235/",
+      "url": "https://tretyakov.ru/exhibitions/o/vystavka-lev-bakst/",
       "description": "",
       "source_name": "Афиша.ru — Москва",
       "source_id": "SRC-002",
@@ -4166,7 +4169,7 @@
       "category": "Фестивали",
       "city": "Москва",
       "venue": "Пушкинский музей",
-      "url": "https://decemberfest.pushkinmuseum.art/",
+      "url": "https://pushkinmuseum.art/events/archive/2026/concerts/december_evenings/index.php?lang=ru",
       "description": "Музыкальный фестиваль в пространстве музея — программа 2026 года посвящена французской культуре и эпохе рококо.",
       "source_name": "Пушкинский музей",
       "people": [],
@@ -4177,9 +4180,11 @@
       "origin": "editorial",
       "verified_at": "2026-11-17",
       "verification": "Проверено по официальной афише",
-      "image_url": "",
+      "image_url": "https://pushkinmuseum.art/events/archive/2026/concerts/december_evenings_01/25757_mainfoto_01.png",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "seed-003",
@@ -4227,7 +4232,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-ff8afd398f55ef",
@@ -4424,7 +4432,8 @@
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "image_checked_version": "4"
     },
     {
       "id": "auto-6dd11b4ede64d5",
@@ -4448,7 +4457,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-a325ded3d383f1",
@@ -4764,7 +4777,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-de21f6a45aecb2",
@@ -5156,7 +5173,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-088f12c9ba628c",
@@ -5278,7 +5299,8 @@
       "extraction_method": "detail_dated_page",
       "image_url": "",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "image_checked_version": "4"
     },
     {
       "id": "auto-9fd42496856739",
@@ -5425,9 +5447,14 @@
       "origin": "editorial",
       "verified_at": "2026-11-17",
       "verification": "Проверено по официальной афише",
-      "image_url": "",
+      "image_url": "https://cdn.v-a-c.org/v-a-c-static/store/materialtranslation/10747/share_image/main-44e4dd7309010fe033de2bc9a242e711.png",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_status": "found",
+      "image_source_pages": [
+        "https://ges-2.org/ges-2-five-years-press-release"
+      ],
+      "image_checked_version": "4",
+      "image_source_type": "editorially_verified_page"
     },
     {
       "id": "seed-008",
@@ -5620,7 +5647,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-9f69248993e261",
@@ -6234,7 +6265,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-c5cd9533e54f26",
@@ -6258,7 +6292,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-13c470a6a40695",
@@ -6306,7 +6343,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-f0c6513acd8ca2",
@@ -6330,7 +6370,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-58e26eca043bf7",
@@ -6354,7 +6397,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-ed837de22d7033",
@@ -6602,7 +6648,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://novat.ru/upload/iblock/3b5/raaus86ekt2dyiiivonmfi6kardraoho/Konek3_Desktop (1).jpg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-39306089e362c6",
@@ -6872,7 +6922,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://novat.ru/upload/resize_cache/iblock/663/xkmhz3iuj503xi8zwio34gbivn7jw8ef/1600_600_1/Спящая_десктоп.jpg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-ed61bed9fe5df4",
@@ -6944,7 +6998,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-981d993d602f90",
@@ -7258,7 +7316,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "feed_date_in_body",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-cb594b42cf88fd",
@@ -7282,7 +7343,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-3402359f4acaa2",
@@ -7306,7 +7370,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-a2611e2b53ca44",
@@ -7378,7 +7446,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-a300297b118224",
@@ -7788,7 +7860,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-9c471de7df1427",
@@ -8078,7 +8154,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-fc8b416fe97d82",
@@ -8394,7 +8474,7 @@
       "url": "https://drama.nnov.ru/performance/102",
       "description": "",
       "source_name": "Театр драмы Нижнего Новгорода",
-      "image_url": "",
+      "image_url": "https://drama.nnov.ru/images/menu_sep.png",
       "source_id": "SRC-216",
       "people": [],
       "editor_score": 68,
@@ -8404,7 +8484,11 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-605ef9fb85bad2",
@@ -8603,7 +8687,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://uralopera.ru/storage/large/hXQi63V34XHOZLiBoQp5jueNWJkgTgrNjEHaCSFP.jpg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-7fb44ff06c4576",
@@ -9045,7 +9133,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-c7105f130a0e55",
@@ -9069,7 +9160,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://uralopera.ru/storage/large/hXQi63V34XHOZLiBoQp5jueNWJkgTgrNjEHaCSFP.jpg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-2d7f6aa3877501",
@@ -10028,6 +10123,34 @@
       "image_url": "https://msk.kassir.ru/detyam/novogodnyaya-istoriya-igrushek-3"
     },
     {
+      "id": "auto-22be290fdfd94a",
+      "title": "Рождественский концерт при свечах",
+      "start_date": "2026-12-13",
+      "end_date": "2026-12-25",
+      "time": null,
+      "category": "Концерты",
+      "venue": "Концертный зал \"Дачное Кусково\"",
+      "city": "Москва",
+      "url": "https://redkassa.ru/events/bilety_na_concert_rozhdestvenskiy_pri_svechah_kuskovo",
+      "description": "",
+      "source_name": "RedKassa",
+      "image_url": "https://redkassa.ru/Themes/Old/Content/img/empty/120x120.png",
+      "source_id": "SRC-230",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
+    },
+    {
       "id": "auto-d7d96ec8d2c8b9",
       "title": "Россия — Казахстан и Матч легенд",
       "start_date": "2026-12-13",
@@ -10270,7 +10393,8 @@
       "extraction_method": "detail_dated_page",
       "image_url": "",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "image_checked_version": "4"
     },
     {
       "id": "auto-e310e92a4edc72",
@@ -10683,7 +10807,8 @@
       "verification": "Собрано автоматически; уточните детали у организатора",
       "image_url": "",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "image_checked_version": "4"
     },
     {
       "id": "auto-999b578d613c74",
@@ -11175,9 +11300,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "",
+      "image_url": "https://www.concert.ru/pictures/000658862.png",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_status": "found",
+      "image_checked_version": "4",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "seed-013",
@@ -11393,9 +11520,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "",
+      "image_url": "https://www.concert.ru/pictures/000658862.png",
       "image_checked_at": "2026-11-18",
-      "image_status": "not_found"
+      "image_status": "found",
+      "image_checked_version": "4",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-cc17f124608090",
@@ -11543,7 +11672,10 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-dbb4abef94d78a",
@@ -11639,7 +11771,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/6556068a-9044-433f-b558-2f8a40447fe0",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-ff1c8863170c05",
@@ -11687,7 +11823,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "microdata",
-      "image_url": ""
+      "image_url": "https://vtb-arena.com/upload/iblock/448/cxojn8negdwsketwrj2tou96h2fqphfj.jpg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "matched_listing_card"
     },
     {
       "id": "auto-008a333c2c7793",
@@ -11725,7 +11865,7 @@
       "url": "https://redkassa.ru/events/bilety_na_concert_piknik_vechnoe_dvizhenie",
       "description": "",
       "source_name": "RedKassa",
-      "image_url": "",
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/69f8f951-2b63-4c84-99cb-5c2cb9397f0f",
       "source_id": "SRC-230",
       "people": [],
       "editor_score": 68,
@@ -11735,7 +11875,11 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "detail_dated_page"
+      "extraction_method": "detail_dated_page",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-0e0f8aae262be5",
@@ -11759,7 +11903,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/a62f0e0c-1720-43d9-9b91-67845be614b4",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-fad4266a1f48f4",
@@ -12215,7 +12363,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/f0b804b2-8e1d-468a-85d7-2aa5023ca70c",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-e4e7a550696598",
@@ -12311,7 +12463,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/20b8acb0-be18-402c-9a27-9040ad815479",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-7aefc8eb08873c",
@@ -12583,7 +12739,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/372e83d1-63f3-477f-aeda-1d8c0302075c",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-4becc65d79a906",
@@ -12657,7 +12817,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/b96aa18d-692e-4aac-8e3a-00d29250e583",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-190c5156d303dd",
@@ -12805,7 +12969,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/b96aa18d-692e-4aac-8e3a-00d29250e583",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-15d6f28a9d692e",
@@ -12901,7 +13069,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/c9811c46-dafb-4670-8912-63770b5855eb",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-1ceffa4dd37188",
@@ -12925,7 +13097,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/35c73834-c57e-4681-bef3-8426b0352b19",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "seed-015",
@@ -13095,7 +13271,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/1b3bf66e-6eba-4201-8897-42db730bd451",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-e7390c77f7781d",
@@ -13119,7 +13299,39 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://www.concert.ru/pictures/000658862.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
+    },
+    {
+      "id": "auto-68868bc569e4d7",
+      "title": "Рождественский концерт при свечах",
+      "start_date": "2026-12-25",
+      "end_date": "2026-12-25",
+      "time": null,
+      "category": "Концерты",
+      "venue": "RedKassa",
+      "city": "Москва",
+      "url": "https://redkassa.ru/events/bilety_na_concert_rozhdestvenskiy_pri_svechah_kuskovo",
+      "description": "",
+      "source_name": "RedKassa",
+      "image_url": "https://redkassa.ru/Themes/Old/Content/img/empty/120x120.png",
+      "source_id": "SRC-230",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-6bd3e3913a5eae",
@@ -13239,7 +13451,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/3fa7d011-eb96-4cc0-b622-7c69b5287365",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-09d0184ff48645",
@@ -13287,7 +13503,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/652135dc-6e21-4d8a-9c0a-f09edd5959eb",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-d9f15b0e3e9ab4",
@@ -13385,7 +13605,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/65fc18b8-e582-44e0-b9ea-0f45239faa39",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-cdeab1e08fb3fa",
@@ -13411,7 +13635,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://www.concert.ru/pictures/000658862.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-791f0ca58182c3",
@@ -13463,7 +13691,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://vtb-arena.com/local/templates/vtb/img/images/about/img-1.jpg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-494f7b7c445d5d",
@@ -13513,7 +13745,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://design-zavod.ru/themes/zavod/assets/img/ognew.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-275287e1140517",
@@ -13585,7 +13821,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://www.concert.ru/pictures/000658862.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-765e23d21aeafb",
@@ -13777,7 +14017,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/2f663e4a-9c4c-46ab-96dd-543d60037ecb",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-ff9d4db254d7d0",
@@ -13897,7 +14141,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/2bd75292-3e38-4ce2-bbd9-e84e29c261cd",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-a9f42bae22fdda",
@@ -13921,7 +14169,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://www.concert.ru/pictures/000658862.png",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-d5832f2d677d9f",
@@ -14089,7 +14341,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": ""
+      "image_url": "https://teatrpushkin.ru/layout/files/submenu-ico.jpg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "matched_listing_card"
     },
     {
       "id": "auto-e78cda1cdb5e49",
@@ -14113,7 +14369,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/3adab90c-00d3-4c7d-a8aa-a365d3716a88",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-ebfbc976119358",
@@ -14233,7 +14493,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/1ae63bbb-bcdc-43be-9923-15e201a60fb9",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-9c687746810d7a",
@@ -14281,7 +14545,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-d41bd53ea07e52",
@@ -14473,7 +14740,10 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "not_found"
     },
     {
       "id": "auto-f14cd915142124",
@@ -14665,7 +14935,11 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
-      "image_url": ""
+      "image_url": "https://cdn.pbilet.com/origin/0b5b76e2-1505-4647-858d-0df47450ce6d.jpeg",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-3dc3c94940e1e2",
@@ -15029,7 +15303,7 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65"
     },
     {
       "id": "auto-423cb53ef76692",
@@ -15101,7 +15375,7 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65"
     },
     {
       "id": "auto-96b93f86a28e48",
@@ -15197,7 +15471,7 @@
       "verified_at": "2026-11-17",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": ""
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65"
     },
     {
       "id": "auto-97ebf45328000e",
@@ -17953,6 +18227,30 @@
       "extraction_method": "dated_listing"
     },
     {
+      "id": "auto-45fe0ca48e0aca",
+      "title": "Андрей Большаков: 70 лет на полной громкости",
+      "start_date": "2027-01-29",
+      "end_date": "2027-01-29",
+      "time": null,
+      "category": "Другое",
+      "venue": "Клуб \"Урбан\" (г. Москва)",
+      "city": "Москва",
+      "url": "https://redkassa.ru/events/bilety_na_concert_andrey_bolshakov",
+      "description": "",
+      "source_name": "RedKassa",
+      "image_url": "",
+      "source_id": "SRC-230",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld"
+    },
+    {
       "id": "auto-c588e82327af52",
       "title": "Иван Абрамов. Всё из детства",
       "start_date": "2027-01-29",
@@ -19541,6 +19839,30 @@
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page"
+    },
+    {
+      "id": "auto-43e1ce07e9c53b",
+      "title": "Запчасти для счастья (Муром)",
+      "start_date": "2027-02-23",
+      "end_date": "2027-02-23",
+      "time": null,
+      "category": "Другое",
+      "venue": "Муромский городской театр",
+      "city": "Москва",
+      "url": "https://redkassa.ru/events/bilety_na_spektakl_zapchasti_dlya_schastya_murom",
+      "description": "",
+      "source_name": "RedKassa",
+      "image_url": "",
+      "source_id": "SRC-230",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld"
     },
     {
       "id": "auto-b07039a852063a",

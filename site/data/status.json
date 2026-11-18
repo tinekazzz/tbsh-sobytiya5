@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T10:12:48+03:00",
+  "updated_at": "2026-11-18T10:43:18+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
@@ -7,25 +7,28 @@
   "tracked_people": 332,
   "configured_collectors": 241,
   "sources_checked_today": 241,
-  "sources_reached_today": 162,
+  "sources_reached_today": 165,
   "sources_with_events_today": 42,
-  "sources_no_dated_events_today": 120,
+  "sources_no_dated_events_today": 123,
   "sources_needing_javascript_today": 0,
-  "sources_blocked_today": 71,
+  "sources_blocked_today": 68,
   "sources_failed_today": 8,
-  "events_extracted_today": 1024,
-  "new_events_added_today": 9,
+  "events_extracted_today": 1030,
+  "new_events_added_today": 4,
   "events_with_people_today": 51,
-  "events_in_catalog": 808,
-  "events_with_images": 659,
-  "images_checked_today": 55,
-  "images_found_today": 60,
-  "image_checks_blocked_today": 0,
+  "events_in_catalog": 812,
+  "events_with_images": 709,
+  "images_checked_today": 60,
+  "image_pages_requested_today": 65,
+  "image_detail_links_followed_today": 6,
+  "poster_overrides_applied_today": 3,
+  "images_found_today": 47,
+  "image_checks_blocked_today": 1,
   "source_status_counts": {
     "found": 42,
-    "no_events": 120,
+    "no_events": 123,
     "needs_javascript": 0,
-    "blocked": 71,
+    "blocked": 68,
     "error": 8,
     "invalid_url": 0,
     "unsupported": 0
@@ -60,7 +63,7 @@
       "url": "https://live.mts.ru/moscow",
       "status": "found",
       "pages": 4,
-      "events": 53,
+      "events": 56,
       "methods": [
         "dated_listing"
       ],
@@ -1036,7 +1039,7 @@
       "url": "https://bigcirk.moscow/events",
       "status": "found",
       "pages": 3,
-      "events": 10,
+      "events": 12,
       "methods": [
         "detail_dated_page",
         "jsonld"
@@ -1261,7 +1264,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt запрещает этот адрес"
+      "error": "robots.txt запрещает доступ"
     },
     {
       "id": "SRC-115",
@@ -1351,12 +1354,11 @@
       "id": "SRC-123",
       "name": "Музей музыки",
       "url": "https://music-museum.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "A"
     },
     {
       "id": "SRC-124",
@@ -1781,12 +1783,11 @@
       "id": "SRC-164",
       "name": "Beat Film Festival",
       "url": "https://beatfilmfestival.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 3,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "B"
     },
     {
       "id": "SRC-165",
@@ -1938,12 +1939,11 @@
       "id": "SRC-179",
       "name": "Ведомости Город",
       "url": "https://www.vedomosti.ru/gorod",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "robots.txt недоступен: ReadTimeout"
+      "priority": "B"
     },
     {
       "id": "SRC-180",
@@ -2496,7 +2496,7 @@
       "url": "https://redkassa.ru/",
       "status": "found",
       "pages": 3,
-      "events": 61,
+      "events": 62,
       "methods": [
         "dated_listing",
         "detail_dated_page",
