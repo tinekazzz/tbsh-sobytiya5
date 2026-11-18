@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T11:32:55+03:00",
+  "generated_at": "2026-11-18T12:53:33+03:00",
   "mode": "daily_collection",
   "events": [
     {
@@ -125,8 +125,8 @@
         "auto-6d735578873cb5"
       ],
       "source_urls": [
-        "https://www.afisha.ru/exhibition/son-v-muzee-1004971/?priorityCity=msk",
-        "https://www.afisha.ru/exhibition/son-v-muzee-1004971/"
+        "https://www.afisha.ru/exhibition/son-v-muzee-1004971/",
+        "https://www.afisha.ru/exhibition/son-v-muzee-1004971/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -162,8 +162,8 @@
         "auto-b3899d044ed333"
       ],
       "source_urls": [
-        "https://www.afisha.ru/exhibition/ayvazovskiy-ozhivshie-polotna-258674/?priorityCity=msk",
-        "https://www.afisha.ru/exhibition/ayvazovskiy-ozhivshie-polotna-258674/"
+        "https://www.afisha.ru/exhibition/ayvazovskiy-ozhivshie-polotna-258674/",
+        "https://www.afisha.ru/exhibition/ayvazovskiy-ozhivshie-polotna-258674/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -197,8 +197,8 @@
         "auto-a3398cf5770c8a"
       ],
       "source_urls": [
-        "https://www.afisha.ru/exhibition/futurione-316306/?priorityCity=msk",
-        "https://www.afisha.ru/exhibition/futurione-316306/"
+        "https://www.afisha.ru/exhibition/futurione-316306/",
+        "https://www.afisha.ru/exhibition/futurione-316306/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -297,6 +297,30 @@
       "image_status": "found"
     },
     {
+      "id": "auto-49a494bfa20017",
+      "title": "Выставка «Рукописи не горят»",
+      "start_date": "2026-05-07",
+      "end_date": "2027-02-21",
+      "time": null,
+      "category": "Выставки",
+      "venue": "Музей на Большой Садовой («Нехорошая квартира»)",
+      "city": "Москва",
+      "url": "https://bulgakovmuseum.ru/exhibitions/v-nehoroshej-kvartire-otkryta-vystavka-rukopisi-ne-goryat",
+      "description": "Выставка «Рукописи не горят» рассказывает об истории создания романа «Мастер и Маргарита» и о том, как спустя 25 лет после смерти Михаила Булгакова, произведение стало о…",
+      "source_name": "Музей Михаила Булгакова",
+      "image_url": "https://static.bulgakovmuseum.ru/exhibitions/47f93b94-05c6-41a3-9017-b68b921234e7.jpg",
+      "source_id": "NEW-SRC-009",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "detail_jsonld"
+    },
+    {
       "id": "auto-52e6764e1d64c5",
       "title": "Только не говори маме",
       "start_date": "2026-06-01",
@@ -355,8 +379,8 @@
         "auto-47e5bcc88a7807"
       ],
       "source_urls": [
-        "https://www.afisha.ru/exhibition/triumf-syurrealizma-imperiya-dali-316733/?priorityCity=msk",
-        "https://www.afisha.ru/exhibition/triumf-syurrealizma-imperiya-dali-316733/"
+        "https://www.afisha.ru/exhibition/triumf-syurrealizma-imperiya-dali-316733/",
+        "https://www.afisha.ru/exhibition/triumf-syurrealizma-imperiya-dali-316733/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -1266,8 +1290,8 @@
         "auto-ccf765ccc1a44e"
       ],
       "source_urls": [
-        "https://www.afisha.ru/exhibition/vek-mayi-pliseckoy-1015123/?priorityCity=msk",
-        "https://www.afisha.ru/exhibition/vek-mayi-pliseckoy-1015123/"
+        "https://www.afisha.ru/exhibition/vek-mayi-pliseckoy-1015123/",
+        "https://www.afisha.ru/exhibition/vek-mayi-pliseckoy-1015123/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -1389,8 +1413,8 @@
         "auto-f92e8a3b2db2d9"
       ],
       "source_urls": [
-        "https://www.afisha.ru/exhibition/russkiy-hudozhnik-ivan-lubennikov-1015295/?priorityCity=msk",
-        "https://www.afisha.ru/exhibition/russkiy-hudozhnik-ivan-lubennikov-1015295/"
+        "https://www.afisha.ru/exhibition/russkiy-hudozhnik-ivan-lubennikov-1015295/",
+        "https://www.afisha.ru/exhibition/russkiy-hudozhnik-ivan-lubennikov-1015295/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -1746,6 +1770,30 @@
         "Центр AZ/ART"
       ],
       "image_status": "found"
+    },
+    {
+      "id": "auto-ebe5bd452d8c06",
+      "title": "Выставка «Всю жизнь мечтал. Михаил Булгаков и Владимир Дмитриев»",
+      "start_date": "2026-10-29",
+      "end_date": "2027-04-19",
+      "time": null,
+      "category": "Выставки",
+      "venue": "Музей на Большой Пироговской",
+      "city": "Москва",
+      "url": "https://bulgakovmuseum.ru/exhibitions/vsyu-zhizn-mechtal-mihail-bulgakov-i-vladimir-dmitriev",
+      "description": "«Всю жизнь мечтал. Михаил Булгаков и Владимир Дмитриев» Михаила Булгакова и театрального художника Владимира Дмитриева связывали дружба, творческое единомыслие, острые с…",
+      "source_name": "Музей Михаила Булгакова",
+      "image_url": "https://static.bulgakovmuseum.ru/banners/4e0059b2-9444-444f-bec0-00f8b27c9a2a.jpg",
+      "source_id": "NEW-SRC-009",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "detail_jsonld"
     },
     {
       "id": "auto-82cab115b5b179",
@@ -2625,8 +2673,8 @@
         "auto-023df8759f98e1"
       ],
       "source_urls": [
-        "https://www.afisha.ru/performance/vsyo-budet-chelentano-1006783/?priorityCity=msk",
-        "https://www.afisha.ru/performance/vsyo-budet-chelentano-1006783/"
+        "https://www.afisha.ru/performance/vsyo-budet-chelentano-1006783/",
+        "https://www.afisha.ru/performance/vsyo-budet-chelentano-1006783/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -2668,6 +2716,43 @@
         "RedKassa"
       ],
       "image_status": "found"
+    },
+    {
+      "id": "auto-790cdc2f163f23",
+      "title": "Всё будет Челентано",
+      "start_date": "2026-11-18",
+      "end_date": "2027-01-31",
+      "time": null,
+      "category": "Другое",
+      "venue": "RedKassa",
+      "city": "Москва",
+      "url": "https://redkassa.ru/events/bilety_na_musical_vse_budet_chelentano",
+      "description": "",
+      "source_name": "RedKassa",
+      "source_id": "SRC-230",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-17",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing",
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/90531d45-340f-4c62-954b-9c19053151c9",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [
+        "auto-f6f901344a2809"
+      ],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_musical_vse_budet_chelentano"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-bac1e9422489f1",
@@ -2770,6 +2855,30 @@
         "Афиша.ru — Москва"
       ],
       "image_status": "found"
+    },
+    {
+      "id": "auto-c1ff2bfbba495d",
+      "title": "Мастер-класс «Живопись маслом на холсте: 2 вечера для себя»",
+      "start_date": "2026-11-18",
+      "end_date": "2026-12-16",
+      "time": null,
+      "category": "Лекции",
+      "venue": "КЦ «Можайский»",
+      "city": "Москва",
+      "url": "https://www.afisha.ru/exhibition/master-klass-zhivopis-maslom-na-holste-2-vechera-dlya-sebya-1015584/",
+      "description": "",
+      "source_name": "Афиша.ru — Москва",
+      "image_url": "https://s4.afisha.ru/mediastorage/84/42/dbd6ed2a3bec47e990e732f64284.jpg",
+      "source_id": "SRC-002",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "detail_dated_page"
     },
     {
       "id": "auto-4f5f8b62705e57",
@@ -3066,6 +3175,30 @@
       "image_status": "found"
     },
     {
+      "id": "auto-9ce2cb69bd50b2",
+      "title": "Посещение смотровой площадки «Выше только любовь» в Москва-сити",
+      "start_date": "2026-11-18",
+      "end_date": "2027-01-31",
+      "time": null,
+      "category": "Другое",
+      "venue": "Смотровая площадка «Выше только любовь»",
+      "city": "Москва",
+      "url": "https://www.afisha.ru/excursion/poseshchenie-smotrovoy-ploshchadki-vyshe-tolko-lyubov-v-moskva-siti-87/",
+      "description": "",
+      "source_name": "Афиша.ru — Москва",
+      "image_url": "https://s2.afisha.ru/mediastorage/ef/79/de825ccca45348aa8fa481ad79ef.jpeg",
+      "source_id": "SRC-002",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld"
+    },
+    {
       "id": "auto-d2576d4b809175",
       "title": "Сегодня 18 ноября 2026, среда",
       "start_date": "2026-11-18",
@@ -3186,8 +3319,8 @@
         "auto-f2ff01c6e5615e"
       ],
       "source_urls": [
-        "https://www.afisha.ru/concert/stendap-shou-5-hedlaynerov-za-2500-6038222/?priorityCity=msk",
-        "https://www.afisha.ru/concert/stendap-shou-5-hedlaynerov-za-2500-6038222/"
+        "https://www.afisha.ru/concert/stendap-shou-5-hedlaynerov-za-2500-6038222/",
+        "https://www.afisha.ru/concert/stendap-shou-5-hedlaynerov-za-2500-6038222/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -3225,41 +3358,6 @@
         "Афиша.ru — Москва"
       ],
       "image_status": "found"
-    },
-    {
-      "id": "auto-790cdc2f163f23",
-      "title": "Всё будет Челентано",
-      "start_date": "2026-11-19",
-      "end_date": "2027-01-31",
-      "time": null,
-      "category": "Другое",
-      "venue": "RedKassa",
-      "city": "Москва",
-      "url": "https://redkassa.ru/events/bilety_na_musical_vse_budet_chelentano",
-      "description": "",
-      "source_name": "RedKassa",
-      "source_id": "SRC-230",
-      "people": [],
-      "editor_score": 68,
-      "featured": false,
-      "tag": "",
-      "discovered_at": "2026-11-17",
-      "origin": "automatic",
-      "verified_at": "2026-11-18",
-      "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing",
-      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/90531d45-340f-4c62-954b-9c19053151c9",
-      "image_checked_at": "2026-11-18",
-      "image_checked_version": "4",
-      "image_status": "found",
-      "image_source_type": "official_detail_page",
-      "duplicate_ids": [],
-      "source_urls": [
-        "https://redkassa.ru/events/bilety_na_musical_vse_budet_chelentano"
-      ],
-      "duplicate_sources": [
-        "RedKassa"
-      ]
     },
     {
       "id": "auto-b71b80c43de7d3",
@@ -3388,8 +3486,8 @@
         "auto-ec7be9b977411b"
       ],
       "source_urls": [
-        "https://www.afisha.ru/concert/kabare-chyornye-rozy-by-sugar-factory-show-2276119/?priorityCity=msk",
-        "https://www.afisha.ru/concert/kabare-chyornye-rozy-by-sugar-factory-show-2276119/"
+        "https://www.afisha.ru/concert/kabare-chyornye-rozy-by-sugar-factory-show-2276119/",
+        "https://www.afisha.ru/concert/kabare-chyornye-rozy-by-sugar-factory-show-2276119/?priorityCity=msk"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -3415,10 +3513,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": "https://mc.yandex.ru/watch/13891495"
+      "image_url": "https://mc.yandex.ru/watch/13891495",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.timeout.ru/msk/concerts"
+      ],
+      "duplicate_sources": [
+        "Time Out Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-c0534c46ac9491",
@@ -3454,6 +3560,30 @@
         "Афиша.ru — Москва"
       ],
       "image_status": "found"
+    },
+    {
+      "id": "auto-b67069754bbbc7",
+      "title": "Небо Игры и Спорт",
+      "start_date": "2026-11-19",
+      "end_date": "2026-12-30",
+      "time": null,
+      "category": "Другое",
+      "venue": "Небо Филион",
+      "city": "Москва",
+      "url": "https://www.afisha.ru/sport/nebo-igry-i-sport-200131/",
+      "description": "",
+      "source_name": "Афиша.ru — Москва",
+      "image_url": "https://s4.afisha.ru/mediastorage/ae/53/551efcc1b84948b8b6ce715053ae.jpg",
+      "source_id": "SRC-002",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld"
     },
     {
       "id": "auto-9f1d170a7d7bde",
@@ -4165,9 +4295,12 @@
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
       "image_url": "https://s5.afisha.ru/mediastorage/6e/46/043bf23104884ad3b0ce6c70466e.jpg",
-      "duplicate_ids": [],
+      "duplicate_ids": [
+        "auto-e2778d7282c405"
+      ],
       "source_urls": [
-        "https://www.afisha.ru/concert/estetika-zhivoy-muzyki-orkestr-v-siyanii-svechiy-atmosfera-6041335/?priorityCity=msk"
+        "https://www.afisha.ru/concert/estetika-zhivoy-muzyki-orkestr-v-siyanii-svechiy-atmosfera-6041335/?priorityCity=msk",
+        "https://www.afisha.ru/concert/estetika-zhivoy-muzyki-orkestr-v-siyanii-svechiy-atmosfera-6041335/"
       ],
       "duplicate_sources": [
         "Афиша.ru — Москва"
@@ -5193,6 +5326,30 @@
       "extraction_method": "jsonld"
     },
     {
+      "id": "auto-128bfa1e3ce907",
+      "title": "Кант",
+      "start_date": "2026-11-30",
+      "end_date": "2027-01-09",
+      "time": null,
+      "category": "Другое",
+      "venue": "Театр им. Вл.Маяковского",
+      "city": "Москва",
+      "url": "https://msk.kassir.ru/teatr/kant",
+      "description": "Кант",
+      "source_name": "Кассир.ру — Москва",
+      "image_url": "https://msk.kassir.ru/teatr/kant",
+      "source_id": "SRC-005",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld"
+    },
+    {
       "id": "auto-1bb3739a12f552",
       "title": "Повод остаться",
       "start_date": "2026-11-30",
@@ -5436,10 +5593,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/tango-orchestra-misterioso-rossiya-9b493936-76b8-4dff-8f8d-548cba0d54ec.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/tango-orchestra-misterioso-rossiya-9b493936-76b8-4dff-8f8d-548cba0d54ec.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/club/club-soyuz-kompozitorov"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-998bf50fb578ad",
@@ -5558,10 +5723,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/tango-orchestra-misterioso-rossiya-9b493936-76b8-4dff-8f8d-548cba0d54ec.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/tango-orchestra-misterioso-rossiya-9b493936-76b8-4dff-8f8d-548cba0d54ec.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/tango-orchestra-misterioso-rossiya?eventId=29106829"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-92cf358988ad81",
@@ -5622,7 +5795,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "detail_dated_page"
+      "extraction_method": "detail_dated_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://vakhtangov.ru/show/kontsert-mihaila-golovushkina/"
+      ],
+      "duplicate_sources": [
+        "Театр Вахтангова"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-6dd11b4ede64d5",
@@ -5710,10 +5891,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/tango-orchestra-misterioso-rossiya-9b493936-76b8-4dff-8f8d-548cba0d54ec.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/tango-orchestra-misterioso-rossiya-9b493936-76b8-4dff-8f8d-548cba0d54ec.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/tango-orchestra-misterioso-rossiya?eventId=29106829"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-dab34d9a8ca9c5",
@@ -5874,6 +6063,30 @@
         "Кассир.ру — Москва"
       ],
       "image_status": "found"
+    },
+    {
+      "id": "auto-238c2591ef66f6",
+      "title": "«Кармина Бурана»",
+      "start_date": "2026-12-02",
+      "end_date": "2026-12-02",
+      "time": null,
+      "category": "Концерты",
+      "venue": "Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла г. Москва , Старосадский пер., 7 М Китай-город",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/40264-sobor/",
+      "description": "Концерт «Кармина Бурана» от фонда Бельканто пройдет 2 декабря 2026 в 20:00 в Москве. Зал — Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/150x-/iblock/26c/26c0172da6143fcb638e4faabe9e28af.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
     },
     {
       "id": "auto-e6d4bf2402f317",
@@ -6059,7 +6272,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4344a12caf029d",
@@ -6118,7 +6339,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604343"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-de21f6a45aecb2",
@@ -6303,7 +6532,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/snezhnaya-koroleva/202612021830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1dd11f5ffb5359",
@@ -6590,7 +6827,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "jsonld"
+      "extraction_method": "jsonld",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/293205"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-82214deab0b88d",
@@ -6618,7 +6863,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/shou-sovsem-bolshoj-291575"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-406b9d1bea5cdf",
@@ -6646,7 +6898,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/52221"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-ae7bb4afdd80db",
@@ -6702,7 +6961,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/volshebnaya_lampa_aladdina/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-b0d6fee1d88167",
@@ -6726,7 +6993,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/events/gala-koncert-shou-nu-ka-vse-vmeste-1"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-3ff6040cb21591",
@@ -6750,7 +7025,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-8d38e71e65304d",
@@ -6839,10 +7122,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/tancy-yolka-muz-tv-1-3515dcaf-11bc-4421-90a1-fb73487d4168.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/tancy-yolka-muz-tv-1-3515dcaf-11bc-4421-90a1-fb73487d4168.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/tancy-yolka-muz-tv-1?eventId=28958881"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-cb8e368d4c41fa",
@@ -6898,6 +7189,38 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604344"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-9080348bfcd659",
+      "title": "МТС Live Холл Москва",
+      "start_date": "2026-12-03",
+      "end_date": "2026-12-03",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/tancy-yolka-muz-tv-1-3515dcaf-11bc-4421-90a1-fb73487d4168.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing"
     },
     {
@@ -6922,7 +7245,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/mertvye_dushi/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-113c0e95c16bc1",
@@ -7010,7 +7341,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/lyuchiya-di-lammermur-2/pushka/202612031830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e82d9d5767a97a",
@@ -7158,7 +7497,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/lyuchiya-di-lammermur-2/202612031830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-aaae3d5ba388b0",
@@ -7179,10 +7526,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/tancy-yolka-muz-tv-1-3515dcaf-11bc-4421-90a1-fb73487d4168.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/tancy-yolka-muz-tv-1-3515dcaf-11bc-4421-90a1-fb73487d4168.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/tancy-yolka-muz-tv-1?eventId=28958881"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "seed-002",
@@ -7413,6 +7768,54 @@
       "image_status": "found"
     },
     {
+      "id": "auto-78aa1b9a5d0dc5",
+      "title": "«Christmas-Gala. Грузинское и Европейское многоголосие и орган»",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-04",
+      "time": null,
+      "category": "Концерты",
+      "venue": "Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла г. Москва , Старосадский пер., 7 М Китай-город",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41919-sobor/",
+      "description": "Концерт «Christmas-Gala. Грузинское и Европейское многоголосие и орган» от фонда Бельканто пройдет 4 декабря 2026 в 18:00 в Москве. Зал — Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/150x-/iblock/ba3/ba34914d57ee289dbb0209889d7190e9.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
+      "id": "auto-9c01c63c1f48ed",
+      "title": "«Саундтрек Орган оркестр шоу: Рихтер, Арнальдс, Гласс, Йоханнссон, Эйнауди»",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-04",
+      "time": null,
+      "category": "Шоу",
+      "venue": "Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла г. Москва , Старосадский пер., 7 М Китай-город",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41921-sobor/",
+      "description": "Концерт «Саундтрек Орган оркестр шоу: Рихтер, Арнальдс, Гласс, Йоханнссон, Эйнауди» от фонда Бельканто пройдет 4 декабря 2026 в 21:00 в Москве. Зал — Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/150x-/iblock/2c9/2c91db18482a23cc33661ef9cf836a1c.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
       "id": "auto-b961103c838ed6",
       "title": "Аида Гарифуллина (сопрано)",
       "start_date": "2026-12-04",
@@ -7536,7 +7939,39 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-b8d91f4bb0d251",
+      "title": "Джаз Клуб «Союз композиторов»",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-04",
+      "time": null,
+      "category": "Концерты",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/venues/club/club-soyuz-kompozitorov",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/sofi-okran-rossiya-9c282182-f6e4-4c0c-ac6c-e25e3287b018.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
     },
     {
       "id": "auto-9f69248993e261",
@@ -7725,7 +8160,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/kontserty/kipelov-spb/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-c7b5e77425231f",
@@ -7746,10 +8189,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/sofi-okran-rossiya-9c282182-f6e4-4c0c-ac6c-e25e3287b018.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/sofi-okran-rossiya-9c282182-f6e4-4c0c-ac6c-e25e3287b018.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/sofi-okran-rossiya?eventId=28517157"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f5bada82165da8",
@@ -7805,7 +8256,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604280"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-fb4540b62a8194",
@@ -7985,7 +8444,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/don-kikhot/pushka/202612041830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1520adfecc0324",
@@ -8235,7 +8702,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1726e3d676f817",
@@ -8283,6 +8758,38 @@
       "source_name": "Урал Опера Балет",
       "image_url": "https://uralopera.ru/images/app/pushka_small_mono.png",
       "source_id": "SRC-211",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/don-kikhot/202612041830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-088c4fe4354efd",
+      "title": "от 1 500 ₽",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-04",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/announcements/sofi-okran-rossiya?eventId=28517157",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/sofi-okran-rossiya-9c282182-f6e4-4c0c-ac6c-e25e3287b018.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
       "people": [],
       "editor_score": 68,
       "featured": false,
@@ -8649,8 +9156,8 @@
         "auto-ed837de22d7033"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/xxxi-tseremoniya-vrucheniya-natsionalnoy-muzykalnoy-premii-zolotoy-grammofon/"
+        "https://vtb-arena.com/poster/xxxi-tseremoniya-vrucheniya-natsionalnoy-muzykalnoy-premii-zolotoy-grammofon/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -8747,7 +9254,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/shou-sovsem-bolshoj-291575"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-5b9c62db4d522e",
@@ -8775,7 +9289,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/52221"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-26881e35f046cc",
@@ -8871,8 +9392,8 @@
         "auto-07088a33ce6a1f"
       ],
       "source_urls": [
-        "https://kremlinpalace.org",
-        "https://kremlinpalace.org/events/novogodnee-tashi-shou-2026"
+        "https://kremlinpalace.org/events/novogodnee-tashi-shou-2026",
+        "https://kremlinpalace.org"
       ],
       "duplicate_sources": [
         "Кремлевский дворец"
@@ -9030,10 +9551,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/khaski-f370f641-0302-4daa-80c3-a45d0847f0bb.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/khaski-f370f641-0302-4daa-80c3-a45d0847f0bb.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/khaski?eventId=28982804"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-c228590f7c729f",
@@ -9057,7 +9586,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604295"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-39306089e362c6",
@@ -9078,10 +9615,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/khaski-f370f641-0302-4daa-80c3-a45d0847f0bb.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/khaski-f370f641-0302-4daa-80c3-a45d0847f0bb.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-943bf593b5ee4c",
@@ -9299,7 +9844,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/don-kikhot/pushka/202612051800"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-d0c5116adcf18d",
@@ -9387,10 +9940,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/ay-da-pushkin-ay-da-spektakl-70f8c65d-f315-43fc-847f-6a1891753129.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/ay-da-pushkin-ay-da-spektakl-70f8c65d-f315-43fc-847f-6a1891753129.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/ay-da-pushkin-ay-da-spektakl?eventId=28628971"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-96ebea27286afc",
@@ -9478,10 +10039,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/ay-da-pushkin-ay-da-spektakl-70f8c65d-f315-43fc-847f-6a1891753129.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/ay-da-pushkin-ay-da-spektakl-70f8c65d-f315-43fc-847f-6a1891753129.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/theater/teatr-russkaya-pesnya"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-2924ab6fc316e8",
@@ -9505,7 +10074,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/tektonika_chuvstv_/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-2eca00f793fbb4",
@@ -9632,7 +10209,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/don-kikhot/202612051800"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f3c72665bed161",
@@ -9653,10 +10238,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/khaski-f370f641-0302-4daa-80c3-a45d0847f0bb.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/khaski-f370f641-0302-4daa-80c3-a45d0847f0bb.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/khaski?eventId=28982804"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f753ccaee1f173",
@@ -9966,7 +10559,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/shou-sovsem-bolshoj-291575"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-59dcfe7333ecf1",
@@ -9994,7 +10594,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/52221"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-fbd40b7d93ffec",
@@ -10018,7 +10625,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-2e720219a5e829",
@@ -10142,7 +10757,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/kontserty/novaya-pesnya-goda-2026/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-3402359f4acaa2",
@@ -10201,7 +10824,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604255"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-d3fbefb0c031eb",
@@ -10225,7 +10856,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/72883/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-a2611e2b53ca44",
@@ -10281,7 +10920,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/cherevichki/pushka/202612061800"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-0910f07803d046",
@@ -10305,7 +10952,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ruslan-i-lyudmila/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-c01cf8dc45d8be",
@@ -10373,6 +11028,30 @@
       "duplicate_sources": [
         "Театр драмы Нижнего Новгорода"
       ]
+    },
+    {
+      "id": "auto-64abde2b11fa40",
+      "title": "Симфония Майкла Джексона при свечах. Оркестр CAGMO",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "time": null,
+      "category": "Концерты",
+      "venue": "Концертный зал РАМ им. Гнесиных",
+      "city": "Москва",
+      "url": "https://www.afisha.ru/concert/simfoniya-maykla-dzheksona-pri-svechah-orkestr-cagmo-6025003/",
+      "description": "",
+      "source_name": "Афиша.ru — Москва",
+      "image_url": "https://s3.afisha.ru/mediastorage/9d/62/adf094d571654e3cbb4e7fb4629d.jpg",
+      "source_id": "SRC-002",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "detail_dated_page"
     },
     {
       "id": "auto-a300297b118224",
@@ -10460,7 +11139,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-647beb52d7dea1",
@@ -10484,7 +11171,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/cherevichki/202612061800"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-2b0d55bc868cd7",
@@ -11122,7 +11817,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-8b7039662d7144",
@@ -11338,7 +12041,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-2cccdde0c34d73",
@@ -11397,7 +12108,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/razdrazhenie/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-fc8b416fe97d82",
@@ -11453,7 +12172,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1d3e4e7295ab8e",
@@ -11636,7 +12363,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-9402c131d37481",
@@ -11727,7 +12462,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604438"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-7ec8936d56de47",
@@ -11848,7 +12591,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-ansambl-anastasii-donny_2026-12-10_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-106104b26c6cc6",
@@ -11944,8 +12695,8 @@
         "auto-605ef9fb85bad2"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/turnir-3kh3-kubok-pervogo-kanala/"
+        "https://vtb-arena.com/poster/turnir-3kh3-kubok-pervogo-kanala/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -12006,7 +12757,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "seed-010",
@@ -12297,7 +13056,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_anzhelika_varum_leonid_agutin"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-8937521d076bdd",
@@ -12326,8 +13092,8 @@
         "auto-5ebfe1607fae44"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/belarus-kazakhstan-i-master-shou-igrokov-sbornykh/"
+        "https://vtb-arena.com/poster/belarus-kazakhstan-i-master-shou-igrokov-sbornykh/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -12393,8 +13159,8 @@
         "auto-afaae7453b04d3"
       ],
       "source_urls": [
-        "https://kremlinpalace.org",
-        "https://kremlinpalace.org/events/ezhegodnaya-premiya-narodnogo-doveriya-marka-1-v-rossii-2026"
+        "https://kremlinpalace.org/events/ezhegodnaya-premiya-narodnogo-doveriya-marka-1-v-rossii-2026",
+        "https://kremlinpalace.org"
       ],
       "duplicate_sources": [
         "Кремлевский дворец"
@@ -12548,10 +13314,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/friendly-thug-52-ngg-6b98d28c-4b64-435f-9a27-e6c969b03f00.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/friendly-thug-52-ngg-6b98d28c-4b64-435f-9a27-e6c969b03f00.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/friendly-thug-52-ngg?eventId=28133659"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-b625fe330a18ee",
@@ -12610,7 +13384,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-ekaterina-samkova-moscow-guitar-project_2026-12-11_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-ad6228bbfbbeac",
@@ -12631,10 +13413,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
-      "image_url": "https://bdt.spb.ru/upload/iblock/341/9wy93lw5gxasb81c8fgve7jrol0qa0rb/shimbarevich-dekabr-2026.jpg"
+      "image_url": "https://bdt.spb.ru/upload/iblock/341/9wy93lw5gxasb81c8fgve7jrol0qa0rb/shimbarevich-dekabr-2026.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bdt.spb.ru/novosti/otkrytie-prodazh-biletov-na-avtorskie-programmy-iriny-shimbarevich-161126/"
+      ],
+      "duplicate_sources": [
+        "БДТ имени Товстоногова"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-af7500f76a9273",
@@ -12690,7 +13480,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/skaz_pro_fedota_streltsa/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-0e6c12e59122f2",
@@ -12711,10 +13509,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/friendly-thug-52-ngg-6b98d28c-4b64-435f-9a27-e6c969b03f00.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/friendly-thug-52-ngg-6b98d28c-4b64-435f-9a27-e6c969b03f00.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/arena/vtb"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-c4953a502eb61e",
@@ -12738,7 +13544,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-16c6bf1e115984",
@@ -12797,7 +13611,14 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/rozhdestvenskiy-kontsert/202612111830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-f6526136f92e60",
@@ -12818,10 +13639,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/friendly-thug-52-ngg-6b98d28c-4b64-435f-9a27-e6c969b03f00.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/friendly-thug-52-ngg-6b98d28c-4b64-435f-9a27-e6c969b03f00.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/friendly-thug-52-ngg?eventId=28133659"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e47b21e1d6b2f0",
@@ -13223,7 +14052,39 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-2d32461d373196",
+      "title": "Джаз Клуб «Союз композиторов»",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "time": null,
+      "category": "Концерты",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/venues/club/club-soyuz-kompozitorov",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/koncert-viktor-zinchuk-eb6c37e0-3309-4424-b8bc-41499df33ae9.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
     },
     {
       "id": "auto-300064d1e3886a",
@@ -13279,7 +14140,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/kontserty/sektor-gaza-gazovaya-ataka/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-72eaf06d597648",
@@ -13300,10 +14169,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/koncert-viktor-zinchuk-eb6c37e0-3309-4424-b8bc-41499df33ae9.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/koncert-viktor-zinchuk-eb6c37e0-3309-4424-b8bc-41499df33ae9.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/koncert-viktor-zinchuk?eventId=28374605"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-32d19dc202a12c",
@@ -13359,6 +14236,38 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604273"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-00068f10b2174e",
+      "title": "МТС Live Холл Москва",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/solnyy-koncert-icegergert-c57aa8e2-b23c-46ff-88b0-090d9b751f46.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing"
     },
     {
@@ -13383,7 +14292,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-funk-club-project_2026-12-12_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-44e90c8e3a2ea1",
@@ -13542,8 +14459,8 @@
         "auto-03ab0ce3771f79"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/rossiya-belarus/"
+        "https://vtb-arena.com/poster/rossiya-belarus/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -13730,10 +14647,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/solnyy-koncert-icegergert-c57aa8e2-b23c-46ff-88b0-090d9b751f46.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/solnyy-koncert-icegergert-c57aa8e2-b23c-46ff-88b0-090d9b751f46.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/solnyy-koncert-icegergert?eventId=28638703"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-6d864744cf6843",
@@ -13858,7 +14783,38 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/rozhdestvenskiy-kontsert/202612121800"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
+    },
+    {
+      "id": "auto-e42f80c90bd7f2",
+      "title": "от 1 500 ₽",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/announcements/koncert-viktor-zinchuk?eventId=28374605",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/koncert-viktor-zinchuk-eb6c37e0-3309-4424-b8bc-41499df33ae9.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
     },
     {
       "id": "auto-08c99d3c836474",
@@ -13879,10 +14835,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/solnyy-koncert-icegergert-c57aa8e2-b23c-46ff-88b0-090d9b751f46.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/solnyy-koncert-icegergert-c57aa8e2-b23c-46ff-88b0-090d9b751f46.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/solnyy-koncert-icegergert?eventId=28638703"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-8aab2a07435a15",
@@ -14035,7 +14999,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/tantsevalnyy-spektakl-psy/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e48485c09f6b38",
@@ -14098,7 +15070,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/52221"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-3929ce8e1781ec",
@@ -14122,7 +15101,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/velikiy_getsbi/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4004376380ec91",
@@ -14441,7 +15428,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/petr-nalich_2026-12-13_19-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-735e65ff6f6afe",
@@ -14500,7 +15495,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/revizor-s-prodolzheniem/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-22be290fdfd94a",
@@ -14557,8 +15560,8 @@
         "auto-d7d96ec8d2c8b9"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/rossiya-kazakhstan-i-match-legend/"
+        "https://vtb-arena.com/poster/rossiya-kazakhstan-i-match-legend/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -14714,7 +15717,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-5aff888e167c24",
@@ -14871,7 +15882,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604360"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-3ce744e78cd1e8",
@@ -14997,7 +16016,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/rozhdestvenskiy-kontsert?date=2507"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-43eb3dca453f94",
@@ -15053,7 +16079,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604356"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4675ed554c2b06",
@@ -15146,8 +16180,8 @@
         "auto-c95db68654a89d"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-spartak1512/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-spartak1512/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -15246,7 +16280,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-04c1ea30c8d22d",
@@ -15273,7 +16315,14 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/rozhdestvenskiy-kontsert/202612151830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-ba9835599e2ba0",
@@ -15399,7 +16448,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://bigcirk.moscow/events/52221"
+      ],
+      "duplicate_sources": [
+        "Большой Московский цирк на Вернадского"
+      ]
     },
     {
       "id": "auto-b5852efc3eb7d5",
@@ -15455,7 +16511,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604357"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-66d246ba0aba53",
@@ -15511,7 +16575,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/master_i_margarita/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-481164ee0509d0",
@@ -15535,7 +16607,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/romeo-i-dzhuletta/pushka/202612161830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4480517492957f",
@@ -15559,7 +16639,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-aba8f34c5cd45f",
@@ -15583,7 +16671,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/romeo-i-dzhuletta/202612161830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "seed-011",
@@ -15702,7 +16798,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/romeo-i-dzhuletta?date=2509"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-7da476ecfc2de8",
@@ -15816,7 +16920,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/madam_rubinshteyn/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-97eaa016b823bd",
@@ -15840,7 +16952,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-ansambl-anastasii-donny_2026-12-17_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-a292a762257a69",
@@ -15864,7 +16984,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/romeo-i-dzhuletta/pushka/202612171830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-23f93e70c14db1",
@@ -15925,8 +17053,8 @@
         "auto-056ef2f4aa717d"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-metallurg1712/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-metallurg1712/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -15987,7 +17115,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-66dcbe368f0460",
@@ -16044,7 +17180,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/romeo-i-dzhuletta/202612171830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "seed-012",
@@ -16138,7 +17282,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/rozhdestvenskiy-kontsert?date=2510"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-3399e07b75d424",
@@ -16162,7 +17313,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/ty-stephens-ssha-i-trio-olega-butmana_2026-12-18_19-30"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-b29c7281e7dc1c",
@@ -16252,7 +17411,14 @@
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_checked_at": "2026-11-18",
-      "image_status": "found"
+      "image_status": "found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_brizgi_shampanskogo_cdu"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-1aef31b8004e9b",
@@ -16374,7 +17540,14 @@
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_checked_at": "2026-11-18",
-      "image_status": "found"
+      "image_status": "found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_zolotie_hiti_80_90h_spb"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-a0bd3ded85daf0",
@@ -16398,7 +17571,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604579"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e7e33626ae4241",
@@ -16486,7 +17667,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-ekaterina-samkova-moscow-guitar-project_2026-12-18_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-dcc8dab2314d68",
@@ -16643,7 +17832,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-6ec77de56798eb",
@@ -16670,7 +17867,14 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/rozhdestvenskiy-kontsert/202612181830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "seed-013",
@@ -16762,7 +17966,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/rozhdestvenskiy-kontsert?date=2512"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-494ec989520268",
@@ -16981,7 +18192,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/spektakl-schelkunchik-1?eventId=29353251"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-b68e1cb8d6f999",
@@ -17066,7 +18285,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/gosudarstvenniy-kremlevskiy-dvorec"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-24220773195113",
@@ -17246,7 +18473,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/kontserty/basta-spb/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-8c14b00c4c3cab",
@@ -17267,10 +18502,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/kai-angel-day-1-8528cf22-2e5e-447c-b839-b524d01ee163.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/kai-angel-day-1-8528cf22-2e5e-447c-b839-b524d01ee163.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/kai-angel-day-1?eventId=28766228"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-ef233a726aabd6",
@@ -17407,6 +18650,30 @@
       "image_status": "found"
     },
     {
+      "id": "auto-61fdecca045097",
+      "title": "МТС Live Холл Москва",
+      "start_date": "2026-12-19",
+      "end_date": "2026-12-19",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/kai-angel-day-1-8528cf22-2e5e-447c-b839-b524d01ee163.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
+    },
+    {
       "id": "auto-286553fe45726b",
       "title": "Ночной концерт: Funk Club Project",
       "start_date": "2026-12-19",
@@ -17428,7 +18695,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-funk-club-project_2026-12-19_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-8a5106e5f7cac9",
@@ -17682,10 +18957,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/spektakl-sobaki-1bcbe7b3-deeb-415b-9e5c-00c325ad886e.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/spektakl-sobaki-1bcbe7b3-deeb-415b-9e5c-00c325ad886e.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/spektakl-sobaki?eventId=29053474"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-03ce02c87a811f",
@@ -17706,10 +18989,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/spektakl-sobaki-1bcbe7b3-deeb-415b-9e5c-00c325ad886e.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/spektakl-sobaki-1bcbe7b3-deeb-415b-9e5c-00c325ad886e.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/theater/teatr-na-yugo-zapade"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-85ed85c8ae91ab",
@@ -17735,7 +19026,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "jsonld"
+      "extraction_method": "jsonld",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://msk.kassir.ru/koncert/filipp-kirkorov"
+      ],
+      "duplicate_sources": [
+        "Кассир.ру — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-fc65c64a937dc1",
@@ -17855,7 +19154,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatralnyy-prolog/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-73d7170abb7473",
@@ -17893,6 +19200,30 @@
       "image_status": "found"
     },
     {
+      "id": "auto-dc3f45dbce1c6d",
+      "title": "от 1 500 ₽",
+      "start_date": "2026-12-19",
+      "end_date": "2026-12-19",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/announcements/spektakl-sobaki?eventId=29053474",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/spektakl-sobaki-1bcbe7b3-deeb-415b-9e5c-00c325ad886e.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
+    },
+    {
       "id": "auto-d5861986a1d987",
       "title": "от 6 249 ₽",
       "start_date": "2026-12-19",
@@ -17911,10 +19242,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/kai-angel-day-1-8528cf22-2e5e-447c-b839-b524d01ee163.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/kai-angel-day-1-8528cf22-2e5e-447c-b839-b524d01ee163.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/kai-angel-day-1?eventId=28766228"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4ef362600bb2f5",
@@ -18226,10 +19565,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/kai-angel-day-2-a8226326-9aea-464b-9148-d5db475273c5.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/kai-angel-day-2-a8226326-9aea-464b-9148-d5db475273c5.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/kai-angel-day-2?eventId=28766035"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f7bd4b40a89b12",
@@ -18300,6 +19647,30 @@
       "duplicate_sources": [
         "RedKassa"
       ]
+    },
+    {
+      "id": "auto-bbf6508acb0063",
+      "title": "МТС Live Холл Москва",
+      "start_date": "2026-12-20",
+      "end_date": "2026-12-20",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/kai-angel-day-2-a8226326-9aea-464b-9148-d5db475273c5.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
     },
     {
       "id": "auto-e4e7a550696598",
@@ -18422,7 +19793,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/spasiti_kamer_yunkera_pushkina/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-a893a8710e9a90",
@@ -18446,7 +19825,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://alexandrinsky.ru/afisha-i-bilety/ekskursiya-teatr-kak-imperiya/"
+      ],
+      "duplicate_sources": [
+        "Александринский театр"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-0bc3855bb5589d",
@@ -18516,6 +19903,30 @@
       "image_status": "found"
     },
     {
+      "id": "auto-f4e887c8e21759",
+      "title": "от 6 249 ₽",
+      "start_date": "2026-12-20",
+      "end_date": "2026-12-20",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/announcements/kai-angel-day-2?eventId=28766035",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/kai-angel-day-2-a8226326-9aea-464b-9148-d5db475273c5.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
+    },
+    {
       "id": "auto-31c018f12ca49e",
       "title": "«Щелкунчик». П. Чайковский. Спектакль театра «Кремлёвский балет»",
       "start_date": "2026-12-21",
@@ -18537,7 +19948,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/events/shchelkunchik-p-chaykovskiy-spektakl-teatra-kremlevskiy-balet-112"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-7846fe3ee38799",
@@ -18630,7 +20049,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604377"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-b6a7c89658f374",
@@ -18755,7 +20182,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/rozhdestvenskiy-kontsert?date=2515"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-1a0c2114c4f839",
@@ -18779,7 +20213,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/events/shchelkunchik-p-chaykovskiy-spektakl-teatra-kremlevskiy-balet-104"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-60fb588e045307",
@@ -18901,7 +20343,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/72909/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1de41795eaa7b2",
@@ -18960,7 +20410,14 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/rozhdestvenskiy-kontsert/202612221830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-ef5e67a78068d4",
@@ -19016,7 +20473,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/snezhnaya-koroleva?date=2516"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-9f4eaf19f448ec",
@@ -19040,7 +20505,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/snezhnaya-koroleva?date=2517"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-05e22f46a2e7cd",
@@ -19199,7 +20672,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604484"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-32d62aa4cad5cd",
@@ -19223,7 +20704,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/72910/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-9b1cb9b81f6cb4",
@@ -19282,7 +20771,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/polya_polechka_polina/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-c55844655a9e1d",
@@ -19408,7 +20905,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "detail_dated_page"
+      "extraction_method": "detail_dated_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://vakhtangov.ru/show/tvorcheskiy_vecher_poyut_artistyi/"
+      ],
+      "duplicate_sources": [
+        "Театр Вахтангова"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-52aa19ab30cfe9",
@@ -19503,7 +21008,14 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/morozko?date=2518"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-ccdb8104678aac",
@@ -19531,7 +21043,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/rozhdestvenskiy-kontsert?date=2519"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-a77b7fbf2ca569",
@@ -19621,7 +21140,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/buy-tks/604405"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-073d1837ae4c8c",
@@ -19680,7 +21207,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/menya_papa_zaberet/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-15d6f28a9d692e",
@@ -19870,7 +21405,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://kremlinpalace.org/events/spektakl-snezhnaya-koroleva"
+      ],
+      "duplicate_sources": [
+        "Кремлевский дворец"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-302d84663144d8",
@@ -20128,7 +21671,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_alisa_live_arena"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-5fdd5b91fd6890",
@@ -20224,7 +21774,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/vadim-ejlenkrig-eilenkrig-crew_2026-12-25_19-30"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f761cec756f8ec",
@@ -20248,7 +21806,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/kontserty/hor-turetskogo-novogodnee-shou/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-802bac32926547",
@@ -20272,7 +21838,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/kontserty/radio-tapok/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-39b793b30e2012",
@@ -20296,7 +21870,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73238/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-a0a870b55091b1",
@@ -20320,7 +21902,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-ekaterina-samkova-moscow-guitar-project_2026-12-25_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-337d09e893019b",
@@ -20545,7 +22135,14 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/morozko?date=2522"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-bb546ba027d66b",
@@ -20573,7 +22170,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/rozhdestvenskiy-kontsert?date=2523"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-e99e869ddb40a9",
@@ -20793,7 +22397,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/detyam/alisa-vremya-chudes/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-a5eaff0a37c8c3",
@@ -20884,7 +22496,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73239/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-cdeab1e08fb3fa",
@@ -21120,7 +22740,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/nochnoj-konczert-funk-club-project_2026-12-26_22-00"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-d1998cfb82f1b2",
@@ -21211,7 +22839,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/son_v_letnyuyu_noch/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-765e23d21aeafb",
@@ -21367,7 +23003,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/shchelkunchik?date=2524"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-13490601c3632c",
@@ -21551,10 +23195,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/macan-mytischi-27-dekabrya-arena-mytischi-0ef87bfe-a9ef-457a-9dde-d45f993104c7.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/macan-mytischi-27-dekabrya-arena-mytischi-0ef87bfe-a9ef-457a-9dde-d45f993104c7.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/arena/arena"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-313be7e9b81b67",
@@ -21578,7 +23230,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/detyam/letuchij-korabl/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-6f1c3d309382d4",
@@ -21599,10 +23259,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/macan-mytischi-27-dekabrya-arena-mytischi-0ef87bfe-a9ef-457a-9dde-d45f993104c7.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/macan-mytischi-27-dekabrya-arena-mytischi-0ef87bfe-a9ef-457a-9dde-d45f993104c7.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/macan-mytischi-27-dekabrya-arena-mytischi?eventId=28916185"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-571f3e4e3307cb",
@@ -21923,10 +23591,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/macan-mytischi-27-dekabrya-arena-mytischi-0ef87bfe-a9ef-457a-9dde-d45f993104c7.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/macan-mytischi-27-dekabrya-arena-mytischi-0ef87bfe-a9ef-457a-9dde-d45f993104c7.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/macan-mytischi-27-dekabrya-arena-mytischi?eventId=28916185"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-ba8b2ecc94f3d5",
@@ -22011,14 +23687,21 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
       "image_url": "https://teatrpushkin.ru/layout/files/submenu-ico.jpg",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "matched_listing_card"
+      "image_source_type": "matched_listing_card",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://teatrpushkin.ru/afisha/alphabet/"
+      ],
+      "duplicate_sources": [
+        "Театр им. Пушкина"
+      ]
     },
     {
       "id": "auto-e78cda1cdb5e49",
@@ -22109,7 +23792,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/sevilskiy-tsiryulnik/pushka/202612281830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-85f73a1f04bab8",
@@ -22133,7 +23824,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/teatry/zhenitba-figaro-mgt/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-21b724447255d6",
@@ -22189,7 +23888,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/sevilskiy-tsiryulnik/202612281830"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-dbf7720351ec96",
@@ -22216,7 +23923,14 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/morozko?date=2527"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-32ab7fab5e0f6d",
@@ -22244,7 +23958,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/rozhdestvenskiy-kontsert?date=2528"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ]
     },
     {
       "id": "auto-2e8ccf8303c5b2",
@@ -22335,7 +24056,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.concert.ru/kontserty/bogushevskaya-irina/"
+      ],
+      "duplicate_sources": [
+        "Concert.ru"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-75f3a8a6d95bbc",
@@ -22373,6 +24102,30 @@
       "image_status": "found"
     },
     {
+      "id": "auto-82997ea2aadff8",
+      "title": "МТС Live Холл Москва",
+      "start_date": "2026-12-29",
+      "end_date": "2026-12-29",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/mechta-volshebnika-55893335-9d9e-4264-b30e-d18fd1511c4d.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
+    },
+    {
       "id": "auto-103140bd910e1c",
       "title": "Мадам Рубинштейн",
       "start_date": "2026-12-29",
@@ -22394,7 +24147,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/madam_rubinshteyn/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f4f0a1ea3edfce",
@@ -22450,10 +24211,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/mechta-volshebnika-55893335-9d9e-4264-b30e-d18fd1511c4d.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/mechta-volshebnika-55893335-9d9e-4264-b30e-d18fd1511c4d.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/mechta-volshebnika?eventId=28798194"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-26a02184b6a94a",
@@ -22641,10 +24410,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/mechta-volshebnika-55893335-9d9e-4264-b30e-d18fd1511c4d.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/mechta-volshebnika-55893335-9d9e-4264-b30e-d18fd1511c4d.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/mechta-volshebnika?eventId=28798194"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-90dc37369ef8dd",
@@ -22668,7 +24445,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/shchelkunchik?date=2529"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-86232b06746991",
@@ -22692,7 +24477,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/shchelkunchik?date=2530"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e8e954185aec07",
@@ -22812,7 +24605,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/72898/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-3c051ff669211e",
@@ -22905,7 +24706,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/romeo_i_dzhuletta/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-7357cedd5c818f",
@@ -22964,7 +24773,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/shchelkunchik?date=2531"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f14cd915142124",
@@ -23095,6 +24912,150 @@
       "image_status": "found"
     },
     {
+      "id": "auto-17cbcc65295728",
+      "title": "«Новогоднее Саксофон-шоу. Моцарт. Маленькая ночная серенада. Бетховен. Лунная соната. Чайковский. Щелкунчик»",
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": null,
+      "category": "Шоу",
+      "venue": "Галерея А. Шилова г. Москва , ул. Знаменка, 3",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41883-galereya-shilova/",
+      "description": "Концерт «Новогоднее Саксофон-шоу. Моцарт. Маленькая ночная серенада. Бетховен. Лунная соната. Чайковский. Щелкунчик» от фонда Бельканто пройдет 31 декабря в 16:00 в Москве. Зал — Галерея А. Шилова, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/522x-/iblock/d9e/d9e59cd5919fb7cbdaee407a8b55299c.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
+      "id": "auto-b8642f9ab17706",
+      "title": "«Новогоднее Саксофон-шоу. Музыкальные шедевры мирового кино»",
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": null,
+      "category": "Шоу",
+      "venue": "Галерея А. Шилова г. Москва , ул. Знаменка, 3",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41884-galereya-shilova/",
+      "description": "Концерт «Новогоднее Саксофон-шоу. Музыкальные шедевры мирового кино» от фонда Бельканто пройдет 31 декабря в 18:00 в Москве. Зал — Галерея А. Шилова, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/522x-/iblock/316/316a168b13517eb5bf53956645e28813.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
+      "id": "auto-ea5af2c900d58e",
+      "title": "«Новогодний концерт. Легенды Ирландии. Ирландские танцы, волынка и ирландская флейта»",
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": null,
+      "category": "Концерты",
+      "venue": "Центральный Дом Архитектора г. Москва , Гранатный пер., 7, стр. 1",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41934-dom-arkhitektora/",
+      "description": "Концерт «Новогодний концерт. Легенды Ирландии. Ирландские танцы, волынка и ирландская флейта» от фонда Бельканто пройдет 31 декабря в 14:00 в Москве. Зал — Центральный Дом Архитектора, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/522x-/iblock/9a8/9a85927ae43bf561dd9811047192fcf3.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
+      "id": "auto-27202a3d11e5e4",
+      "title": "«Новогодний концерт. Танцевальное шоу. Фламенко Андалусии»",
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": null,
+      "category": "Шоу",
+      "venue": "Центральный Дом Архитектора г. Москва , Гранатный пер., 7, стр. 1",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41372-dom-arkhitektora/",
+      "description": "Концерт «Новогодний концерт. Танцевальное шоу. Фламенко Андалусии» от фонда Бельканто пройдет 31 декабря в 17:00 в Москве. Зал — Центральный Дом Архитектора, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/522x-/iblock/e00/e000ac077ee55e657aa2b3320969ab22.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
+      "id": "auto-d7e5247fecfe05",
+      "title": "«Орган оркестр шоу. LED Zeppelin, The Rolling Stones, Scorpions, Nirvana, Massive Attack»",
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": null,
+      "category": "Шоу",
+      "venue": "Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла г. Москва , Старосадский пер., 7",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41877-sobor/",
+      "description": "Концерт «Орган оркестр шоу. LED Zeppelin, The Rolling Stones, Scorpions, Nirvana, Massive Attack» от фонда Бельканто пройдет 31 декабря в 18:00 в Москве. Зал — Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/522x-/iblock/df8/df8051257c3bb437420fcfa3affcd39b.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
+      "id": "auto-3485a16de875af",
+      "title": "Гала-концерт «Европейское Рождество в Соборе. Орган-оркестр»",
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": null,
+      "category": "Концерты",
+      "venue": "Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла г. Москва , Старосадский пер., 7",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/42001-sobor/",
+      "description": "Концерт Гала-концерт «Европейское Рождество в Соборе. Орган-оркестр» от фонда Бельканто пройдет 31 декабря в 15:00 в Москве. Зал — Евангелическо-Лютеранский Кафедральный Собор Святых Петра и Павла, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/522x-/iblock/825/8255dc285352b9e7536f092b0f24e922.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
       "id": "auto-8c1e941f2b42c1",
       "title": "Купить Билет",
       "start_date": "2026-12-31",
@@ -23191,6 +25152,30 @@
       "image_status": "found"
     },
     {
+      "id": "auto-b6a844208b193c",
+      "title": "Новогодняя сказка с органом и песочной анимацией «Двенадцать месяцев»",
+      "start_date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": null,
+      "category": "Концерты",
+      "venue": "Дарвиновский музей г. Москва , ул.Вавилова, 57",
+      "city": "Россия",
+      "url": "https://www.belcantofund.com/actions/41628-darvinskiy-muzey/",
+      "description": "Концерт Новогодняя сказка с органом и песочной анимацией «Двенадцать месяцев» от фонда Бельканто пройдет 31 декабря в 13:00 в Москве. Зал — Дарвиновский музей, купить билет на концерт",
+      "source_name": "Фонд «Бельканто»",
+      "image_url": "https://img.belcantofund.com/522x-/iblock/b75/b75b9523c584fbfd22d302ee9b4d8882.jpg",
+      "source_id": "NEW-SRC-021",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "microdata"
+    },
+    {
       "id": "auto-99a1ee7f08df4f",
       "title": "Подарочные сертификаты",
       "start_date": "2026-12-31",
@@ -23247,7 +25232,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/events/shchelkunchik/pushka/202612311100"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-3dc3c94940e1e2",
@@ -23335,7 +25328,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/shchelkunchik/202612311100"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-54888c7dc6fd6b",
@@ -23758,10 +25759,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65"
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/drugoe/depo"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-423cb53ef76692",
@@ -23782,10 +25791,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/chicago-groove-gruppa-44eebf44-bde8-41b7-805b-e7056b01015e.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/chicago-groove-gruppa-44eebf44-bde8-41b7-805b-e7056b01015e.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/club/club-soyuz-kompozitorov"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4edc7226f05d10",
@@ -23806,10 +25823,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/chicago-groove-gruppa-44eebf44-bde8-41b7-805b-e7056b01015e.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/chicago-groove-gruppa-44eebf44-bde8-41b7-805b-e7056b01015e.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/chicago-groove-gruppa?eventId=28809473"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-10ee2bba0989a6",
@@ -23830,10 +25855,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65"
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/moskovskiy-stendap_depo?eventId=29322935"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-96b93f86a28e48",
@@ -23955,10 +25988,42 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65"
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/moskovskiy-stendap_depo-57c469e7-b727-d121-3dda-ec12d7a3b65d.jpg?width=3840&quality=65",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/moskovskiy-stendap_depo?eventId=29322935"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-7f0cc8d35fbd5d",
+      "title": "от 1 500 ₽",
+      "start_date": "2027-01-02",
+      "end_date": "2027-01-02",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/announcements/chicago-groove-gruppa?eventId=28809473",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/chicago-groove-gruppa-44eebf44-bde8-41b7-805b-e7056b01015e.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
     },
     {
       "id": "auto-97ebf45328000e",
@@ -24339,7 +26404,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://uralopera.ru/tickets/snezhnaya-koroleva/202701031100"
+      ],
+      "duplicate_sources": [
+        "Урал Опера Балет"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-ca46dcd0549ac3",
@@ -24398,7 +26471,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73299/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-6da2d59374851e",
@@ -24615,6 +26696,30 @@
       "extraction_method": "detail_dated_page"
     },
     {
+      "id": "auto-d2b0b66eed3c32",
+      "title": "84",
+      "start_date": "2027-01-05",
+      "end_date": "2027-01-05",
+      "time": null,
+      "category": "Другое",
+      "venue": "Изи",
+      "city": "Москва",
+      "url": "https://www.afisha.ru/concert/84-6048010/",
+      "description": "",
+      "source_name": "Афиша.ru — Москва",
+      "image_url": "https://s.afisha.ru/mediastorage/c7/34/55bbf028509842c49ba79f4134c7.jpg",
+      "source_id": "SRC-002",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "detail_dated_page"
+    },
+    {
       "id": "auto-3a9ddfc71bf54f",
       "title": "«Спящая Красавица». Ледовое шоу-сказка Евгения Плющенко с балетом",
       "start_date": "2027-01-05",
@@ -24775,7 +26880,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_organ_pri_svechah_muzey_tsvetaevoy"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-995afb449a0516",
@@ -24834,7 +26946,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/troe_v_lodke_ne_schitaya_sobaki/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-de47cf605fbb83",
@@ -25057,7 +27177,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73301/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-39b2020f889957",
@@ -25213,7 +27341,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/velikiy_getsbi/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-7759ab850298a8",
@@ -25237,7 +27373,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73303/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-07f95f9604232f",
@@ -25368,7 +27512,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/prishel_muzhchina_k_zenshchine/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f6b48b38b7c8c3",
@@ -25498,6 +27650,34 @@
       "image_source_type": "official_detail_page"
     },
     {
+      "id": "auto-704be419c21cfa",
+      "title": "Красная плесень (г. Москва)",
+      "start_date": "2027-01-08",
+      "end_date": "2027-01-08",
+      "time": null,
+      "category": "Другое",
+      "venue": "O'Connell's Pub",
+      "city": "Москва",
+      "url": "https://redkassa.ru/events/bilety_na_concert_krasnaya_plesen_msk",
+      "description": "",
+      "source_name": "RedKassa",
+      "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/9dcab800-892f-47f3-ad28-eca99edaaf2d",
+      "source_id": "SRC-230",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "detail_dated_page",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
+    },
+    {
       "id": "auto-1c552d76c6c88f",
       "title": "Люди своевременных взглядов",
       "start_date": "2027-01-08",
@@ -25556,8 +27736,8 @@
         "auto-c676b6c0b76837"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-dinamo-minsk-080127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-dinamo-minsk-080127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -25707,10 +27887,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/izmaylovo-tatyana-bulanova-novogodniy-bal-78379b9b-51c7-446f-a8b9-5d83be1537cc.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/izmaylovo-tatyana-bulanova-novogodniy-bal-78379b9b-51c7-446f-a8b9-5d83be1537cc.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/kz-izmaylovo"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1db220d6d1b579",
@@ -25734,7 +27922,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73308/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e901341b883ef7",
@@ -25921,7 +28117,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73311/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4784dd3b2a1249",
@@ -25945,7 +28149,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/son_v_letnyuyu_noch/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-95370791d65694",
@@ -25969,7 +28181,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/spasiti_kamer_yunkera_pushkina/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-172f965fd41e2c",
@@ -25990,14 +28210,21 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/7b247f28-fffa-4e36-bb9b-4d180c47edcf",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_tima_belorusskih_tau_club"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-fff90c2401ac5e",
@@ -26026,8 +28253,8 @@
         "auto-77576e0fb2907e"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-tsska-100127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-tsska-100127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -26254,8 +28481,8 @@
         "auto-ff764fa0cf7d98"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-severstal-130127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-severstal-130127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -26352,7 +28579,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/menya_papa_zaberet/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-8e99f814aca9b5",
@@ -26376,7 +28611,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/mertvye_dushi/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-7f44177b4bca1e",
@@ -26536,8 +28779,8 @@
         "auto-acb8c6c970c4c9"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-lada-150127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-lada-150127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -26659,7 +28902,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/razdrazhenie/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-2f5049b97a0e76",
@@ -26903,14 +29154,24 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/dba39383-537a-470b-99fd-ddf8839513e4",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [
+        "auto-da823bd9755d45"
+      ],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_puteshestvie_goluboy_strely3_nn",
+        "https://redkassa.ru/events/bilety_na_spektakl_puteshestvie_goluboy_strely2_nn"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-fff15bac63085a",
@@ -26971,8 +29232,8 @@
         "auto-adbf61d1cc8434"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-ska-170127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-ska-170127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -27135,7 +29396,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/tektonika_chuvstv_/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-087814682b462f",
@@ -27445,7 +29714,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/vadim-ejlenkrig-eilenkrig-crew_2027-01-23_19-30"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f40cd6dc570204",
@@ -27504,7 +29781,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73333/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-a755499ac17f39",
@@ -27528,7 +29813,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/madam_rubinshteyn/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-6809a87b59f5fd",
@@ -27581,10 +29874,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/v-poiskakh-sokrovisch-ili-61bdf958-5752-42b4-a084-fb266a6ed962.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/v-poiskakh-sokrovisch-ili-61bdf958-5752-42b4-a084-fb266a6ed962.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/v-poiskakh-sokrovisch-ili?eventId=29274574"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-94c4a2d8e03e0a",
@@ -27605,10 +29906,42 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/v-poiskakh-sokrovisch-ili-61bdf958-5752-42b4-a084-fb266a6ed962.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/v-poiskakh-sokrovisch-ili-61bdf958-5752-42b4-a084-fb266a6ed962.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/theater/teatr-na-yugo-zapade"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-dfb535caa67b5d",
+      "title": "от 1 500 ₽",
+      "start_date": "2027-01-23",
+      "end_date": "2027-01-23",
+      "time": null,
+      "category": "Другое",
+      "venue": "МТС Live — Москва",
+      "city": "Москва",
+      "url": "https://live.mts.ru/moscow/announcements/v-poiskakh-sokrovisch-ili?eventId=29274574",
+      "description": "",
+      "source_name": "МТС Live — Москва",
+      "image_url": "https://live.mts.ru/imgproxy/@live//image/536x360/v-poiskakh-sokrovisch-ili-61bdf958-5752-42b4-a084-fb266a6ed962.jpg?width=3840&quality=65",
+      "source_id": "SRC-003",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
     },
     {
       "id": "auto-0eef2c67810183",
@@ -27629,10 +29962,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/daniil-kramer-i-darya-chernakova-yuliana-rogacheva-def318bc-cb1f-47b8-99e0-1850d230b432.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/daniil-kramer-i-darya-chernakova-yuliana-rogacheva-def318bc-cb1f-47b8-99e0-1850d230b432.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/club/akademicheskiy-na-arbate"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-94c0755baf50c7",
@@ -27685,10 +30026,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/daniil-kramer-i-darya-chernakova-yuliana-rogacheva-def318bc-cb1f-47b8-99e0-1850d230b432.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/daniil-kramer-i-darya-chernakova-yuliana-rogacheva-def318bc-cb1f-47b8-99e0-1850d230b432.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/daniil-kramer-i-darya-chernakova-yuliana-rogacheva?eventId=29320929"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-704c2752c6738a",
@@ -27747,7 +30096,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/madam_rubinshteyn/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1dca671c9407e5",
@@ -27771,7 +30128,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/master_i_margarita/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-0e9d81269c6b21",
@@ -27824,14 +30189,24 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/da53d697-434c-4b57-bc36-159dbb49e948",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [
+        "auto-9d8ff6c80788ff"
+      ],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_snezhnaya_koroleva1_nn",
+        "https://redkassa.ru/events/bilety_na_spektakl_snezhnaya_koroleva2_nn"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-5f453377f91847",
@@ -27884,10 +30259,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/daniil-kramer-i-darya-chernakova-yuliana-rogacheva-def318bc-cb1f-47b8-99e0-1850d230b432.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/daniil-kramer-i-darya-chernakova-yuliana-rogacheva-def318bc-cb1f-47b8-99e0-1850d230b432.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/daniil-kramer-i-darya-chernakova-yuliana-rogacheva?eventId=29320929"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-33d6cc40b1daf8",
@@ -27913,7 +30296,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/igor-butman-i-moskovskij-dzhazovyj-orkestr_2027-01-25_19-30"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-6e117f0bc158cc",
@@ -27942,8 +30333,8 @@
         "auto-ffaac3842ed63d"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-neftekhimik-250127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-neftekhimik-250127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -28037,7 +30428,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73338/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-90d4b5370a0953",
@@ -28096,7 +30495,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73339/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4669a4421687b3",
@@ -28184,7 +30591,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/skaz_pro_fedota_streltsa/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-0a62407e1c92bb",
@@ -28213,8 +30628,8 @@
         "auto-6816347c8673d2"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-sochi-270127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-sochi-270127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -28308,7 +30723,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/order/73341/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-74f1b50d29d466",
@@ -28332,7 +30755,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/romeo_i_dzhuletta/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-d8097fa8a2760e",
@@ -28513,7 +30944,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://red-torch.ru/program/info/tolko_dlya_zhenshchin/"
+      ],
+      "duplicate_sources": [
+        "Театр Красный факел"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-cc9fd8df69addf",
@@ -28542,8 +30981,8 @@
         "auto-31992fc0ded611"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-sochi-290127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-sochi-290127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -28663,10 +31102,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/ivan-abramov-novaya-programma-moi-devochki_dk-istok-24a06b9b-d94e-428b-a193-a3a9b1c42390.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/ivan-abramov-novaya-programma-moi-devochki_dk-istok-24a06b9b-d94e-428b-a193-a3a9b1c42390.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/dom-kultury/dk-istok"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-1ba4cb8813bb00",
@@ -28754,10 +31201,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/ivan-abramov-novaya-programma-moi-devochki_dk-istok-24a06b9b-d94e-428b-a193-a3a9b1c42390.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/ivan-abramov-novaya-programma-moi-devochki_dk-istok-24a06b9b-d94e-428b-a193-a3a9b1c42390.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/ivan-abramov-novaya-programma-moi-devochki_dk-istok?eventId=28987473"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-66ff0aebf31566",
@@ -28785,7 +31240,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_organ_pri_svechah_muzey_tsvetaevoy"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-911f1972ff6e74",
@@ -28873,10 +31335,18 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
-      "image_url": "https://live.mts.ru/image/536x360/ivan-abramov-novaya-programma-moi-devochki_dk-istok-24a06b9b-d94e-428b-a193-a3a9b1c42390.jpg"
+      "image_url": "https://live.mts.ru/image/536x360/ivan-abramov-novaya-programma-moi-devochki_dk-istok-24a06b9b-d94e-428b-a193-a3a9b1c42390.jpg",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/ivan-abramov-novaya-programma-moi-devochki_dk-istok?eventId=28987473"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-c697c3a40eb5c9",
@@ -28996,7 +31466,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_ivan_dyatlov_cdu"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-9f09ee4b6f7013",
@@ -29053,8 +31530,8 @@
         "auto-3d65c3ca24c4b9"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-severstal-310127/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-severstal-310127/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -29373,8 +31850,8 @@
         "auto-cbd712368018e7"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-lada-020227/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-lada-020227/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -29782,7 +32259,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/igor-butman-i-moskovskij-dzhazovyj-orkestr_2027-02-08_19-30"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-f8d56f749d52ea",
@@ -30136,7 +32621,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://moscow.butmanclub.ru/concerts/igor-butman-i-moskovskij-dzhazovyj-orkestr_2027-02-15_19-30"
+      ],
+      "duplicate_sources": [
+        "Джаз-клуб Игоря Бутмана"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-75642c27b4da2c",
@@ -30165,8 +32658,8 @@
         "auto-5f39d89b4a7600"
       ],
       "source_urls": [
-        "https://vtb-arena.com/",
-        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-ak-bars-160227/"
+        "https://vtb-arena.com/poster/khk-dinamo-moskva-khk-ak-bars-160227/",
+        "https://vtb-arena.com/"
       ],
       "duplicate_sources": [
         "ВТБ Арена"
@@ -30423,14 +32916,21 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/14e3295a-bc2a-47e9-b648-81da92821cd5",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_vladimir_presnyakov_ledoviy_dvoretz"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-b8a47b602ddb2b",
@@ -30651,7 +33151,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_zapchasti_dlya_schastya_murom"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-b07039a852063a",

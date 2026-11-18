@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-11-18T11:32:55+03:00",
+  "updated_at": "2026-11-18T12:53:33+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
-  "sources_in_registry": 241,
-  "tracked_people": 332,
-  "configured_collectors": 241,
-  "sources_checked_today": 241,
-  "sources_reached_today": 154,
-  "sources_with_events_today": 38,
-  "sources_no_dated_events_today": 116,
+  "sources_in_registry": 274,
+  "tracked_people": 450,
+  "configured_collectors": 274,
+  "sources_checked_today": 274,
+  "sources_reached_today": 178,
+  "sources_with_events_today": 40,
+  "sources_no_dated_events_today": 138,
   "sources_needing_javascript_today": 0,
-  "sources_blocked_today": 78,
-  "sources_failed_today": 9,
-  "events_extracted_today": 973,
-  "new_events_added_today": 195,
+  "sources_blocked_today": 79,
+  "sources_failed_today": 17,
+  "events_extracted_today": 1012,
+  "new_events_added_today": 30,
   "events_with_people_today": 52,
-  "events_in_catalog": 997,
-  "events_with_multiple_sources": 97,
-  "events_with_images": 943,
-  "images_checked_today": 38,
-  "image_pages_requested_today": 38,
+  "events_in_catalog": 1029,
+  "events_with_multiple_sources": 101,
+  "events_with_images": 975,
+  "images_checked_today": 1,
+  "image_pages_requested_today": 1,
   "image_detail_links_followed_today": 0,
-  "poster_overrides_applied_today": 1,
-  "images_found_today": 30,
-  "image_checks_blocked_today": 1,
+  "poster_overrides_applied_today": 0,
+  "images_found_today": 1,
+  "image_checks_blocked_today": 0,
   "source_status_counts": {
-    "found": 38,
-    "no_events": 116,
+    "found": 40,
+    "no_events": 138,
     "needs_javascript": 0,
-    "blocked": 78,
-    "error": 9,
+    "blocked": 79,
+    "error": 17,
     "invalid_url": 0,
     "unsupported": 0
   },
@@ -51,7 +51,7 @@
       "url": "https://www.afisha.ru/msk/",
       "status": "found",
       "pages": 4,
-      "events": 141,
+      "events": 142,
       "methods": [
         "detail_dated_page",
         "jsonld"
@@ -62,12 +62,13 @@
       "id": "SRC-003",
       "name": "МТС Live — Москва",
       "url": "https://live.mts.ru/moscow",
-      "status": "blocked",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ReadTimeout"
+      "status": "found",
+      "pages": 4,
+      "events": 56,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-004",
@@ -109,12 +110,13 @@
       "id": "SRC-007",
       "name": "Time Out Москва",
       "url": "https://www.timeout.ru/msk",
-      "status": "error",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "ReadTimeout: HTTPSConnectionPool(host='www.timeout.ru', port=443): Read timed out. (read timeout=10)"
+      "status": "found",
+      "pages": 5,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-008",
@@ -272,23 +274,23 @@
       "id": "SRC-022",
       "name": "Театр на Бронной",
       "url": "https://mbronnaya.ru/events",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "A"
     },
     {
       "id": "SRC-023",
       "name": "Театр им. Пушкина",
       "url": "https://teatrpushkin.ru/",
-      "status": "blocked",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "status": "found",
+      "pages": 4,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-024",
@@ -354,12 +356,11 @@
       "id": "SRC-030",
       "name": "Театр Сатирикон",
       "url": "https://satirikon.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "A"
     },
     {
       "id": "SRC-031",
@@ -375,11 +376,12 @@
       "id": "SRC-032",
       "name": "Малый театр",
       "url": "https://www.maly.ru/",
-      "status": "no_events",
-      "pages": 4,
+      "status": "error",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.maly.ru', port=443): Read timed out. (read timeout=10)"
     },
     {
       "id": "SRC-033",
@@ -390,7 +392,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "error": "robots.txt запрещает этот адрес"
     },
     {
       "id": "SRC-034",
@@ -406,11 +408,12 @@
       "id": "SRC-035",
       "name": "Пространство Внутри",
       "url": "https://vnutri.space/",
-      "status": "no_events",
-      "pages": 2,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "robots.txt недоступен: ReadTimeout"
     },
     {
       "id": "SRC-036",
@@ -534,12 +537,11 @@
       "id": "SRC-047",
       "name": "Мастерская 12 Никиты Михалкова",
       "url": "https://www.mikhalkov12.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "A"
     },
     {
       "id": "SRC-048",
@@ -610,26 +612,23 @@
       "id": "SRC-054",
       "name": "Московский международный Дом музыки",
       "url": "https://www.mmdm.ru/afisha/",
-      "status": "found",
-      "pages": 4,
-      "events": 14,
-      "methods": [
-        "dated_listing"
-      ],
-      "priority": "A"
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.mmdm.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-055",
       "name": "Московская консерватория",
       "url": "https://www.mosconsv.ru/",
-      "status": "found",
-      "pages": 4,
-      "events": 5,
-      "methods": [
-        "dated_listing",
-        "detail_dated_page"
-      ],
-      "priority": "A"
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.mosconsv.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-056",
@@ -666,7 +665,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "error": "robots.txt запрещает этот адрес"
     },
     {
       "id": "SRC-059",
@@ -695,7 +694,7 @@
       "name": "Московский театр мюзикла",
       "url": "https://teamuz.ru/",
       "status": "no_events",
-      "pages": 4,
+      "pages": 2,
       "events": 0,
       "methods": [],
       "priority": "A"
@@ -704,11 +703,12 @@
       "id": "SRC-062",
       "name": "Театр музыки и драмы Стаса Намина",
       "url": "https://stasnamintheatre.ru/",
-      "status": "no_events",
-      "pages": 4,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-063",
@@ -824,22 +824,22 @@
       "id": "SRC-073",
       "name": "Зеленый театр ВДНХ",
       "url": "https://vdnh.ru/",
-      "status": "no_events",
-      "pages": 3,
-      "events": 0,
-      "methods": [],
-      "priority": "A"
-    },
-    {
-      "id": "SRC-074",
-      "name": "Московский дворец молодежи МДМ",
-      "url": "https://broadway-moscow.ru/mdm/",
       "status": "error",
       "pages": 0,
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "ReadTimeout: HTTPSConnectionPool(host='broadway-moscow.ru', port=443): Read timed out. (read timeout=10)"
+      "error": "ConnectionError: HTTPSConnectionPool(host='vdnh.ru', port=443): Read timed out."
+    },
+    {
+      "id": "SRC-074",
+      "name": "Московский дворец молодежи МДМ",
+      "url": "https://broadway-moscow.ru/mdm/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
     },
     {
       "id": "SRC-075",
@@ -933,7 +933,7 @@
       "name": "Джаз-клуб Эссе",
       "url": "https://jazzesse.ru/",
       "status": "no_events",
-      "pages": 3,
+      "pages": 2,
       "events": 0,
       "methods": [],
       "priority": "B"
@@ -1124,11 +1124,12 @@
       "id": "SRC-101",
       "name": "Татьяна Навка / Navka Show",
       "url": "https://navka.show/",
-      "status": "no_events",
-      "pages": 2,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "robots.txt недоступен: ReadTimeout"
     },
     {
       "id": "SRC-102",
@@ -1144,11 +1145,12 @@
       "id": "SRC-103",
       "name": "Театр мюзикла — программа",
       "url": "https://teamuz.ru/events",
-      "status": "no_events",
-      "pages": 3,
+      "status": "error",
+      "pages": 1,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "ConnectionError: HTTPSConnectionPool(host='teamuz.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-104",
@@ -1387,13 +1389,12 @@
       "id": "SRC-126",
       "name": "Дарвиновский музей",
       "url": "https://www.darwinmuseum.ru/",
-      "status": "found",
-      "pages": 4,
-      "events": 14,
-      "methods": [
-        "dated_listing"
-      ],
-      "priority": "A"
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.darwinmuseum.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-127",
@@ -1443,11 +1444,12 @@
       "id": "SRC-131",
       "name": "Артплей",
       "url": "https://www.artplay.ru/",
-      "status": "no_events",
-      "pages": 4,
+      "status": "error",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "ConnectionError: HTTPSConnectionPool(host='artplay.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-132",
@@ -1475,12 +1477,12 @@
       "id": "SRC-134",
       "name": "Московский музей дизайна",
       "url": "https://moscowdesignmuseum.ru/",
-      "status": "blocked",
+      "status": "error",
       "pages": 0,
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "error": "HTTP 500"
     },
     {
       "id": "SRC-135",
@@ -1661,12 +1663,11 @@
       "id": "SRC-152",
       "name": "Фестиваль Новая Голландия",
       "url": "https://www.newhollandsp.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 3,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "B"
     },
     {
       "id": "SRC-153",
@@ -1952,11 +1953,12 @@
       "id": "SRC-180",
       "name": "Известия Культура",
       "url": "https://iz.ru/culture",
-      "status": "no_events",
-      "pages": 2,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "HTTP 403"
     },
     {
       "id": "SRC-181",
@@ -1993,7 +1995,7 @@
       "name": "Музыкальная жизнь",
       "url": "https://muzlifemagazine.ru/",
       "status": "no_events",
-      "pages": 3,
+      "pages": 2,
       "events": 0,
       "methods": [],
       "priority": "B"
@@ -2022,11 +2024,12 @@
       "id": "SRC-187",
       "name": "SRSLY",
       "url": "https://srsly.ru/",
-      "status": "no_events",
-      "pages": 3,
+      "status": "error",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "ConnectionError: HTTPSConnectionPool(host='srsly.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-188",
@@ -2072,7 +2075,7 @@
       "events": 0,
       "methods": [],
       "priority": "B",
-      "error": "robots.txt вернул HTML вместо правил"
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-192",
@@ -2100,12 +2103,13 @@
       "id": "SRC-194",
       "name": "БДТ имени Товстоногова",
       "url": "https://bdt.spb.ru/",
-      "status": "blocked",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "B",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "status": "found",
+      "pages": 3,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "B"
     },
     {
       "id": "SRC-195",
@@ -2247,12 +2251,11 @@
       "id": "SRC-207",
       "name": "Театр имени Камала",
       "url": "https://kamalteatr.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "C",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "C"
     },
     {
       "id": "SRC-208",
@@ -2303,13 +2306,12 @@
       "id": "SRC-212",
       "name": "Коляда-Театр",
       "url": "https://kolyada-theatre.ru/",
-      "status": "found",
-      "pages": 2,
-      "events": 1,
-      "methods": [
-        "dated_listing"
-      ],
-      "priority": "C"
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "C",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-213",
@@ -2393,12 +2395,11 @@
       "id": "SRC-220",
       "name": "Приморская филармония",
       "url": "https://primfil.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "C",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "C"
     },
     {
       "id": "SRC-221",
@@ -2436,11 +2437,12 @@
       "id": "SRC-224",
       "name": "Калининградская филармония",
       "url": "https://filarmonia39.ru/",
-      "status": "no_events",
-      "pages": 2,
+      "status": "error",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "C"
+      "priority": "C",
+      "error": "ConnectionError: HTTPSConnectionPool(host='filarmonia39.ru', port=443): Read timed out."
     },
     {
       "id": "SRC-225",
@@ -2500,7 +2502,7 @@
       "url": "https://redkassa.ru/",
       "status": "found",
       "pages": 3,
-      "events": 63,
+      "events": 64,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -2624,6 +2626,346 @@
       "events": 0,
       "methods": [],
       "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-001",
+      "name": "Московский театр Олега Табакова",
+      "url": "https://tabakov.ru/afisha/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-002",
+      "name": "Московский театр Эстрады",
+      "url": "https://teatr-estrada.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-003",
+      "name": "Покровка.Театр",
+      "url": "https://pokrovka-teatr.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-004",
+      "name": "Театр «У Никитских ворот»",
+      "url": "https://www.teatrunikitskihvorot.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "NEW-SRC-005",
+      "name": "Театр «Старый дом»",
+      "url": "https://old-house.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-006",
+      "name": "Театр на Садовой («Приют комедианта»)",
+      "url": "https://pkteatr.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-007",
+      "name": "Центр современного искусства МАРС",
+      "url": "https://centermars.ru/projects/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-008",
+      "name": "Музей Победы",
+      "url": "https://victorymuseum.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-009",
+      "name": "Музей Михаила Булгакова",
+      "url": "https://bulgakovmuseum.ru/calendar/",
+      "status": "found",
+      "pages": 4,
+      "events": 2,
+      "methods": [
+        "detail_jsonld"
+      ],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-010",
+      "name": "Государственный музей А. С. Пушкина",
+      "url": "https://www.pushkinmuseum.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-011",
+      "name": "Музей космонавтики",
+      "url": "https://kosmo-museum.ru/events",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-012",
+      "name": "Всероссийский музей декоративного искусства",
+      "url": "https://damuseum.ru/exhibitions/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "NEW-SRC-013",
+      "name": "Музей современной истории России",
+      "url": "https://sovrhistory.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-014",
+      "name": "Музей кино",
+      "url": "https://museikino.ru/",
+      "status": "no_events",
+      "pages": 3,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-015",
+      "name": "Фонд культуры «Екатерина»",
+      "url": "https://www.ekaterina-foundation.ru/rus/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
+    },
+    {
+      "id": "NEW-SRC-016",
+      "name": "ДК «Рассвет»",
+      "url": "https://dkrassvet.space/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-017",
+      "name": "ЦЭАМ",
+      "url": "https://ceam.space/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-018",
+      "name": "SOUND UP",
+      "url": "https://soundup.world/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-019",
+      "name": "Context. Diana Vishneva",
+      "url": "https://contextfest.com/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-020",
+      "name": "Фонд Дианы Вишнёвой — афиша",
+      "url": "https://dianavishneva.com/afisha",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-021",
+      "name": "Фонд «Бельканто»",
+      "url": "https://www.belcantofund.com/affiche/",
+      "status": "found",
+      "pages": 3,
+      "events": 10,
+      "methods": [
+        "microdata"
+      ],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-022",
+      "name": "Театр «Провинциальные танцы»",
+      "url": "https://www.provincialdances.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-023",
+      "name": "Кинотеатр «Художественный»",
+      "url": "https://cinema1909.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-024",
+      "name": "Кинотеатр «Пионер»",
+      "url": "https://pioner-cinema.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "NEW-SRC-025",
+      "name": "Центр документального кино",
+      "url": "https://cdkino.ru/schedule",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-026",
+      "name": "CoolConnections",
+      "url": "https://www.coolconnections.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-027",
+      "name": "Синема Парк и Формула кино",
+      "url": "https://kinoteatr.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-028",
+      "name": "Международный фестиваль Dance Open",
+      "url": "https://danceopen.com/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-029",
+      "name": "Платоновский фестиваль искусств",
+      "url": "https://platonovfest.ru/",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt запрещает этот адрес"
+    },
+    {
+      "id": "NEW-SRC-030",
+      "name": "АРХ Москва",
+      "url": "https://archmoscow.ru/",
+      "status": "no_events",
+      "pages": 2,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
+    },
+    {
+      "id": "NEW-SRC-031",
+      "name": "ARTLIFE FEST",
+      "url": "https://artlife-fest.com/ru/about",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectTimeout"
+    },
+    {
+      "id": "NEW-SRC-032",
+      "name": "Журнал «Сцена»",
+      "url": "https://the-stage.ru/",
+      "status": "no_events",
+      "pages": 1,
+      "events": 0,
+      "methods": [],
+      "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-033",
+      "name": "Петербургский театральный журнал",
+      "url": "https://ptj.spb.ru/",
+      "status": "no_events",
+      "pages": 4,
+      "events": 0,
+      "methods": [],
+      "priority": "B"
     }
   ],
   "note": "Попытка проверки всего реестра: HTTP-доступ не гарантирует наличие событий; учитываются только записи с датами. Часть сайтов требует отдельных интеграций."
