@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0b12" />
+  <title>Редакторская панель — ТБШ СОБЫТИЯ</title>
+  <link rel="icon" type="image/png" href="./assets/tbsh-mark-white.png" />
+  <style>
+    :root{color-scheme:dark;--bg:#090a0f;--panel:#151823;--panel2:#1b2031;--line:#30364b;--text:#f8f9ff;--muted:#959fb7;--blue:#4268ff;--blue2:#86a0ff;--font:Arial,Helvetica,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;-webkit-font-smoothing:antialiased}
+    a{color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}button:disabled{cursor:not-allowed;opacity:.48}
+    .wrap{max-width:1460px;margin:0 auto;padding:0 32px 70px}.top{background:#0d0f18;border-bottom:1px solid #2c3040}
+    .top-inner{max-width:1460px;margin:auto;padding:19px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .brand{display:flex;align-items:center;gap:15px;text-decoration:none;font-weight:900;letter-spacing:1.2px;font-size:17px}.brand img{width:47px;height:47px;object-fit:contain}
+    .brand span small{display:block;margin-top:5px;color:var(--muted);font-weight:600;letter-spacing:1.2px;font-size:10px}
+    .back{color:#c6d1ff;text-decoration:none;font-weight:750;border:1px solid #394261;padding:11px 15px;border-radius:9px}.back:hover{background:#1b2646}
+    .eyebrow{color:#91a7ff;font-weight:900;letter-spacing:2px;font-size:11px;margin:34px 0 16px}
+    .intro{position:relative;border-radius:20px;border:1px solid #3d56aa;background:linear-gradient(115deg,#15182a,#121522 60%,#1a2d8e);padding:31px 38px;overflow:hidden;display:flex;justify-content:space-between;align-items:center}
+    .intro h1{font-size:clamp(36px,4.5vw,64px);font-weight:950;line-height:.95;letter-spacing:-3px;text-transform:uppercase;margin:0 0 18px;max-width:760px}
+    .intro h1 b{color:#7692ff}.intro p{color:#c0c9e2;line-height:1.55;margin:0;max-width:690px;font-size:13px}
+    .intro-star{font-size:166px;color:#88a0ff45;margin:0 0 -45px;line-height:1}
+    .metrics{display:flex;gap:12px;margin:22px 0 29px;flex-wrap:wrap}.metric{background:#151823;border:1px solid var(--line);border-radius:11px;padding:15px 20px;min-width:175px}
+    .metric b{font-size:27px;margin-right:10px}.metric span{font-size:10px;color:var(--muted);font-weight:850;letter-spacing:.5px}
+    .flash{display:none;margin:12px 0 20px;padding:12px 16px;background:#202944;border:1px solid #4965b4;color:#dbe4ff;border-radius:10px}
+    .flash.is-visible{display:block}.layout{display:grid;grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);gap:22px;align-items:start}
+    .panel{background:#141720;border:1px solid var(--line);border-radius:17px;overflow:hidden}.panel-header{padding:22px 24px;border-bottom:1px solid var(--line)}
+    .panel-overline{color:#7e99ff;font-size:10px;letter-spacing:1.6px;font-weight:900}.panel-header h2{font-size:22px;margin:8px 0 7px}.panel-header p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}
+    .panel-body{padding:22px 24px}.tabs{display:flex;gap:8px;margin-bottom:20px}.tab{padding:10px 16px;border-radius:8px;background:#202431;color:#bfc7dd;border:1px solid #32394c;font-size:12px;font-weight:850}.tab.active{background:var(--blue);color:white;border-color:var(--blue)}
+    .field{margin-bottom:14px}.field label{display:block;font-size:10px;font-weight:850;letter-spacing:1px;color:#b3bfdb;margin-bottom:8px;text-transform:uppercase}
+    .field input,.field textarea,.field select,.toolbar input,.toolbar select,.pick-note,.pick-image{width:100%;padding:12px 13px;border:1px solid #3c4256;background:#0d101a;color:#f5f7ff;border-radius:8px;outline:none}
+    .field input:focus,.field textarea:focus,.field select:focus,.toolbar input:focus,.toolbar select:focus,.pick-note:focus,.pick-image:focus{border-color:#6884ff;box-shadow:0 0 0 3px #4268ff28}
+    .field textarea{resize:vertical;min-height:80px}.field input::placeholder,.field textarea::placeholder,.toolbar input::placeholder{color:#727b93}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.toolbar{display:grid;grid-template-columns:1fr 165px;gap:12px;margin-bottom:16px}
+    .result-list{max-height:720px;overflow:auto;padding-right:3px}.catalog-row{display:flex;gap:10px;justify-content:space-between;align-items:center;border:1px solid #2f3445;background:#191d29;border-radius:10px;padding:14px;margin-bottom:9px}
+    .catalog-row strong{display:block;font-size:12px;line-height:1.45}.catalog-row p{margin:6px 0 0;color:var(--muted);font-size:10px;line-height:1.5}.catalog-row button{flex-shrink:0;background:#263e95;color:#edf2ff;border:1px solid #4269f6;padding:9px 11px;border-radius:7px;font-size:10px;font-weight:850}
+    .catalog-row button.added{background:#21283a;border-color:#39445f;color:#a1bad0}.catalog-row button:not(:disabled):hover{background:#3559cd}
+    .hint{font-size:11px;line-height:1.65;color:#94a0bb;margin:10px 0}.hide{display:none!important}
+    .primary{background:#365bff;color:white;padding:13px 17px;border-radius:9px;font-weight:850;font-size:12px}.primary:hover{background:#5376ff}
+    .secondary{color:#d1dcff;border:1px solid #465273;background:#1b2335;border-radius:9px;padding:12px 14px;font-size:11px;font-weight:850;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+    .secondary:hover{border-color:#7d91d5;background:#252e46}.secondary.danger{color:#ffb4b4;border-color:#763942}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+    .pick-list{padding:18px 23px}.pick-row{padding:15px;border:1px solid #34405f;background:#191e30;border-radius:12px;margin-bottom:13px}
+    .pick-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.pick-title{font-size:14px;font-weight:900;line-height:1.5;margin:5px 0 3px}.pick-meta{font-size:10px;line-height:1.6;color:#abb8d9}.pick-num{color:#7d9eff;font-size:10px;letter-spacing:1px;font-weight:950}
+    .order{display:flex;gap:5px}.order button{background:#262e48;color:#f4f5ff;border:1px solid #364468;width:29px;height:29px;border-radius:6px;font-size:15px}
+    .pick-note,.pick-image{font-size:12px;margin-top:8px}.pick-note{resize:vertical;min-height:62px}.pick-caption{color:#95a5d5;font-size:10px;font-weight:850;letter-spacing:.7px;margin-top:15px}
+    .pick-commands{display:flex;gap:7px;justify-content:flex-end;margin-top:13px}.small{font-size:10px;padding:7px 10px}
+    .blank{padding:35px 22px;text-align:center;border:1px dashed #3e4e74;border-radius:13px;background:#14192a;color:#a8b5d6}
+    .blank strong{display:block;color:#fff;font-size:19px;margin:13px 0}.blank p{font-size:12px;line-height:1.7;margin:0 auto;max-width:290px}
+    .publish{background:linear-gradient(110deg,#202a4a,#131d38);border:1px solid #425baf;border-radius:14px;padding:21px 23px;margin-top:18px}
+    .publish h3{font-size:18px;margin:7px 0 10px}.publish p{font-size:11px;line-height:1.65;color:#bdc8e4;margin:0}.publish strong{color:#fff}
+    .publish-step{border-top:1px solid #3b4770;margin-top:13px;padding-top:14px}.publish-step span{display:inline-flex;border-radius:20px;background:#344d9b;color:#f1f4ff;width:22px;height:22px;align-items:center;justify-content:center;margin-right:8px;font-weight:900}
+    .publish-step p{display:inline}.publish-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+    .footer{color:#737f98;text-align:center;padding:40px 10px 12px;font-size:11px}
+    @media(max-width:990px){.layout{grid-template-columns:1fr}.result-list{max-height:340px}.intro-star{font-size:110px}}
+    @media(max-width:620px){.wrap{padding:0 14px 30px}.top-inner{padding:14px}.brand{font-size:13px}.brand img{width:34px;height:34px}.brand span small{font-size:8px}.back{font-size:10px;padding:9px}.intro{padding:23px}.intro h1{font-size:39px;letter-spacing:-2px}.intro-star{position:absolute;right:-12px;bottom:0;font-size:78px}.intro p{max-width:260px;font-size:11px}.panel-header{padding:18px}.panel-body,.pick-list{padding:15px}.row2,.toolbar{grid-template-columns:1fr}.metrics{gap:8px}.metric{min-width:calc(50% - 4px);padding:12px}.metric b{font-size:21px}.metric span{font-size:9px}}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="top-inner">
+    <a class="brand" href="./"><img src="./assets/tbsh-mark-white.png" alt="ТБШ"/><span>ТБШ СОБЫТИЯ<small>РЕДАКТОРСКАЯ ПАНЕЛЬ</small></span></a>
+    <a class="back" href="./#editors">← Посмотреть выбор редакции</a>
+  </div></header>
+  <div class="wrap">
+    <div class="eyebrow">✦ ТБШ / УПРАВЛЕНИЕ РЕДАКЦИОННЫМ ВЫБОРОМ</div>
+    <section class="intro"><div><h1>Наш выбор<b>.</b></h1><p>Отбирайте лучшее из общей афиши или добавляйте события вручную. Расставляйте приоритеты и пишите, почему редакция рекомендует именно их.</p></div><div class="intro-star" aria-hidden="true">✳</div></section>
+    <section class="metrics"><div class="metric"><b id="metric-catalog">—</b><span>СОБЫТИЙ В БАЗЕ</span></div><div class="metric"><b id="metric-picked">0</b><span>В ВЫБОРЕ РЕДАКЦИИ</span></div><div class="metric"><b id="metric-manual">0</b><span>ДОБАВЛЕНО ВРУЧНУЮ</span></div></section>
+    <p class="flash" id="flash" role="status" aria-live="polite"></p>
+    <div class="layout">
+      <section class="panel">
+        <div class="panel-header"><span class="panel-overline">01 / ИСТОЧНИКИ</span><h2>Добавить в подборку</h2><p>Найдите мероприятие в базе сайта или заполните карточку самостоятельно.</p></div>
+        <div class="panel-body">
+          <div class="tabs"><button class="tab active" data-tab="catalog" type="button">Из общей афиши</button><button class="tab" data-tab="manual" type="button">+ Новое событие</button></div>
+          <div id="tab-catalog">
+            <div class="toolbar"><input id="catalog-search" type="search" placeholder="Название, артист, площадка…" aria-label="Поиск по афише"/><input type="month" id="catalog-month" aria-label="Месяц событий"/></div>
+            <p class="hint" id="catalog-summary">Загружаем общую афишу…</p>
+            <div class="result-list" id="catalog-results"></div>
+          </div>
+          <div id="tab-manual" class="hide">
+            <form id="manual-form">
+              <div class="field"><label for="m-title">Название события *</label><input id="m-title" required maxlength="200" placeholder="Например, премьера нового спектакля"/></div>
+              <div class="row2"><div class="field"><label for="m-start">Дата начала *</label><input id="m-start" type="date" required/></div><div class="field"><label for="m-end">Дата окончания</label><input id="m-end" type="date"/></div></div>
+              <div class="row2"><div class="field"><label for="m-category">Раздел *</label><select id="m-category"><option>Театр</option><option>Концерты</option><option>Выставки</option><option>Шоу</option><option>Фестивали</option><option>Стендап</option><option>Кино</option><option>Лекции</option><option>Другое</option></select></div><div class="field"><label for="m-city">Город *</label><input id="m-city" required placeholder="Москва" value="Москва"/></div></div>
+              <div class="field"><label for="m-venue">Площадка *</label><input id="m-venue" required maxlength="180" placeholder="Название театра, музея или зала"/></div>
+              <div class="field"><label for="m-url">Ссылка на анонс *</label><input id="m-url" type="url" required placeholder="https://..."/></div>
+              <div class="field"><label for="m-image">Афиша — ссылка на изображение</label><input id="m-image" type="url" placeholder="https://.../poster.jpg"/></div>
+              <div class="field"><label for="m-description">Короткое описание</label><textarea id="m-description" maxlength="600" placeholder="О чём событие, что увидит зритель"></textarea></div>
+              <div class="field"><label for="m-note">Почему рекомендует ТБШ</label><textarea id="m-note" maxlength="500" placeholder="Например: уникальный состав, сильная визуальная постановка…"></textarea></div>
+              <div class="actions"><button class="primary" id="manual-save" type="submit">✦ Добавить в выбор редакции</button><button class="secondary hide" id="manual-cancel" type="button">Отменить изменение</button></div>
+              <p class="hint">Звёздочка (*) — обязательные поля. Укажите ссылку на первоисточник. Права на изображения должны разрешать их использование.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <section class="panel"><div class="panel-header"><span class="panel-overline">02 / ОТБОР</span><h2>Выбор редакции <span id="picked-inline" style="color:#7f9bff">(0)</span></h2><p>Меняйте порядок кнопками ↑ ↓, добавляйте собственный комментарий и при необходимости ссылку на афишу.</p></div><div class="pick-list" id="picked-list"><div class="blank"><strong>Пока пусто</strong><p>Выберите событие из списка слева или добавьте новое вручную.</p></div></div></section>
+        <section class="publish"><span class="panel-overline">03 / ПУБЛИКАЦИЯ</span><h3>Опубликовать на сайте</h3><p>Редакторские изменения сохраняются <strong>в этом браузере как черновик</strong>. Чтобы все посетители увидели подборку, необходимо сохранить её в GitHub. <strong>Никакие логины и пароли здесь не вводятся.</strong></p>
+          <div class="publish-step"><span>1</span><p>Нажмите <strong>«Скопировать JSON»</strong> или скачайте файл.</p></div>
+          <div class="publish-step"><span>2</span><p>Нажмите <strong>«Открыть редактор GitHub»</strong>, замените содержимое файла, нажмите <strong>Commit changes</strong>.</p></div>
+          <div class="publish-actions"><button id="copy-json" class="primary" type="button">Скопировать JSON</button><button id="download-json" class="secondary" type="button">↓ Скачать JSON</button><a id="github-edit" class="secondary" href="https://github.com/tinekazzz/tbsh-sobytiya5/edit/main/site/data/editorial_picks.json" target="_blank" rel="noopener noreferrer">Открыть редактор GitHub ↗</a></div>
+          <div class="publish-actions"><button id="reset-published" class="secondary danger" type="button">Сбросить черновик до опубликованной версии</button></div>
+          <p class="hint" id="save-state">Загрузка редакционных данных…</p>
+          <p class="hint">Публикация выполняется только владельцем репозитория или участником с правом записи. Сама страница редактора публичная, но она не может изменить сайт без коммита в GitHub.</p>
+        </section>
+      </section>
+    </div>
+    <div class="footer">ТБШ СОБЫТИЯ · Редакторская панель · Данные источников необходимо проверять перед публикацией</div>
+  </div>
+  <script>
+  (()=>{'use strict';
+    const $=(id)=>document.getElementById(id);
+    const esc=(x)=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const storageKey='tbsh:editorial-draft:v1';
+    const state={events:[],published:[],items:[],editingId:null,hasDraft:false};
+    let flashTimer;
+    const validHttps=(x)=>{try{let u=new URL(x);return u.protocol==='https:'&&!!u.hostname;}catch{return false;}};
+    const clone=(x)=>JSON.parse(JSON.stringify(x));
+    const months=(d)=> {let dt=new Date((d||'2026-01-01').slice(0,10)+'T12:00:00');return isNaN(+dt)?'Дата уточняется':dt.toLocaleDateString('ru-RU',{day:'numeric',month:'long',year:'numeric'});};
+    const nowISO=()=>new Date().toISOString();
+    const snapshot=(x)=>({id:x.id,title:x.title,start_date:x.start_date,end_date:x.end_date||x.start_date,category:x.category||'Другое',city:x.city||'Россия',venue:x.venue||'',url:x.url||'',description:x.description||'',image_url:x.image_url||'',source_name:x.source_name||x.venue||'',people:Array.isArray(x.people)?x.people:[],origin:x.origin||'editorial_manual',editor_score:x.editor_score||95,discovered_at:x.discovered_at||new Date().toISOString().slice(0,10),verification:x.verification||'Добавлено редакцией; проверьте первоисточник'});
+    const show=(message)=>{const el=$('flash');el.textContent=message;el.classList.add('is-visible');clearTimeout(flashTimer);flashTimer=setTimeout(()=>el.classList.remove('is-visible'),4400);};
+    const setTab=(which)=>{document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===which));$('tab-catalog').classList.toggle('hide',which!=='catalog');$('tab-manual').classList.toggle('hide',which!=='manual');};
+    const persist=()=>{state.hasDraft=true;try{localStorage.setItem(storageKey,JSON.stringify({saved_at:nowISO(),items:state.items}));}catch{show('Не удалось записать черновик на устройство — скачайте JSON.');}$('save-state').textContent='Черновик сохранён в этом браузере · для публикации нажмите «Скопировать JSON»';updateCounts();};
+    const updateCounts=()=>{$('metric-picked').textContent=String(state.items.length);$('metric-manual').textContent=String(state.items.filter(it=>it.event?.origin==='editorial_manual').length);$('picked-inline').textContent=`(${state.items.length})`;};
+    const makeExport=()=>JSON.stringify({version:1,updated_at:nowISO(),items:state.items.map(it=>({id:it.id,note:String(it.note||'').slice(0,500),image_url:validHttps(it.image_url)?it.image_url:'',event:snapshot(it.event||{})}))},null,2)+'\n';
+    const renderCatalog=()=>{
+      const q=$('catalog-search').value.trim().toLocaleLowerCase('ru-RU'),m=$('catalog-month').value;
+      const filtered=state.events.filter(e=>(!m || String(e.start_date||'').slice(0,7)<=m && String(e.end_date||e.start_date||'').slice(0,7)>=m)&&(!q || [e.title,e.venue,e.source_name,e.city,...(e.people||[])].join(' ').toLocaleLowerCase('ru-RU').includes(q)));
+      const rows=filtered.slice(0,60);
+      $('catalog-summary').textContent=`${filtered.length} событий по фильтрам · показаны первые ${rows.length}. Для поиска используйте название или имя.`;
+      $('catalog-results').innerHTML=rows.map(e=>{const added=state.items.some(it=>it.id===e.id);return `<div class="catalog-row"><div><strong>${esc(e.title)}</strong><p>${esc(months(e.start_date))} · ${esc(e.city||'Россия')} · ${esc(e.venue||'Площадка')}</p></div><button type="button" data-add="${esc(e.id)}" class="${added?'added':''}" ${added?'disabled':''}>${added?'✓ Выбрано':'+ Выбрать'}</button></div>`;}).join('')||'<div class="blank"><strong>Ничего не найдено</strong><p>Измените месяц или поисковый запрос.</p></div>';
+    };
+    const renderPicks=()=>{
+      $('picked-list').innerHTML=state.items.length?state.items.map((it,i)=>{const e=it.event||{};const manual=e.origin==='editorial_manual';return `<article class="pick-row"><div class="pick-top"><div><span class="pick-num">✦ ВЫБОР ${String(i+1).padStart(2,'0')}</span><div class="pick-title">${esc(e.title)}</div><div class="pick-meta">${esc(months(e.start_date))} · ${esc(e.category||'Событие')} · ${esc(e.venue||'Площадка')}</div></div><div class="order"><button data-move="up" data-id="${esc(it.id)}" type="button" aria-label="Выше" ${i===0?'disabled':''}>↑</button><button data-move="down" data-id="${esc(it.id)}" type="button" aria-label="Ниже" ${i===state.items.length-1?'disabled':''}>↓</button></div></div>
+        <div class="pick-caption">КОММЕНТАРИЙ РЕДАКЦИИ</div><textarea class="pick-note" maxlength="500" data-note="${esc(it.id)}" placeholder="Почему стоит посетить…">${esc(it.note||'')}</textarea><div class="pick-caption">ССЫЛКА НА АФИШУ (НЕОБЯЗАТЕЛЬНО)</div><input class="pick-image" type="url" data-image="${esc(it.id)}" value="${esc(it.image_url||'')}" placeholder="https://.../poster.jpg" />
+        <div class="pick-commands">${manual?`<button type="button" class="secondary small" data-edit="${esc(it.id)}">Редактировать событие</button>`:''}<button type="button" class="secondary small danger" data-remove="${esc(it.id)}">Убрать из выбора</button></div></article>`;}).join(''):'<div class="blank"><span style="font-size:36px">✦</span><strong>Подборка пока пуста</strong><p>Выберите событие из общей афиши или добавьте его вручную.</p></div>';
+      updateCounts();
+    };
+    const render=()=>{renderCatalog();renderPicks();};
+    const resetManual=()=>{state.editingId=null;$('manual-form').reset();$('m-city').value='Москва';$('manual-save').textContent='✦ Добавить в выбор редакции';$('manual-cancel').classList.add('hide');};
+    const handleManual=()=>{
+      const title=$('m-title').value.trim(),start=$('m-start').value,end=$('m-end').value||start,city=$('m-city').value.trim(),venue=$('m-venue').value.trim(),url=$('m-url').value.trim(),img=$('m-image').value.trim();
+      if(!title||!start||!city||!venue||!validHttps(url)){show('Заполните название, дату, город, площадку и корректную HTTPS-ссылку.');return;}
+      if(end<start){show('Дата окончания не может быть раньше даты начала.');return;}
+      if(img&&!validHttps(img)){show('Для изображения нужна HTTPS-ссылка или пустое поле.');return;}
+      const id=state.editingId||'manual-'+((globalThis.crypto?.randomUUID?.()||Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)));
+      const previous=state.items.find(x=>x.id===id)?.event||{};
+      const event=snapshot({...previous,id,title,start_date:start,end_date:end,category:$('m-category').value,city,venue,url,image_url:img,description:$('m-description').value.trim(),source_name:venue,origin:'editorial_manual'});
+      const item={id,event,note:$('m-note').value.trim().slice(0,500),image_url:img};
+      const i=state.items.findIndex(x=>x.id===id);
+      if(i>=0)state.items.splice(i,1,item);else state.items.push(item);
+      persist();resetManual();render();setTab('catalog');show(i>=0?'Событие обновлено в черновике.':'Событие добавлено в выбор редакции.');
+    };
+    const loadManual=(id)=>{
+      const it=state.items.find(x=>x.id===id);if(!it||it.event?.origin!=='editorial_manual')return;
+      const e=it.event;state.editingId=id;
+      for(const [key,v] of Object.entries({'m-title':e.title,'m-start':e.start_date,'m-end':e.end_date,'m-category':e.category,'m-city':e.city,'m-venue':e.venue,'m-url':e.url,'m-image':it.image_url||e.image_url,'m-description':e.description,'m-note':it.note})){if($(key))$(key).value=v||'';}
+      $('manual-save').textContent='Сохранить изменения';$('manual-cancel').classList.remove('hide');setTab('manual');document.querySelector('.panel').scrollIntoView({behavior:'smooth',block:'start'});
+    };
+    document.addEventListener('click',async ev=>{
+      const b=ev.target.closest('button');if(!b)return;
+      if(b.dataset.tab){setTab(b.dataset.tab);return;}
+      if(b.dataset.add){const e=state.events.find(x=>x.id===b.dataset.add);if(!e||state.items.some(it=>it.id===e.id))return;state.items.push({id:e.id,event:snapshot(e),note:'',image_url:''});persist();render();show('Событие добавлено — можно написать рекомендацию редакции.');return;}
+      if(b.dataset.remove){state.items=state.items.filter(it=>it.id!==b.dataset.remove);persist();render();return;}
+      if(b.dataset.move){const i=state.items.findIndex(it=>it.id===b.dataset.id);const j=i+(b.dataset.move==='up'?-1:1);if(i<0||j<0||j>=state.items.length)return;[state.items[i],state.items[j]]=[state.items[j],state.items[i]];persist();renderPicks();return;}
+      if(b.dataset.edit){loadManual(b.dataset.edit);return;}
+    });
+    $('manual-form').addEventListener('submit',e=>{e.preventDefault();handleManual();});
+    $('manual-cancel').addEventListener('click',()=>{resetManual();setTab('catalog');});
+    $('catalog-search').addEventListener('input',renderCatalog);
+    $('catalog-month').addEventListener('change',renderCatalog);
+    $('picked-list').addEventListener('input',e=>{
+      const id=e.target.dataset.note||e.target.dataset.image,field=e.target.dataset.note?'note':'image_url';if(!id)return;
+      const it=state.items.find(x=>x.id===id);if(!it)return;
+      it[field]=e.target.value;persist();
+    });
+    $('copy-json').addEventListener('click',async()=>{
+      try{await navigator.clipboard.writeText(makeExport());show('JSON скопирован. Откройте файл в GitHub и вставьте вместо старого содержимого.');}
+      catch{const x=document.createElement('textarea');x.value=makeExport();document.body.append(x);x.select();const ok=document.execCommand('copy');x.remove();show(ok?'JSON скопирован. Откройте GitHub.':'Копирование недоступно — используйте скачивание JSON.');}
+    });
+    $('download-json').addEventListener('click',()=>{const blob=new Blob([makeExport()],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='editorial_picks.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);show('Файл сохранён. Для публикации замените site/data/editorial_picks.json на GitHub.');});
+    $('reset-published').addEventListener('click',()=>{if(!confirm('Заменить черновик последней опубликованной версией? Несохранённые изменения будут потеряны.'))return;state.items=clone(state.published);state.hasDraft=false;try{localStorage.removeItem(storageKey)}catch{}resetManual();render();$('save-state').textContent='Открыта последняя опубликованная версия.';show('Черновик сброшен до опубликованной версии.');});
+    async function init(){try{
+      let e,p;
+      if(window.__ADMIN_PREVIEW__){
+        e={events:window.__ADMIN_PREVIEW__.events||[]};p=window.__ADMIN_PREVIEW__.picks||{items:[]};
+      }else{
+        const [evr,pr]=await Promise.all([fetch('./data/events.json?v='+Date.now(),{cache:'no-store'}),fetch('./data/editorial_picks.json?v='+Date.now(),{cache:'no-store'})]);
+        if(!evr.ok||!pr.ok)throw new Error('Не удалось загрузить events.json или editorial_picks.json');
+        [e,p]=await Promise.all([evr.json(),pr.json()]);
+      }
+      state.events=Array.isArray(e.events)?e.events:[];
+      state.published=Array.isArray(p.items)?p.items:[];
+      state.items=clone(state.published);
+      try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(Array.isArray(saved?.items)){state.items=saved.items;state.hasDraft=true;}}catch{}
+      state.items=state.items.filter(it=>it&&typeof it.id==='string'&&it.event&&typeof it.event==='object');
+      $('metric-catalog').textContent=String(state.events.length);
+      const d=new Date(),month=new Date(d.getFullYear(),d.getMonth()+1,1);$('catalog-month').value=`${month.getFullYear()}-${String(month.getMonth()+1).padStart(2,'0')}`;
+      $('save-state').textContent=state.hasDraft?'Восстановлен черновик из этого браузера. Для публикации скопируйте JSON в GitHub.':'Загружена опубликованная версия. Изменения будут сохраняться в этом браузере до публикации.';
+      render();
+    }catch(ex){$('catalog-summary').textContent='Не удалось загрузить базу: '+ex.message;show('Откройте редакторскую панель на опубликованном сайте GitHub Pages.');}}
+    init();
+  })();
+  </script>
+</body>
+</html>

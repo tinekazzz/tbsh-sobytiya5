@@ -308,3 +308,19 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 .card-visual.poster-image-loaded .card-top-row,
 .modal-visual.poster-image-loaded .modal-close{z-index:4}
 .modal-visual.poster-image-loaded .poster-real-image{object-fit:contain;background:rgba(0,0,0,.65)}
+
+/* Editorial selection: distinct branded highlights, without changing the rest of the dashboard. */
+.nav-editorial{color:#dce5ff!important}
+.nav-editorial .nav-ic{color:#718dff}
+.nav-editorial.active,.nav-editorial:hover{background:#22315c!important;color:#fff!important}
+.editorial-intro{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:28px 31px;margin:1px 0 27px;border:1px solid #3454bd;border-radius:16px;background:linear-gradient(110deg,#151a34 0%,#111425 58%,#1a3ab2 100%);overflow:hidden;position:relative}
+.editorial-intro-eyebrow{display:block;color:#96abff;font-size:10px;font-weight:850;letter-spacing:2px;margin-bottom:13px}
+.editorial-intro h2{font-family:'Roboto Condensed',Impact,'Arial Narrow',Arial,sans-serif;font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-1.8px;line-height:1;margin:0 0 14px;color:#fff;text-transform:uppercase}
+.editorial-intro h2 span{color:#6c8aff}
+.editorial-intro p{color:#b6c0de;line-height:1.65;font-size:12px;max-width:550px;margin:0}
+.editorial-intro-symbol{font-size:120px;color:#6788ff4a;line-height:1;transform:rotate(13deg);margin-right:-15px}
+.event-card.is-editorial{border-color:#3859b7;box-shadow:0 0 0 1px #2345a43d}
+.event-card.is-editorial:hover{border-color:#7297ff}
+.editorial-badge{display:inline-flex;align-items:center;align-self:flex-start;color:#b2c1ff;background:#273f82;border:1px solid #3f62cb60;border-radius:3px;padding:5px 7px;margin:0 0 9px;letter-spacing:1px;font-size:8px;font-weight:900}
+.editorial-note{color:#dee6ff!important;border-left:2px solid #5d7cff;padding:3px 0 4px 10px;margin:8px 0 12px;font-size:10px;line-height:1.55;font-weight:650}
+@media(max-width:610px){.editorial-intro{padding:24px 18px;margin-bottom:22px}.editorial-intro-symbol{font-size:74px;position:absolute;right:0;bottom:0}.editorial-intro h2{font-size:34px}.editorial-intro p{font-size:10px;max-width:260px}.editorial-intro-eyebrow{font-size:8px}.editorial-badge{font-size:6px}.editorial-note{font-size:9px}}

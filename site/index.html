@@ -24,7 +24,7 @@
       <div class="header-actions">
         <span class="timezone-pill"><span class="signal-dot"></span> Москва / МСК</span>
         <button class="icon-button top-favs" id="go-favorites" type="button" title="Избранное" aria-label="Открыть избранное">♡</button>
-        <div class="header-avatar" title="Редакторская панель">ТБШ</div>
+        <a class="header-avatar" href="./admin.html" title="Открыть редакторскую панель" aria-label="Открыть редакторскую панель" style="text-decoration:none">ТБШ</a>
       </div>
     </header>
 
@@ -34,6 +34,7 @@
         <nav id="sidebar-nav" class="sidebar-nav">
           <button data-view="overview" class="nav-link active" type="button"><span class="nav-ic">◈</span> Обзор <span class="nav-short">01</span></button>
           <button data-view="events" class="nav-link" type="button"><span class="nav-ic">▦</span> Афиша месяца <span class="nav-short">02</span></button>
+          <button data-view="editors" class="nav-link nav-editorial" type="button"><span class="nav-ic">✦</span> Выбор редакции <span class="nav-counter" id="editorial-counter">0</span></button>
           <button data-view="fresh" class="nav-link" type="button"><span class="nav-ic">✳</span> Новые находки <span class="nav-short">03</span></button>
           <button data-view="favorites" class="nav-link" type="button"><span class="nav-ic">♡</span> Избранное <span class="nav-counter" id="fav-counter">0</span></button>
         </nav>
@@ -52,7 +53,7 @@
           <p>Театр, музыка, искусство, шоу и самые неожиданные события.</p>
           <button data-view="about" type="button" class="subtle-link">Как устроен радар ↗</button>
         </div>
-        <span class="sidebar-version">ТБШ СОБЫТИЯ / v 1.1</span>
+        <span class="sidebar-version">ТБШ СОБЫТИЯ / v 1.2</span>
       </div>
     </aside>
 
@@ -79,6 +80,13 @@
         <div class="metric"><span class="metric-label">НЕДАВНО ДОБАВЛЕНО</span><span id="metric-new" class="metric-value">—</span><span class="metric-foot">в течение 7 дней</span></div>
         <div class="metric"><span class="metric-label">ИСТОЧНИКОВ В БАЗЕ</span><span id="metric-sources" class="metric-value">241</span><span class="metric-foot">официальные сайты и медиа</span></div>
         <div class="metric"><span class="metric-label">ИМЁН НА РАДАРЕ</span><span id="metric-people" class="metric-value">332</span><span class="metric-foot">артисты, авторы, режиссёры</span></div>
+      </section>
+
+      <section id="editorial-intro" class="editorial-intro hidden" aria-label="Выбор редакции ТБШ">
+        <div><span class="editorial-intro-eyebrow">✦ ТЕОРИЯ БОЛЬШОГО ШОУ / РЕКОМЕНДУЕМ</span>
+        <h2>Не пропустить<span>.</span></h2>
+        <p>События, которые редакция ТБШ выделила из всей культурной афиши. Только наш ручной выбор — без автоматического ранжирования.</p></div>
+        <span class="editorial-intro-symbol" aria-hidden="true">✳</span>
       </section>
 
       <section id="events-section" class="content-section">
