@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T12:53:33+03:00",
+  "generated_at": "2026-11-18T13:43:47+03:00",
   "mode": "daily_collection",
   "events": [
     {
@@ -2878,7 +2878,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "detail_dated_page"
+      "extraction_method": "detail_dated_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.afisha.ru/exhibition/master-klass-zhivopis-maslom-na-holste-2-vechera-dlya-sebya-1015584/"
+      ],
+      "duplicate_sources": [
+        "Афиша.ru — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-4f5f8b62705e57",
@@ -5350,6 +5358,30 @@
       "extraction_method": "jsonld"
     },
     {
+      "id": "auto-128bfa1e3ce907",
+      "title": "Кант",
+      "start_date": "2026-11-30",
+      "end_date": "2027-01-09",
+      "time": null,
+      "category": "Другое",
+      "venue": "Театр им. Вл.Маяковского",
+      "city": "Москва",
+      "url": "https://msk.kassir.ru/teatr/kant",
+      "description": "Кант",
+      "source_name": "Кассир.ру — Москва",
+      "image_url": "https://msk.kassir.ru/teatr/kant",
+      "source_id": "SRC-005",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld"
+    },
+    {
       "id": "auto-1bb3739a12f552",
       "title": "Повод остаться",
       "start_date": "2026-11-30",
@@ -6086,7 +6118,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/40264-sobor/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e6d4bf2402f317",
@@ -7221,7 +7261,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e1d465f7c32f09",
@@ -7789,7 +7837,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41919-sobor/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-9c01c63c1f48ed",
@@ -7813,7 +7869,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41921-sobor/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-b961103c838ed6",
@@ -7971,7 +8035,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/club/club-soyuz-kompozitorov"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-9f69248993e261",
@@ -8102,6 +8174,34 @@
         "Кассир.ру — Москва"
       ],
       "image_status": "found"
+    },
+    {
+      "id": "auto-74b1cd48b37310",
+      "title": "Кабаре. Мюзикл Егора Дружинина",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-04",
+      "time": null,
+      "category": "Театр",
+      "venue": "Concert.ru",
+      "city": "Москва",
+      "url": "https://www.concert.ru/myuzikl/kabare-myuzikl-egora-druzhinina/",
+      "description": "",
+      "source_name": "Concert.ru",
+      "image_url": "https://www.concert.ru/pictures/000658862.png",
+      "source_id": "SRC-231",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing",
+      "image_checked_at": "2026-11-18",
+      "image_checked_version": "4",
+      "image_status": "found",
+      "image_source_type": "official_detail_page"
     },
     {
       "id": "auto-2f41529cd49714",
@@ -8291,7 +8391,72 @@
       "extraction_method": "dated_listing",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
-      "image_status": "not_found"
+      "image_status": "not_found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.mmdm.ru/reserve-ticket/10272/"
+      ],
+      "duplicate_sources": [
+        "Московский международный Дом музыки"
+      ]
+    },
+    {
+      "id": "auto-96906583c72a51",
+      "title": "Маяковский. Я сам",
+      "start_date": "2026-12-04",
+      "end_date": "2027-01-11",
+      "time": null,
+      "category": "Другое",
+      "venue": "Театр Эстрады",
+      "city": "Москва",
+      "url": "https://msk.kassir.ru/teatr/mayakovskiy-ya-sam",
+      "description": "Маяковский. Я сам",
+      "source_name": "Кассир.ру — Москва",
+      "source_id": "SRC-005",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-17",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "jsonld",
+      "image_url": "https://msk.kassir.ru/teatr/mayakovskiy-ya-sam",
+      "duplicate_ids": [
+        "auto-d64e0018aceb37"
+      ],
+      "source_urls": [
+        "https://msk.kassir.ru/teatr/mayakovskiy-ya-sam"
+      ],
+      "duplicate_sources": [
+        "Кассир.ру — Москва"
+      ],
+      "image_status": "found"
+    },
+    {
+      "id": "auto-07cb91985d045c",
+      "title": "Мюзикл / Мюзикл",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-04",
+      "time": null,
+      "category": "Театр",
+      "venue": "Concert.ru",
+      "city": "Москва",
+      "url": "https://www.concert.ru/myuzikl/kabare-myuzikl-egora-druzhinina/",
+      "description": "",
+      "source_name": "Concert.ru",
+      "image_url": "https://www.concert.ru/pictures/000668805.png",
+      "source_id": "SRC-231",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "dated_listing"
     },
     {
       "id": "auto-c313d91b85e3cf",
@@ -8798,7 +8963,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/sofi-okran-rossiya?eventId=28517157"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "seed-009",
@@ -9696,7 +9869,7 @@
       "id": "auto-5fa96227122acf",
       "title": "Новогодняя елка в Каминном зале ХIX века «Сказка Севера»",
       "start_date": "2026-12-05",
-      "end_date": "2027-01-09",
+      "end_date": "2027-01-16",
       "time": null,
       "category": "Другое",
       "venue": "Картинная галерея Александра Шилова",
@@ -11051,7 +11224,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "detail_dated_page"
+      "extraction_method": "detail_dated_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.afisha.ru/concert/simfoniya-maykla-dzheksona-pri-svechah-orkestr-cagmo-6025003/"
+      ],
+      "duplicate_sources": [
+        "Афиша.ru — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-a300297b118224",
@@ -14084,7 +14265,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/club/club-soyuz-kompozitorov"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-300064d1e3886a",
@@ -14268,7 +14457,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-2298f441544bc6",
@@ -14814,7 +15011,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/koncert-viktor-zinchuk?eventId=28374605"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-08c99d3c836474",
@@ -18346,12 +18551,19 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/5f2dfe3d-cc35-4911-aca7-eb2c42c201ba",
       "image_checked_at": "2026-11-18",
-      "image_status": "found"
+      "image_status": "found",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_da_budet_god_lubvi"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-cab3050756d28f",
@@ -18671,7 +18883,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-286553fe45726b",
@@ -19221,7 +19441,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/spektakl-sobaki?eventId=29053474"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-d5861986a1d987",
@@ -19670,7 +19898,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-e4e7a550696598",
@@ -19924,7 +20160,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/kai-angel-day-2?eventId=28766035"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-31c018f12ca49e",
@@ -24123,7 +24367,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/venues/concert-hall/mts-live-kholl-moskva"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-103140bd910e1c",
@@ -24933,7 +25185,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41883-galereya-shilova/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-b8642f9ab17706",
@@ -24957,7 +25217,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41884-galereya-shilova/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-ea5af2c900d58e",
@@ -24981,7 +25249,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41934-dom-arkhitektora/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-27202a3d11e5e4",
@@ -25005,7 +25281,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41372-dom-arkhitektora/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-d7e5247fecfe05",
@@ -25029,7 +25313,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41877-sobor/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-3485a16de875af",
@@ -25053,7 +25345,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/42001-sobor/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-8c1e941f2b42c1",
@@ -25173,7 +25473,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "microdata"
+      "extraction_method": "microdata",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://www.belcantofund.com/actions/41628-darvinskiy-muzey/"
+      ],
+      "duplicate_sources": [
+        "Фонд «Бельканто»"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-99a1ee7f08df4f",
@@ -26023,7 +26331,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/chicago-groove-gruppa?eventId=28809473"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-97ebf45328000e",
@@ -26670,6 +26986,30 @@
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "detail_dated_page",
       "image_url": "https://s.afisha.ru/mediastorage/c7/34/55bbf028509842c49ba79f4134c7.jpg"
+    },
+    {
+      "id": "auto-d2b0b66eed3c32",
+      "title": "84",
+      "start_date": "2027-01-05",
+      "end_date": "2027-01-05",
+      "time": null,
+      "category": "Другое",
+      "venue": "Изи",
+      "city": "Москва",
+      "url": "https://www.afisha.ru/concert/84-6048010/",
+      "description": "",
+      "source_name": "Афиша.ru — Москва",
+      "image_url": "https://s.afisha.ru/mediastorage/c7/34/55bbf028509842c49ba79f4134c7.jpg",
+      "source_id": "SRC-002",
+      "people": [],
+      "editor_score": 68,
+      "featured": false,
+      "tag": "",
+      "discovered_at": "2026-11-18",
+      "origin": "automatic",
+      "verified_at": "2026-11-18",
+      "verification": "Собрано автоматически; уточните детали у организатора",
+      "extraction_method": "detail_dated_page"
     },
     {
       "id": "auto-d2b0b66eed3c32",
@@ -27675,7 +28015,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_krasnaya_plesen_msk"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-1c552d76c6c88f",
@@ -28295,38 +28642,6 @@
       "image_status": "found"
     },
     {
-      "id": "auto-96906583c72a51",
-      "title": "Маяковский. Я сам",
-      "start_date": "2027-01-11",
-      "end_date": "2027-01-11",
-      "time": null,
-      "category": "Другое",
-      "venue": "Театр Эстрады",
-      "city": "Москва",
-      "url": "https://msk.kassir.ru/teatr/mayakovskiy-ya-sam",
-      "description": "Маяковский. Я сам",
-      "source_name": "Кассир.ру — Москва",
-      "source_id": "SRC-005",
-      "people": [],
-      "editor_score": 68,
-      "featured": false,
-      "tag": "",
-      "discovered_at": "2026-11-17",
-      "origin": "automatic",
-      "verified_at": "2026-11-18",
-      "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "jsonld",
-      "image_url": "https://msk.kassir.ru/teatr/mayakovskiy-ya-sam",
-      "duplicate_ids": [],
-      "source_urls": [
-        "https://msk.kassir.ru/teatr/mayakovskiy-ya-sam"
-      ],
-      "duplicate_sources": [
-        "Кассир.ру — Москва"
-      ],
-      "image_status": "found"
-    },
-    {
       "id": "auto-079022b888c3dc",
       "title": "ЧУднЫе люди",
       "start_date": "2027-01-12",
@@ -28871,14 +29186,21 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "dated_listing",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/f6c45b86-b545-4a2b-840a-d09dab83aa0d",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_moe_domashnee_chudovische"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-e4ba8217cdaed6",
@@ -29101,7 +29423,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_metod_grenholma_yuzhno_sahalinsk"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-df1d822df7c519",
@@ -29432,7 +29761,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_metod_grenholma_yuzhno_sahalinsk"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-37e7be340921fb",
@@ -29941,7 +30277,15 @@
       "origin": "automatic",
       "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
-      "extraction_method": "dated_listing"
+      "extraction_method": "dated_listing",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://live.mts.ru/moscow/announcements/v-poiskakh-sokrovisch-ili?eventId=29274574"
+      ],
+      "duplicate_sources": [
+        "МТС Live — Москва"
+      ],
+      "image_status": "found"
     },
     {
       "id": "auto-0eef2c67810183",
@@ -30819,7 +31163,14 @@
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_concert_andrey_bolshakov"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-c588e82327af52",
@@ -32038,14 +32389,21 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/47cbac6f-c5d1-4e0d-8dbf-a52571cb24c7",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_shekspir_son"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-210d2bd436da18",
@@ -32486,14 +32844,21 @@
       "tag": "",
       "discovered_at": "2026-11-17",
       "origin": "automatic",
-      "verified_at": "2026-11-17",
+      "verified_at": "2026-11-18",
       "verification": "Собрано автоматически; уточните детали у организатора",
       "extraction_method": "jsonld",
       "image_url": "https://cdnlv.redkassa.ru/live/sitenew/picture/e44509da-5e8b-4bed-bfe6-519d46f2d35d",
       "image_checked_at": "2026-11-18",
       "image_checked_version": "4",
       "image_status": "found",
-      "image_source_type": "official_detail_page"
+      "image_source_type": "official_detail_page",
+      "duplicate_ids": [],
+      "source_urls": [
+        "https://redkassa.ru/events/bilety_na_spektakl_dovlatov_nashi"
+      ],
+      "duplicate_sources": [
+        "RedKassa"
+      ]
     },
     {
       "id": "auto-08399ced9a068a",
