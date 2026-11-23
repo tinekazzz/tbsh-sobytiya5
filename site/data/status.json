@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T07:17:46+03:00",
+  "updated_at": "2026-11-23T07:33:26+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
@@ -7,29 +7,29 @@
   "tracked_people": 450,
   "configured_collectors": 274,
   "sources_checked_today": 274,
-  "sources_reached_today": 182,
+  "sources_reached_today": 184,
   "sources_with_events_today": 49,
-  "sources_no_dated_events_today": 133,
+  "sources_no_dated_events_today": 135,
   "sources_needing_javascript_today": 0,
-  "sources_blocked_today": 85,
+  "sources_blocked_today": 83,
   "sources_failed_today": 7,
-  "events_extracted_today": 1159,
-  "new_events_added_today": 50,
-  "events_with_people_today": 54,
-  "events_in_catalog": 1265,
-  "events_with_multiple_sources": 133,
-  "events_with_images": 1201,
-  "images_checked_today": 32,
-  "image_pages_requested_today": 32,
-  "image_detail_links_followed_today": 0,
+  "events_extracted_today": 1179,
+  "new_events_added_today": 58,
+  "events_with_people_today": 52,
+  "events_in_catalog": 1327,
+  "events_with_multiple_sources": 147,
+  "events_with_images": 1257,
+  "images_checked_today": 20,
+  "image_pages_requested_today": 22,
+  "image_detail_links_followed_today": 2,
   "poster_overrides_applied_today": 0,
-  "images_found_today": 21,
-  "image_checks_blocked_today": 2,
+  "images_found_today": 13,
+  "image_checks_blocked_today": 0,
   "source_status_counts": {
     "found": 49,
-    "no_events": 133,
+    "no_events": 135,
     "needs_javascript": 0,
-    "blocked": 85,
+    "blocked": 83,
     "error": 7,
     "invalid_url": 0,
     "unsupported": 0
@@ -51,7 +51,7 @@
       "url": "https://www.afisha.ru/msk/",
       "status": "found",
       "pages": 4,
-      "events": 147,
+      "events": 141,
       "methods": [
         "detail_dated_page",
         "jsonld"
@@ -616,7 +616,7 @@
       "url": "https://www.mmdm.ru/afisha/",
       "status": "found",
       "pages": 4,
-      "events": 34,
+      "events": 41,
       "methods": [
         "dated_listing"
       ],
@@ -641,7 +641,7 @@
       "url": "https://kremlinpalace.org/",
       "status": "found",
       "pages": 4,
-      "events": 73,
+      "events": 75,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -802,7 +802,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt недоступен: ConnectionError"
+      "error": "robots.txt недоступен: SSLError"
     },
     {
       "id": "SRC-071",
@@ -1002,10 +1002,12 @@
       "id": "SRC-089",
       "name": "TAU",
       "url": "https://tau.place/",
-      "status": "no_events",
+      "status": "found",
       "pages": 3,
-      "events": 0,
-      "methods": [],
+      "events": 1,
+      "methods": [
+        "jsonld"
+      ],
       "priority": "B"
     },
     {
@@ -1069,7 +1071,7 @@
       "url": "https://circus.ru/",
       "status": "found",
       "pages": 3,
-      "events": 2,
+      "events": 3,
       "methods": [
         "dated_listing"
       ],
@@ -1301,9 +1303,10 @@
       "url": "https://garagemca.org/",
       "status": "found",
       "pages": 4,
-      "events": 1,
+      "events": 2,
       "methods": [
-        "dated_listing"
+        "dated_listing",
+        "detail_dated_page"
       ],
       "priority": "A"
     },
@@ -1364,12 +1367,11 @@
       "id": "SRC-123",
       "name": "Музей музыки",
       "url": "https://music-museum.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "A"
     },
     {
       "id": "SRC-124",
@@ -1794,12 +1796,11 @@
       "id": "SRC-164",
       "name": "Beat Film Festival",
       "url": "https://beatfilmfestival.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 3,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "B"
     },
     {
       "id": "SRC-165",
@@ -1891,7 +1892,7 @@
       "name": "АртУзел",
       "url": "https://artuzel.com/",
       "status": "no_events",
-      "pages": 3,
+      "pages": 4,
       "events": 0,
       "methods": [],
       "priority": "B"
@@ -2100,7 +2101,7 @@
       "url": "https://alexandrinsky.ru/",
       "status": "found",
       "pages": 3,
-      "events": 49,
+      "events": 55,
       "methods": [
         "dated_listing"
       ],
@@ -2336,12 +2337,10 @@
       "id": "SRC-214",
       "name": "ЦСИ Арсенал",
       "url": "https://arsenal-museum.art/",
-      "status": "found",
+      "status": "no_events",
       "pages": 2,
-      "events": 1,
-      "methods": [
-        "dated_listing"
-      ],
+      "events": 0,
+      "methods": [],
       "priority": "C"
     },
     {
@@ -2361,7 +2360,7 @@
       "url": "https://drama.nnov.ru/",
       "status": "found",
       "pages": 2,
-      "events": 14,
+      "events": 15,
       "methods": [
         "dated_listing"
       ],
@@ -2373,7 +2372,7 @@
       "url": "https://novat.ru/",
       "status": "found",
       "pages": 2,
-      "events": 11,
+      "events": 16,
       "methods": [
         "dated_listing"
       ],
@@ -2430,7 +2429,7 @@
       "url": "https://www.dram-teatr.ru/",
       "status": "found",
       "pages": 3,
-      "events": 2,
+      "events": 4,
       "methods": [
         "dated_listing"
       ],
@@ -2453,7 +2452,7 @@
       "url": "https://filarmonia39.ru/",
       "status": "found",
       "pages": 2,
-      "events": 2,
+      "events": 4,
       "methods": [
         "dated_listing"
       ],
@@ -2517,7 +2516,7 @@
       "url": "https://redkassa.ru/",
       "status": "found",
       "pages": 3,
-      "events": 66,
+      "events": 63,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -2531,7 +2530,7 @@
       "url": "https://concert.ru/",
       "status": "found",
       "pages": 3,
-      "events": 33,
+      "events": 34,
       "methods": [
         "dated_listing"
       ],
@@ -2647,7 +2646,7 @@
       "name": "Московский театр Олега Табакова",
       "url": "https://tabakov.ru/afisha/",
       "status": "no_events",
-      "pages": 3,
+      "pages": 4,
       "events": 0,
       "methods": [],
       "priority": "A"
@@ -2728,7 +2727,7 @@
       "url": "https://bulgakovmuseum.ru/calendar/",
       "status": "found",
       "pages": 4,
-      "events": 2,
+      "events": 1,
       "methods": [
         "detail_jsonld"
       ],
@@ -2821,7 +2820,7 @@
       "name": "SOUND UP",
       "url": "https://soundup.world/",
       "status": "no_events",
-      "pages": 3,
+      "pages": 4,
       "events": 0,
       "methods": [],
       "priority": "A"
@@ -2852,7 +2851,7 @@
       "url": "https://www.belcantofund.com/affiche/",
       "status": "found",
       "pages": 3,
-      "events": 18,
+      "events": 20,
       "methods": [
         "microdata"
       ],
