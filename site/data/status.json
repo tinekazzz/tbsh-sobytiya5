@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T07:33:26+03:00",
+  "updated_at": "2026-11-24T07:24:05+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
@@ -7,30 +7,30 @@
   "tracked_people": 450,
   "configured_collectors": 274,
   "sources_checked_today": 274,
-  "sources_reached_today": 184,
-  "sources_with_events_today": 49,
-  "sources_no_dated_events_today": 135,
+  "sources_reached_today": 190,
+  "sources_with_events_today": 50,
+  "sources_no_dated_events_today": 140,
   "sources_needing_javascript_today": 0,
-  "sources_blocked_today": 83,
-  "sources_failed_today": 7,
-  "events_extracted_today": 1179,
-  "new_events_added_today": 58,
-  "events_with_people_today": 52,
-  "events_in_catalog": 1327,
-  "events_with_multiple_sources": 147,
-  "events_with_images": 1257,
-  "images_checked_today": 20,
-  "image_pages_requested_today": 22,
-  "image_detail_links_followed_today": 2,
+  "sources_blocked_today": 76,
+  "sources_failed_today": 8,
+  "events_extracted_today": 1191,
+  "new_events_added_today": 81,
+  "events_with_people_today": 53,
+  "events_in_catalog": 1414,
+  "events_with_multiple_sources": 152,
+  "events_with_images": 1332,
+  "images_checked_today": 60,
+  "image_pages_requested_today": 63,
+  "image_detail_links_followed_today": 5,
   "poster_overrides_applied_today": 0,
-  "images_found_today": 13,
-  "image_checks_blocked_today": 0,
+  "images_found_today": 16,
+  "image_checks_blocked_today": 1,
   "source_status_counts": {
-    "found": 49,
-    "no_events": 135,
+    "found": 50,
+    "no_events": 140,
     "needs_javascript": 0,
-    "blocked": 83,
-    "error": 7,
+    "blocked": 76,
+    "error": 8,
     "invalid_url": 0,
     "unsupported": 0
   },
@@ -51,7 +51,7 @@
       "url": "https://www.afisha.ru/msk/",
       "status": "found",
       "pages": 4,
-      "events": 141,
+      "events": 146,
       "methods": [
         "detail_dated_page",
         "jsonld"
@@ -64,7 +64,7 @@
       "url": "https://live.mts.ru/moscow",
       "status": "found",
       "pages": 4,
-      "events": 65,
+      "events": 68,
       "methods": [
         "dated_listing"
       ],
@@ -87,7 +87,7 @@
       "url": "https://msk.kassir.ru/",
       "status": "found",
       "pages": 4,
-      "events": 88,
+      "events": 97,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -222,7 +222,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt запрещает этот адрес"
+      "error": "robots.txt недоступен: ReadTimeout"
     },
     {
       "id": "SRC-018",
@@ -272,30 +272,30 @@
       "id": "SRC-022",
       "name": "Театр на Бронной",
       "url": "https://mbronnaya.ru/events",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "A"
     },
     {
       "id": "SRC-023",
       "name": "Театр им. Пушкина",
       "url": "https://teatrpushkin.ru/",
-      "status": "blocked",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "status": "found",
+      "pages": 4,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-024",
       "name": "Театр Маяковского",
       "url": "https://www.mayakovsky.ru/",
       "status": "no_events",
-      "pages": 3,
+      "pages": 4,
       "events": 0,
       "methods": [],
       "priority": "A"
@@ -354,12 +354,11 @@
       "id": "SRC-030",
       "name": "Театр Сатирикон",
       "url": "https://satirikon.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "A"
     },
     {
       "id": "SRC-031",
@@ -377,7 +376,7 @@
       "url": "https://www.maly.ru/",
       "status": "found",
       "pages": 4,
-      "events": 2,
+      "events": 1,
       "methods": [
         "dated_listing"
       ],
@@ -392,16 +391,18 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "error": "robots.txt запрещает этот адрес"
     },
     {
       "id": "SRC-034",
       "name": "Театр Практика",
       "url": "https://praktikatheatre.ru/",
-      "status": "no_events",
+      "status": "found",
       "pages": 7,
-      "events": 0,
-      "methods": [],
+      "events": 3,
+      "methods": [
+        "dated_listing"
+      ],
       "priority": "A"
     },
     {
@@ -538,12 +539,11 @@
       "id": "SRC-047",
       "name": "Мастерская 12 Никиты Михалкова",
       "url": "https://www.mikhalkov12.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "A"
     },
     {
       "id": "SRC-048",
@@ -561,8 +561,8 @@
       "name": "Театр.doc",
       "url": "https://teatrdoc.ru/",
       "status": "found",
-      "pages": 4,
-      "events": 2,
+      "pages": 3,
+      "events": 1,
       "methods": [
         "detail_dated_page"
       ],
@@ -628,7 +628,7 @@
       "url": "https://www.mosconsv.ru/",
       "status": "found",
       "pages": 4,
-      "events": 5,
+      "events": 7,
       "methods": [
         "dated_listing",
         "detail_dated_page"
@@ -641,7 +641,7 @@
       "url": "https://kremlinpalace.org/",
       "status": "found",
       "pages": 4,
-      "events": 75,
+      "events": 77,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -786,7 +786,7 @@
       "url": "https://vtb-arena.com/",
       "status": "found",
       "pages": 4,
-      "events": 61,
+      "events": 64,
       "methods": [
         "dated_listing",
         "microdata"
@@ -802,7 +802,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt недоступен: SSLError"
+      "error": "robots.txt ответил HTTP 502"
     },
     {
       "id": "SRC-071",
@@ -980,12 +980,10 @@
       "id": "SRC-087",
       "name": "Платформа",
       "url": "https://platforma.place/",
-      "status": "found",
+      "status": "no_events",
       "pages": 3,
-      "events": 6,
-      "methods": [
-        "dated_listing"
-      ],
+      "events": 0,
+      "methods": [],
       "priority": "B"
     },
     {
@@ -1367,11 +1365,12 @@
       "id": "SRC-123",
       "name": "Музей музыки",
       "url": "https://music-museum.ru/",
-      "status": "no_events",
-      "pages": 4,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "A"
+      "priority": "A",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-124",
@@ -1398,13 +1397,12 @@
       "id": "SRC-126",
       "name": "Дарвиновский музей",
       "url": "https://www.darwinmuseum.ru/",
-      "status": "found",
-      "pages": 4,
-      "events": 17,
-      "methods": [
-        "dated_listing"
-      ],
-      "priority": "A"
+      "status": "error",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.darwinmuseum.ru', port=443): Read timed out. (read timeout=10)"
     },
     {
       "id": "SRC-127",
@@ -1486,12 +1484,11 @@
       "id": "SRC-134",
       "name": "Московский музей дизайна",
       "url": "https://moscowdesignmuseum.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "A"
     },
     {
       "id": "SRC-135",
@@ -1671,12 +1668,11 @@
       "id": "SRC-152",
       "name": "Фестиваль Новая Голландия",
       "url": "https://www.newhollandsp.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 3,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "B"
     },
     {
       "id": "SRC-153",
@@ -1796,11 +1792,12 @@
       "id": "SRC-164",
       "name": "Beat Film Festival",
       "url": "https://beatfilmfestival.ru/",
-      "status": "no_events",
-      "pages": 3,
+      "status": "blocked",
+      "pages": 0,
       "events": 0,
       "methods": [],
-      "priority": "B"
+      "priority": "B",
+      "error": "robots.txt недоступен: ConnectTimeout"
     },
     {
       "id": "SRC-165",
@@ -1974,7 +1971,7 @@
       "name": "Российская газета Культура",
       "url": "https://rg.ru/tema/kultura/",
       "status": "no_events",
-      "pages": 3,
+      "pages": 4,
       "events": 0,
       "methods": [],
       "priority": "B"
@@ -2067,7 +2064,7 @@
       "url": "https://spbcult.ru/",
       "status": "found",
       "pages": 3,
-      "events": 3,
+      "events": 4,
       "methods": [
         "dated_listing",
         "detail_dated_page"
@@ -2083,7 +2080,7 @@
       "events": 0,
       "methods": [],
       "priority": "B",
-      "error": "robots.txt вернул HTML вместо правил"
+      "error": "robots.txt недоступен: SSLError"
     },
     {
       "id": "SRC-192",
@@ -2101,7 +2098,7 @@
       "url": "https://alexandrinsky.ru/",
       "status": "found",
       "pages": 3,
-      "events": 55,
+      "events": 57,
       "methods": [
         "dated_listing"
       ],
@@ -2111,12 +2108,11 @@
       "id": "SRC-194",
       "name": "БДТ имени Товстоногова",
       "url": "https://bdt.spb.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "priority": "B"
     },
     {
       "id": "SRC-195",
@@ -2168,7 +2164,7 @@
       "url": "https://www.erarta.com/",
       "status": "found",
       "pages": 3,
-      "events": 42,
+      "events": 40,
       "methods": [
         "dated_listing",
         "detail_dated_page"
@@ -2248,7 +2244,7 @@
       "url": "https://s-m-e-n-a.org/",
       "status": "found",
       "pages": 3,
-      "events": 6,
+      "events": 9,
       "methods": [
         "dated_listing",
         "feed_date_in_body"
@@ -2259,12 +2255,11 @@
       "id": "SRC-207",
       "name": "Театр имени Камала",
       "url": "https://kamalteatr.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "C",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "C"
     },
     {
       "id": "SRC-208",
@@ -2399,18 +2394,17 @@
       "events": 0,
       "methods": [],
       "priority": "C",
-      "error": "robots.txt запрещает этот адрес"
+      "error": "robots.txt недоступен: SSLError"
     },
     {
       "id": "SRC-220",
       "name": "Приморская филармония",
       "url": "https://primfil.ru/",
-      "status": "blocked",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 2,
       "events": 0,
       "methods": [],
-      "priority": "C",
-      "error": "robots.txt недоступен: ConnectionError"
+      "priority": "C"
     },
     {
       "id": "SRC-221",
@@ -2494,10 +2488,12 @@
       "id": "SRC-228",
       "name": "Театр-Театр",
       "url": "https://teatr-teatr.com/",
-      "status": "no_events",
+      "status": "found",
       "pages": 2,
-      "events": 0,
-      "methods": [],
+      "events": 1,
+      "methods": [
+        "dated_listing"
+      ],
       "priority": "C"
     },
     {
@@ -2516,7 +2512,7 @@
       "url": "https://redkassa.ru/",
       "status": "found",
       "pages": 3,
-      "events": 63,
+      "events": 66,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -2530,7 +2526,7 @@
       "url": "https://concert.ru/",
       "status": "found",
       "pages": 3,
-      "events": 34,
+      "events": 33,
       "methods": [
         "dated_listing"
       ],
@@ -2727,7 +2723,7 @@
       "url": "https://bulgakovmuseum.ru/calendar/",
       "status": "found",
       "pages": 4,
-      "events": 1,
+      "events": 2,
       "methods": [
         "detail_jsonld"
       ],
@@ -2851,7 +2847,7 @@
       "url": "https://www.belcantofund.com/affiche/",
       "status": "found",
       "pages": 3,
-      "events": 20,
+      "events": 21,
       "methods": [
         "microdata"
       ],
