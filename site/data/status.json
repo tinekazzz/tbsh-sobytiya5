@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T07:29:51+03:00",
+  "updated_at": "2026-11-28T07:21:36+03:00",
   "mode": "daily_collection",
   "collection_strategy": "registry_full_sweep",
   "daily_schedule": "06:20 Europe/Moscow (GitHub Actions, возможна задержка)",
@@ -7,30 +7,30 @@
   "tracked_people": 450,
   "configured_collectors": 274,
   "sources_checked_today": 274,
-  "sources_reached_today": 183,
-  "sources_with_events_today": 50,
+  "sources_reached_today": 193,
+  "sources_with_events_today": 60,
   "sources_no_dated_events_today": 133,
   "sources_needing_javascript_today": 0,
-  "sources_blocked_today": 75,
-  "sources_failed_today": 16,
-  "events_extracted_today": 1040,
-  "new_events_added_today": 63,
-  "events_with_people_today": 43,
-  "events_in_catalog": 1662,
-  "events_with_multiple_sources": 180,
-  "events_with_images": 1569,
+  "sources_blocked_today": 74,
+  "sources_failed_today": 7,
+  "events_extracted_today": 1404,
+  "new_events_added_today": 90,
+  "events_with_people_today": 57,
+  "events_in_catalog": 1756,
+  "events_with_multiple_sources": 189,
+  "events_with_images": 1661,
   "images_checked_today": 60,
-  "image_pages_requested_today": 63,
-  "image_detail_links_followed_today": 3,
+  "image_pages_requested_today": 62,
+  "image_detail_links_followed_today": 7,
   "poster_overrides_applied_today": 0,
-  "images_found_today": 22,
-  "image_checks_blocked_today": 3,
+  "images_found_today": 37,
+  "image_checks_blocked_today": 2,
   "source_status_counts": {
-    "found": 50,
+    "found": 60,
     "no_events": 133,
     "needs_javascript": 0,
-    "blocked": 75,
-    "error": 16,
+    "blocked": 74,
+    "error": 7,
     "invalid_url": 0,
     "unsupported": 0
   },
@@ -40,7 +40,7 @@
       "name": "Яндекс Афиша — Москва",
       "url": "https://afisha.yandex.ru/moscow",
       "status": "no_events",
-      "pages": 4,
+      "pages": 3,
       "events": 0,
       "methods": [],
       "priority": "A"
@@ -49,12 +49,15 @@
       "id": "SRC-002",
       "name": "Афиша.ru — Москва",
       "url": "https://www.afisha.ru/msk/",
-      "status": "error",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "ConnectionError: HTTPSConnectionPool(host='www.afisha.ru', port=443): Read timed out."
+      "status": "found",
+      "pages": 4,
+      "events": 155,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page",
+        "jsonld"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-003",
@@ -62,7 +65,7 @@
       "url": "https://live.mts.ru/moscow",
       "status": "found",
       "pages": 4,
-      "events": 67,
+      "events": 74,
       "methods": [
         "dated_listing"
       ],
@@ -85,7 +88,7 @@
       "url": "https://msk.kassir.ru/",
       "status": "found",
       "pages": 4,
-      "events": 102,
+      "events": 98,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -101,7 +104,8 @@
       "pages": 5,
       "events": 12,
       "methods": [
-        "dated_listing"
+        "dated_listing",
+        "detail_dated_page"
       ],
       "priority": "A"
     },
@@ -110,7 +114,7 @@
       "name": "Time Out Москва",
       "url": "https://www.timeout.ru/msk",
       "status": "found",
-      "pages": 3,
+      "pages": 4,
       "events": 1,
       "methods": [
         "detail_dated_page"
@@ -327,7 +331,7 @@
       "url": "https://ermolova.ru/",
       "status": "found",
       "pages": 4,
-      "events": 2,
+      "events": 4,
       "methods": [
         "dated_listing"
       ],
@@ -399,7 +403,7 @@
       "name": "Театр Практика",
       "url": "https://praktikatheatre.ru/",
       "status": "found",
-      "pages": 6,
+      "pages": 7,
       "events": 4,
       "methods": [
         "dated_listing"
@@ -476,10 +480,12 @@
       "id": "SRC-041",
       "name": "Театр имени Моссовета",
       "url": "https://mossoveta.ru/",
-      "status": "no_events",
+      "status": "found",
       "pages": 4,
-      "events": 0,
-      "methods": [],
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
       "priority": "A"
     },
     {
@@ -559,12 +565,13 @@
       "id": "SRC-049",
       "name": "Театр.doc",
       "url": "https://teatrdoc.ru/",
-      "status": "blocked",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "robots.txt недоступен: ConnectionError"
+      "status": "found",
+      "pages": 3,
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-050",
@@ -612,23 +619,26 @@
       "id": "SRC-054",
       "name": "Московский международный Дом музыки",
       "url": "https://www.mmdm.ru/afisha/",
-      "status": "error",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "ConnectionError: HTTPSConnectionPool(host='www.mmdm.ru', port=443): Read timed out."
+      "status": "found",
+      "pages": 4,
+      "events": 59,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-055",
       "name": "Московская консерватория",
       "url": "https://www.mosconsv.ru/",
-      "status": "error",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "ConnectionError: HTTPSConnectionPool(host='www.mosconsv.ru', port=443): Read timed out."
+      "status": "found",
+      "pages": 4,
+      "events": 8,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page"
+      ],
+      "priority": "A"
     },
     {
       "id": "SRC-056",
@@ -650,7 +660,7 @@
       "url": "https://stanmus.ru/",
       "status": "found",
       "pages": 4,
-      "events": 73,
+      "events": 74,
       "methods": [
         "dated_listing"
       ],
@@ -694,7 +704,7 @@
       "name": "Московский театр мюзикла",
       "url": "https://teamuz.ru/",
       "status": "no_events",
-      "pages": 2,
+      "pages": 4,
       "events": 0,
       "methods": [],
       "priority": "A"
@@ -726,10 +736,12 @@
       "id": "SRC-064",
       "name": "Музыка musicAeterna",
       "url": "https://musicaeterna.org/",
-      "status": "no_events",
+      "status": "found",
       "pages": 4,
-      "events": 0,
-      "methods": [],
+      "events": 1,
+      "methods": [
+        "detail_dated_page"
+      ],
       "priority": "A"
     },
     {
@@ -797,7 +809,7 @@
       "events": 0,
       "methods": [],
       "priority": "A",
-      "error": "robots.txt ответил HTTP 502"
+      "error": "robots.txt запрещает этот адрес"
     },
     {
       "id": "SRC-071",
@@ -825,12 +837,11 @@
       "id": "SRC-073",
       "name": "Зеленый театр ВДНХ",
       "url": "https://vdnh.ru/",
-      "status": "error",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 3,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "ConnectionError: HTTPSConnectionPool(host='vdnh.ru', port=443): Read timed out."
+      "priority": "A"
     },
     {
       "id": "SRC-074",
@@ -913,7 +924,7 @@
       "url": "https://kozlovclub.ru/",
       "status": "found",
       "pages": 3,
-      "events": 16,
+      "events": 22,
       "methods": [
         "dated_listing",
         "detail_dated_page"
@@ -926,7 +937,7 @@
       "url": "https://moscow.butmanclub.ru/",
       "status": "found",
       "pages": 3,
-      "events": 75,
+      "events": 74,
       "methods": [
         "dated_listing"
       ],
@@ -937,8 +948,8 @@
       "name": "Джаз-клуб Эссе",
       "url": "https://jazzesse.ru/",
       "status": "found",
-      "pages": 2,
-      "events": 56,
+      "pages": 3,
+      "events": 60,
       "methods": [
         "dated_listing"
       ],
@@ -1003,7 +1014,7 @@
       "url": "https://tau.place/",
       "status": "found",
       "pages": 3,
-      "events": 1,
+      "events": 2,
       "methods": [
         "jsonld"
       ],
@@ -1070,7 +1081,7 @@
       "url": "https://circus.ru/",
       "status": "found",
       "pages": 3,
-      "events": 4,
+      "events": 3,
       "methods": [
         "dated_listing"
       ],
@@ -1152,12 +1163,11 @@
       "id": "SRC-103",
       "name": "Театр мюзикла — программа",
       "url": "https://teamuz.ru/events",
-      "status": "error",
-      "pages": 1,
+      "status": "no_events",
+      "pages": 3,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "ConnectionError: HTTPSConnectionPool(host='teamuz.ru', port=443): Read timed out."
+      "priority": "B"
     },
     {
       "id": "SRC-104",
@@ -1281,12 +1291,11 @@
       "id": "SRC-115",
       "name": "Музей архитектуры им. Щусева",
       "url": "https://muar.ru/",
-      "status": "error",
-      "pages": 2,
+      "status": "no_events",
+      "pages": 4,
       "events": 0,
       "methods": [],
-      "priority": "A",
-      "error": "ConnectionError: HTTPSConnectionPool(host='muar.ru', port=443): Read timed out."
+      "priority": "A"
     },
     {
       "id": "SRC-116",
@@ -1304,7 +1313,7 @@
       "url": "https://garagemca.org/",
       "status": "found",
       "pages": 4,
-      "events": 2,
+      "events": 3,
       "methods": [
         "dated_listing",
         "detail_dated_page"
@@ -1520,10 +1529,12 @@
       "id": "SRC-137",
       "name": "Галерея pop/off/art",
       "url": "https://popoffart.com/",
-      "status": "no_events",
+      "status": "found",
       "pages": 3,
-      "events": 0,
-      "methods": [],
+      "events": 1,
+      "methods": [
+        "dated_listing"
+      ],
       "priority": "A"
     },
     {
@@ -1955,7 +1966,7 @@
       "name": "Ведомости Город",
       "url": "https://www.vedomosti.ru/gorod",
       "status": "no_events",
-      "pages": 3,
+      "pages": 2,
       "events": 0,
       "methods": [],
       "priority": "B"
@@ -1969,7 +1980,7 @@
       "events": 0,
       "methods": [],
       "priority": "B",
-      "error": "HTTP 403"
+      "error": "robots.txt запрещает доступ"
     },
     {
       "id": "SRC-181",
@@ -2035,12 +2046,11 @@
       "id": "SRC-187",
       "name": "SRSLY",
       "url": "https://srsly.ru/",
-      "status": "error",
-      "pages": 0,
+      "status": "no_events",
+      "pages": 3,
       "events": 0,
       "methods": [],
-      "priority": "B",
-      "error": "ConnectionError: HTTPSConnectionPool(host='srsly.ru', port=443): Read timed out."
+      "priority": "B"
     },
     {
       "id": "SRC-188",
@@ -2104,9 +2114,10 @@
       "url": "https://alexandrinsky.ru/",
       "status": "found",
       "pages": 3,
-      "events": 61,
+      "events": 63,
       "methods": [
-        "dated_listing"
+        "dated_listing",
+        "detail_dated_page"
       ],
       "priority": "B"
     },
@@ -2183,7 +2194,7 @@
       "url": "https://manege.spb.ru/",
       "status": "found",
       "pages": 3,
-      "events": 8,
+      "events": 9,
       "methods": [
         "dated_listing"
       ],
@@ -2250,7 +2261,7 @@
       "url": "https://s-m-e-n-a.org/",
       "status": "found",
       "pages": 3,
-      "events": 9,
+      "events": 8,
       "methods": [
         "dated_listing",
         "feed_date_in_body"
@@ -2295,7 +2306,7 @@
       "url": "https://yeltsin.ru/",
       "status": "found",
       "pages": 2,
-      "events": 1,
+      "events": 2,
       "methods": [
         "dated_listing"
       ],
@@ -2305,23 +2316,26 @@
       "id": "SRC-211",
       "name": "Урал Опера Балет",
       "url": "https://uralopera.ru/",
-      "status": "error",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "C",
-      "error": "ConnectionError: HTTPSConnectionPool(host='uralopera.ru', port=443): Read timed out."
+      "status": "found",
+      "pages": 2,
+      "events": 100,
+      "methods": [
+        "dated_listing",
+        "detail_dated_page"
+      ],
+      "priority": "C"
     },
     {
       "id": "SRC-212",
       "name": "Коляда-Театр",
       "url": "https://kolyada-theatre.ru/",
-      "status": "blocked",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "C",
-      "error": "robots.txt недоступен: ConnectTimeout"
+      "status": "found",
+      "pages": 2,
+      "events": 1,
+      "methods": [
+        "dated_listing"
+      ],
+      "priority": "C"
     },
     {
       "id": "SRC-213",
@@ -2362,7 +2376,7 @@
       "url": "https://drama.nnov.ru/",
       "status": "found",
       "pages": 2,
-      "events": 16,
+      "events": 17,
       "methods": [
         "dated_listing"
       ],
@@ -2374,7 +2388,7 @@
       "url": "https://novat.ru/",
       "status": "found",
       "pages": 2,
-      "events": 14,
+      "events": 21,
       "methods": [
         "dated_listing"
       ],
@@ -2453,9 +2467,10 @@
       "url": "https://filarmonia39.ru/",
       "status": "found",
       "pages": 2,
-      "events": 5,
+      "events": 7,
       "methods": [
-        "dated_listing"
+        "dated_listing",
+        "detail_dated_page"
       ],
       "priority": "C"
     },
@@ -2517,7 +2532,7 @@
       "url": "https://redkassa.ru/",
       "status": "found",
       "pages": 3,
-      "events": 73,
+      "events": 71,
       "methods": [
         "dated_listing",
         "detail_dated_page",
@@ -2531,9 +2546,10 @@
       "url": "https://concert.ru/",
       "status": "found",
       "pages": 3,
-      "events": 33,
+      "events": 37,
       "methods": [
-        "dated_listing"
+        "dated_listing",
+        "detail_dated_page"
       ],
       "priority": "B"
     },
@@ -2728,7 +2744,7 @@
       "url": "https://bulgakovmuseum.ru/calendar/",
       "status": "found",
       "pages": 4,
-      "events": 1,
+      "events": 2,
       "methods": [
         "detail_jsonld"
       ],
@@ -2738,22 +2754,22 @@
       "id": "NEW-SRC-010",
       "name": "Государственный музей А. С. Пушкина",
       "url": "https://www.pushkinmuseum.ru/",
-      "status": "error",
-      "pages": 0,
-      "events": 0,
-      "methods": [],
-      "priority": "A",
-      "error": "ConnectionError: HTTPSConnectionPool(host='www.pushkinmuseum.ru', port=443): Read timed out."
-    },
-    {
-      "id": "NEW-SRC-011",
-      "name": "Музей космонавтики",
-      "url": "https://kosmo-museum.ru/events",
       "status": "no_events",
       "pages": 4,
       "events": 0,
       "methods": [],
       "priority": "A"
+    },
+    {
+      "id": "NEW-SRC-011",
+      "name": "Музей космонавтики",
+      "url": "https://kosmo-museum.ru/events",
+      "status": "blocked",
+      "pages": 0,
+      "events": 0,
+      "methods": [],
+      "priority": "A",
+      "error": "robots.txt недоступен: SSLError"
     },
     {
       "id": "NEW-SRC-012",
@@ -2853,7 +2869,7 @@
       "url": "https://www.belcantofund.com/affiche/",
       "status": "found",
       "pages": 3,
-      "events": 23,
+      "events": 27,
       "methods": [
         "microdata"
       ],
@@ -2873,10 +2889,12 @@
       "id": "NEW-SRC-023",
       "name": "Кинотеатр «Художественный»",
       "url": "https://cinema1909.ru/",
-      "status": "no_events",
+      "status": "found",
       "pages": 4,
-      "events": 0,
-      "methods": [],
+      "events": 1,
+      "methods": [
+        "microdata"
+      ],
       "priority": "A"
     },
     {
@@ -2905,7 +2923,7 @@
       "name": "CoolConnections",
       "url": "https://www.coolconnections.ru/",
       "status": "no_events",
-      "pages": 1,
+      "pages": 2,
       "events": 0,
       "methods": [],
       "priority": "A"
